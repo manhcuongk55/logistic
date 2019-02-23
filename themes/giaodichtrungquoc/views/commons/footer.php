@@ -1,0 +1,1 @@
+<?php $this->renderPartial("application.views.layouts.subviews.footer") ?>

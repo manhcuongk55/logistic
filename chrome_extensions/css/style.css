@@ -1,0 +1,48 @@
+.orderhip-container {
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    height: 70px;
+    z-index: 99999999;
+}
+
+.orderhip-background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+    background-color:black;
+    opacity: 1;
+}
+
+.orderhip-content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+    color: white;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.orderhip-inline > * {
+    display: inline-block !important;
+    vertical-align: middle !important;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.orderhip-container * {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.orderhip-container *:before,
+.orderhip-container *:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}

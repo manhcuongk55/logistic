@@ -1,0 +1,64 @@
+.uploadContainer .previewContainer
+{
+    height:130px;
+    width:100%;
+    position:relative;
+    overflow:hidden;;
+}
+.uploadContainer .select,.uploadContainer .preview
+{
+    display:block;
+    /*width:100px;*/
+    height:100px;
+    position:relative;
+}
+.uploadContainer .select
+{
+    border:1px solid #eee;
+}
+.uploadContainer .select
+{
+    cursor:pointer;
+}
+.uploadContainer .select i, .uploadContainer .preview i
+{
+    font-size:40px;
+    left:50%;
+    top:50%;
+    margin-left:-15px;
+    margin-top:-20px;
+    position:absolute;
+    color:#ddd;
+}
+.uploadContainer .select:hover i, .uploadContainer .preview i
+{
+    color:#95a5a6;
+}
+.uploadContainer .preview
+{
+    position:relative;
+}
+.uploadContainer .preview img
+{
+    position:absolute;
+    width:150px;
+    height:150px;
+}
+.uploadContainer .previewContainer .removeButton
+{
+    position:absolute;
+    top:0px;
+    left:160px;
+    font-size:30px;
+    display:none;
+}
+.uploadContainer .previewContainer:hover .removeButton
+{
+    display:block;   
+}
+.uploadContainer .nameText
+{
+    margin-top:5px;
+    white-space: nowrap;
+    max-width:200px;
+}

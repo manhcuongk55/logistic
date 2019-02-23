@@ -1,0 +1,1 @@
+<?php echo Util::param2("front_page","google_analytic_code") ?>

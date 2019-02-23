@@ -1,0 +1,25 @@
+.product-to-cart-option-form .radio-check input:not(:checked) + .attr-display {
+    border: none !important;
+}
+
+.cart-main-area .cart-table .p-quantity input, .wishlist-concept form input {
+    width: 4em;
+    text-align: center;
+}
+
+.cart-main-area .cart-table table th, .cart-main-area .cart-table table td {
+    text-align: center !important;
+}
+
+.checkout-area .customer-name div, .checkout-area .customer-info div, .customer-info div, .city-country div {
+    width: 500px;
+}
+
+.icheckbox_square-blue{
+    width: 22px !important;
+    float: none !important;
+}
+
+.customer-info {
+    margin-top: 10px;
+}

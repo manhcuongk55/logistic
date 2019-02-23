@@ -1,0 +1,23 @@
+<?php
+return array(
+    "type_2_status_1" => "Đơn hàng #{order_id} được khởi tạo thành công",
+    "type_2_status_2" => "Đơn hàng #{order_id} được khởi tạo thành công và đang chờ cập nhật giá",
+    "type_2_status_3" => "Đơn hàng #{order_id} được cập nhật giá thành công",
+    "type_2_status_4" => "Đơn hàng #{order_id} đang đợi tiền đặt cọc",
+    "type_2_status_5" => "Đơn hàng #{order_id} được đặt cọc thành công",
+    "type_2_status_6" => "Đơn hàng #{order_id} đã được đặt hàng",
+    "type_2_status_7" => "Đơn hàng #{order_id} đã bắt đầu chuyển hàng",
+    "type_2_status_8" => "Đơn hàng #{order_id} đã về kho Trung Quốc",
+    "type_2_status_9" => "Đơn hàng #{order_id} đã về kho Việt Nam",
+    "type_2_status_10" => "Đơn hàng #{order_id} đã được hoàn thành",
+    "type_2_status_11" => "Đơn hàng #{order_id} đã bị hủy bỏ",
+    "type_2_status_12" => "Đơn hàng #{order_id} đã được thanh lý",
+    "type_3_status_2" => "Đơn hàng vận chuyển #{delivery_order_id} được khởi tạo thành công",
+    "type_3_status_3" => "Đơn hàng vận chuyển #{delivery_order_id} đang đợi tiền đặt cọc",
+    "type_3_status_4" => "Đơn hàng vận chuyển #{delivery_order_id} được đặt cọc thành công",
+    "type_3_status_5" => "Đơn hàng vận chuyển #{delivery_order_id} đã bắt đầu chuyển hàng",
+    "type_3_status_6" => "Đơn hàng vận chuyển #{delivery_order_id} đã về kho Trung Quốc",
+    "type_3_status_7" => "Đơn hàng vận chuyển #{delivery_order_id} đã về kho Việt Nam",
+    "type_3_status_8" => "Đơn hàng vận chuyển #{delivery_order_id} đã được hoàn thành",
+    "type_3_status_9" => "Đơn hàng vận chuyển #{delivery_order_id} đã bị hủy bỏ",
+);

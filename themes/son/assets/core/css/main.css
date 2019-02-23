@@ -1,0 +1,94 @@
+img {
+	max-width: 100%;
+}
+
+.bootstrap-select.input-sm .selectpicker{
+	/*height:28px;*/
+	padding-top:2px;
+	padding-bottom:2px;
+}
+
+[ng-rendered]
+{
+	visibility:hidden;
+}
+
+.loading
+{
+	background-image:url(../img/loading2.gif);
+	background-size:100% 100%;
+	width:30px;
+	height:30px;
+	display:inline-block;
+}
+
+[data-loading]{
+	visibility:hidden;
+}
+
+[form-loading]{
+	display:none;
+}
+
+
+.dropdown-menu>li>div.search-container
+{
+	margin:5px;
+	display:block;
+	line-height:1.42857143;
+	position:relative;
+}
+
+.dropdown-menu>li>div.search-container .search
+{
+	padding-right:30px;
+}
+
+.dropdown-menu>li>div.search-container.searching .search
+{
+}
+
+.dropdown-menu>li>div.search-container .loading
+{
+	width:20px;
+	height:20px;
+	top:7px;
+	right:7px;
+	position:absolute;
+	display:none;
+}
+
+.dropdown-menu>li>div.search-container.searching .loading
+{
+	display:block;
+}
+
+.dropdown-menu>li>div.search-container .close
+{
+	top:10px;
+	right:7px;
+	position: absolute;
+	font-size:16px;
+}
+
+.dropdown-menu>li>div.search-container.searching .close
+{
+	display:none;
+}
+
+.dropdown-menu>li>div.search-container.empty .close
+{
+	display:none;
+}
+
+.datetimepicker{
+	z-index:10000 !important;
+}
+
+[input-html],[input-checkbox-button],[input-dropdown] {
+	display:none !important;
+}
+
+.note-editor.fullscreen {
+	z-index: 99999 !important;
+}

@@ -1,0 +1,11 @@
+[list-do-order] {
+	cursor: pointer;
+}
+
+[list-no-more-items],[list-no-items] {
+	display: none;
+}
+
+[list-loading] {
+	display: none;
+}

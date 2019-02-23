@@ -1,0 +1,5 @@
+table th, table td {
+	overflow: visible !important;
+	overflow-x: hidden;
+	text-overflow: ellipsis;
+}

@@ -1,0 +1,178 @@
+.v-top-parent > *, .v-top
+{
+	vertical-align: top !important;
+}
+.v-mid-parent > *, .v-mid
+{
+	vertical-align: middle !important;
+}
+.v-bot-parent > *, .v-bot
+{
+	vertical-align: bottom !important;
+}
+.div-table
+{
+	display:table;
+	width:100%;
+}
+	.div-table > *
+	{
+		display:table-cell;
+	}
+	.div-table.div-table-collapse
+	{
+		font-size:0px;
+	}
+	.div-table.div-table-collapse > *
+	{
+		font-size:1em;
+	}
+	.div-table > .fit-content {
+		width: 1%; 
+		white-space:nowrap;
+	}
+.div-table-rows
+{
+	display:table;
+	width:100%;
+}
+	.div-table-rows > *
+	{
+		display:table-row;
+	}
+.div-inline
+{
+}
+	.div-inline > *
+	{
+		display:inline-block;
+	}
+.div-img
+{
+	position:relative;
+}
+	.div-img  > img
+	{
+		width:100%;
+	}
+.bold
+{
+	font-weight:bold;
+}
+.italic
+{
+	font-style:italic;
+}
+.underline
+{
+	text-decoration:underline;
+}
+.strikethrough
+{
+	text-decoration:line-through;
+}
+.upper
+{
+	text-transform:uppercase;
+}
+a.text-style
+{
+	color:inherit !important;
+	text-decoration:inherit !important;
+}
+a.text-style-color
+{
+	text-decoration:inherit !important;
+}
+a.text-style-underline
+{
+	color:inherit !important;
+}
+.no-select
+{
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: moz-none;
+	-ms-user-select: none;
+	user-select: none;
+}
+.favicon
+{
+	height:20px;
+}
+textarea
+{
+	resize:vertical;
+	min-height:100px;
+}
+
+form .form-field label
+{
+	float:left;
+	min-width:200px;
+}
+.hidden0
+{
+	display:none;
+}
+.hidden2
+{
+	visibility:hidden;
+}
+.must-visible
+{
+	display:block !important;
+}
+
+.noselect
+{
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: moz-none;
+	-ms-user-select: none;
+	user-select: none;
+}
+.text-white:hover
+{
+	color:#fff;
+}
+[hidden]{
+	display:none !important;
+}
+
+.info-list {
+
+}
+
+.info-list > div {
+	margin-bottom: 5px;
+}
+
+.info-list > div > span:nth-child(1){
+	display: inline-block;
+	min-width: 100px;
+	vertical-align: middle;
+}
+
+.info-list > div > span:nth-child(2){
+	font-weight: bold;
+	vertical-align: middle;
+}
+
+.box-container .minimized-visible {
+	display: none;
+}
+
+.box-container .minimized-hidden {
+	display: block;
+}
+
+.box-container.minimized .minimized-visible{
+	display: block;
+}
+
+.box-container.minimized .minimized-hidden {
+	display: none;
+}

@@ -1,5 +1,5 @@
 # logistic
-## You must instal apache2 
+## You must install apache2 
 sudo apt-get update
 sudo apt-get install apache2
 sudo systemctl restart apache2

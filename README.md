@@ -12,7 +12,8 @@ sudo apt install php5.6-mysql
 ### install mysql 
 ### install IDE mysql like mysql workbench 
 ### Config database in host for user and pass 
-### Create Schema lik
+### Create Schema like this
+
 <?php
 return array(
 	'connectionString' => 'mysql:host=127.0.0.1;dbname=orderhip',

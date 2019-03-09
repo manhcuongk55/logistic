@@ -24,5 +24,7 @@ return array(
 	'charset' => 'utf8',
 	"tablePrefix" => "tbl_"
 );
+
+
 #Install for window
 

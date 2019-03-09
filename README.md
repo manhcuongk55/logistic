@@ -1,3 +1,4 @@
+#Install for linux
 # logistic
 ## You must install apache2 
 sudo apt-get update
@@ -23,3 +24,5 @@ return array(
 	'charset' => 'utf8',
 	"tablePrefix" => "tbl_"
 );
+#Install for window
+

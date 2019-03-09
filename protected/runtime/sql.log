@@ -326,3 +326,107 @@ in /home/slowak/code/logistic/protected/extensions/Son/components/SWebUser.php (
 in /home/slowak/code/logistic/protected/extensions/Son/models/SModel.php (805)
 in /home/slowak/code/logistic/protected/extensions/Son/models/SModel.php (801)
 in /home/slowak/code/logistic/protected/extensions/Son/components/SWebUser.php (19)
+2019/03/09 17:09:06 [trace] [system.db.CDbConnection] Opening DB connection
+in /home/slowak/code/logistic/protected/extensions/Son/models/SModel.php (90)
+in /home/slowak/code/logistic/protected/extensions/Son/models/SModel.php (797)
+in /home/slowak/code/logistic/protected/extensions/Son/components/SWebUser.php (19)
+2019/03/09 17:09:06 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_user`
+in /home/slowak/code/logistic/protected/extensions/Son/models/SModel.php (90)
+in /home/slowak/code/logistic/protected/extensions/Son/models/SModel.php (797)
+in /home/slowak/code/logistic/protected/extensions/Son/components/SWebUser.php (19)
+2019/03/09 17:09:06 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_user`
+in /home/slowak/code/logistic/protected/extensions/Son/models/SModel.php (90)
+in /home/slowak/code/logistic/protected/extensions/Son/models/SModel.php (797)
+in /home/slowak/code/logistic/protected/extensions/Son/components/SWebUser.php (19)
+2019/03/09 17:09:06 [trace] [system.db.ar.CActiveRecord] User.findByPk()
+in /home/slowak/code/logistic/protected/extensions/Son/models/SModel.php (801)
+in /home/slowak/code/logistic/protected/extensions/Son/components/SWebUser.php (19)
+in /home/slowak/code/logistic/protected/extensions/Son/helpers/ArrayHelper.php (5)
+2019/03/09 17:09:06 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `tbl_user` `t` WHERE `t`.`id` IS NULL LIMIT 1
+in /home/slowak/code/logistic/protected/extensions/Son/models/SModel.php (805)
+in /home/slowak/code/logistic/protected/extensions/Son/models/SModel.php (801)
+in /home/slowak/code/logistic/protected/extensions/Son/components/SWebUser.php (19)
+2019/03/09 17:09:06 [trace] [system.db.CDbCommand] Query result found in cache
+in /home/slowak/code/logistic/protected/extensions/Son/models/SModel.php (805)
+in /home/slowak/code/logistic/protected/extensions/Son/models/SModel.php (801)
+in /home/slowak/code/logistic/protected/extensions/Son/components/SWebUser.php (19)
+2019/03/09 17:09:06 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_view`
+in /home/slowak/code/logistic/protected/extensions/Son/models/SModel.php (61)
+in /home/slowak/code/logistic/protected/components/Controller.php (26)
+in /home/slowak/code/logistic/protected/extensions/Son/components/SController.php (29)
+2019/03/09 17:09:06 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_view`
+in /home/slowak/code/logistic/protected/extensions/Son/models/SModel.php (61)
+in /home/slowak/code/logistic/protected/components/Controller.php (26)
+in /home/slowak/code/logistic/protected/extensions/Son/components/SController.php (29)
+2019/03/09 17:09:06 [trace] [system.db.ar.CActiveRecord] User.findByPk()
+in /home/slowak/code/logistic/protected/extensions/Son/models/SModel.php (801)
+in /home/slowak/code/logistic/protected/extensions/Son/components/SWebUser.php (19)
+in /home/slowak/code/logistic/protected/extensions/Son/helpers/ArrayHelper.php (5)
+2019/03/09 17:09:06 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `tbl_user` `t` WHERE `t`.`id` IS NULL LIMIT 1
+in /home/slowak/code/logistic/protected/extensions/Son/models/SModel.php (805)
+in /home/slowak/code/logistic/protected/extensions/Son/models/SModel.php (801)
+in /home/slowak/code/logistic/protected/extensions/Son/components/SWebUser.php (19)
+2019/03/09 17:09:06 [trace] [system.db.CDbCommand] Query result found in cache
+in /home/slowak/code/logistic/protected/extensions/Son/models/SModel.php (805)
+in /home/slowak/code/logistic/protected/extensions/Son/models/SModel.php (801)
+in /home/slowak/code/logistic/protected/extensions/Son/components/SWebUser.php (19)
+2019/03/09 17:09:06 [trace] [system.db.ar.CActiveRecord] User.findByPk()
+in /home/slowak/code/logistic/protected/extensions/Son/models/SModel.php (801)
+in /home/slowak/code/logistic/protected/extensions/Son/components/SWebUser.php (19)
+in /home/slowak/code/logistic/protected/extensions/Son/helpers/ArrayHelper.php (5)
+2019/03/09 17:09:06 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `tbl_user` `t` WHERE `t`.`id` IS NULL LIMIT 1
+in /home/slowak/code/logistic/protected/extensions/Son/models/SModel.php (805)
+in /home/slowak/code/logistic/protected/extensions/Son/models/SModel.php (801)
+in /home/slowak/code/logistic/protected/extensions/Son/components/SWebUser.php (19)
+2019/03/09 17:09:06 [trace] [system.db.CDbCommand] Query result found in cache
+in /home/slowak/code/logistic/protected/extensions/Son/models/SModel.php (805)
+in /home/slowak/code/logistic/protected/extensions/Son/models/SModel.php (801)
+in /home/slowak/code/logistic/protected/extensions/Son/components/SWebUser.php (19)
+2019/03/09 17:09:08 [trace] [system.db.CDbConnection] Opening DB connection
+in /home/slowak/code/logistic/protected/extensions/Son/models/SModel.php (90)
+in /home/slowak/code/logistic/protected/extensions/Son/models/SModel.php (797)
+in /home/slowak/code/logistic/protected/extensions/Son/components/SWebUser.php (19)
+2019/03/09 17:09:08 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_user`
+in /home/slowak/code/logistic/protected/extensions/Son/models/SModel.php (90)
+in /home/slowak/code/logistic/protected/extensions/Son/models/SModel.php (797)
+in /home/slowak/code/logistic/protected/extensions/Son/components/SWebUser.php (19)
+2019/03/09 17:09:08 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_user`
+in /home/slowak/code/logistic/protected/extensions/Son/models/SModel.php (90)
+in /home/slowak/code/logistic/protected/extensions/Son/models/SModel.php (797)
+in /home/slowak/code/logistic/protected/extensions/Son/components/SWebUser.php (19)
+2019/03/09 17:09:08 [trace] [system.db.ar.CActiveRecord] User.findByPk()
+in /home/slowak/code/logistic/protected/extensions/Son/models/SModel.php (801)
+in /home/slowak/code/logistic/protected/extensions/Son/components/SWebUser.php (19)
+in /home/slowak/code/logistic/protected/extensions/Son/helpers/ArrayHelper.php (5)
+2019/03/09 17:09:08 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `tbl_user` `t` WHERE `t`.`id` IS NULL LIMIT 1
+in /home/slowak/code/logistic/protected/extensions/Son/models/SModel.php (805)
+in /home/slowak/code/logistic/protected/extensions/Son/models/SModel.php (801)
+in /home/slowak/code/logistic/protected/extensions/Son/components/SWebUser.php (19)
+2019/03/09 17:09:08 [trace] [system.db.CDbCommand] Query result found in cache
+in /home/slowak/code/logistic/protected/extensions/Son/models/SModel.php (805)
+in /home/slowak/code/logistic/protected/extensions/Son/models/SModel.php (801)
+in /home/slowak/code/logistic/protected/extensions/Son/components/SWebUser.php (19)
+2019/03/09 17:09:08 [trace] [system.db.CDbConnection] Opening DB connection
+in /home/slowak/code/logistic/protected/extensions/Son/models/SModel.php (90)
+in /home/slowak/code/logistic/protected/extensions/Son/models/SModel.php (797)
+in /home/slowak/code/logistic/protected/extensions/Son/components/SWebUser.php (19)
+2019/03/09 17:09:08 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_user`
+in /home/slowak/code/logistic/protected/extensions/Son/models/SModel.php (90)
+in /home/slowak/code/logistic/protected/extensions/Son/models/SModel.php (797)
+in /home/slowak/code/logistic/protected/extensions/Son/components/SWebUser.php (19)
+2019/03/09 17:09:08 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_user`
+in /home/slowak/code/logistic/protected/extensions/Son/models/SModel.php (90)
+in /home/slowak/code/logistic/protected/extensions/Son/models/SModel.php (797)
+in /home/slowak/code/logistic/protected/extensions/Son/components/SWebUser.php (19)
+2019/03/09 17:09:08 [trace] [system.db.ar.CActiveRecord] User.findByPk()
+in /home/slowak/code/logistic/protected/extensions/Son/models/SModel.php (801)
+in /home/slowak/code/logistic/protected/extensions/Son/components/SWebUser.php (19)
+in /home/slowak/code/logistic/protected/extensions/Son/helpers/ArrayHelper.php (5)
+2019/03/09 17:09:08 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `tbl_user` `t` WHERE `t`.`id` IS NULL LIMIT 1
+in /home/slowak/code/logistic/protected/extensions/Son/models/SModel.php (805)
+in /home/slowak/code/logistic/protected/extensions/Son/models/SModel.php (801)
+in /home/slowak/code/logistic/protected/extensions/Son/components/SWebUser.php (19)
+2019/03/09 17:09:08 [trace] [system.db.CDbCommand] Query result found in cache
+in /home/slowak/code/logistic/protected/extensions/Son/models/SModel.php (805)
+in /home/slowak/code/logistic/protected/extensions/Son/models/SModel.php (801)
+in /home/slowak/code/logistic/protected/extensions/Son/components/SWebUser.php (19)

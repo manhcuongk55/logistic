@@ -1,4 +1,5 @@
 <?php
+
 class SignupForm extends SForm {
 	protected function getConfig(){
 		$config = array(
@@ -73,7 +74,13 @@ class SignupForm extends SForm {
 				if($this->password != $this->retype_password){
 					$this->setError(true);
 					$this->addError("password",$this->l("Mật khẩu không trùng!"));
-				} else {
+				 } else 
+				if(!preg_match('/(09|03)+([0-9]{8})\g',$this->phone)){
+					$this->setError(true);
+					$this->addError("phone",$this->l("Số điện thoại không hợp lệ"));
+					// echo "<script>console.log($this->password);</script>";
+				} 
+				else {
 					$user = new User();
 					$user->name = $this->name;
 					$user->password = $this->password;
@@ -86,9 +93,10 @@ class SignupForm extends SForm {
 						$this->addError("global",$user->getFirstError());
 					} else {
 						$user->generateEmailActiveToken("confirm_email",true);
-						$identity = new UserIdentity($this->email,$this->password);
-						$identity->setUser($user);
-						Yii::app()->user->login($identity);
+						//comment to prevent auto login without check email confirmation
+						// $identity = new UserIdentity($this->email,$this->password);
+						// $identity->setUser($user);
+						// Yii::app()->user->login($identity);
 					}
 				}
 			}

@@ -48,9 +48,7 @@
 <script>
 	$(function(){
 		$("#signup-form").on("form-success",function(){
-			$__$.alert("<?php $form->l_("Đăng ký thành công. Vui lòng kiểm tra email và kích hoạt tài khoản!") ?>",function(){
-				location.href = "<?php echo $this->createUrl('/home') ?>";
-			});
+				location.href = "<?php echo $this->createUrl('/site/redirect_page_after_signup') ?>";
 		});
 	});
 </script>

@@ -810,3 +810,1667 @@ Stack trace:
 REQUEST_URI=/orderhip.com/
 HTTP_REFERER=http://localhost/
 ---
+2019/03/03 18:21:20 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[HY000] [1049] Unknown database 'admin_admin'' in /home/gckm/Project/logistic-master/yii/framework/db/CDbConnection.php:382
+Stack trace:
+#0 /home/gckm/Project/logistic-master/yii/framework/db/CDbConnection.php(330): CDbConnection->open()
+#1 /home/gckm/Project/logistic-master/yii/framework/db/CDbConnection.php(308): CDbConnection->setActive(true)
+#2 /home/gckm/Project/logistic-master/yii/framework/base/CModule.php(387): CDbConnection->init()
+#3 /home/gckm/Project/logistic-master/yii/framework/base/CApplication.php(450): CModule->getComponent('db')
+#4 /home/gckm/Project/logistic-master/yii/framework/db/ar/CActiveRecord.php(634): CApplication->getDb()
+#5 /home/gckm/Project/logistic-master/yii/framework/db/ar/CActiveRecord.php(2361): CActiveRecord->getDbConnection()
+#6 /home/gckm/Project/logistic-master/yii/framework/db/ar/CActiveRecord.php(411): CActiveRecordMetaData->__construct(Object(User))
+#7 /home/gckm/Project/logistic-master/yii/framework/db/ar/CActiveRecord.php(138): CActiveRecord->getMetaData()
+#8 /home/gckm/Project/logistic-master/protected/extensions/Son/models/SModel.php(90): CActiveRecord->__get('tableSchema')
+#9 /home/gckm/Project/logistic-master/protected/extensions/Son/models/SModel.php(797): SModel->__get('tableSchema')
+#10 /home/gckm/Project/logistic-master/protected/extensions/Son/components/SWebUser.php(19): SModel->findByPk(NULL, Array)
+#11 /home/gckm/Project/logistic-master/protected/extensions/Son/helpers/ArrayHelper.php(5): SWebUser->{closure}()
+#12 /home/gckm/Project/logistic-master/protected/extensions/Son/helpers/ArrayHelper.php(22): ArrayHelper::handleDefaultValue(Array, 'User', Object(Closure), true)
+#13 /home/gckm/Project/logistic-master/protected/extensions/Son/components/SWebUser.php(20): ArrayHelper::get(Array, 'User', Object(Closure), true)
+#14 /home/gckm/Project/logistic-master/protected/extensions/Son/components/SWebUser.php(36): SWebUser->getModel('User', Array)
+#15 /home/gckm/Project/logistic-master/protected/components/Controller.php(14): SWebUser->getUser()
+#16 /home/gckm/Project/logistic-master/protected/components/FrontPageBaseController.php(8): Controller->getUser()
+#17 /home/gckm/Project/logistic-master/protected/controllers/HomeController.php(14): FrontPageBaseController->init()
+#18 /home/gckm/Project/logistic-master/yii/framework/web/CWebApplication.php(281): HomeController->init()
+#19 /home/gckm/Project/logistic-master/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#20 /home/gckm/Project/logistic-master/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#21 /home/gckm/Project/logistic-master/index.php(18): CApplication->run()
+#22 {main}
+REQUEST_URI=/
+---
+2019/03/03 20:55:37 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[HY000] [1049] Unknown database 'admin_admin'' in /home/gckm/Project/logistic-master/yii/framework/db/CDbConnection.php:382
+Stack trace:
+#0 /home/gckm/Project/logistic-master/yii/framework/db/CDbConnection.php(330): CDbConnection->open()
+#1 /home/gckm/Project/logistic-master/yii/framework/db/CDbConnection.php(308): CDbConnection->setActive(true)
+#2 /home/gckm/Project/logistic-master/yii/framework/base/CModule.php(387): CDbConnection->init()
+#3 /home/gckm/Project/logistic-master/yii/framework/base/CApplication.php(450): CModule->getComponent('db')
+#4 /home/gckm/Project/logistic-master/yii/framework/db/ar/CActiveRecord.php(634): CApplication->getDb()
+#5 /home/gckm/Project/logistic-master/yii/framework/db/ar/CActiveRecord.php(2361): CActiveRecord->getDbConnection()
+#6 /home/gckm/Project/logistic-master/yii/framework/db/ar/CActiveRecord.php(411): CActiveRecordMetaData->__construct(Object(User))
+#7 /home/gckm/Project/logistic-master/yii/framework/db/ar/CActiveRecord.php(138): CActiveRecord->getMetaData()
+#8 /home/gckm/Project/logistic-master/protected/extensions/Son/models/SModel.php(90): CActiveRecord->__get('tableSchema')
+#9 /home/gckm/Project/logistic-master/protected/extensions/Son/models/SModel.php(797): SModel->__get('tableSchema')
+#10 /home/gckm/Project/logistic-master/protected/extensions/Son/components/SWebUser.php(19): SModel->findByPk(NULL, Array)
+#11 /home/gckm/Project/logistic-master/protected/extensions/Son/helpers/ArrayHelper.php(5): SWebUser->{closure}()
+#12 /home/gckm/Project/logistic-master/protected/extensions/Son/helpers/ArrayHelper.php(22): ArrayHelper::handleDefaultValue(Array, 'User', Object(Closure), true)
+#13 /home/gckm/Project/logistic-master/protected/extensions/Son/components/SWebUser.php(20): ArrayHelper::get(Array, 'User', Object(Closure), true)
+#14 /home/gckm/Project/logistic-master/protected/extensions/Son/components/SWebUser.php(36): SWebUser->getModel('User', Array)
+#15 /home/gckm/Project/logistic-master/protected/components/Controller.php(14): SWebUser->getUser()
+#16 /home/gckm/Project/logistic-master/protected/components/FrontPageBaseController.php(8): Controller->getUser()
+#17 /home/gckm/Project/logistic-master/protected/controllers/HomeController.php(14): FrontPageBaseController->init()
+#18 /home/gckm/Project/logistic-master/yii/framework/web/CWebApplication.php(281): HomeController->init()
+#19 /home/gckm/Project/logistic-master/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#20 /home/gckm/Project/logistic-master/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#21 /home/gckm/Project/logistic-master/index.php(18): CApplication->run()
+#22 {main}
+REQUEST_URI=/
+---
+2019/03/03 21:06:24 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[HY000] [1049] Unknown database 'admin_admin'' in /home/gckm/Project/logistic-master/yii/framework/db/CDbConnection.php:382
+Stack trace:
+#0 /home/gckm/Project/logistic-master/yii/framework/db/CDbConnection.php(330): CDbConnection->open()
+#1 /home/gckm/Project/logistic-master/yii/framework/db/CDbConnection.php(308): CDbConnection->setActive(true)
+#2 /home/gckm/Project/logistic-master/yii/framework/base/CModule.php(387): CDbConnection->init()
+#3 /home/gckm/Project/logistic-master/yii/framework/base/CApplication.php(450): CModule->getComponent('db')
+#4 /home/gckm/Project/logistic-master/yii/framework/db/ar/CActiveRecord.php(634): CApplication->getDb()
+#5 /home/gckm/Project/logistic-master/yii/framework/db/ar/CActiveRecord.php(2361): CActiveRecord->getDbConnection()
+#6 /home/gckm/Project/logistic-master/yii/framework/db/ar/CActiveRecord.php(411): CActiveRecordMetaData->__construct(Object(User))
+#7 /home/gckm/Project/logistic-master/yii/framework/db/ar/CActiveRecord.php(138): CActiveRecord->getMetaData()
+#8 /home/gckm/Project/logistic-master/protected/extensions/Son/models/SModel.php(90): CActiveRecord->__get('tableSchema')
+#9 /home/gckm/Project/logistic-master/protected/extensions/Son/models/SModel.php(797): SModel->__get('tableSchema')
+#10 /home/gckm/Project/logistic-master/protected/extensions/Son/components/SWebUser.php(19): SModel->findByPk(NULL, Array)
+#11 /home/gckm/Project/logistic-master/protected/extensions/Son/helpers/ArrayHelper.php(5): SWebUser->{closure}()
+#12 /home/gckm/Project/logistic-master/protected/extensions/Son/helpers/ArrayHelper.php(22): ArrayHelper::handleDefaultValue(Array, 'User', Object(Closure), true)
+#13 /home/gckm/Project/logistic-master/protected/extensions/Son/components/SWebUser.php(20): ArrayHelper::get(Array, 'User', Object(Closure), true)
+#14 /home/gckm/Project/logistic-master/protected/extensions/Son/components/SWebUser.php(36): SWebUser->getModel('User', Array)
+#15 /home/gckm/Project/logistic-master/protected/components/Controller.php(14): SWebUser->getUser()
+#16 /home/gckm/Project/logistic-master/protected/components/FrontPageBaseController.php(8): Controller->getUser()
+#17 /home/gckm/Project/logistic-master/protected/controllers/HomeController.php(14): FrontPageBaseController->init()
+#18 /home/gckm/Project/logistic-master/yii/framework/web/CWebApplication.php(281): HomeController->init()
+#19 /home/gckm/Project/logistic-master/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#20 /home/gckm/Project/logistic-master/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#21 /home/gckm/Project/logistic-master/index.php(18): CApplication->run()
+#22 {main}
+REQUEST_URI=/
+---
+2019/03/03 21:06:25 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[HY000] [1049] Unknown database 'admin_admin'' in /home/gckm/Project/logistic-master/yii/framework/db/CDbConnection.php:382
+Stack trace:
+#0 /home/gckm/Project/logistic-master/yii/framework/db/CDbConnection.php(330): CDbConnection->open()
+#1 /home/gckm/Project/logistic-master/yii/framework/db/CDbConnection.php(308): CDbConnection->setActive(true)
+#2 /home/gckm/Project/logistic-master/yii/framework/base/CModule.php(387): CDbConnection->init()
+#3 /home/gckm/Project/logistic-master/yii/framework/base/CApplication.php(450): CModule->getComponent('db')
+#4 /home/gckm/Project/logistic-master/yii/framework/db/ar/CActiveRecord.php(634): CApplication->getDb()
+#5 /home/gckm/Project/logistic-master/yii/framework/db/ar/CActiveRecord.php(2361): CActiveRecord->getDbConnection()
+#6 /home/gckm/Project/logistic-master/yii/framework/db/ar/CActiveRecord.php(411): CActiveRecordMetaData->__construct(Object(User))
+#7 /home/gckm/Project/logistic-master/yii/framework/db/ar/CActiveRecord.php(138): CActiveRecord->getMetaData()
+#8 /home/gckm/Project/logistic-master/protected/extensions/Son/models/SModel.php(90): CActiveRecord->__get('tableSchema')
+#9 /home/gckm/Project/logistic-master/protected/extensions/Son/models/SModel.php(797): SModel->__get('tableSchema')
+#10 /home/gckm/Project/logistic-master/protected/extensions/Son/components/SWebUser.php(19): SModel->findByPk(NULL, Array)
+#11 /home/gckm/Project/logistic-master/protected/extensions/Son/helpers/ArrayHelper.php(5): SWebUser->{closure}()
+#12 /home/gckm/Project/logistic-master/protected/extensions/Son/helpers/ArrayHelper.php(22): ArrayHelper::handleDefaultValue(Array, 'User', Object(Closure), true)
+#13 /home/gckm/Project/logistic-master/protected/extensions/Son/components/SWebUser.php(20): ArrayHelper::get(Array, 'User', Object(Closure), true)
+#14 /home/gckm/Project/logistic-master/protected/extensions/Son/components/SWebUser.php(36): SWebUser->getModel('User', Array)
+#15 /home/gckm/Project/logistic-master/protected/components/Controller.php(14): SWebUser->getUser()
+#16 /home/gckm/Project/logistic-master/protected/components/FrontPageBaseController.php(8): Controller->getUser()
+#17 /home/gckm/Project/logistic-master/protected/controllers/HomeController.php(14): FrontPageBaseController->init()
+#18 /home/gckm/Project/logistic-master/yii/framework/web/CWebApplication.php(281): HomeController->init()
+#19 /home/gckm/Project/logistic-master/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#20 /home/gckm/Project/logistic-master/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#21 /home/gckm/Project/logistic-master/index.php(18): CApplication->run()
+#22 {main}
+REQUEST_URI=/
+---
+2019/03/03 21:10:54 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[HY000] [1049] Unknown database 'admin_admin'' in /home/gckm/Project/logistic-master/yii/framework/db/CDbConnection.php:382
+Stack trace:
+#0 /home/gckm/Project/logistic-master/yii/framework/db/CDbConnection.php(330): CDbConnection->open()
+#1 /home/gckm/Project/logistic-master/yii/framework/db/CDbConnection.php(308): CDbConnection->setActive(true)
+#2 /home/gckm/Project/logistic-master/yii/framework/base/CModule.php(387): CDbConnection->init()
+#3 /home/gckm/Project/logistic-master/yii/framework/base/CApplication.php(450): CModule->getComponent('db')
+#4 /home/gckm/Project/logistic-master/yii/framework/db/ar/CActiveRecord.php(634): CApplication->getDb()
+#5 /home/gckm/Project/logistic-master/yii/framework/db/ar/CActiveRecord.php(2361): CActiveRecord->getDbConnection()
+#6 /home/gckm/Project/logistic-master/yii/framework/db/ar/CActiveRecord.php(411): CActiveRecordMetaData->__construct(Object(User))
+#7 /home/gckm/Project/logistic-master/yii/framework/db/ar/CActiveRecord.php(138): CActiveRecord->getMetaData()
+#8 /home/gckm/Project/logistic-master/protected/extensions/Son/models/SModel.php(90): CActiveRecord->__get('tableSchema')
+#9 /home/gckm/Project/logistic-master/protected/extensions/Son/models/SModel.php(797): SModel->__get('tableSchema')
+#10 /home/gckm/Project/logistic-master/protected/extensions/Son/components/SWebUser.php(19): SModel->findByPk(NULL, Array)
+#11 /home/gckm/Project/logistic-master/protected/extensions/Son/helpers/ArrayHelper.php(5): SWebUser->{closure}()
+#12 /home/gckm/Project/logistic-master/protected/extensions/Son/helpers/ArrayHelper.php(22): ArrayHelper::handleDefaultValue(Array, 'User', Object(Closure), true)
+#13 /home/gckm/Project/logistic-master/protected/extensions/Son/components/SWebUser.php(20): ArrayHelper::get(Array, 'User', Object(Closure), true)
+#14 /home/gckm/Project/logistic-master/protected/extensions/Son/components/SWebUser.php(36): SWebUser->getModel('User', Array)
+#15 /home/gckm/Project/logistic-master/protected/components/Controller.php(14): SWebUser->getUser()
+#16 /home/gckm/Project/logistic-master/protected/components/FrontPageBaseController.php(8): Controller->getUser()
+#17 /home/gckm/Project/logistic-master/protected/controllers/HomeController.php(14): FrontPageBaseController->init()
+#18 /home/gckm/Project/logistic-master/yii/framework/web/CWebApplication.php(281): HomeController->init()
+#19 /home/gckm/Project/logistic-master/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#20 /home/gckm/Project/logistic-master/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#21 /home/gckm/Project/logistic-master/index.php(18): CApplication->run()
+#22 {main}
+REQUEST_URI=/
+---
+2019/03/03 21:10:55 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[HY000] [1049] Unknown database 'admin_admin'' in /home/gckm/Project/logistic-master/yii/framework/db/CDbConnection.php:382
+Stack trace:
+#0 /home/gckm/Project/logistic-master/yii/framework/db/CDbConnection.php(330): CDbConnection->open()
+#1 /home/gckm/Project/logistic-master/yii/framework/db/CDbConnection.php(308): CDbConnection->setActive(true)
+#2 /home/gckm/Project/logistic-master/yii/framework/base/CModule.php(387): CDbConnection->init()
+#3 /home/gckm/Project/logistic-master/yii/framework/base/CApplication.php(450): CModule->getComponent('db')
+#4 /home/gckm/Project/logistic-master/yii/framework/db/ar/CActiveRecord.php(634): CApplication->getDb()
+#5 /home/gckm/Project/logistic-master/yii/framework/db/ar/CActiveRecord.php(2361): CActiveRecord->getDbConnection()
+#6 /home/gckm/Project/logistic-master/yii/framework/db/ar/CActiveRecord.php(411): CActiveRecordMetaData->__construct(Object(User))
+#7 /home/gckm/Project/logistic-master/yii/framework/db/ar/CActiveRecord.php(138): CActiveRecord->getMetaData()
+#8 /home/gckm/Project/logistic-master/protected/extensions/Son/models/SModel.php(90): CActiveRecord->__get('tableSchema')
+#9 /home/gckm/Project/logistic-master/protected/extensions/Son/models/SModel.php(797): SModel->__get('tableSchema')
+#10 /home/gckm/Project/logistic-master/protected/extensions/Son/components/SWebUser.php(19): SModel->findByPk(NULL, Array)
+#11 /home/gckm/Project/logistic-master/protected/extensions/Son/helpers/ArrayHelper.php(5): SWebUser->{closure}()
+#12 /home/gckm/Project/logistic-master/protected/extensions/Son/helpers/ArrayHelper.php(22): ArrayHelper::handleDefaultValue(Array, 'User', Object(Closure), true)
+#13 /home/gckm/Project/logistic-master/protected/extensions/Son/components/SWebUser.php(20): ArrayHelper::get(Array, 'User', Object(Closure), true)
+#14 /home/gckm/Project/logistic-master/protected/extensions/Son/components/SWebUser.php(36): SWebUser->getModel('User', Array)
+#15 /home/gckm/Project/logistic-master/protected/components/Controller.php(14): SWebUser->getUser()
+#16 /home/gckm/Project/logistic-master/protected/components/FrontPageBaseController.php(8): Controller->getUser()
+#17 /home/gckm/Project/logistic-master/protected/controllers/HomeController.php(14): FrontPageBaseController->init()
+#18 /home/gckm/Project/logistic-master/yii/framework/web/CWebApplication.php(281): HomeController->init()
+#19 /home/gckm/Project/logistic-master/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#20 /home/gckm/Project/logistic-master/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#21 /home/gckm/Project/logistic-master/index.php(18): CApplication->run()
+#22 {main}
+REQUEST_URI=/
+---
+2019/03/03 21:10:55 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[HY000] [1049] Unknown database 'admin_admin'' in /home/gckm/Project/logistic-master/yii/framework/db/CDbConnection.php:382
+Stack trace:
+#0 /home/gckm/Project/logistic-master/yii/framework/db/CDbConnection.php(330): CDbConnection->open()
+#1 /home/gckm/Project/logistic-master/yii/framework/db/CDbConnection.php(308): CDbConnection->setActive(true)
+#2 /home/gckm/Project/logistic-master/yii/framework/base/CModule.php(387): CDbConnection->init()
+#3 /home/gckm/Project/logistic-master/yii/framework/base/CApplication.php(450): CModule->getComponent('db')
+#4 /home/gckm/Project/logistic-master/yii/framework/db/ar/CActiveRecord.php(634): CApplication->getDb()
+#5 /home/gckm/Project/logistic-master/yii/framework/db/ar/CActiveRecord.php(2361): CActiveRecord->getDbConnection()
+#6 /home/gckm/Project/logistic-master/yii/framework/db/ar/CActiveRecord.php(411): CActiveRecordMetaData->__construct(Object(User))
+#7 /home/gckm/Project/logistic-master/yii/framework/db/ar/CActiveRecord.php(138): CActiveRecord->getMetaData()
+#8 /home/gckm/Project/logistic-master/protected/extensions/Son/models/SModel.php(90): CActiveRecord->__get('tableSchema')
+#9 /home/gckm/Project/logistic-master/protected/extensions/Son/models/SModel.php(797): SModel->__get('tableSchema')
+#10 /home/gckm/Project/logistic-master/protected/extensions/Son/components/SWebUser.php(19): SModel->findByPk(NULL, Array)
+#11 /home/gckm/Project/logistic-master/protected/extensions/Son/helpers/ArrayHelper.php(5): SWebUser->{closure}()
+#12 /home/gckm/Project/logistic-master/protected/extensions/Son/helpers/ArrayHelper.php(22): ArrayHelper::handleDefaultValue(Array, 'User', Object(Closure), true)
+#13 /home/gckm/Project/logistic-master/protected/extensions/Son/components/SWebUser.php(20): ArrayHelper::get(Array, 'User', Object(Closure), true)
+#14 /home/gckm/Project/logistic-master/protected/extensions/Son/components/SWebUser.php(36): SWebUser->getModel('User', Array)
+#15 /home/gckm/Project/logistic-master/protected/components/Controller.php(14): SWebUser->getUser()
+#16 /home/gckm/Project/logistic-master/protected/components/FrontPageBaseController.php(8): Controller->getUser()
+#17 /home/gckm/Project/logistic-master/protected/controllers/HomeController.php(14): FrontPageBaseController->init()
+#18 /home/gckm/Project/logistic-master/yii/framework/web/CWebApplication.php(281): HomeController->init()
+#19 /home/gckm/Project/logistic-master/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#20 /home/gckm/Project/logistic-master/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#21 /home/gckm/Project/logistic-master/index.php(18): CApplication->run()
+#22 {main}
+REQUEST_URI=/
+---
+2019/03/03 21:10:55 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[HY000] [1049] Unknown database 'admin_admin'' in /home/gckm/Project/logistic-master/yii/framework/db/CDbConnection.php:382
+Stack trace:
+#0 /home/gckm/Project/logistic-master/yii/framework/db/CDbConnection.php(330): CDbConnection->open()
+#1 /home/gckm/Project/logistic-master/yii/framework/db/CDbConnection.php(308): CDbConnection->setActive(true)
+#2 /home/gckm/Project/logistic-master/yii/framework/base/CModule.php(387): CDbConnection->init()
+#3 /home/gckm/Project/logistic-master/yii/framework/base/CApplication.php(450): CModule->getComponent('db')
+#4 /home/gckm/Project/logistic-master/yii/framework/db/ar/CActiveRecord.php(634): CApplication->getDb()
+#5 /home/gckm/Project/logistic-master/yii/framework/db/ar/CActiveRecord.php(2361): CActiveRecord->getDbConnection()
+#6 /home/gckm/Project/logistic-master/yii/framework/db/ar/CActiveRecord.php(411): CActiveRecordMetaData->__construct(Object(User))
+#7 /home/gckm/Project/logistic-master/yii/framework/db/ar/CActiveRecord.php(138): CActiveRecord->getMetaData()
+#8 /home/gckm/Project/logistic-master/protected/extensions/Son/models/SModel.php(90): CActiveRecord->__get('tableSchema')
+#9 /home/gckm/Project/logistic-master/protected/extensions/Son/models/SModel.php(797): SModel->__get('tableSchema')
+#10 /home/gckm/Project/logistic-master/protected/extensions/Son/components/SWebUser.php(19): SModel->findByPk(NULL, Array)
+#11 /home/gckm/Project/logistic-master/protected/extensions/Son/helpers/ArrayHelper.php(5): SWebUser->{closure}()
+#12 /home/gckm/Project/logistic-master/protected/extensions/Son/helpers/ArrayHelper.php(22): ArrayHelper::handleDefaultValue(Array, 'User', Object(Closure), true)
+#13 /home/gckm/Project/logistic-master/protected/extensions/Son/components/SWebUser.php(20): ArrayHelper::get(Array, 'User', Object(Closure), true)
+#14 /home/gckm/Project/logistic-master/protected/extensions/Son/components/SWebUser.php(36): SWebUser->getModel('User', Array)
+#15 /home/gckm/Project/logistic-master/protected/components/Controller.php(14): SWebUser->getUser()
+#16 /home/gckm/Project/logistic-master/protected/components/FrontPageBaseController.php(8): Controller->getUser()
+#17 /home/gckm/Project/logistic-master/protected/controllers/HomeController.php(14): FrontPageBaseController->init()
+#18 /home/gckm/Project/logistic-master/yii/framework/web/CWebApplication.php(281): HomeController->init()
+#19 /home/gckm/Project/logistic-master/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#20 /home/gckm/Project/logistic-master/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#21 /home/gckm/Project/logistic-master/index.php(18): CApplication->run()
+#22 {main}
+REQUEST_URI=/
+---
+2019/03/03 21:10:56 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[HY000] [1049] Unknown database 'admin_admin'' in /home/gckm/Project/logistic-master/yii/framework/db/CDbConnection.php:382
+Stack trace:
+#0 /home/gckm/Project/logistic-master/yii/framework/db/CDbConnection.php(330): CDbConnection->open()
+#1 /home/gckm/Project/logistic-master/yii/framework/db/CDbConnection.php(308): CDbConnection->setActive(true)
+#2 /home/gckm/Project/logistic-master/yii/framework/base/CModule.php(387): CDbConnection->init()
+#3 /home/gckm/Project/logistic-master/yii/framework/base/CApplication.php(450): CModule->getComponent('db')
+#4 /home/gckm/Project/logistic-master/yii/framework/db/ar/CActiveRecord.php(634): CApplication->getDb()
+#5 /home/gckm/Project/logistic-master/yii/framework/db/ar/CActiveRecord.php(2361): CActiveRecord->getDbConnection()
+#6 /home/gckm/Project/logistic-master/yii/framework/db/ar/CActiveRecord.php(411): CActiveRecordMetaData->__construct(Object(User))
+#7 /home/gckm/Project/logistic-master/yii/framework/db/ar/CActiveRecord.php(138): CActiveRecord->getMetaData()
+#8 /home/gckm/Project/logistic-master/protected/extensions/Son/models/SModel.php(90): CActiveRecord->__get('tableSchema')
+#9 /home/gckm/Project/logistic-master/protected/extensions/Son/models/SModel.php(797): SModel->__get('tableSchema')
+#10 /home/gckm/Project/logistic-master/protected/extensions/Son/components/SWebUser.php(19): SModel->findByPk(NULL, Array)
+#11 /home/gckm/Project/logistic-master/protected/extensions/Son/helpers/ArrayHelper.php(5): SWebUser->{closure}()
+#12 /home/gckm/Project/logistic-master/protected/extensions/Son/helpers/ArrayHelper.php(22): ArrayHelper::handleDefaultValue(Array, 'User', Object(Closure), true)
+#13 /home/gckm/Project/logistic-master/protected/extensions/Son/components/SWebUser.php(20): ArrayHelper::get(Array, 'User', Object(Closure), true)
+#14 /home/gckm/Project/logistic-master/protected/extensions/Son/components/SWebUser.php(36): SWebUser->getModel('User', Array)
+#15 /home/gckm/Project/logistic-master/protected/components/Controller.php(14): SWebUser->getUser()
+#16 /home/gckm/Project/logistic-master/protected/components/FrontPageBaseController.php(8): Controller->getUser()
+#17 /home/gckm/Project/logistic-master/protected/controllers/HomeController.php(14): FrontPageBaseController->init()
+#18 /home/gckm/Project/logistic-master/yii/framework/web/CWebApplication.php(281): HomeController->init()
+#19 /home/gckm/Project/logistic-master/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#20 /home/gckm/Project/logistic-master/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#21 /home/gckm/Project/logistic-master/index.php(18): CApplication->run()
+#22 {main}
+REQUEST_URI=/
+---
+2019/03/03 21:10:57 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[HY000] [1049] Unknown database 'admin_admin'' in /home/gckm/Project/logistic-master/yii/framework/db/CDbConnection.php:382
+Stack trace:
+#0 /home/gckm/Project/logistic-master/yii/framework/db/CDbConnection.php(330): CDbConnection->open()
+#1 /home/gckm/Project/logistic-master/yii/framework/db/CDbConnection.php(308): CDbConnection->setActive(true)
+#2 /home/gckm/Project/logistic-master/yii/framework/base/CModule.php(387): CDbConnection->init()
+#3 /home/gckm/Project/logistic-master/yii/framework/base/CApplication.php(450): CModule->getComponent('db')
+#4 /home/gckm/Project/logistic-master/yii/framework/db/ar/CActiveRecord.php(634): CApplication->getDb()
+#5 /home/gckm/Project/logistic-master/yii/framework/db/ar/CActiveRecord.php(2361): CActiveRecord->getDbConnection()
+#6 /home/gckm/Project/logistic-master/yii/framework/db/ar/CActiveRecord.php(411): CActiveRecordMetaData->__construct(Object(User))
+#7 /home/gckm/Project/logistic-master/yii/framework/db/ar/CActiveRecord.php(138): CActiveRecord->getMetaData()
+#8 /home/gckm/Project/logistic-master/protected/extensions/Son/models/SModel.php(90): CActiveRecord->__get('tableSchema')
+#9 /home/gckm/Project/logistic-master/protected/extensions/Son/models/SModel.php(797): SModel->__get('tableSchema')
+#10 /home/gckm/Project/logistic-master/protected/extensions/Son/components/SWebUser.php(19): SModel->findByPk(NULL, Array)
+#11 /home/gckm/Project/logistic-master/protected/extensions/Son/helpers/ArrayHelper.php(5): SWebUser->{closure}()
+#12 /home/gckm/Project/logistic-master/protected/extensions/Son/helpers/ArrayHelper.php(22): ArrayHelper::handleDefaultValue(Array, 'User', Object(Closure), true)
+#13 /home/gckm/Project/logistic-master/protected/extensions/Son/components/SWebUser.php(20): ArrayHelper::get(Array, 'User', Object(Closure), true)
+#14 /home/gckm/Project/logistic-master/protected/extensions/Son/components/SWebUser.php(36): SWebUser->getModel('User', Array)
+#15 /home/gckm/Project/logistic-master/protected/components/Controller.php(14): SWebUser->getUser()
+#16 /home/gckm/Project/logistic-master/protected/components/FrontPageBaseController.php(8): Controller->getUser()
+#17 /home/gckm/Project/logistic-master/protected/controllers/HomeController.php(14): FrontPageBaseController->init()
+#18 /home/gckm/Project/logistic-master/yii/framework/web/CWebApplication.php(281): HomeController->init()
+#19 /home/gckm/Project/logistic-master/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#20 /home/gckm/Project/logistic-master/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#21 /home/gckm/Project/logistic-master/index.php(18): CApplication->run()
+#22 {main}
+REQUEST_URI=/
+---
+2019/03/03 21:10:57 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[HY000] [1049] Unknown database 'admin_admin'' in /home/gckm/Project/logistic-master/yii/framework/db/CDbConnection.php:382
+Stack trace:
+#0 /home/gckm/Project/logistic-master/yii/framework/db/CDbConnection.php(330): CDbConnection->open()
+#1 /home/gckm/Project/logistic-master/yii/framework/db/CDbConnection.php(308): CDbConnection->setActive(true)
+#2 /home/gckm/Project/logistic-master/yii/framework/base/CModule.php(387): CDbConnection->init()
+#3 /home/gckm/Project/logistic-master/yii/framework/base/CApplication.php(450): CModule->getComponent('db')
+#4 /home/gckm/Project/logistic-master/yii/framework/db/ar/CActiveRecord.php(634): CApplication->getDb()
+#5 /home/gckm/Project/logistic-master/yii/framework/db/ar/CActiveRecord.php(2361): CActiveRecord->getDbConnection()
+#6 /home/gckm/Project/logistic-master/yii/framework/db/ar/CActiveRecord.php(411): CActiveRecordMetaData->__construct(Object(User))
+#7 /home/gckm/Project/logistic-master/yii/framework/db/ar/CActiveRecord.php(138): CActiveRecord->getMetaData()
+#8 /home/gckm/Project/logistic-master/protected/extensions/Son/models/SModel.php(90): CActiveRecord->__get('tableSchema')
+#9 /home/gckm/Project/logistic-master/protected/extensions/Son/models/SModel.php(797): SModel->__get('tableSchema')
+#10 /home/gckm/Project/logistic-master/protected/extensions/Son/components/SWebUser.php(19): SModel->findByPk(NULL, Array)
+#11 /home/gckm/Project/logistic-master/protected/extensions/Son/helpers/ArrayHelper.php(5): SWebUser->{closure}()
+#12 /home/gckm/Project/logistic-master/protected/extensions/Son/helpers/ArrayHelper.php(22): ArrayHelper::handleDefaultValue(Array, 'User', Object(Closure), true)
+#13 /home/gckm/Project/logistic-master/protected/extensions/Son/components/SWebUser.php(20): ArrayHelper::get(Array, 'User', Object(Closure), true)
+#14 /home/gckm/Project/logistic-master/protected/extensions/Son/components/SWebUser.php(36): SWebUser->getModel('User', Array)
+#15 /home/gckm/Project/logistic-master/protected/components/Controller.php(14): SWebUser->getUser()
+#16 /home/gckm/Project/logistic-master/protected/components/FrontPageBaseController.php(8): Controller->getUser()
+#17 /home/gckm/Project/logistic-master/protected/controllers/HomeController.php(14): FrontPageBaseController->init()
+#18 /home/gckm/Project/logistic-master/yii/framework/web/CWebApplication.php(281): HomeController->init()
+#19 /home/gckm/Project/logistic-master/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#20 /home/gckm/Project/logistic-master/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#21 /home/gckm/Project/logistic-master/index.php(18): CApplication->run()
+#22 {main}
+REQUEST_URI=/
+---
+2019/03/03 21:10:57 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[HY000] [1049] Unknown database 'admin_admin'' in /home/gckm/Project/logistic-master/yii/framework/db/CDbConnection.php:382
+Stack trace:
+#0 /home/gckm/Project/logistic-master/yii/framework/db/CDbConnection.php(330): CDbConnection->open()
+#1 /home/gckm/Project/logistic-master/yii/framework/db/CDbConnection.php(308): CDbConnection->setActive(true)
+#2 /home/gckm/Project/logistic-master/yii/framework/base/CModule.php(387): CDbConnection->init()
+#3 /home/gckm/Project/logistic-master/yii/framework/base/CApplication.php(450): CModule->getComponent('db')
+#4 /home/gckm/Project/logistic-master/yii/framework/db/ar/CActiveRecord.php(634): CApplication->getDb()
+#5 /home/gckm/Project/logistic-master/yii/framework/db/ar/CActiveRecord.php(2361): CActiveRecord->getDbConnection()
+#6 /home/gckm/Project/logistic-master/yii/framework/db/ar/CActiveRecord.php(411): CActiveRecordMetaData->__construct(Object(User))
+#7 /home/gckm/Project/logistic-master/yii/framework/db/ar/CActiveRecord.php(138): CActiveRecord->getMetaData()
+#8 /home/gckm/Project/logistic-master/protected/extensions/Son/models/SModel.php(90): CActiveRecord->__get('tableSchema')
+#9 /home/gckm/Project/logistic-master/protected/extensions/Son/models/SModel.php(797): SModel->__get('tableSchema')
+#10 /home/gckm/Project/logistic-master/protected/extensions/Son/components/SWebUser.php(19): SModel->findByPk(NULL, Array)
+#11 /home/gckm/Project/logistic-master/protected/extensions/Son/helpers/ArrayHelper.php(5): SWebUser->{closure}()
+#12 /home/gckm/Project/logistic-master/protected/extensions/Son/helpers/ArrayHelper.php(22): ArrayHelper::handleDefaultValue(Array, 'User', Object(Closure), true)
+#13 /home/gckm/Project/logistic-master/protected/extensions/Son/components/SWebUser.php(20): ArrayHelper::get(Array, 'User', Object(Closure), true)
+#14 /home/gckm/Project/logistic-master/protected/extensions/Son/components/SWebUser.php(36): SWebUser->getModel('User', Array)
+#15 /home/gckm/Project/logistic-master/protected/components/Controller.php(14): SWebUser->getUser()
+#16 /home/gckm/Project/logistic-master/protected/components/FrontPageBaseController.php(8): Controller->getUser()
+#17 /home/gckm/Project/logistic-master/protected/controllers/HomeController.php(14): FrontPageBaseController->init()
+#18 /home/gckm/Project/logistic-master/yii/framework/web/CWebApplication.php(281): HomeController->init()
+#19 /home/gckm/Project/logistic-master/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#20 /home/gckm/Project/logistic-master/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#21 /home/gckm/Project/logistic-master/index.php(18): CApplication->run()
+#22 {main}
+REQUEST_URI=/
+---
+2019/03/03 21:10:58 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[HY000] [1049] Unknown database 'admin_admin'' in /home/gckm/Project/logistic-master/yii/framework/db/CDbConnection.php:382
+Stack trace:
+#0 /home/gckm/Project/logistic-master/yii/framework/db/CDbConnection.php(330): CDbConnection->open()
+#1 /home/gckm/Project/logistic-master/yii/framework/db/CDbConnection.php(308): CDbConnection->setActive(true)
+#2 /home/gckm/Project/logistic-master/yii/framework/base/CModule.php(387): CDbConnection->init()
+#3 /home/gckm/Project/logistic-master/yii/framework/base/CApplication.php(450): CModule->getComponent('db')
+#4 /home/gckm/Project/logistic-master/yii/framework/db/ar/CActiveRecord.php(634): CApplication->getDb()
+#5 /home/gckm/Project/logistic-master/yii/framework/db/ar/CActiveRecord.php(2361): CActiveRecord->getDbConnection()
+#6 /home/gckm/Project/logistic-master/yii/framework/db/ar/CActiveRecord.php(411): CActiveRecordMetaData->__construct(Object(User))
+#7 /home/gckm/Project/logistic-master/yii/framework/db/ar/CActiveRecord.php(138): CActiveRecord->getMetaData()
+#8 /home/gckm/Project/logistic-master/protected/extensions/Son/models/SModel.php(90): CActiveRecord->__get('tableSchema')
+#9 /home/gckm/Project/logistic-master/protected/extensions/Son/models/SModel.php(797): SModel->__get('tableSchema')
+#10 /home/gckm/Project/logistic-master/protected/extensions/Son/components/SWebUser.php(19): SModel->findByPk(NULL, Array)
+#11 /home/gckm/Project/logistic-master/protected/extensions/Son/helpers/ArrayHelper.php(5): SWebUser->{closure}()
+#12 /home/gckm/Project/logistic-master/protected/extensions/Son/helpers/ArrayHelper.php(22): ArrayHelper::handleDefaultValue(Array, 'User', Object(Closure), true)
+#13 /home/gckm/Project/logistic-master/protected/extensions/Son/components/SWebUser.php(20): ArrayHelper::get(Array, 'User', Object(Closure), true)
+#14 /home/gckm/Project/logistic-master/protected/extensions/Son/components/SWebUser.php(36): SWebUser->getModel('User', Array)
+#15 /home/gckm/Project/logistic-master/protected/components/Controller.php(14): SWebUser->getUser()
+#16 /home/gckm/Project/logistic-master/protected/components/FrontPageBaseController.php(8): Controller->getUser()
+#17 /home/gckm/Project/logistic-master/protected/controllers/HomeController.php(14): FrontPageBaseController->init()
+#18 /home/gckm/Project/logistic-master/yii/framework/web/CWebApplication.php(281): HomeController->init()
+#19 /home/gckm/Project/logistic-master/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#20 /home/gckm/Project/logistic-master/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#21 /home/gckm/Project/logistic-master/index.php(18): CApplication->run()
+#22 {main}
+REQUEST_URI=/
+---
+2019/03/03 21:10:58 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[HY000] [1049] Unknown database 'admin_admin'' in /home/gckm/Project/logistic-master/yii/framework/db/CDbConnection.php:382
+Stack trace:
+#0 /home/gckm/Project/logistic-master/yii/framework/db/CDbConnection.php(330): CDbConnection->open()
+#1 /home/gckm/Project/logistic-master/yii/framework/db/CDbConnection.php(308): CDbConnection->setActive(true)
+#2 /home/gckm/Project/logistic-master/yii/framework/base/CModule.php(387): CDbConnection->init()
+#3 /home/gckm/Project/logistic-master/yii/framework/base/CApplication.php(450): CModule->getComponent('db')
+#4 /home/gckm/Project/logistic-master/yii/framework/db/ar/CActiveRecord.php(634): CApplication->getDb()
+#5 /home/gckm/Project/logistic-master/yii/framework/db/ar/CActiveRecord.php(2361): CActiveRecord->getDbConnection()
+#6 /home/gckm/Project/logistic-master/yii/framework/db/ar/CActiveRecord.php(411): CActiveRecordMetaData->__construct(Object(User))
+#7 /home/gckm/Project/logistic-master/yii/framework/db/ar/CActiveRecord.php(138): CActiveRecord->getMetaData()
+#8 /home/gckm/Project/logistic-master/protected/extensions/Son/models/SModel.php(90): CActiveRecord->__get('tableSchema')
+#9 /home/gckm/Project/logistic-master/protected/extensions/Son/models/SModel.php(797): SModel->__get('tableSchema')
+#10 /home/gckm/Project/logistic-master/protected/extensions/Son/components/SWebUser.php(19): SModel->findByPk(NULL, Array)
+#11 /home/gckm/Project/logistic-master/protected/extensions/Son/helpers/ArrayHelper.php(5): SWebUser->{closure}()
+#12 /home/gckm/Project/logistic-master/protected/extensions/Son/helpers/ArrayHelper.php(22): ArrayHelper::handleDefaultValue(Array, 'User', Object(Closure), true)
+#13 /home/gckm/Project/logistic-master/protected/extensions/Son/components/SWebUser.php(20): ArrayHelper::get(Array, 'User', Object(Closure), true)
+#14 /home/gckm/Project/logistic-master/protected/extensions/Son/components/SWebUser.php(36): SWebUser->getModel('User', Array)
+#15 /home/gckm/Project/logistic-master/protected/components/Controller.php(14): SWebUser->getUser()
+#16 /home/gckm/Project/logistic-master/protected/components/FrontPageBaseController.php(8): Controller->getUser()
+#17 /home/gckm/Project/logistic-master/protected/controllers/HomeController.php(14): FrontPageBaseController->init()
+#18 /home/gckm/Project/logistic-master/yii/framework/web/CWebApplication.php(281): HomeController->init()
+#19 /home/gckm/Project/logistic-master/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#20 /home/gckm/Project/logistic-master/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#21 /home/gckm/Project/logistic-master/index.php(18): CApplication->run()
+#22 {main}
+REQUEST_URI=/
+---
+2019/03/03 21:10:58 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[HY000] [1049] Unknown database 'admin_admin'' in /home/gckm/Project/logistic-master/yii/framework/db/CDbConnection.php:382
+Stack trace:
+#0 /home/gckm/Project/logistic-master/yii/framework/db/CDbConnection.php(330): CDbConnection->open()
+#1 /home/gckm/Project/logistic-master/yii/framework/db/CDbConnection.php(308): CDbConnection->setActive(true)
+#2 /home/gckm/Project/logistic-master/yii/framework/base/CModule.php(387): CDbConnection->init()
+#3 /home/gckm/Project/logistic-master/yii/framework/base/CApplication.php(450): CModule->getComponent('db')
+#4 /home/gckm/Project/logistic-master/yii/framework/db/ar/CActiveRecord.php(634): CApplication->getDb()
+#5 /home/gckm/Project/logistic-master/yii/framework/db/ar/CActiveRecord.php(2361): CActiveRecord->getDbConnection()
+#6 /home/gckm/Project/logistic-master/yii/framework/db/ar/CActiveRecord.php(411): CActiveRecordMetaData->__construct(Object(User))
+#7 /home/gckm/Project/logistic-master/yii/framework/db/ar/CActiveRecord.php(138): CActiveRecord->getMetaData()
+#8 /home/gckm/Project/logistic-master/protected/extensions/Son/models/SModel.php(90): CActiveRecord->__get('tableSchema')
+#9 /home/gckm/Project/logistic-master/protected/extensions/Son/models/SModel.php(797): SModel->__get('tableSchema')
+#10 /home/gckm/Project/logistic-master/protected/extensions/Son/components/SWebUser.php(19): SModel->findByPk(NULL, Array)
+#11 /home/gckm/Project/logistic-master/protected/extensions/Son/helpers/ArrayHelper.php(5): SWebUser->{closure}()
+#12 /home/gckm/Project/logistic-master/protected/extensions/Son/helpers/ArrayHelper.php(22): ArrayHelper::handleDefaultValue(Array, 'User', Object(Closure), true)
+#13 /home/gckm/Project/logistic-master/protected/extensions/Son/components/SWebUser.php(20): ArrayHelper::get(Array, 'User', Object(Closure), true)
+#14 /home/gckm/Project/logistic-master/protected/extensions/Son/components/SWebUser.php(36): SWebUser->getModel('User', Array)
+#15 /home/gckm/Project/logistic-master/protected/components/Controller.php(14): SWebUser->getUser()
+#16 /home/gckm/Project/logistic-master/protected/components/FrontPageBaseController.php(8): Controller->getUser()
+#17 /home/gckm/Project/logistic-master/protected/controllers/HomeController.php(14): FrontPageBaseController->init()
+#18 /home/gckm/Project/logistic-master/yii/framework/web/CWebApplication.php(281): HomeController->init()
+#19 /home/gckm/Project/logistic-master/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#20 /home/gckm/Project/logistic-master/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#21 /home/gckm/Project/logistic-master/index.php(18): CApplication->run()
+#22 {main}
+REQUEST_URI=/
+---
+2019/03/03 21:10:58 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[HY000] [1049] Unknown database 'admin_admin'' in /home/gckm/Project/logistic-master/yii/framework/db/CDbConnection.php:382
+Stack trace:
+#0 /home/gckm/Project/logistic-master/yii/framework/db/CDbConnection.php(330): CDbConnection->open()
+#1 /home/gckm/Project/logistic-master/yii/framework/db/CDbConnection.php(308): CDbConnection->setActive(true)
+#2 /home/gckm/Project/logistic-master/yii/framework/base/CModule.php(387): CDbConnection->init()
+#3 /home/gckm/Project/logistic-master/yii/framework/base/CApplication.php(450): CModule->getComponent('db')
+#4 /home/gckm/Project/logistic-master/yii/framework/db/ar/CActiveRecord.php(634): CApplication->getDb()
+#5 /home/gckm/Project/logistic-master/yii/framework/db/ar/CActiveRecord.php(2361): CActiveRecord->getDbConnection()
+#6 /home/gckm/Project/logistic-master/yii/framework/db/ar/CActiveRecord.php(411): CActiveRecordMetaData->__construct(Object(User))
+#7 /home/gckm/Project/logistic-master/yii/framework/db/ar/CActiveRecord.php(138): CActiveRecord->getMetaData()
+#8 /home/gckm/Project/logistic-master/protected/extensions/Son/models/SModel.php(90): CActiveRecord->__get('tableSchema')
+#9 /home/gckm/Project/logistic-master/protected/extensions/Son/models/SModel.php(797): SModel->__get('tableSchema')
+#10 /home/gckm/Project/logistic-master/protected/extensions/Son/components/SWebUser.php(19): SModel->findByPk(NULL, Array)
+#11 /home/gckm/Project/logistic-master/protected/extensions/Son/helpers/ArrayHelper.php(5): SWebUser->{closure}()
+#12 /home/gckm/Project/logistic-master/protected/extensions/Son/helpers/ArrayHelper.php(22): ArrayHelper::handleDefaultValue(Array, 'User', Object(Closure), true)
+#13 /home/gckm/Project/logistic-master/protected/extensions/Son/components/SWebUser.php(20): ArrayHelper::get(Array, 'User', Object(Closure), true)
+#14 /home/gckm/Project/logistic-master/protected/extensions/Son/components/SWebUser.php(36): SWebUser->getModel('User', Array)
+#15 /home/gckm/Project/logistic-master/protected/components/Controller.php(14): SWebUser->getUser()
+#16 /home/gckm/Project/logistic-master/protected/components/FrontPageBaseController.php(8): Controller->getUser()
+#17 /home/gckm/Project/logistic-master/protected/controllers/HomeController.php(14): FrontPageBaseController->init()
+#18 /home/gckm/Project/logistic-master/yii/framework/web/CWebApplication.php(281): HomeController->init()
+#19 /home/gckm/Project/logistic-master/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#20 /home/gckm/Project/logistic-master/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#21 /home/gckm/Project/logistic-master/index.php(18): CApplication->run()
+#22 {main}
+REQUEST_URI=/
+---
+2019/03/03 21:10:58 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[HY000] [1049] Unknown database 'admin_admin'' in /home/gckm/Project/logistic-master/yii/framework/db/CDbConnection.php:382
+Stack trace:
+#0 /home/gckm/Project/logistic-master/yii/framework/db/CDbConnection.php(330): CDbConnection->open()
+#1 /home/gckm/Project/logistic-master/yii/framework/db/CDbConnection.php(308): CDbConnection->setActive(true)
+#2 /home/gckm/Project/logistic-master/yii/framework/base/CModule.php(387): CDbConnection->init()
+#3 /home/gckm/Project/logistic-master/yii/framework/base/CApplication.php(450): CModule->getComponent('db')
+#4 /home/gckm/Project/logistic-master/yii/framework/db/ar/CActiveRecord.php(634): CApplication->getDb()
+#5 /home/gckm/Project/logistic-master/yii/framework/db/ar/CActiveRecord.php(2361): CActiveRecord->getDbConnection()
+#6 /home/gckm/Project/logistic-master/yii/framework/db/ar/CActiveRecord.php(411): CActiveRecordMetaData->__construct(Object(User))
+#7 /home/gckm/Project/logistic-master/yii/framework/db/ar/CActiveRecord.php(138): CActiveRecord->getMetaData()
+#8 /home/gckm/Project/logistic-master/protected/extensions/Son/models/SModel.php(90): CActiveRecord->__get('tableSchema')
+#9 /home/gckm/Project/logistic-master/protected/extensions/Son/models/SModel.php(797): SModel->__get('tableSchema')
+#10 /home/gckm/Project/logistic-master/protected/extensions/Son/components/SWebUser.php(19): SModel->findByPk(NULL, Array)
+#11 /home/gckm/Project/logistic-master/protected/extensions/Son/helpers/ArrayHelper.php(5): SWebUser->{closure}()
+#12 /home/gckm/Project/logistic-master/protected/extensions/Son/helpers/ArrayHelper.php(22): ArrayHelper::handleDefaultValue(Array, 'User', Object(Closure), true)
+#13 /home/gckm/Project/logistic-master/protected/extensions/Son/components/SWebUser.php(20): ArrayHelper::get(Array, 'User', Object(Closure), true)
+#14 /home/gckm/Project/logistic-master/protected/extensions/Son/components/SWebUser.php(36): SWebUser->getModel('User', Array)
+#15 /home/gckm/Project/logistic-master/protected/components/Controller.php(14): SWebUser->getUser()
+#16 /home/gckm/Project/logistic-master/protected/components/FrontPageBaseController.php(8): Controller->getUser()
+#17 /home/gckm/Project/logistic-master/protected/controllers/HomeController.php(14): FrontPageBaseController->init()
+#18 /home/gckm/Project/logistic-master/yii/framework/web/CWebApplication.php(281): HomeController->init()
+#19 /home/gckm/Project/logistic-master/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#20 /home/gckm/Project/logistic-master/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#21 /home/gckm/Project/logistic-master/index.php(18): CApplication->run()
+#22 {main}
+REQUEST_URI=/
+---
+2019/03/03 21:10:59 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[HY000] [1049] Unknown database 'admin_admin'' in /home/gckm/Project/logistic-master/yii/framework/db/CDbConnection.php:382
+Stack trace:
+#0 /home/gckm/Project/logistic-master/yii/framework/db/CDbConnection.php(330): CDbConnection->open()
+#1 /home/gckm/Project/logistic-master/yii/framework/db/CDbConnection.php(308): CDbConnection->setActive(true)
+#2 /home/gckm/Project/logistic-master/yii/framework/base/CModule.php(387): CDbConnection->init()
+#3 /home/gckm/Project/logistic-master/yii/framework/base/CApplication.php(450): CModule->getComponent('db')
+#4 /home/gckm/Project/logistic-master/yii/framework/db/ar/CActiveRecord.php(634): CApplication->getDb()
+#5 /home/gckm/Project/logistic-master/yii/framework/db/ar/CActiveRecord.php(2361): CActiveRecord->getDbConnection()
+#6 /home/gckm/Project/logistic-master/yii/framework/db/ar/CActiveRecord.php(411): CActiveRecordMetaData->__construct(Object(User))
+#7 /home/gckm/Project/logistic-master/yii/framework/db/ar/CActiveRecord.php(138): CActiveRecord->getMetaData()
+#8 /home/gckm/Project/logistic-master/protected/extensions/Son/models/SModel.php(90): CActiveRecord->__get('tableSchema')
+#9 /home/gckm/Project/logistic-master/protected/extensions/Son/models/SModel.php(797): SModel->__get('tableSchema')
+#10 /home/gckm/Project/logistic-master/protected/extensions/Son/components/SWebUser.php(19): SModel->findByPk(NULL, Array)
+#11 /home/gckm/Project/logistic-master/protected/extensions/Son/helpers/ArrayHelper.php(5): SWebUser->{closure}()
+#12 /home/gckm/Project/logistic-master/protected/extensions/Son/helpers/ArrayHelper.php(22): ArrayHelper::handleDefaultValue(Array, 'User', Object(Closure), true)
+#13 /home/gckm/Project/logistic-master/protected/extensions/Son/components/SWebUser.php(20): ArrayHelper::get(Array, 'User', Object(Closure), true)
+#14 /home/gckm/Project/logistic-master/protected/extensions/Son/components/SWebUser.php(36): SWebUser->getModel('User', Array)
+#15 /home/gckm/Project/logistic-master/protected/components/Controller.php(14): SWebUser->getUser()
+#16 /home/gckm/Project/logistic-master/protected/components/FrontPageBaseController.php(8): Controller->getUser()
+#17 /home/gckm/Project/logistic-master/protected/controllers/HomeController.php(14): FrontPageBaseController->init()
+#18 /home/gckm/Project/logistic-master/yii/framework/web/CWebApplication.php(281): HomeController->init()
+#19 /home/gckm/Project/logistic-master/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#20 /home/gckm/Project/logistic-master/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#21 /home/gckm/Project/logistic-master/index.php(18): CApplication->run()
+#22 {main}
+REQUEST_URI=/
+---
+2019/03/03 21:10:59 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[HY000] [1049] Unknown database 'admin_admin'' in /home/gckm/Project/logistic-master/yii/framework/db/CDbConnection.php:382
+Stack trace:
+#0 /home/gckm/Project/logistic-master/yii/framework/db/CDbConnection.php(330): CDbConnection->open()
+#1 /home/gckm/Project/logistic-master/yii/framework/db/CDbConnection.php(308): CDbConnection->setActive(true)
+#2 /home/gckm/Project/logistic-master/yii/framework/base/CModule.php(387): CDbConnection->init()
+#3 /home/gckm/Project/logistic-master/yii/framework/base/CApplication.php(450): CModule->getComponent('db')
+#4 /home/gckm/Project/logistic-master/yii/framework/db/ar/CActiveRecord.php(634): CApplication->getDb()
+#5 /home/gckm/Project/logistic-master/yii/framework/db/ar/CActiveRecord.php(2361): CActiveRecord->getDbConnection()
+#6 /home/gckm/Project/logistic-master/yii/framework/db/ar/CActiveRecord.php(411): CActiveRecordMetaData->__construct(Object(User))
+#7 /home/gckm/Project/logistic-master/yii/framework/db/ar/CActiveRecord.php(138): CActiveRecord->getMetaData()
+#8 /home/gckm/Project/logistic-master/protected/extensions/Son/models/SModel.php(90): CActiveRecord->__get('tableSchema')
+#9 /home/gckm/Project/logistic-master/protected/extensions/Son/models/SModel.php(797): SModel->__get('tableSchema')
+#10 /home/gckm/Project/logistic-master/protected/extensions/Son/components/SWebUser.php(19): SModel->findByPk(NULL, Array)
+#11 /home/gckm/Project/logistic-master/protected/extensions/Son/helpers/ArrayHelper.php(5): SWebUser->{closure}()
+#12 /home/gckm/Project/logistic-master/protected/extensions/Son/helpers/ArrayHelper.php(22): ArrayHelper::handleDefaultValue(Array, 'User', Object(Closure), true)
+#13 /home/gckm/Project/logistic-master/protected/extensions/Son/components/SWebUser.php(20): ArrayHelper::get(Array, 'User', Object(Closure), true)
+#14 /home/gckm/Project/logistic-master/protected/extensions/Son/components/SWebUser.php(36): SWebUser->getModel('User', Array)
+#15 /home/gckm/Project/logistic-master/protected/components/Controller.php(14): SWebUser->getUser()
+#16 /home/gckm/Project/logistic-master/protected/components/FrontPageBaseController.php(8): Controller->getUser()
+#17 /home/gckm/Project/logistic-master/protected/controllers/HomeController.php(14): FrontPageBaseController->init()
+#18 /home/gckm/Project/logistic-master/yii/framework/web/CWebApplication.php(281): HomeController->init()
+#19 /home/gckm/Project/logistic-master/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#20 /home/gckm/Project/logistic-master/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#21 /home/gckm/Project/logistic-master/index.php(18): CApplication->run()
+#22 {main}
+REQUEST_URI=/
+---
+2019/03/03 21:11:24 [error] [exception.CException] exception 'CException' with message 'Thuộc tính "CDbConnection.0" chưa được định nghĩa.' in /home/gckm/Project/logistic-master/yii/framework/base/CComponent.php:173
+Stack trace:
+#0 /home/gckm/Project/logistic-master/yii/framework/YiiBase.php(220): CComponent->__set('0', 'mysql:host=127....')
+#1 /home/gckm/Project/logistic-master/yii/framework/base/CModule.php(386): YiiBase::createComponent(Array)
+#2 /home/gckm/Project/logistic-master/yii/framework/base/CApplication.php(450): CModule->getComponent('db')
+#3 /home/gckm/Project/logistic-master/yii/framework/db/ar/CActiveRecord.php(634): CApplication->getDb()
+#4 /home/gckm/Project/logistic-master/yii/framework/db/ar/CActiveRecord.php(2361): CActiveRecord->getDbConnection()
+#5 /home/gckm/Project/logistic-master/yii/framework/db/ar/CActiveRecord.php(411): CActiveRecordMetaData->__construct(Object(User))
+#6 /home/gckm/Project/logistic-master/yii/framework/db/ar/CActiveRecord.php(138): CActiveRecord->getMetaData()
+#7 /home/gckm/Project/logistic-master/protected/extensions/Son/models/SModel.php(90): CActiveRecord->__get('tableSchema')
+#8 /home/gckm/Project/logistic-master/protected/extensions/Son/models/SModel.php(797): SModel->__get('tableSchema')
+#9 /home/gckm/Project/logistic-master/protected/extensions/Son/components/SWebUser.php(19): SModel->findByPk(NULL, Array)
+#10 /home/gckm/Project/logistic-master/protected/extensions/Son/helpers/ArrayHelper.php(5): SWebUser->{closure}()
+#11 /home/gckm/Project/logistic-master/protected/extensions/Son/helpers/ArrayHelper.php(22): ArrayHelper::handleDefaultValue(Array, 'User', Object(Closure), true)
+#12 /home/gckm/Project/logistic-master/protected/extensions/Son/components/SWebUser.php(20): ArrayHelper::get(Array, 'User', Object(Closure), true)
+#13 /home/gckm/Project/logistic-master/protected/extensions/Son/components/SWebUser.php(36): SWebUser->getModel('User', Array)
+#14 /home/gckm/Project/logistic-master/protected/components/Controller.php(14): SWebUser->getUser()
+#15 /home/gckm/Project/logistic-master/protected/components/FrontPageBaseController.php(8): Controller->getUser()
+#16 /home/gckm/Project/logistic-master/protected/controllers/HomeController.php(14): FrontPageBaseController->init()
+#17 /home/gckm/Project/logistic-master/yii/framework/web/CWebApplication.php(281): HomeController->init()
+#18 /home/gckm/Project/logistic-master/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#19 /home/gckm/Project/logistic-master/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#20 /home/gckm/Project/logistic-master/index.php(18): CApplication->run()
+#21 {main}
+REQUEST_URI=/
+---
+2019/03/03 21:14:16 [error] [exception.CException] exception 'CException' with message 'Thuộc tính "CDbConnection.0" chưa được định nghĩa.' in /home/gckm/Project/logistic-master/yii/framework/base/CComponent.php:173
+Stack trace:
+#0 /home/gckm/Project/logistic-master/yii/framework/YiiBase.php(220): CComponent->__set('0', 'mysql:host=127....')
+#1 /home/gckm/Project/logistic-master/yii/framework/base/CModule.php(386): YiiBase::createComponent(Array)
+#2 /home/gckm/Project/logistic-master/yii/framework/base/CApplication.php(450): CModule->getComponent('db')
+#3 /home/gckm/Project/logistic-master/yii/framework/db/ar/CActiveRecord.php(634): CApplication->getDb()
+#4 /home/gckm/Project/logistic-master/yii/framework/db/ar/CActiveRecord.php(2361): CActiveRecord->getDbConnection()
+#5 /home/gckm/Project/logistic-master/yii/framework/db/ar/CActiveRecord.php(411): CActiveRecordMetaData->__construct(Object(User))
+#6 /home/gckm/Project/logistic-master/yii/framework/db/ar/CActiveRecord.php(138): CActiveRecord->getMetaData()
+#7 /home/gckm/Project/logistic-master/protected/extensions/Son/models/SModel.php(90): CActiveRecord->__get('tableSchema')
+#8 /home/gckm/Project/logistic-master/protected/extensions/Son/models/SModel.php(797): SModel->__get('tableSchema')
+#9 /home/gckm/Project/logistic-master/protected/extensions/Son/components/SWebUser.php(19): SModel->findByPk(NULL, Array)
+#10 /home/gckm/Project/logistic-master/protected/extensions/Son/helpers/ArrayHelper.php(5): SWebUser->{closure}()
+#11 /home/gckm/Project/logistic-master/protected/extensions/Son/helpers/ArrayHelper.php(22): ArrayHelper::handleDefaultValue(Array, 'User', Object(Closure), true)
+#12 /home/gckm/Project/logistic-master/protected/extensions/Son/components/SWebUser.php(20): ArrayHelper::get(Array, 'User', Object(Closure), true)
+#13 /home/gckm/Project/logistic-master/protected/extensions/Son/components/SWebUser.php(36): SWebUser->getModel('User', Array)
+#14 /home/gckm/Project/logistic-master/protected/components/Controller.php(14): SWebUser->getUser()
+#15 /home/gckm/Project/logistic-master/protected/components/FrontPageBaseController.php(8): Controller->getUser()
+#16 /home/gckm/Project/logistic-master/protected/controllers/HomeController.php(14): FrontPageBaseController->init()
+#17 /home/gckm/Project/logistic-master/yii/framework/web/CWebApplication.php(281): HomeController->init()
+#18 /home/gckm/Project/logistic-master/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#19 /home/gckm/Project/logistic-master/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#20 /home/gckm/Project/logistic-master/index.php(18): CApplication->run()
+#21 {main}
+REQUEST_URI=/
+---
+2019/03/04 09:49:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The page you requested cannot be found!' in /home/gckm/Project/logistic-master/protected/extensions/Son/helpers/Output.php:119
+Stack trace:
+#0 /home/gckm/Project/logistic-master/protected/extensions/Son/helpers/Output.php(123): Output::showError('The page you re...', 404)
+#1 /home/gckm/Project/logistic-master/protected/controllers/HomeController.php(59): Output::show404()
+#2 [internal function]: HomeController->actionPost('7', 'chuyen-hang-noi...')
+#3 /home/gckm/Project/logistic-master/yii/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs(Object(HomeController), Array)
+#4 /home/gckm/Project/logistic-master/yii/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(HomeController), Object(ReflectionMethod), Array)
+#5 /home/gckm/Project/logistic-master/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#6 /home/gckm/Project/logistic-master/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#7 /home/gckm/Project/logistic-master/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /home/gckm/Project/logistic-master/yii/framework/web/CWebApplication.php(282): CController->run('post')
+#9 /home/gckm/Project/logistic-master/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('home/post')
+#10 /home/gckm/Project/logistic-master/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#11 /home/gckm/Project/logistic-master/index.php(18): CApplication->run()
+#12 {main}
+REQUEST_URI=/page_7_chuyen-hang-noi-dia.html
+HTTP_REFERER=http://localhost/
+---
+2019/03/04 09:49:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The page you requested cannot be found!' in /home/gckm/Project/logistic-master/protected/extensions/Son/helpers/Output.php:119
+Stack trace:
+#0 /home/gckm/Project/logistic-master/protected/extensions/Son/helpers/Output.php(123): Output::showError('The page you re...', 404)
+#1 /home/gckm/Project/logistic-master/protected/controllers/HomeController.php(153): Output::show404()
+#2 /home/gckm/Project/logistic-master/protected/controllers/HomeController.php(104): HomeController->renderPage('download')
+#3 /home/gckm/Project/logistic-master/yii/framework/web/actions/CInlineAction.php(49): HomeController->actionDownload()
+#4 /home/gckm/Project/logistic-master/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /home/gckm/Project/logistic-master/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#6 /home/gckm/Project/logistic-master/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /home/gckm/Project/logistic-master/yii/framework/web/CWebApplication.php(282): CController->run('download')
+#8 /home/gckm/Project/logistic-master/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('home/download')
+#9 /home/gckm/Project/logistic-master/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /home/gckm/Project/logistic-master/index.php(18): CApplication->run()
+#11 {main}
+REQUEST_URI=/home/download
+HTTP_REFERER=http://localhost/
+---
+2019/03/04 09:50:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The page you requested cannot be found!' in /home/gckm/Project/logistic-master/protected/extensions/Son/helpers/Output.php:119
+Stack trace:
+#0 /home/gckm/Project/logistic-master/protected/extensions/Son/helpers/Output.php(123): Output::showError('The page you re...', 404)
+#1 /home/gckm/Project/logistic-master/protected/controllers/HomeController.php(59): Output::show404()
+#2 [internal function]: HomeController->actionPost('5', 'order-online')
+#3 /home/gckm/Project/logistic-master/yii/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs(Object(HomeController), Array)
+#4 /home/gckm/Project/logistic-master/yii/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(HomeController), Object(ReflectionMethod), Array)
+#5 /home/gckm/Project/logistic-master/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#6 /home/gckm/Project/logistic-master/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#7 /home/gckm/Project/logistic-master/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /home/gckm/Project/logistic-master/yii/framework/web/CWebApplication.php(282): CController->run('post')
+#9 /home/gckm/Project/logistic-master/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('home/post')
+#10 /home/gckm/Project/logistic-master/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#11 /home/gckm/Project/logistic-master/index.php(18): CApplication->run()
+#12 {main}
+REQUEST_URI=/page_5_order-online.html
+HTTP_REFERER=http://localhost/
+---
+2019/03/04 09:50:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The page you requested cannot be found!' in /home/gckm/Project/logistic-master/protected/extensions/Son/helpers/Output.php:119
+Stack trace:
+#0 /home/gckm/Project/logistic-master/protected/extensions/Son/helpers/Output.php(123): Output::showError('The page you re...', 404)
+#1 /home/gckm/Project/logistic-master/protected/controllers/HomeController.php(153): Output::show404()
+#2 /home/gckm/Project/logistic-master/protected/controllers/HomeController.php(19): HomeController->renderPage('contact')
+#3 /home/gckm/Project/logistic-master/yii/framework/web/actions/CInlineAction.php(49): HomeController->actionContact()
+#4 /home/gckm/Project/logistic-master/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /home/gckm/Project/logistic-master/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#6 /home/gckm/Project/logistic-master/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /home/gckm/Project/logistic-master/yii/framework/web/CWebApplication.php(282): CController->run('contact')
+#8 /home/gckm/Project/logistic-master/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('home/contact')
+#9 /home/gckm/Project/logistic-master/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /home/gckm/Project/logistic-master/index.php(18): CApplication->run()
+#11 {main}
+REQUEST_URI=/home/contact
+HTTP_REFERER=http://localhost/home/index
+---
+2019/03/04 09:51:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The page you requested cannot be found!' in /home/gckm/Project/logistic-master/protected/extensions/Son/helpers/Output.php:119
+Stack trace:
+#0 /home/gckm/Project/logistic-master/protected/extensions/Son/helpers/Output.php(123): Output::showError('The page you re...', 404)
+#1 /home/gckm/Project/logistic-master/protected/controllers/HomeController.php(153): Output::show404()
+#2 /home/gckm/Project/logistic-master/protected/controllers/HomeController.php(19): HomeController->renderPage('contact')
+#3 /home/gckm/Project/logistic-master/yii/framework/web/actions/CInlineAction.php(49): HomeController->actionContact()
+#4 /home/gckm/Project/logistic-master/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /home/gckm/Project/logistic-master/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#6 /home/gckm/Project/logistic-master/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /home/gckm/Project/logistic-master/yii/framework/web/CWebApplication.php(282): CController->run('contact')
+#8 /home/gckm/Project/logistic-master/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('home/contact')
+#9 /home/gckm/Project/logistic-master/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /home/gckm/Project/logistic-master/index.php(18): CApplication->run()
+#11 {main}
+REQUEST_URI=/home/contact
+HTTP_REFERER=http://localhost/home/index
+---
+2019/03/04 09:51:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Hệ thống không thể tìm được hành động yêu cầu "contact.php".' in /home/gckm/Project/logistic-master/yii/framework/web/CController.php:483
+Stack trace:
+#0 /home/gckm/Project/logistic-master/yii/framework/web/CController.php(270): CController->missingAction('contact.php')
+#1 /home/gckm/Project/logistic-master/yii/framework/web/CWebApplication.php(282): CController->run('contact.php')
+#2 /home/gckm/Project/logistic-master/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('home/contact.ph...')
+#3 /home/gckm/Project/logistic-master/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /home/gckm/Project/logistic-master/index.php(18): CApplication->run()
+#5 {main}
+REQUEST_URI=/home/contact.php
+---
+2019/03/04 09:52:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Hệ thống không thể tìm được hành động yêu cầu "contact.php".' in /home/gckm/Project/logistic-master/yii/framework/web/CController.php:483
+Stack trace:
+#0 /home/gckm/Project/logistic-master/yii/framework/web/CController.php(270): CController->missingAction('contact.php')
+#1 /home/gckm/Project/logistic-master/yii/framework/web/CWebApplication.php(282): CController->run('contact.php')
+#2 /home/gckm/Project/logistic-master/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('home/contact.ph...')
+#3 /home/gckm/Project/logistic-master/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /home/gckm/Project/logistic-master/index.php(18): CApplication->run()
+#5 {main}
+REQUEST_URI=/home/contact.php
+---
+2019/03/04 09:52:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The page you requested cannot be found!' in /home/gckm/Project/logistic-master/protected/extensions/Son/helpers/Output.php:119
+Stack trace:
+#0 /home/gckm/Project/logistic-master/protected/extensions/Son/helpers/Output.php(123): Output::showError('The page you re...', 404)
+#1 /home/gckm/Project/logistic-master/protected/controllers/HomeController.php(153): Output::show404()
+#2 /home/gckm/Project/logistic-master/protected/controllers/HomeController.php(19): HomeController->renderPage('contact')
+#3 /home/gckm/Project/logistic-master/yii/framework/web/actions/CInlineAction.php(49): HomeController->actionContact()
+#4 /home/gckm/Project/logistic-master/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /home/gckm/Project/logistic-master/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#6 /home/gckm/Project/logistic-master/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /home/gckm/Project/logistic-master/yii/framework/web/CWebApplication.php(282): CController->run('contact')
+#8 /home/gckm/Project/logistic-master/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('home/contact')
+#9 /home/gckm/Project/logistic-master/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /home/gckm/Project/logistic-master/index.php(18): CApplication->run()
+#11 {main}
+REQUEST_URI=/home/contact
+HTTP_REFERER=http://localhost/
+---
+2019/03/04 09:58:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The page you requested cannot be found!' in /home/gckm/Project/logistic-master/protected/extensions/Son/helpers/Output.php:119
+Stack trace:
+#0 /home/gckm/Project/logistic-master/protected/extensions/Son/helpers/Output.php(123): Output::showError('The page you re...', 404)
+#1 /home/gckm/Project/logistic-master/protected/controllers/HomeController.php(153): Output::show404()
+#2 /home/gckm/Project/logistic-master/protected/controllers/HomeController.php(19): HomeController->renderPage('contact')
+#3 /home/gckm/Project/logistic-master/yii/framework/web/actions/CInlineAction.php(49): HomeController->actionContact()
+#4 /home/gckm/Project/logistic-master/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /home/gckm/Project/logistic-master/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#6 /home/gckm/Project/logistic-master/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /home/gckm/Project/logistic-master/yii/framework/web/CWebApplication.php(282): CController->run('contact')
+#8 /home/gckm/Project/logistic-master/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('home/contact')
+#9 /home/gckm/Project/logistic-master/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /home/gckm/Project/logistic-master/index.php(18): CApplication->run()
+#11 {main}
+REQUEST_URI=/home/contact
+HTTP_REFERER=http://localhost/home/check_price
+---
+2019/03/06 15:27:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Không thể giải quyết yêu cầu "favicon.ico".' in /home/gckm/Project/logistic-master/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/gckm/Project/logistic-master/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 /home/gckm/Project/logistic-master/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/gckm/Project/logistic-master/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/site/confirm_email?token=afeaf44022ab4b07375cc184f7acd051
+---
+2019/03/06 15:33:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The page you requested cannot be found!' in /home/gckm/Project/logistic-master/protected/extensions/Son/helpers/Output.php:119
+Stack trace:
+#0 /home/gckm/Project/logistic-master/protected/extensions/Son/helpers/Output.php(123): Output::showError('The page you re...', 404)
+#1 /home/gckm/Project/logistic-master/protected/controllers/HomeController.php(59): Output::show404()
+#2 [internal function]: HomeController->actionPost('5', 'order-online')
+#3 /home/gckm/Project/logistic-master/yii/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs(Object(HomeController), Array)
+#4 /home/gckm/Project/logistic-master/yii/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(HomeController), Object(ReflectionMethod), Array)
+#5 /home/gckm/Project/logistic-master/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#6 /home/gckm/Project/logistic-master/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#7 /home/gckm/Project/logistic-master/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /home/gckm/Project/logistic-master/yii/framework/web/CWebApplication.php(282): CController->run('post')
+#9 /home/gckm/Project/logistic-master/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('home/post')
+#10 /home/gckm/Project/logistic-master/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#11 /home/gckm/Project/logistic-master/index.php(18): CApplication->run()
+#12 {main}
+REQUEST_URI=/page_5_order-online.html
+HTTP_REFERER=http://localhost/home/index
+---
+2019/03/06 15:34:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The page you requested cannot be found!' in /home/gckm/Project/logistic-master/protected/extensions/Son/helpers/Output.php:119
+Stack trace:
+#0 /home/gckm/Project/logistic-master/protected/extensions/Son/helpers/Output.php(123): Output::showError('The page you re...', 404)
+#1 /home/gckm/Project/logistic-master/protected/controllers/HomeController.php(59): Output::show404()
+#2 [internal function]: HomeController->actionPost('7', 'chuyen-hang-noi...')
+#3 /home/gckm/Project/logistic-master/yii/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs(Object(HomeController), Array)
+#4 /home/gckm/Project/logistic-master/yii/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(HomeController), Object(ReflectionMethod), Array)
+#5 /home/gckm/Project/logistic-master/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#6 /home/gckm/Project/logistic-master/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#7 /home/gckm/Project/logistic-master/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /home/gckm/Project/logistic-master/yii/framework/web/CWebApplication.php(282): CController->run('post')
+#9 /home/gckm/Project/logistic-master/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('home/post')
+#10 /home/gckm/Project/logistic-master/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#11 /home/gckm/Project/logistic-master/index.php(18): CApplication->run()
+#12 {main}
+REQUEST_URI=/page_7_chuyen-hang-noi-dia.html
+HTTP_REFERER=http://localhost/home/index
+---
+2019/03/06 15:34:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The page you requested cannot be found!' in /home/gckm/Project/logistic-master/protected/extensions/Son/helpers/Output.php:119
+Stack trace:
+#0 /home/gckm/Project/logistic-master/protected/extensions/Son/helpers/Output.php(123): Output::showError('The page you re...', 404)
+#1 /home/gckm/Project/logistic-master/protected/controllers/HomeController.php(59): Output::show404()
+#2 [internal function]: HomeController->actionPost('6', 'ky-gui-hang')
+#3 /home/gckm/Project/logistic-master/yii/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs(Object(HomeController), Array)
+#4 /home/gckm/Project/logistic-master/yii/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(HomeController), Object(ReflectionMethod), Array)
+#5 /home/gckm/Project/logistic-master/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#6 /home/gckm/Project/logistic-master/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#7 /home/gckm/Project/logistic-master/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /home/gckm/Project/logistic-master/yii/framework/web/CWebApplication.php(282): CController->run('post')
+#9 /home/gckm/Project/logistic-master/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('home/post')
+#10 /home/gckm/Project/logistic-master/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#11 /home/gckm/Project/logistic-master/index.php(18): CApplication->run()
+#12 {main}
+REQUEST_URI=/page_6_ky-gui-hang.html
+HTTP_REFERER=http://localhost/home/index
+---
+2019/03/06 15:34:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The page you requested cannot be found!' in /home/gckm/Project/logistic-master/protected/extensions/Son/helpers/Output.php:119
+Stack trace:
+#0 /home/gckm/Project/logistic-master/protected/extensions/Son/helpers/Output.php(123): Output::showError('The page you re...', 404)
+#1 /home/gckm/Project/logistic-master/protected/controllers/HomeController.php(153): Output::show404()
+#2 /home/gckm/Project/logistic-master/protected/controllers/HomeController.php(104): HomeController->renderPage('download')
+#3 /home/gckm/Project/logistic-master/yii/framework/web/actions/CInlineAction.php(49): HomeController->actionDownload()
+#4 /home/gckm/Project/logistic-master/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /home/gckm/Project/logistic-master/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#6 /home/gckm/Project/logistic-master/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /home/gckm/Project/logistic-master/yii/framework/web/CWebApplication.php(282): CController->run('download')
+#8 /home/gckm/Project/logistic-master/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('home/download')
+#9 /home/gckm/Project/logistic-master/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /home/gckm/Project/logistic-master/index.php(18): CApplication->run()
+#11 {main}
+REQUEST_URI=/home/download
+HTTP_REFERER=http://localhost/home/index
+---
+2019/03/06 15:34:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The page you requested cannot be found!' in /home/gckm/Project/logistic-master/protected/extensions/Son/helpers/Output.php:119
+Stack trace:
+#0 /home/gckm/Project/logistic-master/protected/extensions/Son/helpers/Output.php(123): Output::showError('The page you re...', 404)
+#1 /home/gckm/Project/logistic-master/protected/controllers/HomeController.php(153): Output::show404()
+#2 /home/gckm/Project/logistic-master/protected/controllers/HomeController.php(23): HomeController->renderPage('pricing')
+#3 /home/gckm/Project/logistic-master/yii/framework/web/actions/CInlineAction.php(49): HomeController->actionPricing()
+#4 /home/gckm/Project/logistic-master/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /home/gckm/Project/logistic-master/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#6 /home/gckm/Project/logistic-master/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /home/gckm/Project/logistic-master/yii/framework/web/CWebApplication.php(282): CController->run('pricing')
+#8 /home/gckm/Project/logistic-master/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('home/pricing')
+#9 /home/gckm/Project/logistic-master/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /home/gckm/Project/logistic-master/index.php(18): CApplication->run()
+#11 {main}
+REQUEST_URI=/home/pricing
+HTTP_REFERER=http://localhost/home/index
+---
+2019/03/06 15:35:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The page you requested cannot be found!' in /home/gckm/Project/logistic-master/protected/extensions/Son/helpers/Output.php:119
+Stack trace:
+#0 /home/gckm/Project/logistic-master/protected/extensions/Son/helpers/Output.php(123): Output::showError('The page you re...', 404)
+#1 /home/gckm/Project/logistic-master/protected/controllers/HomeController.php(153): Output::show404()
+#2 /home/gckm/Project/logistic-master/protected/controllers/HomeController.php(23): HomeController->renderPage('pricing')
+#3 /home/gckm/Project/logistic-master/yii/framework/web/actions/CInlineAction.php(49): HomeController->actionPricing()
+#4 /home/gckm/Project/logistic-master/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /home/gckm/Project/logistic-master/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#6 /home/gckm/Project/logistic-master/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /home/gckm/Project/logistic-master/yii/framework/web/CWebApplication.php(282): CController->run('pricing')
+#8 /home/gckm/Project/logistic-master/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('home/pricing')
+#9 /home/gckm/Project/logistic-master/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /home/gckm/Project/logistic-master/index.php(18): CApplication->run()
+#11 {main}
+REQUEST_URI=/home/pricing
+HTTP_REFERER=http://localhost/user/create_order
+---
+2019/03/06 22:55:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Không thể giải quyết yêu cầu "favicon.ico".' in /home/gckm/Project/logistic-master/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/gckm/Project/logistic-master/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 /home/gckm/Project/logistic-master/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/gckm/Project/logistic-master/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/site/login?callback_url=/user/contact
+---
+2019/03/07 08:01:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Không thể giải quyết yêu cầu "favicon.ico".' in /home/gckm/Project/logistic-master/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/gckm/Project/logistic-master/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 /home/gckm/Project/logistic-master/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/gckm/Project/logistic-master/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/site/login?callback_url=/user/contact
+---
+2019/03/07 08:35:25 [error] [php] include(phone.php): failed to open stream: No such file or directory (/home/gckm/Project/logistic-master/yii/framework/YiiBase.php:427)
+Stack trace:
+#0 /home/gckm/Project/logistic-master/yii/framework/validators/CValidator.php(186): import()
+#1 /home/gckm/Project/logistic-master/yii/framework/base/CModel.php(287): createValidator()
+#2 /home/gckm/Project/logistic-master/yii/framework/base/CModel.php(260): SValidator->createValidators()
+#3 /home/gckm/Project/logistic-master/yii/framework/base/CModel.php(158): SValidator->getValidators()
+#4 /home/gckm/Project/logistic-master/protected/extensions/Son/helpers/SValidator.php(63): SValidator->validate()
+#5 /home/gckm/Project/logistic-master/protected/extensions/Son/helpers/SValidator.php(90): validateArray()
+#6 /home/gckm/Project/logistic-master/protected/extensions/Son/helpers/Input.php(52): validateSingle()
+#7 /home/gckm/Project/logistic-master/protected/extensions/Son/helpers/Input.php(142): getInput()
+#8 /home/gckm/Project/logistic-master/protected/extensions/Son/html/SForm.php(103): post()
+#9 /home/gckm/Project/logistic-master/protected/components/form/SignupForm.php(71): SignupForm->readInput()
+#10 /home/gckm/Project/logistic-master/protected/extensions/Son/html/SForm.php(89): SignupForm->onHandleInput()
+#11 /home/gckm/Project/logistic-master/protected/extensions/Son/html/SForm.php(77): SignupForm->handle()
+#12 /home/gckm/Project/logistic-master/protected/controllers/SiteController.php(32): SignupForm->run()
+#13 /home/gckm/Project/logistic-master/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionSignup()
+#14 /home/gckm/Project/logistic-master/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#15 /home/gckm/Project/logistic-master/yii/framework/web/CController.php(286): SiteController->runAction()
+#16 /home/gckm/Project/logistic-master/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#17 /home/gckm/Project/logistic-master/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#18 /home/gckm/Project/logistic-master/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#19 /home/gckm/Project/logistic-master/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#20 /home/gckm/Project/logistic-master/index.php(18): CWebApplication->run()
+REQUEST_URI=/site/signup
+in /home/gckm/Project/logistic-master/protected/extensions/Son/helpers/SValidator.php (63)
+in /home/gckm/Project/logistic-master/protected/extensions/Son/helpers/SValidator.php (90)
+in /home/gckm/Project/logistic-master/protected/extensions/Son/helpers/Input.php (52)
+2019/03/07 10:26:13 [error] [php] Undefined variable: model (/home/gckm/Project/logistic-master/protected/components/form/views/signup_form.php:58)
+Stack trace:
+#0 /home/gckm/Project/logistic-master/yii/framework/web/CController.php(869): SiteController->renderFile()
+#1 /home/gckm/Project/logistic-master/protected/extensions/Son/components/SController.php(68): SiteController->renderPartial()
+#2 /home/gckm/Project/logistic-master/protected/extensions/Son/html/SForm.php(643): SiteController->renderPartial()
+#3 /home/gckm/Project/logistic-master/protected/views/site/login_page.php(14): SignupForm->render()
+#4 /home/gckm/Project/logistic-master/yii/framework/web/CBaseController.php(126): require()
+#5 /home/gckm/Project/logistic-master/yii/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#6 /home/gckm/Project/logistic-master/yii/framework/web/CController.php(869): SiteController->renderFile()
+#7 /home/gckm/Project/logistic-master/protected/extensions/Son/components/SController.php(68): SiteController->renderPartial()
+#8 /home/gckm/Project/logistic-master/yii/framework/web/CController.php(782): SiteController->renderPartial()
+#9 /home/gckm/Project/logistic-master/protected/extensions/Son/components/SController.php(29): SiteController->render()
+#10 /home/gckm/Project/logistic-master/protected/controllers/SiteController.php(26): SiteController->render()
+#11 /home/gckm/Project/logistic-master/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionLogin()
+#12 /home/gckm/Project/logistic-master/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#13 /home/gckm/Project/logistic-master/yii/framework/web/CController.php(286): SiteController->runAction()
+#14 /home/gckm/Project/logistic-master/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#15 /home/gckm/Project/logistic-master/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#16 /home/gckm/Project/logistic-master/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#17 /home/gckm/Project/logistic-master/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#18 /home/gckm/Project/logistic-master/index.php(18): CWebApplication->run()
+REQUEST_URI=/site/login
+in /home/gckm/Project/logistic-master/protected/components/form/views/signup_form.php (58)
+in /home/gckm/Project/logistic-master/protected/extensions/Son/components/SController.php (68)
+in /home/gckm/Project/logistic-master/protected/extensions/Son/html/SForm.php (643)
+2019/03/07 10:26:35 [error] [exception.CException] exception 'CException' with message 'CActiveForm and its behaviors do not have a method or closure named "l_".' in /home/gckm/Project/logistic-master/yii/framework/base/CComponent.php:266
+Stack trace:
+#0 /home/gckm/Project/logistic-master/protected/components/form/views/signup_form.php(63): CComponent->__call('l_', Array)
+#1 /home/gckm/Project/logistic-master/protected/components/form/views/signup_form.php(63): CActiveForm->l_('\xC4\x90\xC4\x83ng k\xC3\xBD th\xC3\xA0...')
+#2 /home/gckm/Project/logistic-master/yii/framework/web/CBaseController.php(126): require('/home/gckm/Proj...')
+#3 /home/gckm/Project/logistic-master/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/gckm/Proj...', Array, true)
+#4 /home/gckm/Project/logistic-master/yii/framework/web/CController.php(869): CBaseController->renderFile('/home/gckm/Proj...', Array, true)
+#5 /home/gckm/Project/logistic-master/protected/extensions/Son/components/SController.php(68): CController->renderPartial('application.com...', Array, false, false)
+#6 /home/gckm/Project/logistic-master/protected/extensions/Son/html/SForm.php(643): SController->renderPartial('application.com...', Array, false)
+#7 /home/gckm/Project/logistic-master/protected/views/site/login_page.php(14): SForm->render()
+#8 /home/gckm/Project/logistic-master/yii/framework/web/CBaseController.php(126): require('/home/gckm/Proj...')
+#9 /home/gckm/Project/logistic-master/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/gckm/Proj...', Array, true)
+#10 /home/gckm/Project/logistic-master/yii/framework/web/CController.php(869): CBaseController->renderFile('/home/gckm/Proj...', Array, true)
+#11 /home/gckm/Project/logistic-master/protected/extensions/Son/components/SController.php(68): CController->renderPartial('login_page', Array, true, false)
+#12 /home/gckm/Project/logistic-master/yii/framework/web/CController.php(782): SController->renderPartial('login_page', Array, true)
+#13 /home/gckm/Project/logistic-master/protected/extensions/Son/components/SController.php(29): CController->render('login_page', Array, false)
+#14 /home/gckm/Project/logistic-master/protected/controllers/SiteController.php(26): SController->render('login_page')
+#15 /home/gckm/Project/logistic-master/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionLogin()
+#16 /home/gckm/Project/logistic-master/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#17 /home/gckm/Project/logistic-master/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#18 /home/gckm/Project/logistic-master/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#19 /home/gckm/Project/logistic-master/yii/framework/web/CWebApplication.php(282): CController->run('login')
+#20 /home/gckm/Project/logistic-master/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/login')
+#21 /home/gckm/Project/logistic-master/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#22 /home/gckm/Project/logistic-master/index.php(18): CApplication->run()
+#23 {main}
+REQUEST_URI=/site/login
+---
+2019/03/07 10:47:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Hệ thống không thể tìm được hành động yêu cầu "redirect".' in /home/gckm/Project/logistic-master/yii/framework/web/CController.php:483
+Stack trace:
+#0 /home/gckm/Project/logistic-master/yii/framework/web/CController.php(270): CController->missingAction('redirect')
+#1 /home/gckm/Project/logistic-master/yii/framework/web/CWebApplication.php(282): CController->run('redirect')
+#2 /home/gckm/Project/logistic-master/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/redirect')
+#3 /home/gckm/Project/logistic-master/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /home/gckm/Project/logistic-master/index.php(18): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/redirect
+---
+2019/03/07 10:47:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Hệ thống không thể tìm được hành động yêu cầu "redirect_page".' in /home/gckm/Project/logistic-master/yii/framework/web/CController.php:483
+Stack trace:
+#0 /home/gckm/Project/logistic-master/yii/framework/web/CController.php(270): CController->missingAction('redirect_page')
+#1 /home/gckm/Project/logistic-master/yii/framework/web/CWebApplication.php(282): CController->run('redirect_page')
+#2 /home/gckm/Project/logistic-master/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/redirect_p...')
+#3 /home/gckm/Project/logistic-master/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /home/gckm/Project/logistic-master/index.php(18): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/redirect_page
+---
+2019/03/07 10:50:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Không thể giải quyết yêu cầu "favicon.ico".' in /home/gckm/Project/logistic-master/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/gckm/Project/logistic-master/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 /home/gckm/Project/logistic-master/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/gckm/Project/logistic-master/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/site/error
+---
+2019/03/07 10:51:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Hệ thống không thể tìm được hành động yêu cầu "redirect_page.php".' in /home/gckm/Project/logistic-master/yii/framework/web/CController.php:483
+Stack trace:
+#0 /home/gckm/Project/logistic-master/yii/framework/web/CController.php(270): CController->missingAction('redirect_page.p...')
+#1 /home/gckm/Project/logistic-master/yii/framework/web/CWebApplication.php(282): CController->run('redirect_page.p...')
+#2 /home/gckm/Project/logistic-master/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/redirect_p...')
+#3 /home/gckm/Project/logistic-master/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /home/gckm/Project/logistic-master/index.php(18): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/redirect_page.php
+HTTP_REFERER=http://localhost/site/login?callback_url=prev
+---
+2019/03/07 10:56:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Hệ thống không thể tìm được hành động yêu cầu "redirect_page.php".' in /home/gckm/Project/logistic-master/yii/framework/web/CController.php:483
+Stack trace:
+#0 /home/gckm/Project/logistic-master/yii/framework/web/CController.php(270): CController->missingAction('redirect_page.p...')
+#1 /home/gckm/Project/logistic-master/yii/framework/web/CWebApplication.php(282): CController->run('redirect_page.p...')
+#2 /home/gckm/Project/logistic-master/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/redirect_p...')
+#3 /home/gckm/Project/logistic-master/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /home/gckm/Project/logistic-master/index.php(18): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/redirect_page.php
+HTTP_REFERER=http://localhost/site/login?callback_url=prev
+---
+2019/03/09 02:25:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Hệ thống không thể tìm được hành động yêu cầu "redirect_page.php".' in /home/gckm/Project/logistic-master/yii/framework/web/CController.php:483
+Stack trace:
+#0 /home/gckm/Project/logistic-master/yii/framework/web/CController.php(270): CController->missingAction('redirect_page.p...')
+#1 /home/gckm/Project/logistic-master/yii/framework/web/CWebApplication.php(282): CController->run('redirect_page.p...')
+#2 /home/gckm/Project/logistic-master/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('home/redirect_p...')
+#3 /home/gckm/Project/logistic-master/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /home/gckm/Project/logistic-master/index.php(18): CApplication->run()
+#5 {main}
+REQUEST_URI=/home/redirect_page.php
+HTTP_REFERER=http://localhost/site/login?callback_url=prev
+---
+2019/03/09 02:27:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Hệ thống không thể tìm được hành động yêu cầu "redirect_page".' in /home/gckm/Project/logistic-master/yii/framework/web/CController.php:483
+Stack trace:
+#0 /home/gckm/Project/logistic-master/yii/framework/web/CController.php(270): CController->missingAction('redirect_page')
+#1 /home/gckm/Project/logistic-master/yii/framework/web/CWebApplication.php(282): CController->run('redirect_page')
+#2 /home/gckm/Project/logistic-master/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('home/redirect_p...')
+#3 /home/gckm/Project/logistic-master/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /home/gckm/Project/logistic-master/index.php(18): CApplication->run()
+#5 {main}
+REQUEST_URI=/home/redirect_page
+HTTP_REFERER=http://localhost/site/login?callback_url=prev
+---
+2019/03/09 02:28:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Hệ thống không thể tìm được hành động yêu cầu "redirect_page".' in /home/gckm/Project/logistic-master/yii/framework/web/CController.php:483
+Stack trace:
+#0 /home/gckm/Project/logistic-master/yii/framework/web/CController.php(270): CController->missingAction('redirect_page')
+#1 /home/gckm/Project/logistic-master/yii/framework/web/CWebApplication.php(282): CController->run('redirect_page')
+#2 /home/gckm/Project/logistic-master/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('home/redirect_p...')
+#3 /home/gckm/Project/logistic-master/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /home/gckm/Project/logistic-master/index.php(18): CApplication->run()
+#5 {main}
+REQUEST_URI=/home/redirect_page
+HTTP_REFERER=http://localhost/site/login?callback_url=prev
+---
+2019/03/09 02:29:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Hệ thống không thể tìm được hành động yêu cầu "redirect_page".' in /home/gckm/Project/logistic-master/yii/framework/web/CController.php:483
+Stack trace:
+#0 /home/gckm/Project/logistic-master/yii/framework/web/CController.php(270): CController->missingAction('redirect_page')
+#1 /home/gckm/Project/logistic-master/yii/framework/web/CWebApplication.php(282): CController->run('redirect_page')
+#2 /home/gckm/Project/logistic-master/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/redirect_p...')
+#3 /home/gckm/Project/logistic-master/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /home/gckm/Project/logistic-master/index.php(18): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/redirect_page
+---
+2019/03/09 02:29:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Hệ thống không thể tìm được hành động yêu cầu "error-404".' in /home/gckm/Project/logistic-master/yii/framework/web/CController.php:483
+Stack trace:
+#0 /home/gckm/Project/logistic-master/yii/framework/web/CController.php(270): CController->missingAction('error-404')
+#1 /home/gckm/Project/logistic-master/yii/framework/web/CWebApplication.php(282): CController->run('error-404')
+#2 /home/gckm/Project/logistic-master/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/error-404')
+#3 /home/gckm/Project/logistic-master/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /home/gckm/Project/logistic-master/index.php(18): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/error-404
+---
+2019/03/09 02:29:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Không thể giải quyết yêu cầu "favicon.ico".' in /home/gckm/Project/logistic-master/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/gckm/Project/logistic-master/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 /home/gckm/Project/logistic-master/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/gckm/Project/logistic-master/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/site/error
+---
+2019/03/09 02:30:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Hệ thống không thể tìm được hành động yêu cầu "login_page".' in /home/gckm/Project/logistic-master/yii/framework/web/CController.php:483
+Stack trace:
+#0 /home/gckm/Project/logistic-master/yii/framework/web/CController.php(270): CController->missingAction('login_page')
+#1 /home/gckm/Project/logistic-master/yii/framework/web/CWebApplication.php(282): CController->run('login_page')
+#2 /home/gckm/Project/logistic-master/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/login_page')
+#3 /home/gckm/Project/logistic-master/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /home/gckm/Project/logistic-master/index.php(18): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/login_page
+---
+2019/03/09 08:57:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Hệ thống không thể tìm được hành động yêu cầu "error-404".' in /home/gckm/Project/logistic-master/yii/framework/web/CController.php:483
+Stack trace:
+#0 /home/gckm/Project/logistic-master/yii/framework/web/CController.php(270): CController->missingAction('error-404')
+#1 /home/gckm/Project/logistic-master/yii/framework/web/CWebApplication.php(282): CController->run('error-404')
+#2 /home/gckm/Project/logistic-master/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/error-404')
+#3 /home/gckm/Project/logistic-master/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /home/gckm/Project/logistic-master/index.php(18): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/error-404
+---
+2019/03/09 08:57:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Hệ thống không thể tìm được hành động yêu cầu "redirect_page".' in /home/gckm/Project/logistic-master/yii/framework/web/CController.php:483
+Stack trace:
+#0 /home/gckm/Project/logistic-master/yii/framework/web/CController.php(270): CController->missingAction('redirect_page')
+#1 /home/gckm/Project/logistic-master/yii/framework/web/CWebApplication.php(282): CController->run('redirect_page')
+#2 /home/gckm/Project/logistic-master/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/redirect_p...')
+#3 /home/gckm/Project/logistic-master/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /home/gckm/Project/logistic-master/index.php(18): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/redirect_page
+---
+2019/03/09 09:34:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Hệ thống không thể tìm được hành động yêu cầu "redirect_page".' in /home/gckm/Project/logistic-master/yii/framework/web/CController.php:483
+Stack trace:
+#0 /home/gckm/Project/logistic-master/yii/framework/web/CController.php(270): CController->missingAction('redirect_page')
+#1 /home/gckm/Project/logistic-master/yii/framework/web/CWebApplication.php(282): CController->run('redirect_page')
+#2 /home/gckm/Project/logistic-master/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/redirect_p...')
+#3 /home/gckm/Project/logistic-master/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /home/gckm/Project/logistic-master/index.php(18): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/redirect_page
+HTTP_REFERER=http://localhost/site/login?callback_url=prev
+---
+2019/03/09 09:45:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The page you requested cannot be found!' in /home/gckm/Project/logistic-master/protected/extensions/Son/helpers/Output.php:119
+Stack trace:
+#0 /home/gckm/Project/logistic-master/protected/extensions/Son/helpers/Output.php(123): Output::showError('The page you re...', 404)
+#1 /home/gckm/Project/logistic-master/protected/controllers/HomeController.php(153): Output::show404()
+#2 /home/gckm/Project/logistic-master/protected/controllers/HomeController.php(19): HomeController->renderPage('contact')
+#3 /home/gckm/Project/logistic-master/yii/framework/web/actions/CInlineAction.php(49): HomeController->actionContact()
+#4 /home/gckm/Project/logistic-master/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /home/gckm/Project/logistic-master/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#6 /home/gckm/Project/logistic-master/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /home/gckm/Project/logistic-master/yii/framework/web/CWebApplication.php(282): CController->run('contact')
+#8 /home/gckm/Project/logistic-master/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('home/contact')
+#9 /home/gckm/Project/logistic-master/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /home/gckm/Project/logistic-master/index.php(18): CApplication->run()
+#11 {main}
+REQUEST_URI=/home/contact
+HTTP_REFERER=http://localhost/home/index
+---
+2019/03/09 09:45:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The page you requested cannot be found!' in /home/gckm/Project/logistic-master/protected/extensions/Son/helpers/Output.php:119
+Stack trace:
+#0 /home/gckm/Project/logistic-master/protected/extensions/Son/helpers/Output.php(123): Output::showError('The page you re...', 404)
+#1 /home/gckm/Project/logistic-master/protected/controllers/HomeController.php(153): Output::show404()
+#2 /home/gckm/Project/logistic-master/protected/controllers/HomeController.php(19): HomeController->renderPage('contact')
+#3 /home/gckm/Project/logistic-master/yii/framework/web/actions/CInlineAction.php(49): HomeController->actionContact()
+#4 /home/gckm/Project/logistic-master/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /home/gckm/Project/logistic-master/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#6 /home/gckm/Project/logistic-master/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /home/gckm/Project/logistic-master/yii/framework/web/CWebApplication.php(282): CController->run('contact')
+#8 /home/gckm/Project/logistic-master/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('home/contact')
+#9 /home/gckm/Project/logistic-master/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /home/gckm/Project/logistic-master/index.php(18): CApplication->run()
+#11 {main}
+REQUEST_URI=/home/contact
+HTTP_REFERER=http://localhost/home/index
+---
+2019/03/09 10:21:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Không thể giải quyết yêu cầu "favicon.ico".' in /home/gckm/Project/logistic-master/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/gckm/Project/logistic-master/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 /home/gckm/Project/logistic-master/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/gckm/Project/logistic-master/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/site/redirect_page
+---
+2019/03/09 10:21:21 [error] [php] Undefined variable: url (/home/gckm/Project/logistic-master/protected/controllers/SiteController.php:331)
+Stack trace:
+#0 /home/gckm/Project/logistic-master/yii/framework/web/CController.php(286): SiteController->runAction()
+#1 /home/gckm/Project/logistic-master/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#2 /home/gckm/Project/logistic-master/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#3 /home/gckm/Project/logistic-master/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#4 /home/gckm/Project/logistic-master/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#5 /home/gckm/Project/logistic-master/index.php(18): CWebApplication->run()
+REQUEST_URI=/site/redirect_page
+in /home/gckm/Project/logistic-master/protected/controllers/SiteController.php (331)
+in /home/gckm/Project/logistic-master/index.php (18)
+2019/03/09 10:21:40 [error] [php] Missing argument 1 for SController::render(), called in /home/gckm/Project/logistic-master/protected/controllers/SiteController.php on line 331 and defined (/home/gckm/Project/logistic-master/protected/extensions/Son/components/SController.php:23)
+Stack trace:
+#0 /home/gckm/Project/logistic-master/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#1 /home/gckm/Project/logistic-master/yii/framework/web/CController.php(286): SiteController->runAction()
+#2 /home/gckm/Project/logistic-master/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#3 /home/gckm/Project/logistic-master/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#4 /home/gckm/Project/logistic-master/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#5 /home/gckm/Project/logistic-master/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /home/gckm/Project/logistic-master/index.php(18): CWebApplication->run()
+REQUEST_URI=/site/redirect_page
+in /home/gckm/Project/logistic-master/protected/extensions/Son/components/SController.php (23)
+in /home/gckm/Project/logistic-master/protected/controllers/SiteController.php (331)
+in /home/gckm/Project/logistic-master/index.php (18)
+2019/03/09 10:27:32 [error] [exception.CException] exception 'CException' with message 'SiteController không tìm được view: "/site/redirect_page_after_sigup".' in /home/gckm/Project/logistic-master/yii/framework/web/CController.php:878
+Stack trace:
+#0 /home/gckm/Project/logistic-master/protected/extensions/Son/components/SController.php(68): CController->renderPartial('/site/redirect_...', Array, true, false)
+#1 /home/gckm/Project/logistic-master/yii/framework/web/CController.php(782): SController->renderPartial('/site/redirect_...', Array, true)
+#2 /home/gckm/Project/logistic-master/protected/extensions/Son/components/SController.php(29): CController->render('/site/redirect_...', Array, false)
+#3 /home/gckm/Project/logistic-master/protected/controllers/SiteController.php(331): SController->render('/site/redirect_...')
+#4 /home/gckm/Project/logistic-master/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionRedirect_page()
+#5 /home/gckm/Project/logistic-master/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#6 /home/gckm/Project/logistic-master/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#7 /home/gckm/Project/logistic-master/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /home/gckm/Project/logistic-master/yii/framework/web/CWebApplication.php(282): CController->run('redirect_page')
+#9 /home/gckm/Project/logistic-master/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/redirect_p...')
+#10 /home/gckm/Project/logistic-master/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#11 /home/gckm/Project/logistic-master/index.php(18): CApplication->run()
+#12 {main}
+REQUEST_URI=/site/redirect_page
+HTTP_REFERER=http://localhost/site/login?callback_url=prev
+---
+2019/03/09 10:31:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Hệ thống không thể tìm được hành động yêu cầu "redirect_page_after_signup".' in /home/gckm/Project/logistic-master/yii/framework/web/CController.php:483
+Stack trace:
+#0 /home/gckm/Project/logistic-master/yii/framework/web/CController.php(270): CController->missingAction('redirect_page_a...')
+#1 /home/gckm/Project/logistic-master/yii/framework/web/CWebApplication.php(282): CController->run('redirect_page_a...')
+#2 /home/gckm/Project/logistic-master/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/redirect_p...')
+#3 /home/gckm/Project/logistic-master/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /home/gckm/Project/logistic-master/index.php(18): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/redirect_page_after_signup
+HTTP_REFERER=http://localhost/site/login?callback_url=prev
+---
+2019/03/09 10:32:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Hệ thống không thể tìm được hành động yêu cầu "redirect_page_after_signup".' in /home/gckm/Project/logistic-master/yii/framework/web/CController.php:483
+Stack trace:
+#0 /home/gckm/Project/logistic-master/yii/framework/web/CController.php(270): CController->missingAction('redirect_page_a...')
+#1 /home/gckm/Project/logistic-master/yii/framework/web/CWebApplication.php(282): CController->run('redirect_page_a...')
+#2 /home/gckm/Project/logistic-master/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/redirect_p...')
+#3 /home/gckm/Project/logistic-master/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /home/gckm/Project/logistic-master/index.php(18): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/redirect_page_after_signup
+HTTP_REFERER=http://localhost/site/login?callback_url=prev
+---
+2019/03/09 10:32:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Hệ thống không thể tìm được hành động yêu cầu "redirect_page_after_signup".' in /home/gckm/Project/logistic-master/yii/framework/web/CController.php:483
+Stack trace:
+#0 /home/gckm/Project/logistic-master/yii/framework/web/CController.php(270): CController->missingAction('redirect_page_a...')
+#1 /home/gckm/Project/logistic-master/yii/framework/web/CWebApplication.php(282): CController->run('redirect_page_a...')
+#2 /home/gckm/Project/logistic-master/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/redirect_p...')
+#3 /home/gckm/Project/logistic-master/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /home/gckm/Project/logistic-master/index.php(18): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/redirect_page_after_signup
+HTTP_REFERER=http://localhost/site/login?callback_url=prev
+---
+2019/03/09 10:32:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Hệ thống không thể tìm được hành động yêu cầu "redirect_page_after_signup".' in /home/gckm/Project/logistic-master/yii/framework/web/CController.php:483
+Stack trace:
+#0 /home/gckm/Project/logistic-master/yii/framework/web/CController.php(270): CController->missingAction('redirect_page_a...')
+#1 /home/gckm/Project/logistic-master/yii/framework/web/CWebApplication.php(282): CController->run('redirect_page_a...')
+#2 /home/gckm/Project/logistic-master/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/redirect_p...')
+#3 /home/gckm/Project/logistic-master/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /home/gckm/Project/logistic-master/index.php(18): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/redirect_page_after_signup
+HTTP_REFERER=http://localhost/site/login?callback_url=prev
+---
+2019/03/09 10:47:45 [error] [php] Undefined variable: signupForm (/home/gckm/Project/logistic-master/protected/views/site/signup_page.php:4)
+Stack trace:
+#0 /home/gckm/Project/logistic-master/yii/framework/web/CController.php(869): SiteController->renderFile()
+#1 /home/gckm/Project/logistic-master/protected/extensions/Son/components/SController.php(68): SiteController->renderPartial()
+#2 /home/gckm/Project/logistic-master/yii/framework/web/CController.php(782): SiteController->renderPartial()
+#3 /home/gckm/Project/logistic-master/protected/extensions/Son/components/SController.php(29): SiteController->render()
+#4 /home/gckm/Project/logistic-master/protected/controllers/SiteController.php(37): SiteController->render()
+#5 /home/gckm/Project/logistic-master/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionSignup()
+#6 /home/gckm/Project/logistic-master/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#7 /home/gckm/Project/logistic-master/yii/framework/web/CController.php(286): SiteController->runAction()
+#8 /home/gckm/Project/logistic-master/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#9 /home/gckm/Project/logistic-master/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#10 /home/gckm/Project/logistic-master/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#11 /home/gckm/Project/logistic-master/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#12 /home/gckm/Project/logistic-master/index.php(18): CWebApplication->run()
+REQUEST_URI=/site/signup
+in /home/gckm/Project/logistic-master/protected/views/site/signup_page.php (4)
+in /home/gckm/Project/logistic-master/protected/extensions/Son/components/SController.php (68)
+in /home/gckm/Project/logistic-master/protected/extensions/Son/components/SController.php (29)
+2019/03/09 10:49:52 [error] [php] Undefined variable: signupForm (/home/gckm/Project/logistic-master/protected/views/site/signup_page.php:4)
+Stack trace:
+#0 /home/gckm/Project/logistic-master/yii/framework/web/CController.php(869): SiteController->renderFile()
+#1 /home/gckm/Project/logistic-master/protected/extensions/Son/components/SController.php(68): SiteController->renderPartial()
+#2 /home/gckm/Project/logistic-master/yii/framework/web/CController.php(782): SiteController->renderPartial()
+#3 /home/gckm/Project/logistic-master/protected/extensions/Son/components/SController.php(29): SiteController->render()
+#4 /home/gckm/Project/logistic-master/protected/controllers/SiteController.php(37): SiteController->render()
+#5 /home/gckm/Project/logistic-master/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionSignup()
+#6 /home/gckm/Project/logistic-master/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#7 /home/gckm/Project/logistic-master/yii/framework/web/CController.php(286): SiteController->runAction()
+#8 /home/gckm/Project/logistic-master/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#9 /home/gckm/Project/logistic-master/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#10 /home/gckm/Project/logistic-master/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#11 /home/gckm/Project/logistic-master/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#12 /home/gckm/Project/logistic-master/index.php(18): CWebApplication->run()
+REQUEST_URI=/site/signup
+in /home/gckm/Project/logistic-master/protected/views/site/signup_page.php (4)
+in /home/gckm/Project/logistic-master/protected/extensions/Son/components/SController.php (68)
+in /home/gckm/Project/logistic-master/protected/extensions/Son/components/SController.php (29)
+2019/03/09 13:45:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Không thể giải quyết yêu cầu "favicon.ico".' in /home/gckm/Project/logistic-master/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/gckm/Project/logistic-master/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 /home/gckm/Project/logistic-master/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/gckm/Project/logistic-master/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/site/signup?callback_url=prev
+---
+2019/03/09 15:24:42 [error] [php] preg_match(): Unknown modifier '+' (/home/gckm/Project/logistic-master/protected/components/form/SignupForm.php:77)
+Stack trace:
+#0 /home/gckm/Project/logistic-master/protected/extensions/Son/html/SForm.php(77): SignupForm->handle()
+#1 /home/gckm/Project/logistic-master/protected/controllers/SiteController.php(32): SignupForm->run()
+#2 /home/gckm/Project/logistic-master/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionSignup()
+#3 /home/gckm/Project/logistic-master/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#4 /home/gckm/Project/logistic-master/yii/framework/web/CController.php(286): SiteController->runAction()
+#5 /home/gckm/Project/logistic-master/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#6 /home/gckm/Project/logistic-master/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#7 /home/gckm/Project/logistic-master/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /home/gckm/Project/logistic-master/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /home/gckm/Project/logistic-master/index.php(18): CWebApplication->run()
+REQUEST_URI=/site/signup
+in /home/gckm/Project/logistic-master/protected/components/form/SignupForm.php (77)
+in /home/gckm/Project/logistic-master/protected/extensions/Son/html/SForm.php (89)
+in /home/gckm/Project/logistic-master/protected/extensions/Son/html/SForm.php (77)
+2019/03/09 15:24:46 [error] [php] preg_match(): Unknown modifier '+' (/home/gckm/Project/logistic-master/protected/components/form/SignupForm.php:77)
+Stack trace:
+#0 /home/gckm/Project/logistic-master/protected/extensions/Son/html/SForm.php(77): SignupForm->handle()
+#1 /home/gckm/Project/logistic-master/protected/controllers/SiteController.php(32): SignupForm->run()
+#2 /home/gckm/Project/logistic-master/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionSignup()
+#3 /home/gckm/Project/logistic-master/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#4 /home/gckm/Project/logistic-master/yii/framework/web/CController.php(286): SiteController->runAction()
+#5 /home/gckm/Project/logistic-master/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#6 /home/gckm/Project/logistic-master/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#7 /home/gckm/Project/logistic-master/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /home/gckm/Project/logistic-master/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /home/gckm/Project/logistic-master/index.php(18): CWebApplication->run()
+REQUEST_URI=/site/signup
+in /home/gckm/Project/logistic-master/protected/components/form/SignupForm.php (77)
+in /home/gckm/Project/logistic-master/protected/extensions/Son/html/SForm.php (89)
+in /home/gckm/Project/logistic-master/protected/extensions/Son/html/SForm.php (77)
+2019/03/09 15:25:01 [error] [php] preg_match(): Unknown modifier '+' (/home/gckm/Project/logistic-master/protected/components/form/SignupForm.php:77)
+Stack trace:
+#0 /home/gckm/Project/logistic-master/protected/extensions/Son/html/SForm.php(77): SignupForm->handle()
+#1 /home/gckm/Project/logistic-master/protected/controllers/SiteController.php(32): SignupForm->run()
+#2 /home/gckm/Project/logistic-master/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionSignup()
+#3 /home/gckm/Project/logistic-master/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#4 /home/gckm/Project/logistic-master/yii/framework/web/CController.php(286): SiteController->runAction()
+#5 /home/gckm/Project/logistic-master/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#6 /home/gckm/Project/logistic-master/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#7 /home/gckm/Project/logistic-master/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /home/gckm/Project/logistic-master/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /home/gckm/Project/logistic-master/index.php(18): CWebApplication->run()
+REQUEST_URI=/site/signup
+in /home/gckm/Project/logistic-master/protected/components/form/SignupForm.php (77)
+in /home/gckm/Project/logistic-master/protected/extensions/Son/html/SForm.php (89)
+in /home/gckm/Project/logistic-master/protected/extensions/Son/html/SForm.php (77)
+2019/03/09 15:25:21 [error] [php] preg_match(): Unknown modifier '+' (/home/gckm/Project/logistic-master/protected/components/form/SignupForm.php:77)
+Stack trace:
+#0 /home/gckm/Project/logistic-master/protected/extensions/Son/html/SForm.php(77): SignupForm->handle()
+#1 /home/gckm/Project/logistic-master/protected/controllers/SiteController.php(32): SignupForm->run()
+#2 /home/gckm/Project/logistic-master/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionSignup()
+#3 /home/gckm/Project/logistic-master/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#4 /home/gckm/Project/logistic-master/yii/framework/web/CController.php(286): SiteController->runAction()
+#5 /home/gckm/Project/logistic-master/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#6 /home/gckm/Project/logistic-master/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#7 /home/gckm/Project/logistic-master/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /home/gckm/Project/logistic-master/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /home/gckm/Project/logistic-master/index.php(18): CWebApplication->run()
+REQUEST_URI=/site/signup
+in /home/gckm/Project/logistic-master/protected/components/form/SignupForm.php (77)
+in /home/gckm/Project/logistic-master/protected/extensions/Son/html/SForm.php (89)
+in /home/gckm/Project/logistic-master/protected/extensions/Son/html/SForm.php (77)
+2019/03/09 15:25:42 [error] [php] preg_match(): Unknown modifier '+' (/home/gckm/Project/logistic-master/protected/components/form/SignupForm.php:77)
+Stack trace:
+#0 /home/gckm/Project/logistic-master/protected/extensions/Son/html/SForm.php(77): SignupForm->handle()
+#1 /home/gckm/Project/logistic-master/protected/controllers/SiteController.php(32): SignupForm->run()
+#2 /home/gckm/Project/logistic-master/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionSignup()
+#3 /home/gckm/Project/logistic-master/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#4 /home/gckm/Project/logistic-master/yii/framework/web/CController.php(286): SiteController->runAction()
+#5 /home/gckm/Project/logistic-master/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#6 /home/gckm/Project/logistic-master/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#7 /home/gckm/Project/logistic-master/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /home/gckm/Project/logistic-master/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /home/gckm/Project/logistic-master/index.php(18): CWebApplication->run()
+REQUEST_URI=/site/signup
+in /home/gckm/Project/logistic-master/protected/components/form/SignupForm.php (77)
+in /home/gckm/Project/logistic-master/protected/extensions/Son/html/SForm.php (89)
+in /home/gckm/Project/logistic-master/protected/extensions/Son/html/SForm.php (77)
+2019/03/09 15:31:39 [error] [php] preg_match(): Unknown modifier '+' (/home/gckm/Project/logistic-master/protected/components/form/SignupForm.php:77)
+Stack trace:
+#0 /home/gckm/Project/logistic-master/protected/extensions/Son/html/SForm.php(77): SignupForm->handle()
+#1 /home/gckm/Project/logistic-master/protected/controllers/SiteController.php(32): SignupForm->run()
+#2 /home/gckm/Project/logistic-master/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionSignup()
+#3 /home/gckm/Project/logistic-master/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#4 /home/gckm/Project/logistic-master/yii/framework/web/CController.php(286): SiteController->runAction()
+#5 /home/gckm/Project/logistic-master/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#6 /home/gckm/Project/logistic-master/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#7 /home/gckm/Project/logistic-master/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /home/gckm/Project/logistic-master/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /home/gckm/Project/logistic-master/index.php(18): CWebApplication->run()
+REQUEST_URI=/site/signup
+in /home/gckm/Project/logistic-master/protected/components/form/SignupForm.php (77)
+in /home/gckm/Project/logistic-master/protected/extensions/Son/html/SForm.php (89)
+in /home/gckm/Project/logistic-master/protected/extensions/Son/html/SForm.php (77)
+2019/03/09 15:35:47 [error] [php] preg_match(): Unknown modifier '+' (/home/gckm/Project/logistic-master/protected/components/form/SignupForm.php:77)
+Stack trace:
+#0 /home/gckm/Project/logistic-master/protected/extensions/Son/html/SForm.php(77): SignupForm->handle()
+#1 /home/gckm/Project/logistic-master/protected/controllers/SiteController.php(32): SignupForm->run()
+#2 /home/gckm/Project/logistic-master/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionSignup()
+#3 /home/gckm/Project/logistic-master/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#4 /home/gckm/Project/logistic-master/yii/framework/web/CController.php(286): SiteController->runAction()
+#5 /home/gckm/Project/logistic-master/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#6 /home/gckm/Project/logistic-master/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#7 /home/gckm/Project/logistic-master/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /home/gckm/Project/logistic-master/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /home/gckm/Project/logistic-master/index.php(18): CWebApplication->run()
+REQUEST_URI=/site/signup
+in /home/gckm/Project/logistic-master/protected/components/form/SignupForm.php (77)
+in /home/gckm/Project/logistic-master/protected/extensions/Son/html/SForm.php (89)
+in /home/gckm/Project/logistic-master/protected/extensions/Son/html/SForm.php (77)
+2019/03/09 15:36:22 [error] [php] preg_match(): Unknown modifier '+' (/home/gckm/Project/logistic-master/protected/components/form/SignupForm.php:77)
+Stack trace:
+#0 /home/gckm/Project/logistic-master/protected/extensions/Son/html/SForm.php(77): SignupForm->handle()
+#1 /home/gckm/Project/logistic-master/protected/controllers/SiteController.php(32): SignupForm->run()
+#2 /home/gckm/Project/logistic-master/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionSignup()
+#3 /home/gckm/Project/logistic-master/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#4 /home/gckm/Project/logistic-master/yii/framework/web/CController.php(286): SiteController->runAction()
+#5 /home/gckm/Project/logistic-master/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#6 /home/gckm/Project/logistic-master/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#7 /home/gckm/Project/logistic-master/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /home/gckm/Project/logistic-master/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /home/gckm/Project/logistic-master/index.php(18): CWebApplication->run()
+REQUEST_URI=/site/signup
+in /home/gckm/Project/logistic-master/protected/components/form/SignupForm.php (77)
+in /home/gckm/Project/logistic-master/protected/extensions/Son/html/SForm.php (89)
+in /home/gckm/Project/logistic-master/protected/extensions/Son/html/SForm.php (77)
+2019/03/09 15:36:26 [error] [php] preg_match(): Unknown modifier '+' (/home/gckm/Project/logistic-master/protected/components/form/SignupForm.php:77)
+Stack trace:
+#0 /home/gckm/Project/logistic-master/protected/extensions/Son/html/SForm.php(77): SignupForm->handle()
+#1 /home/gckm/Project/logistic-master/protected/controllers/SiteController.php(32): SignupForm->run()
+#2 /home/gckm/Project/logistic-master/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionSignup()
+#3 /home/gckm/Project/logistic-master/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#4 /home/gckm/Project/logistic-master/yii/framework/web/CController.php(286): SiteController->runAction()
+#5 /home/gckm/Project/logistic-master/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#6 /home/gckm/Project/logistic-master/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#7 /home/gckm/Project/logistic-master/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /home/gckm/Project/logistic-master/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /home/gckm/Project/logistic-master/index.php(18): CWebApplication->run()
+REQUEST_URI=/site/signup
+in /home/gckm/Project/logistic-master/protected/components/form/SignupForm.php (77)
+in /home/gckm/Project/logistic-master/protected/extensions/Son/html/SForm.php (89)
+in /home/gckm/Project/logistic-master/protected/extensions/Son/html/SForm.php (77)
+2019/03/09 15:39:10 [error] [php] preg_match(): Unknown modifier '+' (/home/gckm/Project/logistic-master/protected/components/form/SignupForm.php:77)
+Stack trace:
+#0 /home/gckm/Project/logistic-master/protected/extensions/Son/html/SForm.php(77): SignupForm->handle()
+#1 /home/gckm/Project/logistic-master/protected/controllers/SiteController.php(32): SignupForm->run()
+#2 /home/gckm/Project/logistic-master/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionSignup()
+#3 /home/gckm/Project/logistic-master/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#4 /home/gckm/Project/logistic-master/yii/framework/web/CController.php(286): SiteController->runAction()
+#5 /home/gckm/Project/logistic-master/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#6 /home/gckm/Project/logistic-master/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#7 /home/gckm/Project/logistic-master/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /home/gckm/Project/logistic-master/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /home/gckm/Project/logistic-master/index.php(18): CWebApplication->run()
+REQUEST_URI=/site/signup
+in /home/gckm/Project/logistic-master/protected/components/form/SignupForm.php (77)
+in /home/gckm/Project/logistic-master/protected/extensions/Son/html/SForm.php (89)
+in /home/gckm/Project/logistic-master/protected/extensions/Son/html/SForm.php (77)
+2019/03/09 15:39:15 [error] [php] preg_match(): Unknown modifier '+' (/home/gckm/Project/logistic-master/protected/components/form/SignupForm.php:77)
+Stack trace:
+#0 /home/gckm/Project/logistic-master/protected/extensions/Son/html/SForm.php(77): SignupForm->handle()
+#1 /home/gckm/Project/logistic-master/protected/controllers/SiteController.php(32): SignupForm->run()
+#2 /home/gckm/Project/logistic-master/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionSignup()
+#3 /home/gckm/Project/logistic-master/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#4 /home/gckm/Project/logistic-master/yii/framework/web/CController.php(286): SiteController->runAction()
+#5 /home/gckm/Project/logistic-master/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#6 /home/gckm/Project/logistic-master/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#7 /home/gckm/Project/logistic-master/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /home/gckm/Project/logistic-master/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /home/gckm/Project/logistic-master/index.php(18): CWebApplication->run()
+REQUEST_URI=/site/signup
+in /home/gckm/Project/logistic-master/protected/components/form/SignupForm.php (77)
+in /home/gckm/Project/logistic-master/protected/extensions/Son/html/SForm.php (89)
+in /home/gckm/Project/logistic-master/protected/extensions/Son/html/SForm.php (77)
+2019/03/09 15:40:59 [error] [php] preg_match(): Unknown modifier '+' (/home/gckm/Project/logistic-master/protected/components/form/SignupForm.php:77)
+Stack trace:
+#0 /home/gckm/Project/logistic-master/protected/extensions/Son/html/SForm.php(77): SignupForm->handle()
+#1 /home/gckm/Project/logistic-master/protected/controllers/SiteController.php(32): SignupForm->run()
+#2 /home/gckm/Project/logistic-master/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionSignup()
+#3 /home/gckm/Project/logistic-master/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#4 /home/gckm/Project/logistic-master/yii/framework/web/CController.php(286): SiteController->runAction()
+#5 /home/gckm/Project/logistic-master/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#6 /home/gckm/Project/logistic-master/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#7 /home/gckm/Project/logistic-master/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /home/gckm/Project/logistic-master/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /home/gckm/Project/logistic-master/index.php(18): CWebApplication->run()
+REQUEST_URI=/site/signup
+in /home/gckm/Project/logistic-master/protected/components/form/SignupForm.php (77)
+in /home/gckm/Project/logistic-master/protected/extensions/Son/html/SForm.php (89)
+in /home/gckm/Project/logistic-master/protected/extensions/Son/html/SForm.php (77)
+2019/03/09 15:48:32 [error] [php] preg_match(): No ending delimiter '/' found (/home/gckm/Project/logistic-master/protected/components/form/SignupForm.php:77)
+Stack trace:
+#0 /home/gckm/Project/logistic-master/protected/extensions/Son/html/SForm.php(77): SignupForm->handle()
+#1 /home/gckm/Project/logistic-master/protected/controllers/SiteController.php(32): SignupForm->run()
+#2 /home/gckm/Project/logistic-master/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionSignup()
+#3 /home/gckm/Project/logistic-master/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#4 /home/gckm/Project/logistic-master/yii/framework/web/CController.php(286): SiteController->runAction()
+#5 /home/gckm/Project/logistic-master/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#6 /home/gckm/Project/logistic-master/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#7 /home/gckm/Project/logistic-master/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /home/gckm/Project/logistic-master/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /home/gckm/Project/logistic-master/index.php(18): CWebApplication->run()
+REQUEST_URI=/site/signup
+in /home/gckm/Project/logistic-master/protected/components/form/SignupForm.php (77)
+in /home/gckm/Project/logistic-master/protected/extensions/Son/html/SForm.php (89)
+in /home/gckm/Project/logistic-master/protected/extensions/Son/html/SForm.php (77)
+2019/03/09 15:50:32 [error] [php] preg_match(): No ending delimiter '/' found (/home/gckm/Project/logistic-master/protected/components/form/SignupForm.php:77)
+Stack trace:
+#0 /home/gckm/Project/logistic-master/protected/extensions/Son/html/SForm.php(77): SignupForm->handle()
+#1 /home/gckm/Project/logistic-master/protected/controllers/SiteController.php(32): SignupForm->run()
+#2 /home/gckm/Project/logistic-master/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionSignup()
+#3 /home/gckm/Project/logistic-master/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#4 /home/gckm/Project/logistic-master/yii/framework/web/CController.php(286): SiteController->runAction()
+#5 /home/gckm/Project/logistic-master/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#6 /home/gckm/Project/logistic-master/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#7 /home/gckm/Project/logistic-master/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /home/gckm/Project/logistic-master/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /home/gckm/Project/logistic-master/index.php(18): CWebApplication->run()
+REQUEST_URI=/site/signup
+in /home/gckm/Project/logistic-master/protected/components/form/SignupForm.php (77)
+in /home/gckm/Project/logistic-master/protected/extensions/Son/html/SForm.php (89)
+in /home/gckm/Project/logistic-master/protected/extensions/Son/html/SForm.php (77)
+2019/03/09 15:50:42 [error] [php] preg_match(): No ending delimiter '/' found (/home/gckm/Project/logistic-master/protected/components/form/SignupForm.php:77)
+Stack trace:
+#0 /home/gckm/Project/logistic-master/protected/extensions/Son/html/SForm.php(77): SignupForm->handle()
+#1 /home/gckm/Project/logistic-master/protected/controllers/SiteController.php(32): SignupForm->run()
+#2 /home/gckm/Project/logistic-master/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionSignup()
+#3 /home/gckm/Project/logistic-master/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#4 /home/gckm/Project/logistic-master/yii/framework/web/CController.php(286): SiteController->runAction()
+#5 /home/gckm/Project/logistic-master/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#6 /home/gckm/Project/logistic-master/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#7 /home/gckm/Project/logistic-master/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /home/gckm/Project/logistic-master/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /home/gckm/Project/logistic-master/index.php(18): CWebApplication->run()
+REQUEST_URI=/site/signup
+in /home/gckm/Project/logistic-master/protected/components/form/SignupForm.php (77)
+in /home/gckm/Project/logistic-master/protected/extensions/Son/html/SForm.php (89)
+in /home/gckm/Project/logistic-master/protected/extensions/Son/html/SForm.php (77)
+2019/03/09 15:50:53 [error] [php] preg_match(): No ending delimiter '/' found (/home/gckm/Project/logistic-master/protected/components/form/SignupForm.php:77)
+Stack trace:
+#0 /home/gckm/Project/logistic-master/protected/extensions/Son/html/SForm.php(77): SignupForm->handle()
+#1 /home/gckm/Project/logistic-master/protected/controllers/SiteController.php(32): SignupForm->run()
+#2 /home/gckm/Project/logistic-master/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionSignup()
+#3 /home/gckm/Project/logistic-master/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#4 /home/gckm/Project/logistic-master/yii/framework/web/CController.php(286): SiteController->runAction()
+#5 /home/gckm/Project/logistic-master/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#6 /home/gckm/Project/logistic-master/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#7 /home/gckm/Project/logistic-master/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /home/gckm/Project/logistic-master/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /home/gckm/Project/logistic-master/index.php(18): CWebApplication->run()
+REQUEST_URI=/site/signup
+in /home/gckm/Project/logistic-master/protected/components/form/SignupForm.php (77)
+in /home/gckm/Project/logistic-master/protected/extensions/Son/html/SForm.php (89)
+in /home/gckm/Project/logistic-master/protected/extensions/Son/html/SForm.php (77)
+2019/03/09 15:51:06 [error] [php] preg_match(): No ending delimiter '/' found (/home/gckm/Project/logistic-master/protected/components/form/SignupForm.php:77)
+Stack trace:
+#0 /home/gckm/Project/logistic-master/protected/extensions/Son/html/SForm.php(77): SignupForm->handle()
+#1 /home/gckm/Project/logistic-master/protected/controllers/SiteController.php(32): SignupForm->run()
+#2 /home/gckm/Project/logistic-master/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionSignup()
+#3 /home/gckm/Project/logistic-master/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#4 /home/gckm/Project/logistic-master/yii/framework/web/CController.php(286): SiteController->runAction()
+#5 /home/gckm/Project/logistic-master/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#6 /home/gckm/Project/logistic-master/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#7 /home/gckm/Project/logistic-master/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /home/gckm/Project/logistic-master/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /home/gckm/Project/logistic-master/index.php(18): CWebApplication->run()
+REQUEST_URI=/site/signup
+in /home/gckm/Project/logistic-master/protected/components/form/SignupForm.php (77)
+in /home/gckm/Project/logistic-master/protected/extensions/Son/html/SForm.php (89)
+in /home/gckm/Project/logistic-master/protected/extensions/Son/html/SForm.php (77)
+2019/03/09 15:52:08 [error] [php] preg_match(): No ending delimiter '/' found (/home/gckm/Project/logistic-master/protected/components/form/SignupForm.php:77)
+Stack trace:
+#0 /home/gckm/Project/logistic-master/protected/extensions/Son/html/SForm.php(77): SignupForm->handle()
+#1 /home/gckm/Project/logistic-master/protected/controllers/SiteController.php(32): SignupForm->run()
+#2 /home/gckm/Project/logistic-master/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionSignup()
+#3 /home/gckm/Project/logistic-master/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#4 /home/gckm/Project/logistic-master/yii/framework/web/CController.php(286): SiteController->runAction()
+#5 /home/gckm/Project/logistic-master/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#6 /home/gckm/Project/logistic-master/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#7 /home/gckm/Project/logistic-master/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /home/gckm/Project/logistic-master/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /home/gckm/Project/logistic-master/index.php(18): CWebApplication->run()
+REQUEST_URI=/site/signup
+in /home/gckm/Project/logistic-master/protected/components/form/SignupForm.php (77)
+in /home/gckm/Project/logistic-master/protected/extensions/Son/html/SForm.php (89)
+in /home/gckm/Project/logistic-master/protected/extensions/Son/html/SForm.php (77)
+2019/03/09 15:52:19 [error] [php] preg_match(): No ending delimiter '/' found (/home/gckm/Project/logistic-master/protected/components/form/SignupForm.php:77)
+Stack trace:
+#0 /home/gckm/Project/logistic-master/protected/extensions/Son/html/SForm.php(77): SignupForm->handle()
+#1 /home/gckm/Project/logistic-master/protected/controllers/SiteController.php(32): SignupForm->run()
+#2 /home/gckm/Project/logistic-master/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionSignup()
+#3 /home/gckm/Project/logistic-master/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#4 /home/gckm/Project/logistic-master/yii/framework/web/CController.php(286): SiteController->runAction()
+#5 /home/gckm/Project/logistic-master/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#6 /home/gckm/Project/logistic-master/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#7 /home/gckm/Project/logistic-master/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /home/gckm/Project/logistic-master/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /home/gckm/Project/logistic-master/index.php(18): CWebApplication->run()
+REQUEST_URI=/site/signup
+in /home/gckm/Project/logistic-master/protected/components/form/SignupForm.php (77)
+in /home/gckm/Project/logistic-master/protected/extensions/Son/html/SForm.php (89)
+in /home/gckm/Project/logistic-master/protected/extensions/Son/html/SForm.php (77)
+2019/03/09 15:52:34 [error] [php] preg_match(): No ending delimiter '/' found (/home/gckm/Project/logistic-master/protected/components/form/SignupForm.php:77)
+Stack trace:
+#0 /home/gckm/Project/logistic-master/protected/extensions/Son/html/SForm.php(77): SignupForm->handle()
+#1 /home/gckm/Project/logistic-master/protected/controllers/SiteController.php(32): SignupForm->run()
+#2 /home/gckm/Project/logistic-master/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionSignup()
+#3 /home/gckm/Project/logistic-master/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#4 /home/gckm/Project/logistic-master/yii/framework/web/CController.php(286): SiteController->runAction()
+#5 /home/gckm/Project/logistic-master/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#6 /home/gckm/Project/logistic-master/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#7 /home/gckm/Project/logistic-master/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /home/gckm/Project/logistic-master/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /home/gckm/Project/logistic-master/index.php(18): CWebApplication->run()
+REQUEST_URI=/site/signup
+in /home/gckm/Project/logistic-master/protected/components/form/SignupForm.php (77)
+in /home/gckm/Project/logistic-master/protected/extensions/Son/html/SForm.php (89)
+in /home/gckm/Project/logistic-master/protected/extensions/Son/html/SForm.php (77)
+2019/03/09 15:56:31 [error] [php] preg_match(): No ending delimiter '/' found (/home/gckm/Project/logistic-master/protected/components/form/SignupForm.php:77)
+Stack trace:
+#0 /home/gckm/Project/logistic-master/protected/extensions/Son/html/SForm.php(77): SignupForm->handle()
+#1 /home/gckm/Project/logistic-master/protected/controllers/SiteController.php(32): SignupForm->run()
+#2 /home/gckm/Project/logistic-master/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionSignup()
+#3 /home/gckm/Project/logistic-master/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#4 /home/gckm/Project/logistic-master/yii/framework/web/CController.php(286): SiteController->runAction()
+#5 /home/gckm/Project/logistic-master/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#6 /home/gckm/Project/logistic-master/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#7 /home/gckm/Project/logistic-master/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /home/gckm/Project/logistic-master/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /home/gckm/Project/logistic-master/index.php(18): CWebApplication->run()
+REQUEST_URI=/site/signup
+in /home/gckm/Project/logistic-master/protected/components/form/SignupForm.php (77)
+in /home/gckm/Project/logistic-master/protected/extensions/Son/html/SForm.php (89)
+in /home/gckm/Project/logistic-master/protected/extensions/Son/html/SForm.php (77)
+2019/03/09 15:57:08 [error] [php] preg_match(): No ending delimiter '/' found (/home/gckm/Project/logistic-master/protected/components/form/SignupForm.php:77)
+Stack trace:
+#0 /home/gckm/Project/logistic-master/protected/extensions/Son/html/SForm.php(77): SignupForm->handle()
+#1 /home/gckm/Project/logistic-master/protected/controllers/SiteController.php(32): SignupForm->run()
+#2 /home/gckm/Project/logistic-master/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionSignup()
+#3 /home/gckm/Project/logistic-master/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#4 /home/gckm/Project/logistic-master/yii/framework/web/CController.php(286): SiteController->runAction()
+#5 /home/gckm/Project/logistic-master/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#6 /home/gckm/Project/logistic-master/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#7 /home/gckm/Project/logistic-master/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /home/gckm/Project/logistic-master/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /home/gckm/Project/logistic-master/index.php(18): CWebApplication->run()
+REQUEST_URI=/site/signup
+in /home/gckm/Project/logistic-master/protected/components/form/SignupForm.php (77)
+in /home/gckm/Project/logistic-master/protected/extensions/Son/html/SForm.php (89)
+in /home/gckm/Project/logistic-master/protected/extensions/Son/html/SForm.php (77)
+2019/03/09 15:57:46 [error] [php] preg_match(): No ending delimiter '/' found (/home/gckm/Project/logistic-master/protected/components/form/SignupForm.php:77)
+Stack trace:
+#0 /home/gckm/Project/logistic-master/protected/extensions/Son/html/SForm.php(77): SignupForm->handle()
+#1 /home/gckm/Project/logistic-master/protected/controllers/SiteController.php(32): SignupForm->run()
+#2 /home/gckm/Project/logistic-master/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionSignup()
+#3 /home/gckm/Project/logistic-master/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#4 /home/gckm/Project/logistic-master/yii/framework/web/CController.php(286): SiteController->runAction()
+#5 /home/gckm/Project/logistic-master/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#6 /home/gckm/Project/logistic-master/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#7 /home/gckm/Project/logistic-master/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /home/gckm/Project/logistic-master/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /home/gckm/Project/logistic-master/index.php(18): CWebApplication->run()
+REQUEST_URI=/site/signup
+in /home/gckm/Project/logistic-master/protected/components/form/SignupForm.php (77)
+in /home/gckm/Project/logistic-master/protected/extensions/Son/html/SForm.php (89)
+in /home/gckm/Project/logistic-master/protected/extensions/Son/html/SForm.php (77)
+2019/03/09 15:58:14 [error] [php] preg_match(): No ending delimiter '/' found (/home/gckm/Project/logistic-master/protected/components/form/SignupForm.php:77)
+Stack trace:
+#0 /home/gckm/Project/logistic-master/protected/extensions/Son/html/SForm.php(77): SignupForm->handle()
+#1 /home/gckm/Project/logistic-master/protected/controllers/SiteController.php(32): SignupForm->run()
+#2 /home/gckm/Project/logistic-master/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionSignup()
+#3 /home/gckm/Project/logistic-master/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#4 /home/gckm/Project/logistic-master/yii/framework/web/CController.php(286): SiteController->runAction()
+#5 /home/gckm/Project/logistic-master/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#6 /home/gckm/Project/logistic-master/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#7 /home/gckm/Project/logistic-master/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /home/gckm/Project/logistic-master/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /home/gckm/Project/logistic-master/index.php(18): CWebApplication->run()
+REQUEST_URI=/site/signup
+in /home/gckm/Project/logistic-master/protected/components/form/SignupForm.php (77)
+in /home/gckm/Project/logistic-master/protected/extensions/Son/html/SForm.php (89)
+in /home/gckm/Project/logistic-master/protected/extensions/Son/html/SForm.php (77)
+2019/03/09 16:07:21 [error] [php] preg_match(): No ending delimiter '/' found (/home/gckm/Project/logistic-master/protected/components/form/SignupForm.php:77)
+Stack trace:
+#0 /home/gckm/Project/logistic-master/protected/extensions/Son/html/SForm.php(77): SignupForm->handle()
+#1 /home/gckm/Project/logistic-master/protected/controllers/SiteController.php(32): SignupForm->run()
+#2 /home/gckm/Project/logistic-master/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionSignup()
+#3 /home/gckm/Project/logistic-master/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#4 /home/gckm/Project/logistic-master/yii/framework/web/CController.php(286): SiteController->runAction()
+#5 /home/gckm/Project/logistic-master/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#6 /home/gckm/Project/logistic-master/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#7 /home/gckm/Project/logistic-master/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /home/gckm/Project/logistic-master/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /home/gckm/Project/logistic-master/index.php(18): CWebApplication->run()
+REQUEST_URI=/site/signup
+in /home/gckm/Project/logistic-master/protected/components/form/SignupForm.php (77)
+in /home/gckm/Project/logistic-master/protected/extensions/Son/html/SForm.php (89)
+in /home/gckm/Project/logistic-master/protected/extensions/Son/html/SForm.php (77)
+2019/03/09 16:08:46 [error] [php] preg_match(): No ending delimiter '/' found (/home/gckm/Project/logistic-master/protected/components/form/SignupForm.php:77)
+Stack trace:
+#0 /home/gckm/Project/logistic-master/protected/extensions/Son/html/SForm.php(77): SignupForm->handle()
+#1 /home/gckm/Project/logistic-master/protected/controllers/SiteController.php(32): SignupForm->run()
+#2 /home/gckm/Project/logistic-master/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionSignup()
+#3 /home/gckm/Project/logistic-master/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#4 /home/gckm/Project/logistic-master/yii/framework/web/CController.php(286): SiteController->runAction()
+#5 /home/gckm/Project/logistic-master/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#6 /home/gckm/Project/logistic-master/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#7 /home/gckm/Project/logistic-master/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /home/gckm/Project/logistic-master/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /home/gckm/Project/logistic-master/index.php(18): CWebApplication->run()
+REQUEST_URI=/site/signup
+in /home/gckm/Project/logistic-master/protected/components/form/SignupForm.php (77)
+in /home/gckm/Project/logistic-master/protected/extensions/Son/html/SForm.php (89)
+in /home/gckm/Project/logistic-master/protected/extensions/Son/html/SForm.php (77)

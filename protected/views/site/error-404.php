@@ -1,5 +1,5 @@
 <div class="page404 text-center">
-    <img src="/img/404.png" class="img-404">
+    <img src="/img/bomman.gif" class="img-404">
     <h4 class="text-uppercase" style="margin-top: 40px;">Oh! Xin lỗi bạn</h4>
     <h5 class="text-uppercase">Trang bạn yêu cầu không tồn tại</h5>
     <form class="form-inline mg-t20" action="<?php echo $this->createUrl("/home/search") ?>">

@@ -810,3 +810,30 @@ Stack trace:
 REQUEST_URI=/orderhip.com/
 HTTP_REFERER=http://localhost/
 ---
+2019/03/09 16:56:26 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[HY000] [1049] Unknown database 'admin_admin'' in /home/slowak/code/logistic/yii/framework/db/CDbConnection.php:382
+Stack trace:
+#0 /home/slowak/code/logistic/yii/framework/db/CDbConnection.php(330): CDbConnection->open()
+#1 /home/slowak/code/logistic/yii/framework/db/CDbConnection.php(308): CDbConnection->setActive(true)
+#2 /home/slowak/code/logistic/yii/framework/base/CModule.php(387): CDbConnection->init()
+#3 /home/slowak/code/logistic/yii/framework/base/CApplication.php(450): CModule->getComponent('db')
+#4 /home/slowak/code/logistic/yii/framework/db/ar/CActiveRecord.php(634): CApplication->getDb()
+#5 /home/slowak/code/logistic/yii/framework/db/ar/CActiveRecord.php(2361): CActiveRecord->getDbConnection()
+#6 /home/slowak/code/logistic/yii/framework/db/ar/CActiveRecord.php(411): CActiveRecordMetaData->__construct(Object(User))
+#7 /home/slowak/code/logistic/yii/framework/db/ar/CActiveRecord.php(138): CActiveRecord->getMetaData()
+#8 /home/slowak/code/logistic/protected/extensions/Son/models/SModel.php(90): CActiveRecord->__get('tableSchema')
+#9 /home/slowak/code/logistic/protected/extensions/Son/models/SModel.php(797): SModel->__get('tableSchema')
+#10 /home/slowak/code/logistic/protected/extensions/Son/components/SWebUser.php(19): SModel->findByPk(NULL, Array)
+#11 /home/slowak/code/logistic/protected/extensions/Son/helpers/ArrayHelper.php(5): SWebUser->{closure}()
+#12 /home/slowak/code/logistic/protected/extensions/Son/helpers/ArrayHelper.php(22): ArrayHelper::handleDefaultValue(Array, 'User', Object(Closure), true)
+#13 /home/slowak/code/logistic/protected/extensions/Son/components/SWebUser.php(20): ArrayHelper::get(Array, 'User', Object(Closure), true)
+#14 /home/slowak/code/logistic/protected/extensions/Son/components/SWebUser.php(36): SWebUser->getModel('User', Array)
+#15 /home/slowak/code/logistic/protected/components/Controller.php(14): SWebUser->getUser()
+#16 /home/slowak/code/logistic/protected/components/FrontPageBaseController.php(8): Controller->getUser()
+#17 /home/slowak/code/logistic/protected/controllers/HomeController.php(14): FrontPageBaseController->init()
+#18 /home/slowak/code/logistic/yii/framework/web/CWebApplication.php(281): HomeController->init()
+#19 /home/slowak/code/logistic/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#20 /home/slowak/code/logistic/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#21 /home/slowak/code/logistic/index.php(18): CApplication->run()
+#22 {main}
+REQUEST_URI=/
+---

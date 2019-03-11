@@ -12,6 +12,36 @@
 		width: 500px !important;
 		height: 300px !important;
 	}
+	#receivers-container {
+		padding: 0px 20px;
+		margin-top: 10px;
+	}
+	#receivers {
+
+	}
+	.slick-next:before,.slick-prev:before {
+		color: blue;
+	}
+	.slider-item {
+		padding: 10px;
+		text-align: center;
+	}
+	.slider-item > * {
+		margin-bottom: 3px;
+	}
+	.slider-item img {
+		width: 100px;
+		margin: 0px auto;
+	}
+	.slick-center .slider-item {
+		border: 3px solid #e67e22;
+	}
+	.slider-name {
+		font-weight: bold;
+	}
+	.slider-phone {
+		font-weight: bold;
+	}
 </style>
 
 <?php $this->renderPartial("application.views.home.subviews.search") ?>
@@ -29,15 +59,6 @@
 					<div id="slider-1-caption1" class="nivo-html-caption nivo-caption">
 						<div class="timethai" style=" position:absolute; bottom:0; left:0; background-color:rgba(224, 53, 80, 0.6); height:3px; -webkit-animation: myfirst 10000ms ease-in-out; -moz-animation: myfirst 10000ms ease-in-out; -ms-animation: myfirst 10000ms ease-in-out; animation: myfirst 10000ms ease-in-out; ">
 						</div>
-						<!--<div class="banner-content slider-1 hidden-xs">
-							<div class="text-content">
-								<h1 class="title1"><span>collections</span></h1>
-								<h2 class="title2"><span>2015 new design</span></h2>
-								<div class="banner-readmore">
-									<a href="#" title="Read more">Read more</a>
-								</div>
-							</div>
-						</div>-->
 					</div>
 				</div>
 			</div>
@@ -49,13 +70,6 @@
 								<a href="/page_5_order-online.html">
 									<img src="/orderhip.com/img/slider/slider-3.jpg" alt="">
 								</a>
-								<!--<div class="banner-text">
-									<h3>SHORT DUNGAREES</h3>
-									<p>
-										Nam libero tempore, cum soluta nobis est eligendi optio cumque omnis voluptas assumenda est, omnis dolor repellendus.
-									</p>
-									<a href="#">View all products</a>
-								</div>-->
 							</div>
 						</div>
 						<div class="col-md-6 col-sm-6">
@@ -63,13 +77,6 @@
 								<a href="/page_6_ky-gui-hang.html">
 									<img src="/orderhip.com/img/slider/slider-2.jpg" alt="">
 								</a>
-								<!--<div class="banner-text">
-									<h3>SHORT DUNGAREES</h3>
-									<p>
-										Nam libero tempore, cum soluta nobis est eligendi optio cumque omnis voluptas assumenda est, omnis dolor repellendus.
-									</p>
-									<a href="#">View all products</a>
-								</div>-->
 							</div>
 						</div>
 					</div>
@@ -79,13 +86,6 @@
 								<a href="/page_7_chuyen-hang-noi-dia.html">
 									<img src="/orderhip.com/img/slider/slider-1.jpg" alt="">
 								</a>
-								<!--<div class="banner-text">
-									<h3>SHORT DUNGAREES</h3>
-									<p>
-										Nam libero tempore, cum soluta nobis est eligendi optio cumque omnis voluptas assumenda est, omnis dolor repellendus.
-									</p>
-									<a href="#">View all products</a>
-								</div>-->
 							</div>
 						</div>
 						<div class="col-md-6 col-sm-6">
@@ -93,13 +93,6 @@
 								<a href="#">
 									<img src="/orderhip.com/img/slider/slider-6.jpg" alt="">
 								</a>
-								<!--<div class="banner-text">
-									<h3>SHORT DUNGAREES</h3>
-									<p>
-										Nam libero tempore, cum soluta nobis est eligendi optio cumque omnis voluptas assumenda est, omnis dolor repellendus.
-									</p>
-									<a href="#">View all products</a>
-								</div>-->
 							</div>
 						</div>
 					</div>
@@ -145,7 +138,7 @@
 				<div class="item-team text-center">
 					<div class="team-info">
 						<div class="team-img">
-							<img width="250" height="250" alt="team1" class="img-responsive" src="/img/banner/vendors/taobao.gif">
+							<img width="250" height="250" alt="team1" class="img-responsive" src="/orderhip.com/img/banner/vendors/taobao.gif">
 							<div class="mask">
 								<div class="mask-inner">
 									<a href="http://taobao.com" target="_blank"><i class="fa fa-link"></i></a>
@@ -161,7 +154,7 @@
 				<div class="item-team text-center">
 					<div class="team-info">
 						<div class="team-img">
-							<img width="250" height="250" alt="team2" class="img-responsive" src="/img/banner/vendors/1688.jpg">
+							<img width="250" height="250" alt="team2" class="img-responsive" src="/orderhip.com/img/banner/vendors/1688.jpg">
 							<div class="mask">
 								<div class="mask-inner">
 									<a href="http://1688.com" target="_blank"><i class="fa fa-link"></i></a>
@@ -177,7 +170,7 @@
 				<div class="item-team text-center">
 					<div class="team-info">
 						<div class="team-img">
-							<img width="250" height="250" alt="team3" class="img-responsive" src="/img/banner/vendors/tmall.png">
+							<img width="250" height="250" alt="team3" class="img-responsive" src="/orderhip.com/img/banner/vendors/tmall.png">
 							<div class="mask">
 								<div class="mask-inner">
 									<a href="http://tmall.com" target="_blank"><i class="fa fa-link"></i></a>
@@ -193,7 +186,7 @@
 				<div class="item-team text-center">
 					<div class="team-info">
 						<div class="team-img">
-							<img width="250" height="250" alt="team4" class="img-responsive" src="/img/banner/vendors/other.jpg">
+							<img width="250" height="250" alt="team4" class="img-responsive" src="/orderhip.com/img/banner/vendors/other.jpg">
 							<div class="mask">
 								<div class="mask-inner">
 									<a href="#"><i class="fa fa-link"></i></a>
@@ -277,40 +270,6 @@
 		</div>
 	</div>
 </div>
-
-<style>
-	#receivers-container {
-		padding: 0px 20px;
-		margin-top: 10px;
-	}
-	#receivers {
-
-	}
-	.slick-next:before,.slick-prev:before {
-		color: blue;
-	}
-	.slider-item {
-		padding: 10px;
-		text-align: center;
-	}
-	.slider-item > * {
-		margin-bottom: 3px;
-	}
-	.slider-item img {
-		width: 100px;
-		margin: 0px auto;
-	}
-	.slick-center .slider-item {
-		border: 3px solid #e67e22;
-	}
-	.slider-name {
-		font-weight: bold;
-	}
-	.slider-phone {
-		font-weight: bold;
-	}
-</style>
-
 <?php if(Yii::app()->user->isGuest): ?>
 	<?php
 		$criteria = new CDbCriteria();

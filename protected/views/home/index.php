@@ -23,8 +23,8 @@
 			<div class="col-md-6 col-sm-6">
 				<div class="preview-2">
 					<div id="nivoslider" class="slides">
-						<a href="#"><img src="/img/slider/slider-4.jpg" alt="" title="#slider-1-caption1"/></a>
-						<a href="#"><img src="/img/slider/slider-5.jpg" alt="" title="#slider-1-caption1"/></a>
+						<a href="#"><img src="/orderhip.com/img/slider/slider-4.jpg" alt="" title="#slider-1-caption1"/></a>
+						<a href="#"><img src="/orderhip.com/img/slider/slider-5.jpg" alt="" title="#slider-1-caption1"/></a>
 					</div>
 					<div id="slider-1-caption1" class="nivo-html-caption nivo-caption">
 						<div class="timethai" style=" position:absolute; bottom:0; left:0; background-color:rgba(224, 53, 80, 0.6); height:3px; -webkit-animation: myfirst 10000ms ease-in-out; -moz-animation: myfirst 10000ms ease-in-out; -ms-animation: myfirst 10000ms ease-in-out; animation: myfirst 10000ms ease-in-out; ">
@@ -47,7 +47,7 @@
 						<div class="col-md-6 col-sm-6">
 							<div class="banner-container">
 								<a href="/page_5_order-online.html">
-									<img src="/img/slider/slider-3.jpg" alt="">
+									<img src="/orderhip.com/img/slider/slider-3.jpg" alt="">
 								</a>
 								<!--<div class="banner-text">
 									<h3>SHORT DUNGAREES</h3>
@@ -61,7 +61,7 @@
 						<div class="col-md-6 col-sm-6">
 							<div class="banner-container">
 								<a href="/page_6_ky-gui-hang.html">
-									<img src="/img/slider/slider-2.jpg" alt="">
+									<img src="/orderhip.com/img/slider/slider-2.jpg" alt="">
 								</a>
 								<!--<div class="banner-text">
 									<h3>SHORT DUNGAREES</h3>
@@ -77,7 +77,7 @@
 						<div class="col-md-6 col-sm-6">
 							<div class="banner-container">
 								<a href="/page_7_chuyen-hang-noi-dia.html">
-									<img src="/img/slider/slider-1.jpg" alt="">
+									<img src="/orderhip.com/img/slider/slider-1.jpg" alt="">
 								</a>
 								<!--<div class="banner-text">
 									<h3>SHORT DUNGAREES</h3>
@@ -91,7 +91,7 @@
 						<div class="col-md-6 col-sm-6">
 							<div class="banner-container">
 								<a href="#">
-									<img src="/img/slider/slider-6.jpg" alt="">
+									<img src="/orderhip.com/img/slider/slider-6.jpg" alt="">
 								</a>
 								<!--<div class="banner-text">
 									<h3>SHORT DUNGAREES</h3>

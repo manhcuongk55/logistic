@@ -63,5 +63,18 @@ app/config/database.php
  
 #Yii Framework
 src/protected/config/main-local.php
- 
+assets/*
+!assets/.gitignore
+protected/runtime/*
+!protected/runtime/.gitignore
+protected/data/*.db
+themes/classic/views/ 
 /.htaccess
+
+_cache_data/
+
+_cache_file_dependency/
+
+protected/components/form/
+
+protected/runtime/

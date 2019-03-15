@@ -13,8 +13,4 @@ _cache_data/
 
 _cache_file_dependency/
 
-protected/components/form/
-
-protected/runtime/
-
 *.cache

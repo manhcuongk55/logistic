@@ -14,3 +14,5 @@ _cache_data/
 _cache_file_dependency/
 
 *.cache
+
+\.vscode/

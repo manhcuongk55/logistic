@@ -87,6 +87,7 @@ class SignupForm extends SForm {
 					$this->addError("password",$this->l("Mật khẩu không trùng!"));
 				 } else 
 				//check phone number is a correct vietnamese phone number
+				//XuanCuong 12/3 
 				if(!preg_match("/(09|03)+([0-9]{8})\b/",$this->phone)){
 					$this->setError(true);
 					$this->addError("phone",$this->l("Số điện thoại không hợp lệ"));
@@ -98,6 +99,9 @@ class SignupForm extends SForm {
 					$user->email = $this->email;
 					$user->phone = $this->phone;
 					$user->address = $this->address;
+					//add birthday property to user object
+					//xuancuong 16/3
+					$user->birthday = $this->birthday;
 					$result = $user->save();
 					$this->setError(!$result);
 					if(!$result){

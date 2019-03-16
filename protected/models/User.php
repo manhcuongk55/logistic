@@ -11,7 +11,6 @@ class User extends BaseUser
 	protected $passwordField = "password";
 	protected $preventDeleteAttr = "active";
 	protected $deleteTogetherRelations = array();
-
 	public function relations(){
 		return array(
 			"collaborator_group" => array(
@@ -207,4 +206,7 @@ class User extends BaseUser
 		}
 		return true;
 	}
+	//add birthday property 
+	// xuancuong 16/3
+	//protected string $birthday;
 }

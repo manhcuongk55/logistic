@@ -26,6 +26,13 @@
 			"placeholder" => $form->l("Ngày sinh")
 		)) ?>
 	</div>
+	<!-- add dropdown list to select warehouse -->
+	<!-- xuancuong 20/3 -->
+	<div class="form-group">
+		<?php echo CHtml::dropDownList("warehouse","warehouse",
+				array("HN"=>"Ha Noi", "HCM"=>"TP Ho Chi Minh"));
+		?>
+	</div>
 	<div class="form-group">
 		<?php $form->inputField("address",array(
 			"class" => "form-control input-sm",

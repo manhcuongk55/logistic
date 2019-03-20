@@ -206,7 +206,4 @@ class User extends BaseUser
 		}
 		return true;
 	}
-	//add birthday property 
-	// xuancuong 16/3
-	//protected string $birthday;
 }

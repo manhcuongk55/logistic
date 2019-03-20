@@ -37,6 +37,15 @@ class SignupForm extends SForm {
 					)
 				)
 				,
+				//add selected warehouse
+				//xuancuong 20/3
+				"warehouse"=>array(
+					"type" => "text",
+					"label" => l("forms/signup_form","Nhà kho"),
+					"rules" => array(
+						array("required")
+					)
+				),
 				"email" => array(
 					"type" => "text",
 					"label" => l("forms/signup_form","Email"),
@@ -102,6 +111,9 @@ class SignupForm extends SForm {
 					//add birthday property to user object
 					//xuancuong 16/3
 					$user->birthday = $this->birthday;
+					//add selected warehouse
+					//xuancuong 20/3
+					$user->warehouse = $this->warehouse;
 					$result = $user->save();
 					$this->setError(!$result);
 					if(!$result){

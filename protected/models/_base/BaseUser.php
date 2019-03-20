@@ -32,6 +32,8 @@
  * @property integer $collaborator_id
  * //add property birthday
  * @property string $birthday
+ * //add property warehouse
+ * @property string $warehouse
  */
 abstract class BaseUser extends SModel {
 
@@ -63,7 +65,8 @@ abstract class BaseUser extends SModel {
 			array('address', 'length', 'max'=>200),
 			array('active, is_email_active, email_active_token, google_id, google_token, phone, image, image_thumbnail, facebook_id, facebook_access_token, collaborator_group_id, skype, address, customer_type_id, collaborator_id', 'default', 'setOnEmpty' => true, 'value' => null),
 			array('id, active, created_time, updated_time, name, email, password, is_email_active, email_active_token, google_id, google_token, phone, image, image_thumbnail, facebook_id, facebook_access_token, collaborator_group_id, skype, address, customer_type_id, collaborator_id', 'safe', 'on'=>'search'),
-			array('birthday','required')
+			array('birthday','required'),
+			array('warehouse','required')
 		);
 	}
 
@@ -100,7 +103,8 @@ abstract class BaseUser extends SModel {
 			'address' => Yii::t('app', 'Address'),
 			'customer_type_id' => Yii::t('app', 'Customer Type'),
 			'collaborator_id' => Yii::t('app', 'Collaborator'),
-			'birthday' => Yii::t('app','birthday')
+			'birthday' => Yii::t('app','birthday'),
+			'warehouse' => Yii::t('app','warehouse')
 		);
 	}
 
@@ -129,6 +133,7 @@ abstract class BaseUser extends SModel {
 		$criteria->compare('customer_type_id', $this->customer_type_id);
 		$criteria->compare('collaborator_id', $this->collaborator_id);
 		$criteria->compare('birthday',$this->birthday);
+		$criteria->compare('warehouse',$this->warehouse);
 		return new CActiveDataProvider($this, array(
 			'criteria' => $criteria,
 		));

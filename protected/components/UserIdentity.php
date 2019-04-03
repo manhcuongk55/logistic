@@ -8,9 +8,6 @@ class UserIdentity extends CUserIdentity {
 		$criteria = new CDbCriteria();
 		$criteria->compare("email",$this->username,false);
 		$user = User::model()->find($criteria);
-		if(!$user || !$user->active){
-			return false;
-		}
 		if(!$user->verifyPassword($this->password)){
 			return false;
 		}
@@ -30,6 +27,9 @@ class UserIdentity extends CUserIdentity {
 			if(!$user->is_email_active){
 				return "has_not_active_email";
 			}
+		}
+		if(!$user || !$user->active){
+			return false;
 		}
 		$this->setUser($user);
 		return true;

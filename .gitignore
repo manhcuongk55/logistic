@@ -1,0 +1,24 @@
+
+#Yii Framework
+src/protected/config/main-local.php
+assets/*
+!assets/.gitignore
+protected/runtime/*
+!protected/runtime/.gitkeep
+/fetched_data/**
+!/fetched_data/**/.gitkeep
+protected/data/*.db
+themes/classic/views/ 
+/.htaccess
+
+/_cache_data/**
+!/_cache_data/**
+!.gitignore
+!.gitkeep
+*.bin
+/_cache_file_dependency/
+!/_cache_file_dependency/**
+
+*.cache
+
+\.vscode/

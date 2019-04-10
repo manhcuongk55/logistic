@@ -78,8 +78,13 @@ return array(
 
 		"cache" => array(
 			//'class'=>'system.caching.CFileCache',
-			"class" => "ext.Son.components.FileCache",
-			"cachePath" => "_cache_data"
+
+			// Uncomment before deploying
+			// "class" => "ext.Son.components.FileCache",
+			// "cachePath" => "_cache_data"
+
+			//Comment this
+			"class" => "CDummyCache"
 		),
 		
 		'urlManager' => include(dirname(__FILE__)) . '/url.php',

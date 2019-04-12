@@ -36,7 +36,9 @@
  * @property double $service_price_percentage
  * @property double $extra_price
  * @property double $real_exchange_rate
- *
+ * // for seperate order type into 3 types
+ * //xuancuong 12/4/2019
+ * @property string $order_type
  */
 abstract class BaseOrder extends SModel {
 
@@ -64,6 +66,7 @@ abstract class BaseOrder extends SModel {
 			array('description', 'length', 'max'=>500),
 			array('active, status, total_price, total_weight, is_paid, description, deposit_amount, total_delivery_price, total_real_price, total_real_price_ndt, total_price_ndt, total_delivery_price_ndt, weight_price, service_price, final_price, remaining_amount, exchange_rate, shipping_home_price, total_weight_price, service_price_percentage, extra_price, real_exchange_rate', 'default', 'setOnEmpty' => true, 'value' => null),
 			array('id, active, created_time, updated_time, user_id, status, total_price, total_weight, is_paid, description, deposit_amount, total_delivery_price, total_real_price, total_quantity, total_real_price_ndt, total_price_ndt, total_delivery_price_ndt, weight_price, service_price, final_price, remaining_amount, exchange_rate, shipping_home_price, total_weight_price, service_price_percentage, extra_price, real_exchange_rate', 'safe', 'on'=>'search'),
+			array('order_type','required','on'=>'search') // add rules, xuancuong 12/4/2019
 		);
 	}
 
@@ -106,6 +109,7 @@ abstract class BaseOrder extends SModel {
 			'service_price_percentage' => Yii::t('app', 'Service Price Percentage'),
 			'extra_price' => Yii::t('app', 'Extra Price'),
 			'real_exchange_rate' => Yii::t('app', 'Real Exchange Rate'),
+			'order_type' => Yii::t('app','Order Type')// add attribute label for order_type xuancuong 12/4/2019
 		);
 	}
 
@@ -139,7 +143,7 @@ abstract class BaseOrder extends SModel {
 		$criteria->compare('service_price_percentage', $this->service_price_percentage);
 		$criteria->compare('extra_price', $this->extra_price);
 		$criteria->compare('real_exchange_rate', $this->real_exchange_rate);
-
+		$criteria->compare('order_type',$this->order_type);
 		return new CActiveDataProvider($this, array(
 			'criteria' => $criteria,
 		));

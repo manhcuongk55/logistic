@@ -38,7 +38,7 @@
 	<div class="account-menu">
 		<ul>
 			<li>
-				<a href="<?php echo $this->createUrl("/site/login?callback_url=prev") ?>">
+				<a href="<?php echo $this->createUrl("/site/signup?callback_url=prev") ?>">
 					<?php l_("home","Đăng ký") ?>
 				</a>
 			</li>

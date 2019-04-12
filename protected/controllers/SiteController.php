@@ -34,7 +34,7 @@ class SiteController extends FrontPageBaseController
 			return;
 		}
 		$this->pageTitle = "Đăng ký";
-		$signupForm->renderPage();
+		$this->render("signup_page");
 	}
 
 	public function actionLogin_with_google(){
@@ -324,5 +324,10 @@ class SiteController extends FrontPageBaseController
 
 	public function actionFacebook_login_callback_bt(){
 		$this->actionFacebook_login_callback(Input::get("access_token"));
+	}
+	//tranxuancuong 9/3/2019
+	//create new page to redirect after signup
+	public function actionRedirect_page_after_signup(){
+		$this->render('/site/redirect_page_after_signup');
 	}
 }

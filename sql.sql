@@ -360,7 +360,9 @@ CREATE TABLE `tbl_user` (
   `skype` varchar(50) COLLATE utf32_unicode_ci DEFAULT NULL,
   `address` varchar(200) COLLATE utf32_unicode_ci DEFAULT NULL,
   `customer_type_id` int(11) DEFAULT NULL,
-  `collaborator_id` int(11) DEFAULT NULL
+  `collaborator_id` int(11) DEFAULT NULL,
+  `birthday` varchar(45) COLLATE utf32_unicode_ci DEFAULT NULL,
+  `warehouse` varchar(200) COLLATE utf32_unicode_ci DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf32 COLLATE=utf32_unicode_ci;
 
 -- --------------------------------------------------------

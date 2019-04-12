@@ -390,13 +390,13 @@ input[type=submit]:hover {
                             </button>
                             <button class="btn btn-primary" type="submit">
                                 <span>Cập nhật giỏ hàng</span>
-                            </button>
+                            </button>   
                         </div>
                     </div>
                 </form>
                 <div class="row mg-t15">
                     <div class="col-md-9 italic">
-                        Sau khi hoàn tất việc thêm sản phẩm, bạn chỉ cần click vào nút Gửi đơn hàng và đợi CTV báo giá.<br>
+                        Ssadadsadasdasd tất việc thêm sản phẩm, bạn chỉ cần click vào nút Gửi đơn hàng và đợi CTV báo giá.<br>
                         Mọi thông tin cập nhật về đơn hàng này sẽ được thông báo qua email cũng như trên trang web này
                     </div>
                     <div class="col-md-3 text-right">

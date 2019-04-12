@@ -1,0 +1,894 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"li",
+				"link\tTag"
+			],
+			[
+				"ara",
+				"array"
+			],
+			[
+				"a",
+				"array\t$… = array (…)"
+			],
+			[
+				"ba",
+				"background-color\tproperty"
+			],
+			[
+				"col",
+				"color\tproperty"
+			],
+			[
+				"f",
+				"float\tproperty"
+			],
+			[
+				"tet",
+				"text-decoration\tproperty"
+			],
+			[
+				"c",
+				"class\tAttr"
+			],
+			[
+				"te",
+				"text-align\tproperty"
+			],
+			[
+				"ma",
+				"margin\tproperty"
+			],
+			[
+				"w",
+				"width\tproperty"
+			],
+			[
+				"bac",
+				"background-color\tproperty"
+			],
+			[
+				"di",
+				"div\tTag"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "protected/views/user/create_order.php",
+			"settings":
+			{
+				"buffer_size": 21162,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/xampp/htdocs/yii2-starter-kit/.env.dist",
+			"settings":
+			{
+				"buffer_size": 1669,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/xampp/htdocs/yii2-starter-kit/.evn",
+			"settings":
+			{
+				"buffer_size": 1676,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "Searching 7131 files for \"ghi chú\"\n\nC:\\xampp\\htdocs\\logistic\\dummy\\logistic\\protected\\components\\form\\views\\delivery_order_form.php:\n   20              </div>\n   21              <div class=\"form-group\">\n   22:                 <label>Ghi chú</label>\n   23                  <?php $form->inputField(\"description\",array(\n   24                      \"class\" => \"form-control input-sm\"\n\nC:\\xampp\\htdocs\\logistic\\dummy\\logistic\\protected\\components\\form\\views\\unknown_shop_delivery_order_form.php:\n   26              </div>\n   27              <div class=\"form-group\">\n   28:                 <label>Ghi chú</label>\n   29                  <?php $form->inputField(\"description\",array(\n   30                      \"class\" => \"form-control input-sm\"\n\nC:\\xampp\\htdocs\\logistic\\dummy\\logistic\\protected\\controllers\\collaborator\\includes\\order_extended_actions.php:\n  176              \"extra_description\" => array(\n  177                  \"type\" => \"textarea\",\n  178:                 \"label\" => \"Ghi chú lỗi phát sinh\",\n  179                  \"rules\" => array(\n  180                  )\n\nC:\\xampp\\htdocs\\logistic\\dummy\\logistic\\protected\\messages\\vi\\app.php:\n   58    \"Total Volume\" => \"Số khối\",\n   59    \"Image Url\" => \"Link ảnh\",\n   60:   \"Extra Description\" => \"Ghi chú chi phí phát sinh\"\n   61  );\n   62  \n\nC:\\xampp\\htdocs\\logistic\\dummy\\logistic\\protected\\views\\collaborator\\china_store.php:\n   58                                  </td>\n   59                                  <td>\n   60:                                     Ghi chú\n   61                                  </td>\n   62                                  <td>\n\nC:\\xampp\\htdocs\\logistic\\dummy\\logistic\\protected\\views\\collaborator\\china_store_2.php:\n   58                                  </td>\n   59                                  <td>\n   60:                                     Ghi chú\n   61                                  </td>\n   62                                  <td>\n\nC:\\xampp\\htdocs\\logistic\\dummy\\logistic\\protected\\views\\collaborator\\export.php:\n   51                                  </td>\n   52                                  <td>\n   53:                                     Ghi chú\n   54                                  </td>\n   55                                  <!-- <td>\n\nC:\\xampp\\htdocs\\logistic\\dummy\\logistic\\protected\\views\\collaborator\\reports\\report6.php:\n   36                  <th><b>STT</b></th>\n   37                  <th><b>Mã vận đơn</b></th>\n   38:                 <th><b>Ghi chú</b></th>\n   39                  <th><b>Cân nặng</b></th>\n   40                  <th><b>Số khối</b></th>\n\nC:\\xampp\\htdocs\\logistic\\dummy\\logistic\\protected\\views\\collaborator\\vietnam_store.php:\n   54                                  </td>\n   55                                  <td>\n   56:                                     Ghi chú\n   57                                  </td>\n   58                                  <!-- <td>\n\nC:\\xampp\\htdocs\\logistic\\dummy\\logistic\\protected\\views\\user\\[OLD]order.php:\n  187                  </th>\n  188                  <th>\n  189:                     Ghi chú\n  190                  </th>\n  191                  <th class=\"p-action\">\n\nC:\\xampp\\htdocs\\logistic\\dummy\\logistic\\protected\\views\\user\\create_order.php:\n  226                              <input type=\"text\" class=\"form-control input-sm\" name=\"items[{{$index}}][url]\" ng-model=\"addedItem.url\" placeholder=\"Đường dẫn sản phẩm {{$index+1}}\" />\n  227                              \n  228:                             <textarea class=\"form-control input-sm mg-t5\" rows=\"2\" name=\"items[{{$index}}][description]\" ng-model=\"addedItem.description\" placeholder=\"Ghi chú\"></textarea>\n  229                          </div>\n  230                          <div class=\"col-md-2\">\n  ...\n  309                                      </th>\n  310                                      <th>\n  311:                                         Ghi chú\n  312                                      </th>\n  313                                      <th class=\"p-action\">\n\nC:\\xampp\\htdocs\\logistic\\dummy\\logistic\\protected\\views\\user\\order.php:\n  218                  </th>\n  219                  <th>\n  220:                     Ghi chú (CTV)\n  221                  </th>\n  222              </tr>\n  ...\n  290                  </th>\n  291                  <th>\n  292:                     Ghi chú (CTV)\n  293                  </th>\n  294              </tr>\n  ...\n  329  <?php if($order->extra_description): ?>\n  330  <h3 class=\"bold mg-t20\">\n  331:     Ghi chú lỗi phát sinh\n  332  </h3>\n  333  <div class=\"bold text-danger\"><?php echo $order->extra_description ?></div>\n\n15 matches across 12 files\n",
+			"settings":
+			{
+				"buffer_size": 4623,
+				"line_ending": "Windows",
+				"name": "Find Results",
+				"scratch": true
+			}
+		},
+		{
+			"file": "protected/components/form/views/delivery_order_form.php",
+			"settings":
+			{
+				"buffer_size": 2456,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "protected/controllers/UserController.php",
+			"settings":
+			{
+				"buffer_size": 9375,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "protected/components/form/SignupForm.php",
+			"settings":
+			{
+				"buffer_size": 3601,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "protected/components/menu/UserMenu.php",
+			"settings":
+			{
+				"buffer_size": 4665,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "protected/extensions/Son/html/SMenu.php",
+			"settings":
+			{
+				"buffer_size": 3129,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"brow",
+				"Preferences: Browse Packages"
+			],
+			[
+				"istall",
+				"Package Control: Install Package"
+			],
+			[
+				"istal",
+				"Package Control: Install Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 157.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '6f4c264a24d933ce70df5dedcf1dcaee' + 'ebe013ee18cced0ef93d5f746d80ef60'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/xampp/htdocs/logistic/dummy/logistic",
+		"/C/xampp/htdocs/logistic/dummy/logistic/_cache_data",
+		"/C/xampp/htdocs/logistic/dummy/logistic/img",
+		"/C/xampp/htdocs/logistic/dummy/logistic/protected",
+		"/C/xampp/htdocs/logistic/dummy/logistic/protected/components",
+		"/C/xampp/htdocs/logistic/dummy/logistic/protected/components/form",
+		"/C/xampp/htdocs/logistic/dummy/logistic/protected/components/list",
+		"/C/xampp/htdocs/logistic/dummy/logistic/protected/components/list/views",
+		"/C/xampp/htdocs/logistic/dummy/logistic/protected/components/menu",
+		"/C/xampp/htdocs/logistic/dummy/logistic/protected/components/menu/views",
+		"/C/xampp/htdocs/logistic/dummy/logistic/protected/components/menu/views/include",
+		"/C/xampp/htdocs/logistic/dummy/logistic/protected/components/models",
+		"/C/xampp/htdocs/logistic/dummy/logistic/protected/controllers",
+		"/C/xampp/htdocs/logistic/dummy/logistic/protected/controllers/collaborator",
+		"/C/xampp/htdocs/logistic/dummy/logistic/protected/controllers/collaborator/includes",
+		"/C/xampp/htdocs/logistic/dummy/logistic/protected/data",
+		"/C/xampp/htdocs/logistic/dummy/logistic/protected/extensions",
+		"/C/xampp/htdocs/logistic/dummy/logistic/protected/extensions/Son",
+		"/C/xampp/htdocs/logistic/dummy/logistic/protected/extensions/Son/html",
+		"/C/xampp/htdocs/logistic/dummy/logistic/protected/messages",
+		"/C/xampp/htdocs/logistic/dummy/logistic/protected/messages/vi",
+		"/C/xampp/htdocs/logistic/dummy/logistic/protected/messages/vi/home",
+		"/C/xampp/htdocs/logistic/dummy/logistic/protected/models",
+		"/C/xampp/htdocs/logistic/dummy/logistic/protected/modules",
+		"/C/xampp/htdocs/logistic/dummy/logistic/protected/modules/admin",
+		"/C/xampp/htdocs/logistic/dummy/logistic/protected/views",
+		"/C/xampp/htdocs/logistic/dummy/logistic/protected/views/home",
+		"/C/xampp/htdocs/logistic/dummy/logistic/protected/views/user",
+		"/C/xampp/htdocs/logistic/dummy/logistic/testapp",
+		"/C/xampp/htdocs/logistic/dummy/logistic/themes",
+		"/C/xampp/htdocs/logistic/dummy/logistic/themes/giaodichtrungquoc",
+		"/C/xampp/htdocs/logistic/dummy/logistic/themes/giaodichtrungquoc/assets",
+		"/C/xampp/htdocs/logistic/dummy/logistic/themes/giaodichtrungquoc/assets/extensions",
+		"/C/xampp/htdocs/logistic/dummy/logistic/themes/giaodichtrungquoc/views",
+		"/C/xampp/htdocs/logistic/dummy/logistic/themes/son",
+		"/C/xampp/htdocs/logistic/dummy/logistic/themes/son/assets",
+		"/C/xampp/htdocs/logistic/dummy/logistic/themes/son/assets/extensions",
+		"/C/xampp/htdocs/logistic/dummy/logistic/yii",
+		"/C/xampp/htdocs/logistic/dummy/logistic/yii/framework",
+		"/C/xampp/htdocs/logistic/dummy/logistic/yii/framework/base",
+		"/C/xampp/htdocs/logistic/dummy/logistic/yii/framework/gii",
+		"/C/xampp/htdocs/logistic/dummy/logistic/yii/framework/gii/assets",
+		"/C/xampp/htdocs/logistic/dummy/logistic/yii/framework/gii/assets/js",
+		"/C/xampp/htdocs/logistic/dummy/logistic/yii/framework/gii/views",
+		"/C/xampp/htdocs/logistic/dummy/logistic/yii/framework/gii/views/layouts"
+	],
+	"file_history":
+	[
+		"/C/xampp/htdocs/logistic/dummy/logistic/protected/components/form/views/unknown_shop_delivery_order_form.php",
+		"/C/xampp/htdocs/logistic/dummy/logistic/protected/views/user/b1.css",
+		"/C/xampp/htdocs/logistic/dummy/logistic/protected/views/user/create_order.php",
+		"/C/xampp/htdocs/logistic/dummy/logistic/protected/views/user/create_order.css",
+		"/C/xampp/htdocs/logistic/dummy/logistic/protected/config/assets.php",
+		"/C/xampp/htdocs/logistic/dummy/logistic/protected/config/main.php",
+		"/C/xampp/htdocs/logistic/dummy/logistic/chrome_extensions/js/jquery.js",
+		"/C/xampp/htdocs/logistic/dummy/logistic/yii/framework/gii/views/layouts/main.php",
+		"/C/xampp/htdocs/logistic/dummy/logistic/protected/views/layouts/main.php",
+		"/C/xampp/htdocs/logistic/dummy/logistic/index.php",
+		"/C/xampp/htdocs/logistic/dummy/logistic/protected/config/params.php",
+		"/C/xampp/htdocs/logistic/dummy/logistic/protected/views/user/create_delivery_order.css",
+		"/C/xampp/htdocs/logistic/dummy/logistic/_cache_data/f3b8c86eb301318e4258b1957fc5f8c3.bin",
+		"/C/xampp/htdocs/logistic/dummy/logistic/protected/config/main-local.php",
+		"/C/xampp/htdocs/logistic/dummy/logistic/_cache_data/00ff3fcb8af7921769b15504365ef70d.bin",
+		"/C/xampp/htdocs/logistic/dummy/logistic/_cache_file_dependency/User/global.cache",
+		"/C/xampp/htdocs/logistic/dummy/logistic/protected/controllers/collaborator/create_order.css",
+		"/C/xampp/htdocs/logistic/dummy/logistic/protected/views/collaborator/reports.php",
+		"/C/xampp/htdocs/logistic/dummy/logistic/protected/views/home/index.php",
+		"/C/xampp/htdocs/logistic/dummy/logistic/img/stock/banner/5.jpg",
+		"/C/xampp/htdocs/logistic/dummy/logistic/protected/controllers/HomeController.php",
+		"/C/xampp/htdocs/logistic/dummy/logistic/protected/views/user/test_bs.html",
+		"/C/Users/Toan Tran/Desktop/HTML/test_bootstrap",
+		"/C/xampp/htdocs/logistic/dummy/logistic/protected/views/home/create_order.php",
+		"/C/xampp/htdocs/logistic/dummy/logistic/protected/views/user/order.php",
+		"/C/xampp/htdocs/logistic/dummy/logistic/protected/controllers/collaborator/order_products.php",
+		"/C/xampp/htdocs/logistic/dummy/logistic/protected/controllers/collaborator/orders.php",
+		"/C/Users/Toan Tran/Desktop/advanced/frontend/assets/AppAsset.php",
+		"/C/xampp/htdocs/logistic/dummy/logistic/protected/components/menu/UserMenu.php",
+		"/C/xampp/htdocs/logistic/dummy/logistic/protected/components/menu/views/include/main_submenu.php",
+		"/C/xampp/htdocs/logistic/dummy/logistic/protected/components/menu/MainMenu.php",
+		"/C/xampp/htdocs/logistic/dummy/logistic/protected/views/home/subviews/search.php",
+		"/C/xampp/htdocs/logistic/dummy/logistic/protected/views/home/check_price.php",
+		"/C/xampp/htdocs/logistic/dummy/logistic/protected/views/layouts/subviews/footer/popup_banner.php",
+		"/C/xampp/htdocs/logistic/dummy/logistic/protected/views/home/contact.php",
+		"/C/xampp/htdocs/logistic/dummy/logistic/themes/create_order/assets/create_order.css",
+		"/C/xampp/htdocs/logistic/protected/components/form/SignupForm.php",
+		"/C/xampp/htdocs/logistic/protected/views/user/create_order.php",
+		"/C/xampp/htdocs/logistic/dummy/logistic/protected/config/db.php",
+		"/C/xampp/htdocs/logistic/protected/config/db.php",
+		"/C/xampp/htdocs/logistic/protected/components/menu/UserMenu.php",
+		"/C/xampp/htdocs/logistic/protected/extensions/Son/html/SMenu.php",
+		"/C/xampp/phpMyAdmin/config.inc.php",
+		"/C/xampp/htdocs/logistic/protected/yiic.php",
+		"/C/xampp/htdocs/logistic/protected/url.php",
+		"/C/xampp/htdocs/logistic/protected/config/assets.php",
+		"/C/xampp/phpMyAdmin/config.sample.inc.php",
+		"/C/xampp/htdocs/logistic/protected/views/user/taodonhang.css",
+		"/C/xampp/htdocs/logistic/protected/modules/admin/controllers/admin/orders.php",
+		"/C/xampp/htdocs/logistic/protected/views/home/index.php",
+		"/C/xampp/htdocs/logistic/protected/views/layouts/subviews/header/cart.php",
+		"/C/xampp/htdocs/logistic/protected/views/user/[OLD]order.php",
+		"/C/Users/Toan Tran/Downloads/create_order.php",
+		"/C/xampp/htdocs/logistic/testapp/protected/yiic.php",
+		"/C/xampp/htdocs/logistic/testapp/css/form.css",
+		"/C/xampp/htdocs/logistic/protected/components/AdminWebUser.php",
+		"/C/xampp/htdocs/logistic/_cache_data/1551e1ddde387106c8ca1d2cad085f12.bin",
+		"/C/xampp/htdocs/logistic/protected/views/collaborator/china_store_2.php",
+		"/C/xampp/htdocs/logistic/protected/modules/admin/views/home/index.php",
+		"/C/xampp/htdocs/logistic/index.php",
+		"/C/Users/Toan Tran/Desktop/HTML/tho.php",
+		"/C/Users/Toan Tran/Desktop/HTML/bai1.html",
+		"/C/Users/Toan Tran/Desktop/HTML/bai1",
+		"/C/Users/Toan Tran/Desktop/HTML/1 - HTML Fundamentals Introduction/Demo - using _head.en.srt",
+		"/C/Users/Toan Tran/Desktop/HTML/1 - HTML Fundamentals Introduction/Demo - using doctype.en.srt"
+	],
+	"find":
+	{
+		"height": 28.0
+	},
+	"find_in_files":
+	{
+		"height": 116.0,
+		"where_history":
+		[
+			"C:\\xampp\\htdocs\\logistic\\dummy\\logistic",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"ghi chú",
+			"tạo đơn hàng",
+			"active_orders",
+			"height:",
+			"arow",
+			"learn",
+			"OH! XIN LỖI BẠN\nTRANG BẠN YÊU CẦU KHÔNG TỒN TẠI",
+			"page404",
+			"home",
+			"color-start",
+			"color-contrast",
+			"2e40aa",
+			"p-url",
+			"product-to-cart-option-form",
+			"bootstrap.min.css",
+			"config",
+			"conf",
+			"a-list",
+			"$cs->registerCssFile($baseUrl.'/js/fancybox/jquery.fancybox-1.3.1.css')",
+			"Register",
+			"Profit!",
+			"MỘT SỐ HƯỚNG DẪN",
+			"main",
+			"tạo đơn hàng",
+			"Thêm Sản Phẩm Vào Đơn Hàng Hiện Tại",
+			"SMenu",
+			"Tạo đơn hàng",
+			"style",
+			"stype",
+			"p-name",
+			"$scope",
+			"$scope.addedItems",
+			"getSubmitable",
+			"getSubmitable()",
+			"Đang hoạt động",
+			"MỘT SỐ HƯỚNG DẪN111111111111111",
+			"btn btn-sm btn-primary"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 2,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "protected/views/user/create_order.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 21162,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								19005,
+								19005
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 10107.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/C/xampp/htdocs/yii2-starter-kit/.env.dist",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1669,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								1669
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/C/xampp/htdocs/yii2-starter-kit/.evn",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1676,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								300,
+								300
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4623,
+						"regions":
+						{
+							"match":
+							{
+								"flags": 112,
+								"regions":
+								[
+									[
+										233,
+										240
+									],
+									[
+										590,
+										597
+									],
+									[
+										978,
+										985
+									],
+									[
+										1247,
+										1254
+									],
+									[
+										1511,
+										1518
+									],
+									[
+										1829,
+										1836
+									],
+									[
+										2140,
+										2147
+									],
+									[
+										2456,
+										2463
+									],
+									[
+										2789,
+										2796
+									],
+									[
+										3053,
+										3060
+									],
+									[
+										3613,
+										3620
+									],
+									[
+										3876,
+										3883
+									],
+									[
+										4155,
+										4162
+									],
+									[
+										4313,
+										4320
+									],
+									[
+										4477,
+										4484
+									]
+								],
+								"scope": ""
+							}
+						},
+						"selection":
+						[
+							[
+								3616,
+								3616
+							]
+						],
+						"settings":
+						{
+							"detect_indentation": false,
+							"line_numbers": false,
+							"output_tag": 1,
+							"result_base_dir": "",
+							"result_file_regex": "^([^ \t].*):$",
+							"result_line_regex": "^ +([0-9]+):",
+							"scroll_past_end": true,
+							"syntax": "Packages/Default/Find Results.hidden-tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 1026.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "protected/components/form/views/delivery_order_form.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2456,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								860,
+								860
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "protected/controllers/UserController.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 9375,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1445,
+								1445
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1254.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "protected/components/form/SignupForm.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3601,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2392,
+								2392
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 399.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "protected/components/menu/UserMenu.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4665,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								607,
+								607
+							],
+							[
+								901,
+								901
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "protected/extensions/Son/html/SMenu.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3129,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3009,
+								3009
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 9,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 28.0
+	},
+	"input":
+	{
+		"height": 40.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.xdebug":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "myproject.sublime-project",
+	"replace":
+	{
+		"height": 52.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+		"last_automatic_layout":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"xdebug":
+		{
+			"hide_conflict": false,
+			"restore_index":
+			{
+				"88":
+				{
+					"group": 0,
+					"index": 0
+				}
+			},
+			"restore_layout":
+			{
+				"cells":
+				[
+					[
+						0,
+						0,
+						1,
+						1
+					]
+				],
+				"cols":
+				[
+					0.0,
+					1.0
+				],
+				"rows":
+				[
+					0.0,
+					1.0
+				]
+			}
+		}
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 333.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

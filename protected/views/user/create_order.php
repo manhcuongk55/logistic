@@ -16,12 +16,176 @@
 ?>
 
 <style>
+
     .p-url {
         text-overflow: ellipsis;
         white-space: nowrap;
         max-width: 200px;
         overflow: hidden;
+        
     }
+    /* --- VARS --- */
+/* --- MIXINS --- */
+/* --- DEMO CONTENT--- */
+.navbar-menu {
+  border: 0;
+  border-radius: 0;
+}
+.navbar-menu .navbar-collapse {
+  padding: 0;
+  border-top: 0;
+}
+.navbar-main {
+  margin: 0;
+}
+.navbar-menu {
+  background-color: #7352a4;
+}
+.navbar-menu .navbar-header {
+  padding: 7px;
+}
+.navbar-main > li > a {
+  font-size: 15px;
+  font-weight: 500;
+  color: #ffffff;
+  text-transform: uppercase;
+  -webkit-transition: 0.2s color ease-in-out;
+  transition: 0.2s color ease-in-out;
+  -webkit-transition: 0.2s background ease-in-out;
+  transition: 0.2s background ease-in-out;
+}
+.navbar-main > li > a small {
+  color: #fff;
+  font-size: 15px;
+  font-weight: 300;
+  text-transform: none;
+}
+.navbar-main > li > a:hover,
+.navbar-main > li > a:focus,
+.navbar-main > li > a.active {
+  background-color: #ffffff;
+  color: #583e7e;
+}
+.navbar-main > li > a:hover small,
+.navbar-main > li > a:focus small,
+.navbar-main > li > a.active small {
+  color: #000;
+}
+@media (min-width: 768px) {
+  .navbar-main-container {
+    background-color: #7352a4;
+    background-repeat: repeat-x;
+    background-image: -webkit-linear-gradient(left, color-stop(#7352a4 50%), color-stop(#583e7e 50%));
+    background-image: -moz-linear-gradient(left, #7352a4 50%, #583e7e 50%);
+    background-image: linear-gradient(to right, #7352a4 50%, #583e7e 50%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#7352a4', endColorstr='#583e7e', GradientType=1);
+    /* IE6-9 */
+  }
+  .navbar-main-container .navbar-nav {
+    float: none;
+  }
+  .navbar-main {
+    margin: 0 auto;
+    padding-right: 40px;
+    max-width: 730px;
+  }
+  .navbar-main li {
+    display: inline-block;
+    height: 80px;
+    position: relative;
+    width: 25%;
+    background-color: #583e7e;
+    background-repeat: repeat-x;
+    background-image: -webkit-gradient(linear, 0% top, 100% top, from(#583e7e), to(#7352a4));
+    background-image: -webkit-linear-gradient(left, color-stop(#583e7e 0%), color-stop(#7352a4 100%));
+    background-image: -moz-linear-gradient(left, #583e7e 0%, #7352a4 100%);
+    background-image: linear-gradient(to right, #583e7e 0%, #7352a4 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#583e7e', endColorstr='#7352a4', GradientType=1);
+    /* IE6-9 */
+  }
+  .navbar-main li:first-child:before {
+    border: 40px solid transparent;
+    border-left-color: #7352a4;
+    border-right: 0;
+    content: " ";
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0px;
+    width: 0px;
+    z-index: 10;
+  }
+  .navbar-main li a {
+    display: table;
+    height: 100%;
+    padding: 0 0 0 66.66666667px;
+    position: relative;
+    width: 100%;
+  }
+  .navbar-main li a:after {
+    border: 40px solid transparent;
+    border-left-color: #7352a4;
+    border-right: 0;
+    content: " ";
+    display: block;
+    position: absolute;
+    right: -40px;
+    top: 0px;
+    width: 0px;
+    z-index: 10;
+    -webkit-transition: 0.2s border-color ease-in-out;
+    transition: 0.2s border-color ease-in-out;
+  }
+  .navbar-main li a:hover:after,
+  .navbar-main li a.active:after {
+    
+    border-left-color: #ffffff;
+  }
+  
+  
+  .navbar-main li a span {
+    display: table-cell;
+    vertical-align: middle;
+  }
+}
+@media (min-width: 992px) {
+  .navbar-main {
+    max-width: 980px;
+  }
+  .navbar-main li a {
+    padding: 0 0 0 80px;
+  }
+}
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 20%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+  width: 20%;
+
+}
+
+
+
 </style>
 
 <form id="delete-all-form" class="hidden" method="POST" action="<?php echo $cartUrl ?>" data-type="validate" data-confirm="Xóa tất cả sản phẩm trong giỏ hàng">
@@ -35,16 +199,45 @@
         </div>
     </div>
 <?php endif; ?>
+
 <div class="cart-main-area area-padding mg-t20" ng-app="app" ng-controller="CartController" ng-rendered>
 	<div class="container-1">
         <div class="row">
 			<div class="col-md-12">
-				<div class="page-title bold">
-					<h1>Thêm sản phẩm vào đơn hàng hiện tại</h1>
-				</div>
-			</div>
-		</div>
-        <div class="row">
+                <nav class="navbar navbar-menu" role="navigation">
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    
+      <div class="navbar-main-container">
+        <ul class="nav navbar-nav navbar-main" id="main-nav">
+            <li id="firt-item" class="navbar-item" data-toggle="collapse" data-target="#b1"><a href="#"><span class="icon-arrow-right">B1.<br/><small>Nhập thông tin nhà cung cấp</small></span></a></li>
+            <li class="navbar-item" class="navbar-item" data-toggle="collapse" data-target="#b2"><a href="#"><span class="icon-arrow-right">B2<br/><small>Nhập thông tin sp</small></span></a></li>
+            <li class="navbar-item" class="navbar-item" data-toggle="collapse" data-target="#b3"><a href="#"><span class="icon-arrow-right">B3.<br/><small>Chọn hình thức báo giá v/c</small></span></a></li>
+            <li class="navbar-item" class="navbar-item" data-toggle="collapse" data-target="#b4"><a href="#"><span class="icon-arrow-right">B4.<br/><small>Chọn kho gửi hàng</small></span></a></li></ul>
+    </div>
+  </nav>
+
+<div id="b1" class="collapse">
+
+    <div class="page-title bold">
+                    <h1>Thêm sản phẩm vào đơn hàng hiện tại</h1>
+                </div>
+                <div>
+  <form action="/action_page.php">
+    <label for="fname">Link Hoặc Tên Nhà Cung Cấp</label>
+    <input type="text" id="fname" name="firstname" placeholder="Link Hoặc Tên Nhà Cung Cấp">
+
+    <label for="lname">Số Điện Thoại</label>
+    <input type="text" id="lname" name="lastname" placeholder="Số Điện Thoại">
+  
+    <input type="submit" value="Xác Nhận">
+  </form>
+</div>
+
+                  
+  </div>
+  <div id="b2" class="collapse">
+      <div class="row">
             <div class="col-md-8" ng-controller="InsertFormController">
                 <form action="<?php echo $cartUrl ?>" method="POST">
                     <input type="hidden" name="action" value="add" />
@@ -76,17 +269,17 @@
 
         <hr/>
 
-		<div class="row">
-			<div class="col-md-12">
-				<div class="page-title bold">
-					<h1>Upload file</h1>
-				</div>
-			</div>
-		</div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="page-title bold">
+                    <h1>Upload file</h1>
+                </div>
+            </div>
+        </div>
 
-		<div class="row">
-			<div class="col-md-12">
-				<form action="<?php echo $cartUrl ?>" method="POST" enctype="multipart/form-data"  novalidate>
+        <div class="row">
+            <div class="col-md-12">
+                <form action="<?php echo $cartUrl ?>" method="POST" enctype="multipart/form-data"  novalidate>
                     <input type="hidden" name="action" value="upload_file" />
                     <input type="hidden" name="redirect_url" value="<?php echo $url ?>" />
                     <div class="row">
@@ -104,20 +297,20 @@
         </div>
         <hr/>
 
-		<div class="row mg-t20">
-			<div class="col-md-12">
-				<div class="page-title bold">
-					<h1>Danh sách sản phẩm</h1>
-				</div>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-lg-12 col-md-12 col-sm-12">
-				<form action="<?php echo $cartUrl ?>" method="POST" novalidate>
+        <div class="row mg-t20">
+            <div class="col-md-12">
+                <div class="page-title bold">
+                    <h1>Danh sách sản phẩm</h1>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12">
+                <form action="<?php echo $cartUrl ?>" method="POST" novalidate>
                     <input type="hidden" name="action" value="update_all" />
                     <input type="hidden" name="redirect_url" value="<?php echo $url ?>" />
-					<div class="cart-table table-responsive">
-						<table class="table">
+                    <div class="cart-table table-responsive">
+                        <table class="table">
                             <thead>
                                 <tr>
                                     <th class="p-url">
@@ -181,7 +374,7 @@
                                     </td>
                                 </tr>
                             </tbody>
-						</table>
+                        </table>
                         <?php if(!count($items)): ?>
                             <div class="mg-t10">
                                 <div class="alert alert-info" role="alert">
@@ -189,7 +382,7 @@
                                 </div>
                             </div>
                         <?php endif; ?>
-					</div>
+                    </div>
                     <div class="all-cart-buttons clearfix" style="padding: 10px 0px;">
                         <div class="floatright">
                             <button class="btn btn-default clear-cart" type="button" onclick="$__$.__ajax('#delete-all-form')">
@@ -200,7 +393,7 @@
                             </button>   
                         </div>
                     </div>
-				</form>
+                </form>
                 <div class="row mg-t15">
                     <div class="col-md-9 italic">
                         Ssadadsadasdasd tất việc thêm sản phẩm, bạn chỉ cần click vào nút Gửi đơn hàng và đợi CTV báo giá.<br>
@@ -224,8 +417,34 @@
                         <input type="hidden" value="<?php echo $item->shop_id ?>" name="items[<?php echo $i ?>][shop_id]"/>
                     <?php endforeach; ?>
                 </form>
-			</div>
-		</div>
+            </div>
+        </div>
+
+    
+  </div>
+  <div id="b3" class="collapse">
+        
+    <label for="country">Chọn Hình Thức Báo Giá Sản Phẩm</label>
+    <select id="country" name="country">
+      <option value="australia">Giá bao gồm thuế sản phẩm </option>
+      <option value="canada">Không bao gồm thuế sản phẩm</option>
+       </select>
+       <input type="submit" value="Xác Nhận">
+  
+  </div>
+  <div id="b4" class="collapse">
+      <label for="warehouse">Chọn Kho Gửi Hàng</label> 
+      <select id="warehouse" name="warehouse">
+      <option value="Bằng Tường">Bằng Tường </option>
+      <option value=".....">.....</option>
+      
+    </select>
+    <input type="submit" value="Xác Nhận">
+    
+  </div>
+            </div>
+        </div>
+       
 	</div>
 </div>
 <!--End of Cart Main Area-->

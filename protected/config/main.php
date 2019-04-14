@@ -18,6 +18,7 @@ return array(
 
 	// autoloading model and component classes
 	'import'=>array(
+
 		'application.models.*',
 		'application.components.*',
 		'application.components.list.*',
@@ -32,7 +33,9 @@ return array(
 		"ext.Son.html.*",
 		"ext.Son.models.*",
 		"ext.Son.super-modules.list.*"
+
 	),
+
 
 	'modules'=>array(
 		// uncomment the following to enable the Gii tool
@@ -78,12 +81,21 @@ return array(
 
 		"cache" => array(
 			//'class'=>'system.caching.CFileCache',
+<<<<<<< HEAD
+			
+
+			//Uncomment this when go to production
+			// "class" => "ext.Son.components.FileCache",
+			// "cachePath" => "_cache_data"
+			//Commet this
+=======
 
 			// Uncomment before deploying
 			// "class" => "ext.Son.components.FileCache",
 			// "cachePath" => "_cache_data"
 
 			//Comment this
+>>>>>>> 02bd5b029a3c8a1a1e896b0ec2f61265d484e31c
 			"class" => "CDummyCache"
 		),
 		
@@ -119,4 +131,5 @@ return array(
 	'params'=>include(dirname(__FILE__).'/params.php'),
 	'theme'=>'giaodichtrungquoc',
 	"language" => "vi"
+	
 );

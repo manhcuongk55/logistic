@@ -22,6 +22,8 @@ class UserMenu extends SMenu {
                         array(
                             "id" => "create_order",
                             "name" => "Tạo đơn hàng"
+                            
+
                         ),
                         array(
                             "id" => "active_orders",

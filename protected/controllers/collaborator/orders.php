@@ -1,4 +1,8 @@
 <?php
+$baseUrl = Yii::app()->baseUrl; 
+$cs = Yii::app()->getClientScript();
+$cs->registerScriptFile($baseUrl.'/js/yourscript.js');
+$cs->registerCssFile($baseUrl.'/css/create_order.css');
 $arr = array(
 	"onRun" => function($list){
 	},

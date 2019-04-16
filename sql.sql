@@ -580,3 +580,9 @@ COMMIT;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+
+/*21/4/2019 them thuoc tinh order_type vao bang tbl_order de phan biet 3 loai don hang
+  Xuan Cuong */
+ALTER TABLE `orderhip`.`tbl_order` 
+  ADD COLUMN `order_type` VARCHAR(45) NULL AFTER `extra_description`;
+COMMIT;

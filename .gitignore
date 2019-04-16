@@ -22,3 +22,6 @@ themes/classic/views/
 *.cache
 
 \.vscode/
+
+
+!.sql

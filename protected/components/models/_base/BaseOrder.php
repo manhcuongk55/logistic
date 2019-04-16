@@ -36,7 +36,8 @@
  * @property double $service_price_percentage
  * @property double $extra_price
  * @property double $real_exchange_rate
- *
+ * @property string $test1
+ * 
  */
 abstract class BaseOrder extends SModel {
 
@@ -58,7 +59,8 @@ abstract class BaseOrder extends SModel {
 
 	public function rules() {
 		return array(
-			array('created_time, updated_time, user_id, total_quantity', 'required'),
+			//them test1
+			array('created_time, updated_time, user_id, total_quantity, test1', 'required'),
 			array('active, created_time, updated_time, user_id, status, is_paid, total_quantity', 'numerical', 'integerOnly'=>true),
 			array('total_price, total_weight, deposit_amount, total_delivery_price, total_real_price, total_real_price_ndt, total_price_ndt, total_delivery_price_ndt, weight_price, service_price, final_price, remaining_amount, exchange_rate, shipping_home_price, total_weight_price, service_price_percentage, extra_price, real_exchange_rate', 'numerical'),
 			array('description', 'length', 'max'=>500),
@@ -106,6 +108,8 @@ abstract class BaseOrder extends SModel {
 			'service_price_percentage' => Yii::t('app', 'Service Price Percentage'),
 			'extra_price' => Yii::t('app', 'Extra Price'),
 			'real_exchange_rate' => Yii::t('app', 'Real Exchange Rate'),
+			//them nhan
+			'test1' => Yii::t('app', 'test111'),
 		);
 	}
 
@@ -139,6 +143,8 @@ abstract class BaseOrder extends SModel {
 		$criteria->compare('service_price_percentage', $this->service_price_percentage);
 		$criteria->compare('extra_price', $this->extra_price);
 		$criteria->compare('real_exchange_rate', $this->real_exchange_rate);
+		// them test1
+		$criteria->compare('test1', $this->test1);
 
 		return new CActiveDataProvider($this, array(
 			'criteria' => $criteria,

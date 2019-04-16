@@ -54,10 +54,15 @@
                             <input type="text" class="form-control input-sm" name="items[{{$index}}][url]" ng-model="addedItem.url" placeholder="Đường dẫn sản phẩm {{$index+1}}" />
                             
                             <textarea class="form-control input-sm mg-t5" rows="2" name="items[{{$index}}][description]" ng-model="addedItem.description" placeholder="Ghi chú"></textarea>
+
+                            <input type="text" class="form-control input-sm" name="items[{{$index}}][test1]" ng-model="addedItem.test1" placeholder="test1 {{$index+1}}" />
+
                         </div>
+
                         <div class="col-md-2">
                             <input type="number" class="form-control input-sm" name="items[{{$index}}][count]" ng-model="addedItem.count" placeholder="Số lượng" />
-                        </div>
+                        
+
                         <div class="col-md-1 text-right">
                             <button type="button" class="btn btn-sm btn-danger" ng-click="remove($index)" ng-disabled="addedItems.length==1"><i class="fa fa-close"></i></button>
                         </div>

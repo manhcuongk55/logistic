@@ -3,7 +3,6 @@
     if(isset($_GET["debug"])){
         var_dump($items);
         var_dump(json_encode($items,JSON_UNESCAPED_UNICODE));
-        die();
     }
     $url = Yii::app()->request->requestUri;
     $cartUrl = $this->createUrl("/home/cart");

@@ -14,6 +14,10 @@
         OrderProduct::WEBSITE_TYPE_OTHER => "/img/vendors/other.png",
     );
 ?>
+<?php 
+Son::load("SAsset")->addExtension("bootstrap");
+?>
+
 
 <style>
 
@@ -24,139 +28,7 @@
         overflow: hidden;
         
     }
-    /* --- VARS --- */
-/* --- MIXINS --- */
-/* --- DEMO CONTENT--- */
-.navbar-menu {
-  border: 0;
-  border-radius: 0;
-}
-.navbar-menu .navbar-collapse {
-  padding: 0;
-  border-top: 0;
-}
-.navbar-main {
-  margin: 0;
-}
-.navbar-menu {
-  background-color: #7352a4;
-}
-.navbar-menu .navbar-header {
-  padding: 7px;
-}
-.navbar-main > li > a {
-  font-size: 15px;
-  font-weight: 500;
-  color: #ffffff;
-  text-transform: uppercase;
-  -webkit-transition: 0.2s color ease-in-out;
-  transition: 0.2s color ease-in-out;
-  -webkit-transition: 0.2s background ease-in-out;
-  transition: 0.2s background ease-in-out;
-}
-.navbar-main > li > a small {
-  color: #fff;
-  font-size: 15px;
-  font-weight: 300;
-  text-transform: none;
-}
-.navbar-main > li > a:hover,
-.navbar-main > li > a:focus,
-.navbar-main > li > a.active {
-  background-color: #ffffff;
-  color: #583e7e;
-}
-.navbar-main > li > a:hover small,
-.navbar-main > li > a:focus small,
-.navbar-main > li > a.active small {
-  color: #000;
-}
-@media (min-width: 768px) {
-  .navbar-main-container {
-    background-color: #7352a4;
-    background-repeat: repeat-x;
-    background-image: -webkit-linear-gradient(left, color-stop(#7352a4 50%), color-stop(#583e7e 50%));
-    background-image: -moz-linear-gradient(left, #7352a4 50%, #583e7e 50%);
-    background-image: linear-gradient(to right, #7352a4 50%, #583e7e 50%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#7352a4', endColorstr='#583e7e', GradientType=1);
-    /* IE6-9 */
-  }
-  .navbar-main-container .navbar-nav {
-    float: none;
-  }
-  .navbar-main {
-    margin: 0 auto;
-    padding-right: 40px;
-    max-width: 730px;
-  }
-  .navbar-main li {
-    display: inline-block;
-    height: 80px;
-    position: relative;
-    width: 25%;
-    background-color: #583e7e;
-    background-repeat: repeat-x;
-    background-image: -webkit-gradient(linear, 0% top, 100% top, from(#583e7e), to(#7352a4));
-    background-image: -webkit-linear-gradient(left, color-stop(#583e7e 0%), color-stop(#7352a4 100%));
-    background-image: -moz-linear-gradient(left, #583e7e 0%, #7352a4 100%);
-    background-image: linear-gradient(to right, #583e7e 0%, #7352a4 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#583e7e', endColorstr='#7352a4', GradientType=1);
-    /* IE6-9 */
-  }
-  .navbar-main li:first-child:before {
-    border: 40px solid transparent;
-    border-left-color: #7352a4;
-    border-right: 0;
-    content: " ";
-    display: block;
-    position: absolute;
-    left: 0;
-    top: 0px;
-    width: 0px;
-    z-index: 10;
-  }
-  .navbar-main li a {
-    display: table;
-    height: 100%;
-    padding: 0 0 0 66.66666667px;
-    position: relative;
-    width: 100%;
-  }
-  .navbar-main li a:after {
-    border: 40px solid transparent;
-    border-left-color: #7352a4;
-    border-right: 0;
-    content: " ";
-    display: block;
-    position: absolute;
-    right: -40px;
-    top: 0px;
-    width: 0px;
-    z-index: 10;
-    -webkit-transition: 0.2s border-color ease-in-out;
-    transition: 0.2s border-color ease-in-out;
-  }
-  .navbar-main li a:hover:after,
-  .navbar-main li a.active:after {
-    
-    border-left-color: #ffffff;
-  }
-  
-  
-  .navbar-main li a span {
-    display: table-cell;
-    vertical-align: middle;
-  }
-}
-@media (min-width: 992px) {
-  .navbar-main {
-    max-width: 980px;
-  }
-  .navbar-main li a {
-    padding: 0 0 0 80px;
-  }
-}
-input[type=text], select {
+    input[type=text], select {
   width: 100%;
   padding: 12px 20px;
   margin: 8px 0;
@@ -165,7 +37,6 @@ input[type=text], select {
   border-radius: 4px;
   box-sizing: border-box;
 }
-
 input[type=submit] {
   width: 20%;
   background-color: #4CAF50;
@@ -175,17 +46,11 @@ input[type=submit] {
   border: none;
   border-radius: 4px;
   cursor: pointer;
-
 }
-
 input[type=submit]:hover {
   background-color: #45a049;
   width: 20%;
-
 }
-
-
-
 </style>
 
 <form id="delete-all-form" class="hidden" method="POST" action="<?php echo $cartUrl ?>" data-type="validate" data-confirm="Xóa tất cả sản phẩm trong giỏ hàng">
@@ -204,40 +69,63 @@ input[type=submit]:hover {
 	<div class="container-1">
         <div class="row">
 			<div class="col-md-12">
-                <nav class="navbar navbar-menu" role="navigation">
+         <div class="container">
+        <!-- External toolbar sample -->
+        <div class="row d-flex align-items-center p-3 my-3 text-white-50">
+            <div class="col-12 col-lg-6 col-sm-12">
+              <label>Theme:</label>
+              <select id="theme_selector" class="custom-select col-lg-6 col-sm-12">
+                    <option value="default">default</option>
+                    <option value="arrows">arrows</option>
+                    <option value="circles">circles</option>
+                    <option value="dots">dots</option>
+              </select>
+            </div>
+            <div class="col-12 col-lg-6 col-sm-12">
+              <label>External Buttons:</label>
+              <div class="btn-group col-lg-6 col-sm-12" role="group">
+                  <button class="btn btn-secondary" id="prev-btn" type="button">Go Previous</button>
+                  <button class="btn btn-secondary" id="next-btn" type="button">Go Next</button>
+                  <button class="btn btn-danger" id="reset-btn" type="button">Reset Wizard</button>
+              </div>
+            </div>
+        </div>
 
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    
-      <div class="navbar-main-container">
-        <ul class="nav navbar-nav navbar-main" id="main-nav">
-            <li id="firt-item" class="navbar-item" data-toggle="collapse" data-target="#b1"><a href="#"><span class="icon-arrow-right">B1.<br/><small>Nhập thông tin nhà cung cấp</small></span></a></li>
-            <li class="navbar-item" class="navbar-item" data-toggle="collapse" data-target="#b2"><a href="#"><span class="icon-arrow-right">B2<br/><small>Nhập thông tin sp</small></span></a></li>
-            <li class="navbar-item" class="navbar-item" data-toggle="collapse" data-target="#b3"><a href="#"><span class="icon-arrow-right">B3.<br/><small>Chọn hình thức báo giá v/c</small></span></a></li>
-            <li class="navbar-item" class="navbar-item" data-toggle="collapse" data-target="#b4"><a href="#"><span class="icon-arrow-right">B4.<br/><small>Chọn kho gửi hàng</small></span></a></li></ul>
-    </div>
-  </nav>
+        <!-- SmartWizard html -->
+        <div id="smartwizard">
+            <ul>
+                <li><a href="#step-1">B1<br /><small>Chọn loại đơn hàng</small></a></li>
+                <li><a href="#step-2">B2<br /><small>Nhập thông tin nhà cung cấp</small></a></li>
+                <li><a href="#step-3">B3<br /><small>Nhập thông tin sp</small></a></li>
+                <li><a href="#step-4">B4<br /><small>Chọn hình thức báo giá v/c</small></a></li>
+                <li><a href="#step-5">B5<br /><small>Chọn kho gửi hàng</small></a></li>
+            </ul>
 
-<div id="b1" class="collapse">
+            <div>
+                <div id="step-1" class="">
+                   <label for="country">Chọn loại đơn hàng</label>
+                      <select id="country" name="country">
+                        <option value="australia">Đơn hàng uỷ thác trọn gói</option>
+                        <option value="canada">Đơn hàng Thanh toán và Vận Chuyển</option>
+                        <option value="usa">Đơn hàng vận chuyển</option>
+                      </select>
+                    </div>
+                     
+                <div id="step-2" class="">
+                   <div>
+                        <form action="/action_page.php">
+                          <label for="fname">Link Hoặc Tên Nhà Cung Cấp</label>
+                          <input type="text" id="fname" name="firstname" placeholder="Link Hoặc Tên Nhà Cung Cấp">
 
-    <div class="page-title bold">
-                    <h1>Thêm sản phẩm vào đơn hàng hiện tại</h1>
+                          <label for="lname">Số Điện Thoại</label>
+                          <input type="text" id="lname" name="lastname" placeholder="Số Điện Thoại">
+                        
+                          <input type="submit" value="Xác Nhận">
+                        </form>
+                      </div>
                 </div>
-                <div>
-  <form action="/action_page.php">
-    <label for="fname">Link Hoặc Tên Nhà Cung Cấp</label>
-    <input type="text" id="fname" name="firstname" placeholder="Link Hoặc Tên Nhà Cung Cấp">
-
-    <label for="lname">Số Điện Thoại</label>
-    <input type="text" id="lname" name="lastname" placeholder="Số Điện Thoại">
-  
-    <input type="submit" value="Xác Nhận">
-  </form>
-</div>
-
-                  
-  </div>
-  <div id="b2" class="collapse">
-      <div class="row">
+                <div id="step-3" class="">
+                   <div class="row">
             <div class="col-md-8" ng-controller="InsertFormController">
                 <form action="<?php echo $cartUrl ?>" method="POST">
                     <input type="hidden" name="action" value="add" />
@@ -419,29 +307,36 @@ input[type=submit]:hover {
                 </form>
             </div>
         </div>
+                   
+                </div>
+                <div id="step-4" class="">
+                     <label for="country">Chọn Hình Thức Báo Giá Sản Phẩm</label>
+                      <select id="country" name="country">
+                        <option value="australia">Giá bao gồm thuế sản phẩm </option>
+                        <option value="canada">Không bao gồm thuế sản phẩm</option>
+                         </select>
+                         <input type="submit" value="Xác Nhận">
+                </div>
+                <div id="step-5" class="">
+                    <label for="warehouse">Chọn Kho Gửi Hàng</label> 
+                    <select id="warehouse" name="warehouse">
+                    <option value="Bằng Tường">Bằng Tường </option>
+                    <option value=".....">.....</option>
+                    
+                  </select>
+                  <input type="submit" value="Xác Nhận">
+    
+                  
+                </div>
+            </div>
+        </div>
 
-    
-  </div>
-  <div id="b3" class="collapse">
-        
-    <label for="country">Chọn Hình Thức Báo Giá Sản Phẩm</label>
-    <select id="country" name="country">
-      <option value="australia">Giá bao gồm thuế sản phẩm </option>
-      <option value="canada">Không bao gồm thuế sản phẩm</option>
-       </select>
-       <input type="submit" value="Xác Nhận">
-  
-  </div>
-  <div id="b4" class="collapse">
-      <label for="warehouse">Chọn Kho Gửi Hàng</label> 
-      <select id="warehouse" name="warehouse">
-      <option value="Bằng Tường">Bằng Tường </option>
-      <option value=".....">.....</option>
-      
-    </select>
-    <input type="submit" value="Xác Nhận">
-    
-  </div>
+
+    </div>
+
+
+
+                
             </div>
         </div>
        
@@ -513,4 +408,73 @@ input[type=submit]:hover {
             init();
         });
     })();
+     $(document).ready(function(){
+
+            // Step show event
+            $("#smartwizard").on("showStep", function(e, anchorObject, stepNumber, stepDirection, stepPosition) {
+               //alert("You are on step "+stepNumber+" now");
+               if(stepPosition === 'first'){
+                   $("#prev-btn").addClass('disabled');
+               }else if(stepPosition === 'final'){
+                   $("#next-btn").addClass('disabled');
+               }else{
+                   $("#prev-btn").removeClass('disabled');
+                   $("#next-btn").removeClass('disabled');
+               }
+            });
+
+            // Toolbar extra buttons
+            var btnFinish = $('<button></button>').text('Finish')
+                                             .addClass('btn btn-info')
+                                             .on('click', function(){ alert('Finish Clicked'); });
+            var btnCancel = $('<button></button>').text('Cancel')
+                                             .addClass('btn btn-danger')
+                                             .on('click', function(){ $('#smartwizard').smartWizard("reset"); });
+
+
+            // Smart Wizard
+            $('#smartwizard').smartWizard({
+                    selected: 0,
+                    theme: 'default',
+                    transitionEffect:'fade',
+                    showStepURLhash: true,
+                    toolbarSettings: {toolbarPosition: 'both',
+                                      toolbarButtonPosition: 'end',
+                                      toolbarExtraButtons: [btnFinish, btnCancel]
+                                    }
+            });
+
+
+            // External Button Events
+            $("#reset-btn").on("click", function() {
+                // Reset wizard
+                $('#smartwizard').smartWizard("reset");
+                return true;
+            });
+
+            $("#prev-btn").on("click", function() {
+                // Navigate previous
+                $('#smartwizard').smartWizard("prev");
+                return true;
+            });
+
+            $("#next-btn").on("click", function() {
+                // Navigate next
+                $('#smartwizard').smartWizard("next");
+                return true;
+            });
+
+            $("#theme_selector").on("change", function() {
+                // Change theme
+                $('#smartwizard').smartWizard("theme", $(this).val());
+                return true;
+            });
+
+            // Set selected theme on page refresh
+            $("#theme_selector").change();
+        });
+
+     
 </script>
+
+

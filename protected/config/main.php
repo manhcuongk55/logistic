@@ -81,21 +81,14 @@ return array(
 
 		"cache" => array(
 			//'class'=>'system.caching.CFileCache',
-<<<<<<< HEAD
-			
 
-			//Uncomment this when go to production
-			// "class" => "ext.Son.components.FileCache",
-			// "cachePath" => "_cache_data"
-			//Commet this
-=======
 
 			// Uncomment before deploying
 			// "class" => "ext.Son.components.FileCache",
 			// "cachePath" => "_cache_data"
 
 			//Comment this
->>>>>>> 02bd5b029a3c8a1a1e896b0ec2f61265d484e31c
+
 			"class" => "CDummyCache"
 		),
 		

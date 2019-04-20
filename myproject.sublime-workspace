@@ -4,16 +4,28 @@
 		"selected_items":
 		[
 			[
+				"sma",
+				"smart-wizard-theme-circles"
+			],
+			[
+				"css",
+				"css"
+			],
+			[
+				"a",
+				"array"
+			],
+			[
+				"bo",
+				"bootstrap"
+			],
+			[
 				"li",
 				"link\tTag"
 			],
 			[
 				"ara",
 				"array"
-			],
-			[
-				"a",
-				"array\t$… = array (…)"
 			],
 			[
 				"ba",
@@ -63,87 +75,77 @@
 			"file": "protected/views/user/create_order.php",
 			"settings":
 			{
-				"buffer_size": 21162,
+				"buffer_size": 22027,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "/C/xampp/htdocs/yii2-starter-kit/.env.dist",
+			"file": "themes/son/assets/extensions/bootstrap/css/smart-wizard-theme-arrow.css",
 			"settings":
 			{
-				"buffer_size": 1669,
+				"buffer_size": 4702,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "/C/xampp/htdocs/yii2-starter-kit/.evn",
+			"file": "themes/son/assets/extensions/bootstrap/css/smart-wizard.css",
 			"settings":
 			{
-				"buffer_size": 1676,
-				"encoding": "UTF-8",
+				"buffer_size": 4702,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"contents": "Searching 7131 files for \"ghi chú\"\n\nC:\\xampp\\htdocs\\logistic\\dummy\\logistic\\protected\\components\\form\\views\\delivery_order_form.php:\n   20              </div>\n   21              <div class=\"form-group\">\n   22:                 <label>Ghi chú</label>\n   23                  <?php $form->inputField(\"description\",array(\n   24                      \"class\" => \"form-control input-sm\"\n\nC:\\xampp\\htdocs\\logistic\\dummy\\logistic\\protected\\components\\form\\views\\unknown_shop_delivery_order_form.php:\n   26              </div>\n   27              <div class=\"form-group\">\n   28:                 <label>Ghi chú</label>\n   29                  <?php $form->inputField(\"description\",array(\n   30                      \"class\" => \"form-control input-sm\"\n\nC:\\xampp\\htdocs\\logistic\\dummy\\logistic\\protected\\controllers\\collaborator\\includes\\order_extended_actions.php:\n  176              \"extra_description\" => array(\n  177                  \"type\" => \"textarea\",\n  178:                 \"label\" => \"Ghi chú lỗi phát sinh\",\n  179                  \"rules\" => array(\n  180                  )\n\nC:\\xampp\\htdocs\\logistic\\dummy\\logistic\\protected\\messages\\vi\\app.php:\n   58    \"Total Volume\" => \"Số khối\",\n   59    \"Image Url\" => \"Link ảnh\",\n   60:   \"Extra Description\" => \"Ghi chú chi phí phát sinh\"\n   61  );\n   62  \n\nC:\\xampp\\htdocs\\logistic\\dummy\\logistic\\protected\\views\\collaborator\\china_store.php:\n   58                                  </td>\n   59                                  <td>\n   60:                                     Ghi chú\n   61                                  </td>\n   62                                  <td>\n\nC:\\xampp\\htdocs\\logistic\\dummy\\logistic\\protected\\views\\collaborator\\china_store_2.php:\n   58                                  </td>\n   59                                  <td>\n   60:                                     Ghi chú\n   61                                  </td>\n   62                                  <td>\n\nC:\\xampp\\htdocs\\logistic\\dummy\\logistic\\protected\\views\\collaborator\\export.php:\n   51                                  </td>\n   52                                  <td>\n   53:                                     Ghi chú\n   54                                  </td>\n   55                                  <!-- <td>\n\nC:\\xampp\\htdocs\\logistic\\dummy\\logistic\\protected\\views\\collaborator\\reports\\report6.php:\n   36                  <th><b>STT</b></th>\n   37                  <th><b>Mã vận đơn</b></th>\n   38:                 <th><b>Ghi chú</b></th>\n   39                  <th><b>Cân nặng</b></th>\n   40                  <th><b>Số khối</b></th>\n\nC:\\xampp\\htdocs\\logistic\\dummy\\logistic\\protected\\views\\collaborator\\vietnam_store.php:\n   54                                  </td>\n   55                                  <td>\n   56:                                     Ghi chú\n   57                                  </td>\n   58                                  <!-- <td>\n\nC:\\xampp\\htdocs\\logistic\\dummy\\logistic\\protected\\views\\user\\[OLD]order.php:\n  187                  </th>\n  188                  <th>\n  189:                     Ghi chú\n  190                  </th>\n  191                  <th class=\"p-action\">\n\nC:\\xampp\\htdocs\\logistic\\dummy\\logistic\\protected\\views\\user\\create_order.php:\n  226                              <input type=\"text\" class=\"form-control input-sm\" name=\"items[{{$index}}][url]\" ng-model=\"addedItem.url\" placeholder=\"Đường dẫn sản phẩm {{$index+1}}\" />\n  227                              \n  228:                             <textarea class=\"form-control input-sm mg-t5\" rows=\"2\" name=\"items[{{$index}}][description]\" ng-model=\"addedItem.description\" placeholder=\"Ghi chú\"></textarea>\n  229                          </div>\n  230                          <div class=\"col-md-2\">\n  ...\n  309                                      </th>\n  310                                      <th>\n  311:                                         Ghi chú\n  312                                      </th>\n  313                                      <th class=\"p-action\">\n\nC:\\xampp\\htdocs\\logistic\\dummy\\logistic\\protected\\views\\user\\order.php:\n  218                  </th>\n  219                  <th>\n  220:                     Ghi chú (CTV)\n  221                  </th>\n  222              </tr>\n  ...\n  290                  </th>\n  291                  <th>\n  292:                     Ghi chú (CTV)\n  293                  </th>\n  294              </tr>\n  ...\n  329  <?php if($order->extra_description): ?>\n  330  <h3 class=\"bold mg-t20\">\n  331:     Ghi chú lỗi phát sinh\n  332  </h3>\n  333  <div class=\"bold text-danger\"><?php echo $order->extra_description ?></div>\n\n15 matches across 12 files\n",
+			"contents": "Searching 7139 files for \"smartwizard\"\n\nC:\\xampp\\htdocs\\logistic\\dummy\\logistic\\protected\\config\\assets.php:\n   29  \t\t\t\t\"js\" =>array(\n   30  \t\t\t\t \t\"bootstrap.min.js\",\n   31: \t\t\t\t \t\"jquery.smartWizard.js\"\n   32  \t\t\t\t ),\n   33  \n\nC:\\xampp\\htdocs\\logistic\\dummy\\logistic\\protected\\runtime\\application.log:\n 5075  HTTP_REFERER=http://localhost/user/create_order\n 5076  ---\n 5077: 2019/04/16 15:59:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Không thể giải quyết yêu cầu \"dist/js/jquery.smartWizard.min.js\".' in C:\\xampp\\htdocs\\logistic\\dummy\\logistic\\yii\\framework\\web\\CWebApplication.php:286\n 5078  Stack trace:\n 5079  #0 C:\\xampp\\htdocs\\logistic\\dummy\\logistic\\yii\\framework\\web\\CWebApplication.php(141): CWebApplication->runController('dist/js/jquery....')\n ....\n 5081  #2 C:\\xampp\\htdocs\\logistic\\dummy\\logistic\\index.php(18): CApplication->run()\n 5082  #3 {main}\n 5083: REQUEST_URI=/dist/js/jquery.smartWizard.min.js\n 5084  HTTP_REFERER=http://localhost/user/create_order\n 5085  ---\n 5086: 2019/04/16 15:59:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Không thể giải quyết yêu cầu \"dist/js/jquery.smartWizard.min.js\".' in C:\\xampp\\htdocs\\logistic\\dummy\\logistic\\yii\\framework\\web\\CWebApplication.php:286\n 5087  Stack trace:\n 5088  #0 C:\\xampp\\htdocs\\logistic\\dummy\\logistic\\yii\\framework\\web\\CWebApplication.php(141): CWebApplication->runController('dist/js/jquery....')\n ....\n 5090  #2 C:\\xampp\\htdocs\\logistic\\dummy\\logistic\\index.php(18): CApplication->run()\n 5091  #3 {main}\n 5092: REQUEST_URI=/dist/js/jquery.smartWizard.min.js\n 5093  HTTP_REFERER=http://localhost/user/create_order\n 5094  ---\n 5095: 2019/04/16 15:59:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Không thể giải quyết yêu cầu \"dist/js/jquery.smartWizard.min.js\".' in C:\\xampp\\htdocs\\logistic\\dummy\\logistic\\yii\\framework\\web\\CWebApplication.php:286\n 5096  Stack trace:\n 5097  #0 C:\\xampp\\htdocs\\logistic\\dummy\\logistic\\yii\\framework\\web\\CWebApplication.php(141): CWebApplication->runController('dist/js/jquery....')\n ....\n 5099  #2 C:\\xampp\\htdocs\\logistic\\dummy\\logistic\\index.php(18): CApplication->run()\n 5100  #3 {main}\n 5101: REQUEST_URI=/dist/js/jquery.smartWizard.min.js\n 5102  HTTP_REFERER=http://localhost/user/create_order\n 5103  ---\n ....\n 5111  HTTP_REFERER=http://localhost/user/create_order\n 5112  ---\n 5113: 2019/04/16 16:01:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Không thể giải quyết yêu cầu \"dist/js/jquery.smartWizard.min.js\".' in C:\\xampp\\htdocs\\logistic\\dummy\\logistic\\yii\\framework\\web\\CWebApplication.php:286\n 5114  Stack trace:\n 5115  #0 C:\\xampp\\htdocs\\logistic\\dummy\\logistic\\yii\\framework\\web\\CWebApplication.php(141): CWebApplication->runController('dist/js/jquery....')\n ....\n 5117  #2 C:\\xampp\\htdocs\\logistic\\dummy\\logistic\\index.php(18): CApplication->run()\n 5118  #3 {main}\n 5119: REQUEST_URI=/dist/js/jquery.smartWizard.min.js\n 5120  HTTP_REFERER=http://localhost/user/create_order\n 5121  ---\n 5122: 2019/04/16 16:01:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Không thể giải quyết yêu cầu \"dist/js/jquery.smartWizard.min.js\".' in C:\\xampp\\htdocs\\logistic\\dummy\\logistic\\yii\\framework\\web\\CWebApplication.php:286\n 5123  Stack trace:\n 5124  #0 C:\\xampp\\htdocs\\logistic\\dummy\\logistic\\yii\\framework\\web\\CWebApplication.php(141): CWebApplication->runController('dist/js/jquery....')\n ....\n 5126  #2 C:\\xampp\\htdocs\\logistic\\dummy\\logistic\\index.php(18): CApplication->run()\n 5127  #3 {main}\n 5128: REQUEST_URI=/dist/js/jquery.smartWizard.min.js\n 5129  HTTP_REFERER=http://localhost/user/create_order\n 5130  ---\n ....\n 5138  HTTP_REFERER=http://localhost/user/create_order\n 5139  ---\n 5140: 2019/04/16 16:01:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Không thể giải quyết yêu cầu \"dist/js/jquery.smartWizard.min.js\".' in C:\\xampp\\htdocs\\logistic\\dummy\\logistic\\yii\\framework\\web\\CWebApplication.php:286\n 5141  Stack trace:\n 5142  #0 C:\\xampp\\htdocs\\logistic\\dummy\\logistic\\yii\\framework\\web\\CWebApplication.php(141): CWebApplication->runController('dist/js/jquery....')\n ....\n 5144  #2 C:\\xampp\\htdocs\\logistic\\dummy\\logistic\\index.php(18): CApplication->run()\n 5145  #3 {main}\n 5146: REQUEST_URI=/dist/js/jquery.smartWizard.min.js\n 5147  HTTP_REFERER=http://localhost/user/create_order\n 5148  ---\n 5149: 2019/04/16 16:01:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Không thể giải quyết yêu cầu \"dist/js/jquery.smartWizard.min.js\".' in C:\\xampp\\htdocs\\logistic\\dummy\\logistic\\yii\\framework\\web\\CWebApplication.php:286\n 5150  Stack trace:\n 5151  #0 C:\\xampp\\htdocs\\logistic\\dummy\\logistic\\yii\\framework\\web\\CWebApplication.php(141): CWebApplication->runController('dist/js/jquery....')\n ....\n 5153  #2 C:\\xampp\\htdocs\\logistic\\dummy\\logistic\\index.php(18): CApplication->run()\n 5154  #3 {main}\n 5155: REQUEST_URI=/dist/js/jquery.smartWizard.min.js\n 5156  HTTP_REFERER=http://localhost/user/create_order\n 5157  ---\n ....\n 5507  HTTP_REFERER=http://localhost/user/create_order\n 5508  ---\n 5509: 2019/04/16 16:50:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Không thể giải quyết yêu cầu \"dist/js/jquery.smartWizard.min.js\".' in C:\\xampp\\htdocs\\logistic\\dummy\\logistic\\yii\\framework\\web\\CWebApplication.php:286\n 5510  Stack trace:\n 5511  #0 C:\\xampp\\htdocs\\logistic\\dummy\\logistic\\yii\\framework\\web\\CWebApplication.php(141): CWebApplication->runController('dist/js/jquery....')\n ....\n 5513  #2 C:\\xampp\\htdocs\\logistic\\dummy\\logistic\\index.php(18): CApplication->run()\n 5514  #3 {main}\n 5515: REQUEST_URI=/dist/js/jquery.smartWizard.min.js\n 5516  HTTP_REFERER=http://localhost/user/create_order\n 5517  ---\n ....\n 5552  HTTP_REFERER=http://localhost/user/create_order\n 5553  ---\n 5554: 2019/04/16 16:50:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Không thể giải quyết yêu cầu \"dist/js/jquery.smartWizard.min.js\".' in C:\\xampp\\htdocs\\logistic\\dummy\\logistic\\yii\\framework\\web\\CWebApplication.php:286\n 5555  Stack trace:\n 5556  #0 C:\\xampp\\htdocs\\logistic\\dummy\\logistic\\yii\\framework\\web\\CWebApplication.php(141): CWebApplication->runController('dist/js/jquery....')\n ....\n 5558  #2 C:\\xampp\\htdocs\\logistic\\dummy\\logistic\\index.php(18): CApplication->run()\n 5559  #3 {main}\n 5560: REQUEST_URI=/dist/js/jquery.smartWizard.min.js\n 5561  HTTP_REFERER=http://localhost/user/create_order\n 5562  ---\n 5563: 2019/04/16 16:50:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Không thể giải quyết yêu cầu \"dist/js/jquery.smartWizard.min.js\".' in C:\\xampp\\htdocs\\logistic\\dummy\\logistic\\yii\\framework\\web\\CWebApplication.php:286\n 5564  Stack trace:\n 5565  #0 C:\\xampp\\htdocs\\logistic\\dummy\\logistic\\yii\\framework\\web\\CWebApplication.php(141): CWebApplication->runController('dist/js/jquery....')\n ....\n 5567  #2 C:\\xampp\\htdocs\\logistic\\dummy\\logistic\\index.php(18): CApplication->run()\n 5568  #3 {main}\n 5569: REQUEST_URI=/dist/js/jquery.smartWizard.min.js\n 5570  HTTP_REFERER=http://localhost/user/create_order\n 5571  ---\n ....\n 6101  HTTP_REFERER=http://localhost/user/create_order\n 6102  ---\n 6103: 2019/04/16 23:24:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Không thể giải quyết yêu cầu \"dist/js/jquery.smartWizard.min.js\".' in C:\\xampp\\htdocs\\logistic\\dummy\\logistic\\yii\\framework\\web\\CWebApplication.php:286\n 6104  Stack trace:\n 6105  #0 C:\\xampp\\htdocs\\logistic\\dummy\\logistic\\yii\\framework\\web\\CWebApplication.php(141): CWebApplication->runController('dist/js/jquery....')\n ....\n 6107  #2 C:\\xampp\\htdocs\\logistic\\dummy\\logistic\\index.php(18): CApplication->run()\n 6108  #3 {main}\n 6109: REQUEST_URI=/dist/js/jquery.smartWizard.min.js\n 6110  HTTP_REFERER=http://localhost/user/create_order\n 6111  ---\n ....\n 6128  HTTP_REFERER=http://localhost/user/create_order\n 6129  ---\n 6130: 2019/04/16 23:24:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Không thể giải quyết yêu cầu \"dist/js/jquery.smartWizard.min.js\".' in C:\\xampp\\htdocs\\logistic\\dummy\\logistic\\yii\\framework\\web\\CWebApplication.php:286\n 6131  Stack trace:\n 6132  #0 C:\\xampp\\htdocs\\logistic\\dummy\\logistic\\yii\\framework\\web\\CWebApplication.php(141): CWebApplication->runController('dist/js/jquery....')\n ....\n 6134  #2 C:\\xampp\\htdocs\\logistic\\dummy\\logistic\\index.php(18): CApplication->run()\n 6135  #3 {main}\n 6136: REQUEST_URI=/dist/js/jquery.smartWizard.min.js\n 6137  HTTP_REFERER=http://localhost/user/create_order\n 6138  ---\n 6139: 2019/04/16 23:24:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Không thể giải quyết yêu cầu \"dist/js/jquery.smartWizard.min.js\".' in C:\\xampp\\htdocs\\logistic\\dummy\\logistic\\yii\\framework\\web\\CWebApplication.php:286\n 6140  Stack trace:\n 6141  #0 C:\\xampp\\htdocs\\logistic\\dummy\\logistic\\yii\\framework\\web\\CWebApplication.php(141): CWebApplication->runController('dist/js/jquery....')\n ....\n 6143  #2 C:\\xampp\\htdocs\\logistic\\dummy\\logistic\\index.php(18): CApplication->run()\n 6144  #3 {main}\n 6145: REQUEST_URI=/dist/js/jquery.smartWizard.min.js\n 6146  HTTP_REFERER=http://localhost/user/create_order\n 6147  ---\n ....\n 6344  HTTP_REFERER=http://localhost/user/create_order\n 6345  ---\n 6346: 2019/04/16 23:27:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Không thể giải quyết yêu cầu \"dist/js/jquery.smartWizard.min.js\".' in C:\\xampp\\htdocs\\logistic\\dummy\\logistic\\yii\\framework\\web\\CWebApplication.php:286\n 6347  Stack trace:\n 6348  #0 C:\\xampp\\htdocs\\logistic\\dummy\\logistic\\yii\\framework\\web\\CWebApplication.php(141): CWebApplication->runController('dist/js/jquery....')\n ....\n 6350  #2 C:\\xampp\\htdocs\\logistic\\dummy\\logistic\\index.php(18): CApplication->run()\n 6351  #3 {main}\n 6352: REQUEST_URI=/dist/js/jquery.smartWizard.min.js\n 6353  HTTP_REFERER=http://localhost/user/create_order\n 6354  ---\n ....\n 6380  HTTP_REFERER=http://localhost/user/create_order\n 6381  ---\n 6382: 2019/04/16 23:27:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Không thể giải quyết yêu cầu \"dist/js/jquery.smartWizard.min.js\".' in C:\\xampp\\htdocs\\logistic\\dummy\\logistic\\yii\\framework\\web\\CWebApplication.php:286\n 6383  Stack trace:\n 6384  #0 C:\\xampp\\htdocs\\logistic\\dummy\\logistic\\yii\\framework\\web\\CWebApplication.php(141): CWebApplication->runController('dist/js/jquery....')\n ....\n 6386  #2 C:\\xampp\\htdocs\\logistic\\dummy\\logistic\\index.php(18): CApplication->run()\n 6387  #3 {main}\n 6388: REQUEST_URI=/dist/js/jquery.smartWizard.min.js\n 6389  HTTP_REFERER=http://localhost/user/create_order\n 6390  ---\n 6391: 2019/04/16 23:27:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Không thể giải quyết yêu cầu \"dist/js/jquery.smartWizard.min.js\".' in C:\\xampp\\htdocs\\logistic\\dummy\\logistic\\yii\\framework\\web\\CWebApplication.php:286\n 6392  Stack trace:\n 6393  #0 C:\\xampp\\htdocs\\logistic\\dummy\\logistic\\yii\\framework\\web\\CWebApplication.php(141): CWebApplication->runController('dist/js/jquery....')\n ....\n 6395  #2 C:\\xampp\\htdocs\\logistic\\dummy\\logistic\\index.php(18): CApplication->run()\n 6396  #3 {main}\n 6397: REQUEST_URI=/dist/js/jquery.smartWizard.min.js\n 6398  HTTP_REFERER=http://localhost/user/create_order\n 6399  ---\n ....\n 6443  HTTP_REFERER=http://localhost/user/create_order\n 6444  ---\n 6445: 2019/04/16 23:27:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Không thể giải quyết yêu cầu \"dist/js/jquery.smartWizard.min.js\".' in C:\\xampp\\htdocs\\logistic\\dummy\\logistic\\yii\\framework\\web\\CWebApplication.php:286\n 6446  Stack trace:\n 6447  #0 C:\\xampp\\htdocs\\logistic\\dummy\\logistic\\yii\\framework\\web\\CWebApplication.php(141): CWebApplication->runController('dist/js/jquery....')\n ....\n 6449  #2 C:\\xampp\\htdocs\\logistic\\dummy\\logistic\\index.php(18): CApplication->run()\n 6450  #3 {main}\n 6451: REQUEST_URI=/dist/js/jquery.smartWizard.min.js\n 6452  HTTP_REFERER=http://localhost/user/create_order\n 6453  ---\n ....\n 6479  HTTP_REFERER=http://localhost/user/create_order\n 6480  ---\n 6481: 2019/04/16 23:27:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Không thể giải quyết yêu cầu \"dist/js/jquery.smartWizard.min.js\".' in C:\\xampp\\htdocs\\logistic\\dummy\\logistic\\yii\\framework\\web\\CWebApplication.php:286\n 6482  Stack trace:\n 6483  #0 C:\\xampp\\htdocs\\logistic\\dummy\\logistic\\yii\\framework\\web\\CWebApplication.php(141): CWebApplication->runController('dist/js/jquery....')\n ....\n 6485  #2 C:\\xampp\\htdocs\\logistic\\dummy\\logistic\\index.php(18): CApplication->run()\n 6486  #3 {main}\n 6487: REQUEST_URI=/dist/js/jquery.smartWizard.min.js\n 6488  HTTP_REFERER=http://localhost/user/create_order\n 6489  ---\n 6490: 2019/04/16 23:27:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Không thể giải quyết yêu cầu \"dist/js/jquery.smartWizard.min.js\".' in C:\\xampp\\htdocs\\logistic\\dummy\\logistic\\yii\\framework\\web\\CWebApplication.php:286\n 6491  Stack trace:\n 6492  #0 C:\\xampp\\htdocs\\logistic\\dummy\\logistic\\yii\\framework\\web\\CWebApplication.php(141): CWebApplication->runController('dist/js/jquery....')\n ....\n 6494  #2 C:\\xampp\\htdocs\\logistic\\dummy\\logistic\\index.php(18): CApplication->run()\n 6495  #3 {main}\n 6496: REQUEST_URI=/dist/js/jquery.smartWizard.min.js\n 6497  HTTP_REFERER=http://localhost/user/create_order\n 6498  ---\n ....\n 6695  HTTP_REFERER=http://localhost/user/create_order\n 6696  ---\n 6697: 2019/04/17 00:36:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Không thể giải quyết yêu cầu \"dist/js/jquery.smartWizard.min.js\".' in C:\\xampp\\htdocs\\logistic\\dummy\\logistic\\yii\\framework\\web\\CWebApplication.php:286\n 6698  Stack trace:\n 6699  #0 C:\\xampp\\htdocs\\logistic\\dummy\\logistic\\yii\\framework\\web\\CWebApplication.php(141): CWebApplication->runController('dist/js/jquery....')\n ....\n 6701  #2 C:\\xampp\\htdocs\\logistic\\dummy\\logistic\\index.php(18): CApplication->run()\n 6702  #3 {main}\n 6703: REQUEST_URI=/dist/js/jquery.smartWizard.min.js\n 6704  HTTP_REFERER=http://localhost/user/create_order\n 6705  ---\n 6706: 2019/04/17 00:36:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Không thể giải quyết yêu cầu \"dist/js/jquery.smartWizard.min.js\".' in C:\\xampp\\htdocs\\logistic\\dummy\\logistic\\yii\\framework\\web\\CWebApplication.php:286\n 6707  Stack trace:\n 6708  #0 C:\\xampp\\htdocs\\logistic\\dummy\\logistic\\yii\\framework\\web\\CWebApplication.php(141): CWebApplication->runController('dist/js/jquery....')\n ....\n 6710  #2 C:\\xampp\\htdocs\\logistic\\dummy\\logistic\\index.php(18): CApplication->run()\n 6711  #3 {main}\n 6712: REQUEST_URI=/dist/js/jquery.smartWizard.min.js\n 6713  HTTP_REFERER=http://localhost/user/create_order\n 6714  ---\n\nC:\\xampp\\htdocs\\logistic\\dummy\\logistic\\protected\\views\\user\\create_order.php:\n   71          </div>\n   72  \n   73:         <!-- SmartWizard html -->\n   74:         <div id=\"smartwizard\">\n   75              <ul>\n   76                  <li><a href=\"#step-1\">Step 1<br /><small>This is step description</small></a></li>\n   ..\n  194  \n  195              // Step show event\n  196:             $(\"#smartwizard\").on(\"showStep\", function(e, anchorObject, stepNumber, stepDirection, stepPosition) {\n  197                 //alert(\"You are on step \"+stepNumber+\" now\");\n  198                 if(stepPosition === 'first'){\n  ...\n  212              var btnCancel = $('<button></button>').text('Cancel')\n  213                                               .addClass('btn btn-danger')\n  214:                                              .on('click', function(){ $('#smartwizard').smartWizard(\"reset\"); });\n  215  \n  216  \n  217              // Smart Wizard\n  218:             $('#smartwizard').smartWizard({\n  219                      selected: 0,\n  220                      theme: 'default',\n  ...\n  231              $(\"#reset-btn\").on(\"click\", function() {\n  232                  // Reset wizard\n  233:                 $('#smartwizard').smartWizard(\"reset\");\n  234                  return true;\n  235              });\n  ...\n  237              $(\"#prev-btn\").on(\"click\", function() {\n  238                  // Navigate previous\n  239:                 $('#smartwizard').smartWizard(\"prev\");\n  240                  return true;\n  241              });\n  ...\n  243              $(\"#next-btn\").on(\"click\", function() {\n  244                  // Navigate next\n  245:                 $('#smartwizard').smartWizard(\"next\");\n  246                  return true;\n  247              });\n  ...\n  249              $(\"#theme_selector\").on(\"change\", function() {\n  250                  // Change theme\n  251:                 $('#smartwizard').smartWizard(\"theme\", $(this).val());\n  252                  return true;\n  253              });\n\nC:\\xampp\\htdocs\\logistic\\dummy\\logistic\\themes\\son\\assets\\extensions\\bootstrap\\css\\smart-wizard-theme-arrow.css:\n    1  /*!\n    2:  * SmartWizard v4.3.x\n    3   * jQuery Wizard Plugin\n    4:  * http://www.techlaboratory.net/smartwizard\n    5   *\n    6   * Created by Dipu Raj\n    .\n    8   *\n    9   * Licensed under the terms of MIT License\n   10:  * https://github.com/techlab/SmartWizard/blob/master/LICENSE\n   11   */\n   12  \n   13: /* SmartWizard Basic CSS */\n   14  .sw-main {\n   15      position: relative;\n   ..\n   37  }\n   38  \n   39: /* SmartWizard Theme: White */\n   40  .sw-theme-default {\n   41      -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3);\n\nC:\\xampp\\htdocs\\logistic\\dummy\\logistic\\themes\\son\\assets\\extensions\\bootstrap\\css\\smart-wizard-theme-arrow.min.css:\n    1  /*!\n    2:  * SmartWizard v4.3.x\n    3   * jQuery Wizard Plugin\n    4:  * http://www.techlaboratory.net/smartwizard\n    5   *\n    6   * Created by Dipu Raj\n    .\n    8   *\n    9   * Licensed under the terms of MIT License\n   10:  * https://github.com/techlab/SmartWizard/blob/master/LICENSE\n   11   */.sw-theme-arrows{border-radius:5px;border:1px solid #ddd}.sw-theme-arrows>.sw-container{min-height:200px}.sw-theme-arrows .step-content{padding:0 10px;border:0 solid #d4d4d4;background-color:#fff;text-align:left}.sw-theme-arrows .sw-toolbar{padding:10px;margin-bottom:0!important}.sw-theme-arrows>ul.step-anchor{border:0;border-bottom:1px solid #ddd;padding:0;background:#f5f5f5;border-radius:0;border-top-right-radius:5px;list-style:none;overflow:hidden}.sw-theme-arrows>ul.step-anchor li+li:before{padding:0}.sw-theme-arrows>ul.step-anchor>li>a,.sw-theme-arrows>ul.step-anchor>li>a:hover{color:#bbb;text-decoration:none;padding:10px 0 10px 45px;position:relative;display:block;border:0!important;border-radius:0;outline-style:none;background:#f5f5f5}.sw-theme-arrows>ul.step-anchor>li>a:after{content:\" \";display:block;width:0;height:0;border-top:50px solid transparent;border-bottom:50px solid transparent;border-left:30px solid #f5f5f5;position:absolute;top:50%;margin-top:-50px;left:100%;z-index:2}.sw-theme-arrows>ul.step-anchor>li>a:before{content:\" \";display:block;width:0;height:0;border-top:50px solid transparent;border-bottom:50px solid transparent;border-left:30px solid #ddd;position:absolute;top:50%;margin-top:-50px;margin-left:1px;left:100%;z-index:1}.sw-theme-arrows>ul.step-anchor>li:first-child>a{padding-left:15px}.sw-theme-arrows>ul.step-anchor>li>a:hover{color:#bbb;text-decoration:none;outline-style:none;background:#f5f5f5;border-color:#f5f5f5}.sw-theme-arrows>ul.step-anchor>li>a:hover:after{border-left-color:#f5f5f5}.sw-theme-arrows>ul.step-anchor>li.clickable>a:hover{color:#4285f4!important;background:#46b8da!important}.sw-theme-arrows>ul.step-anchor>li.active>a{border-color:#5cb85c!important;color:#fff!important;background:#5cb85c!important}.sw-theme-arrows>ul.step-anchor>li.active>a:after{border-left:30px solid #5cb85c!important}.sw-theme-arrows>ul.step-anchor>li.done>a{border-color:#b1dfbb!important;color:#fff!important;background:#b1dfbb!important}.sw-theme-arrows>ul.step-anchor>li.done>a:after{border-left:30px solid #b1dfbb}.sw-theme-arrows>ul.step-anchor>li.danger>a{border-color:#d9534f!important;color:#fff!important;background:#d9534f!important}.sw-theme-arrows>ul.step-anchor>li.danger>a:after{border-left:30px solid #d9534f!important}.sw-theme-arrows>ul.step-anchor>li.disabled>a,.sw-theme-arrows>ul.step-anchor>li.disabled>a:hover{color:#eee!important}@media screen and (max-width:768px){.sw-theme-arrows>ul.step-anchor{border:0;background:#ddd!important}.sw-theme-arrows>.nav-tabs>li{float:none!important;margin-bottom:0}.sw-theme-arrows>ul.step-anchor>li>a,.sw-theme-arrows>ul.step-anchor>li>a:hover{padding-left:15px;margin-right:0;margin-bottom:1px}.sw-theme-arrows>ul.step-anchor>li>a:after,.sw-theme-arrows>ul.step-anchor>li>a:before{display:none}}.sw-theme-arrows::before{border:10px solid #f3f3f3;border-top:10px solid #5cb85c}\n\nC:\\xampp\\htdocs\\logistic\\dummy\\logistic\\themes\\son\\assets\\extensions\\bootstrap\\css\\smart-wizard-theme-circles.css:\n    1  /*!\n    2:  * SmartWizard v4.3.x\n    3   * jQuery Wizard Plugin\n    4:  * http://www.techlaboratory.net/smartwizard\n    5   *\n    6   * Created by Dipu Raj\n    .\n    8   *\n    9   * Licensed under the terms of MIT License\n   10:  * https://github.com/techlab/SmartWizard/blob/master/LICENSE\n   11   */\n   12  \n   13: /* SmartWizard Theme: Circles */\n   14  .sw-theme-circles {\n   15  }\n\nC:\\xampp\\htdocs\\logistic\\dummy\\logistic\\themes\\son\\assets\\extensions\\bootstrap\\css\\smart-wizard-theme-circles.min.css:\n    1  /*!\n    2:  * SmartWizard v4.3.x\n    3   * jQuery Wizard Plugin\n    4:  * http://www.techlaboratory.net/smartwizard\n    5   *\n    6   * Created by Dipu Raj\n    .\n    8   *\n    9   * Licensed under the terms of MIT License\n   10:  * https://github.com/techlab/SmartWizard/blob/master/LICENSE\n   11   */.sw-theme-circles .sw-container{min-height:300px}.sw-theme-circles .step-content{padding:10px 0;background-color:#fff;text-align:left}.sw-theme-circles .sw-toolbar{background:#fff;padding-left:10px;padding-right:10px;margin-bottom:0!important}.sw-theme-circles .sw-toolbar-bottom{border-top-color:#ddd!important;border-bottom-color:#ddd!important}.sw-theme-circles>ul.step-anchor{position:relative;background:#fff;border:none;list-style:none;margin-bottom:40px}.sw-theme-circles>ul.step-anchor:before{content:\" \";position:absolute;top:50%;bottom:0;width:100%;height:5px;background-color:#f5f5f5;border-radius:3px;z-index:0}.sw-theme-circles>ul.step-anchor>li{border:none;margin-left:40px;z-index:98}.sw-theme-circles>ul.step-anchor>li>a{border:2px solid #f5f5f5;background:#f5f5f5;width:75px;height:75px;text-align:center;padding:25px 0;border-radius:50%;-webkit-box-shadow:inset 0 0 0 3px #fff!important;box-shadow:inset 0 0 0 3px #fff!important;text-decoration:none;outline-style:none;z-index:99;color:#bbb;background:#f5f5f5;line-height:1}.sw-theme-circles>ul.step-anchor>li>a:hover{color:#bbb;background:#f5f5f5;border-width:2px}.sw-theme-circles>ul.step-anchor>li>a>small{position:relative;bottom:-40px;color:#ccc}.sw-theme-circles>ul.step-anchor>li.clickable>a:hover{color:#4285f4!important}.sw-theme-circles>ul.step-anchor>li.active>a{border-color:#5bc0de;color:#fff;background:#5bc0de}.sw-theme-circles>ul.step-anchor>li.active>a>small{color:#5bc0de}.sw-theme-circles>ul.step-anchor>li.done>a{border-color:#5cb85c;color:#fff;background:#5cb85c}.sw-theme-circles>ul.step-anchor>li.done>a>small{color:#5cb85c}.sw-theme-circles>ul.step-anchor>li.danger>a{border-color:#d9534f;color:#d9534f;background:#fff}.sw-theme-circles>ul.step-anchor>li.danger>a>small{color:#d9534f}.sw-theme-circles>ul.step-anchor>li.disabled>a,.sw-theme-circles>ul.step-anchor>li.disabled>a:hover{color:#eee!important}\n\nC:\\xampp\\htdocs\\logistic\\dummy\\logistic\\themes\\son\\assets\\extensions\\bootstrap\\css\\smart-wizard-theme-dots.css:\n    1  /*!\n    2:  * SmartWizard v4.3.x\n    3   * jQuery Wizard Plugin\n    4:  * http://www.techlaboratory.net/smartwizard\n    5   *\n    6   * Created by Dipu Raj\n    .\n    8   *\n    9   * Licensed under the terms of MIT License\n   10:  * https://github.com/techlab/SmartWizard/blob/master/LICENSE\n   11   */\n   12  \n   13: /* SmartWizard Theme: Dots */\n   14  .sw-theme-dots {\n   15  }\n\nC:\\xampp\\htdocs\\logistic\\dummy\\logistic\\themes\\son\\assets\\extensions\\bootstrap\\css\\smart-wizard-theme-dots.min.css:\n    1  /*!\n    2:  * SmartWizard v4.3.x\n    3   * jQuery Wizard Plugin\n    4:  * http://www.techlaboratory.net/smartwizard\n    5   *\n    6   * Created by Dipu Raj\n    .\n    8   *\n    9   * Licensed under the terms of MIT License\n   10:  * https://github.com/techlab/SmartWizard/blob/master/LICENSE\n   11   */.sw-theme-dots .sw-container{min-height:300px}.sw-theme-dots .step-content{padding:10px 0;border:none;background-color:#fff;text-align:left}.sw-theme-dots .sw-toolbar{background:#fff;border-radius:0!important;padding-left:10px;padding-right:10px;margin-bottom:0!important}.sw-theme-dots .sw-toolbar-top{border-bottom-color:#ddd!important}.sw-theme-dots .sw-toolbar-bottom{border-top-color:#ddd!important;border-bottom-color:#ddd!important}.sw-theme-dots>ul.step-anchor{position:relative;background:#fff;border:0 solid #ccc!important;list-style:none}.sw-theme-dots>ul.step-anchor:before{content:\" \";position:absolute;top:70px;bottom:0;width:100%;height:5px;background-color:#f5f5f5;border-radius:3px;z-order:0;z-index:95}.sw-theme-dots>ul.step-anchor>li{border:none}.sw-theme-dots>ul.step-anchor>li>a{position:relative;text-align:center;font-weight:700;background:0 0;border:none;color:#ccc;text-decoration:none;outline-style:none;z-index:96;display:block}.sw-theme-dots>ul.step-anchor>li>a:before{content:' ';position:absolute;bottom:2px;left:40%;margin-top:10px;display:block;border-radius:50%;color:#428bca;background:#f5f5f5;border:none;width:30px;height:30px;text-decoration:none;z-index:98}.sw-theme-dots>ul.step-anchor>li>a:after{content:' ';position:relative;left:43%;bottom:2px;margin-top:10px;display:block;width:15px;height:15px;background:#f5f5f5;border-radius:50%;z-index:99}.sw-theme-dots>ul.step-anchor>li>a:hover{color:#ccc;background:0 0}.sw-theme-dots>ul.step-anchor>li>a:focus{color:#ccc;border:none}.sw-theme-dots>ul.step-anchor>li.clickable>a:hover{color:#999}.sw-theme-dots>ul.step-anchor>li.active>a{color:#5bc0de}.sw-theme-dots>ul.step-anchor>li.active>a:hover{border:none}.sw-theme-dots>ul.step-anchor>li.active>a:after{background:#5bc0de}.sw-theme-dots>ul.step-anchor>li.done>a{color:#5cb85c}.sw-theme-dots>ul.step-anchor>li.done>a:after{background:#5cb85c}.sw-theme-dots>ul.step-anchor>li.danger>a{color:#d9534f}.sw-theme-dots>ul.step-anchor>li.danger>a:after{background:#d9534f}.sw-theme-dots>ul.step-anchor>li.disabled>a,.sw-theme-dots>ul.step-anchor>li.disabled>a:hover{color:#eee!important}.sw-theme-dots>ul.step-anchor>li.disabled>a:after{background:#eee}@media screen and (max-width:768px){.sw-theme-dots>ul.step-anchor:before{top:0;bottom:0;left:10px;width:5px;height:100%;background-color:#f5f5f5;display:block;margin-right:10px}.sw-theme-dots>ul.step-anchor>li{margin-left:20px;display:block;clear:both}.sw-theme-dots>ul.step-anchor>li>a{text-align:left;margin-left:0;display:block}.sw-theme-dots>ul.step-anchor>li>a:before{top:5px;left:-23px;margin-right:10px;display:block}.sw-theme-dots>ul.step-anchor>li>a:after{top:-38px;left:-31px;margin-right:10px;display:block}}\n\nC:\\xampp\\htdocs\\logistic\\dummy\\logistic\\themes\\son\\assets\\extensions\\bootstrap\\css\\smart-wizard.css:\n    1  /*!\n    2:  * SmartWizard v4.3.x\n    3   * jQuery Wizard Plugin\n    4:  * http://www.techlaboratory.net/smartwizard\n    5   *\n    6   * Created by Dipu Raj\n    .\n    8   *\n    9   * Licensed under the terms of MIT License\n   10:  * https://github.com/techlab/SmartWizard/blob/master/LICENSE\n   11   */\n   12  \n   13: /* SmartWizard Basic CSS */\n   14  .sw-main {\n   15      position: relative;\n   ..\n   37  }\n   38  \n   39: /* SmartWizard Theme: White */\n   40  .sw-theme-default {\n   41      -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3);\n\nC:\\xampp\\htdocs\\logistic\\dummy\\logistic\\themes\\son\\assets\\extensions\\bootstrap\\js\\jquery.smartWizard.js:\n    1  /*!\n    2:  * SmartWizard v4.3.1\n    3   * The awesome jQuery step wizard plugin with Bootstrap support\n    4:  * http://www.techlaboratory.net/smartwizard\n    5   *\n    6   * Created by Dipu Raj\n    .\n    8   *\n    9   * Licensed under the terms of the MIT License\n   10:  * https://github.com/techlab/SmartWizard/blob/master/LICENSE\n   11   */\n   12  \n   ..\n   54  \n   55      // The plugin constructor\n   56:     function SmartWizard(element, options) {\n   57          // Merge user settings with default, recursively\n   58          this.options = $.extend(true, {}, defaults, options);\n   ..\n   81      }\n   82  \n   83:     $.extend(SmartWizard.prototype, {\n   84  \n   85          init: function () {\n   ..\n  621  \n  622      // Wrapper for the plugin\n  623:     $.fn.smartWizard = function (options) {\n  624          var args = arguments;\n  625          var instance;\n  ...\n  627          if (options === undefined || typeof options === 'object') {\n  628              return this.each(function () {\n  629:                 if (!$.data(this, \"smartWizard\")) {\n  630:                     $.data(this, \"smartWizard\", new SmartWizard(this, options));\n  631                  }\n  632              });\n  633          } else if (typeof options === 'string' && options[0] !== '_' && options !== 'init') {\n  634:             instance = $.data(this[0], 'smartWizard');\n  635  \n  636              if (options === 'destroy') {\n  637:                 $.data(this, 'smartWizard', null);\n  638              }\n  639  \n  640:             if (instance instanceof SmartWizard && typeof instance[options] === 'function') {\n  641                  return instance[options].apply(instance, Array.prototype.slice.call(args, 1));\n  642              } else {\n\n97 matches across 11 files\n\n\nSearching 7139 files for \"step-anchor\"\n\nC:\\xampp\\htdocs\\logistic\\dummy\\logistic\\themes\\son\\assets\\extensions\\bootstrap\\css\\smart-wizard-theme-arrow.css:\n   71  }\n   72  \n   73: .sw-theme-default > ul.step-anchor > li {\n   74      position: relative;\n   75      margin-right: 2px;\n   76  }\n   77  \n   78: .sw-theme-default > ul.step-anchor > li > a, .sw-theme-default > ul.step-anchor > li > a:hover {\n   79      border: none !important;\n   80      color: #bbb;\n   ..\n   86  }\n   87  \n   88: .sw-theme-default > ul.step-anchor > li.clickable > a:hover {\n   89      color: #4285F4 !important;\n   90      background: transparent !important;\n   ..\n   92  }\n   93  \n   94: .sw-theme-default > ul.step-anchor > li > a::after {\n   95      content: \"\";\n   96      background: #4285F4;\n   ..\n  107  }\n  108  \n  109: .sw-theme-default > ul.step-anchor > li.active > a {\n  110      border: none !important;\n  111      color: #4285F4 !important;\n  ...\n  114  }\n  115  \n  116: .sw-theme-default > ul.step-anchor > li.active > a::after {\n  117      -webkit-transform: scale(1);\n  118      -ms-transform: scale(1);\n  ...\n  120  }\n  121  \n  122: .sw-theme-default > ul.step-anchor > li.done > a {\n  123      border: none !important;\n  124      color: #000 !important;\n  ...\n  127  }\n  128  \n  129: .sw-theme-default > ul.step-anchor > li.done > a::after {\n  130      background: #5cb85c;\n  131      -webkit-transform: scale(1);\n  ...\n  134  }\n  135  \n  136: .sw-theme-default > ul.step-anchor > li.danger > a {\n  137      border: none !important;\n  138      color: #d9534f !important;\n  ...\n  141  }\n  142  \n  143: .sw-theme-default > ul.step-anchor > li.danger > a::after {\n  144      background: #d9534f;\n  145      border-left-color: #f8d7da;\n  ...\n  149  }\n  150  \n  151: .sw-theme-default > ul.step-anchor > li.disabled > a, .sw-theme-default > ul.step-anchor > li.disabled > a:hover {\n  152      color: #eee !important;\n  153      cursor: not-allowed;\n\nC:\\xampp\\htdocs\\logistic\\dummy\\logistic\\themes\\son\\assets\\extensions\\bootstrap\\css\\smart-wizard-theme-arrow.min.css:\n    9   * Licensed under the terms of MIT License\n   10   * https://github.com/techlab/SmartWizard/blob/master/LICENSE\n   11:  */.sw-theme-arrows{border-radius:5px;border:1px solid #ddd}.sw-theme-arrows>.sw-container{min-height:200px}.sw-theme-arrows .step-content{padding:0 10px;border:0 solid #d4d4d4;background-color:#fff;text-align:left}.sw-theme-arrows .sw-toolbar{padding:10px;margin-bottom:0!important}.sw-theme-arrows>ul.step-anchor{border:0;border-bottom:1px solid #ddd;padding:0;background:#f5f5f5;border-radius:0;border-top-right-radius:5px;list-style:none;overflow:hidden}.sw-theme-arrows>ul.step-anchor li+li:before{padding:0}.sw-theme-arrows>ul.step-anchor>li>a,.sw-theme-arrows>ul.step-anchor>li>a:hover{color:#bbb;text-decoration:none;padding:10px 0 10px 45px;position:relative;display:block;border:0!important;border-radius:0;outline-style:none;background:#f5f5f5}.sw-theme-arrows>ul.step-anchor>li>a:after{content:\" \";display:block;width:0;height:0;border-top:50px solid transparent;border-bottom:50px solid transparent;border-left:30px solid #f5f5f5;position:absolute;top:50%;margin-top:-50px;left:100%;z-index:2}.sw-theme-arrows>ul.step-anchor>li>a:before{content:\" \";display:block;width:0;height:0;border-top:50px solid transparent;border-bottom:50px solid transparent;border-left:30px solid #ddd;position:absolute;top:50%;margin-top:-50px;margin-left:1px;left:100%;z-index:1}.sw-theme-arrows>ul.step-anchor>li:first-child>a{padding-left:15px}.sw-theme-arrows>ul.step-anchor>li>a:hover{color:#bbb;text-decoration:none;outline-style:none;background:#f5f5f5;border-color:#f5f5f5}.sw-theme-arrows>ul.step-anchor>li>a:hover:after{border-left-color:#f5f5f5}.sw-theme-arrows>ul.step-anchor>li.clickable>a:hover{color:#4285f4!important;background:#46b8da!important}.sw-theme-arrows>ul.step-anchor>li.active>a{border-color:#5cb85c!important;color:#fff!important;background:#5cb85c!important}.sw-theme-arrows>ul.step-anchor>li.active>a:after{border-left:30px solid #5cb85c!important}.sw-theme-arrows>ul.step-anchor>li.done>a{border-color:#b1dfbb!important;color:#fff!important;background:#b1dfbb!important}.sw-theme-arrows>ul.step-anchor>li.done>a:after{border-left:30px solid #b1dfbb}.sw-theme-arrows>ul.step-anchor>li.danger>a{border-color:#d9534f!important;color:#fff!important;background:#d9534f!important}.sw-theme-arrows>ul.step-anchor>li.danger>a:after{border-left:30px solid #d9534f!important}.sw-theme-arrows>ul.step-anchor>li.disabled>a,.sw-theme-arrows>ul.step-anchor>li.disabled>a:hover{color:#eee!important}@media screen and (max-width:768px){.sw-theme-arrows>ul.step-anchor{border:0;background:#ddd!important}.sw-theme-arrows>.nav-tabs>li{float:none!important;margin-bottom:0}.sw-theme-arrows>ul.step-anchor>li>a,.sw-theme-arrows>ul.step-anchor>li>a:hover{padding-left:15px;margin-right:0;margin-bottom:1px}.sw-theme-arrows>ul.step-anchor>li>a:after,.sw-theme-arrows>ul.step-anchor>li>a:before{display:none}}.sw-theme-arrows::before{border:10px solid #f3f3f3;border-top:10px solid #5cb85c}\n\nC:\\xampp\\htdocs\\logistic\\dummy\\logistic\\themes\\son\\assets\\extensions\\bootstrap\\css\\smart-wizard-theme-circles.css:\n   40  }\n   41  \n   42: .sw-theme-circles > ul.step-anchor {\n   43      position: relative;\n   44      background: #fff;\n   ..\n   48  }\n   49  \n   50: .sw-theme-circles > ul.step-anchor:before {\n   51      content: \" \";\n   52      position: absolute;\n   ..\n   60  }\n   61  \n   62: .sw-theme-circles > ul.step-anchor > li {\n   63      border: none;\n   64      margin-left: 40px;\n   ..\n   66  }\n   67  \n   68: .sw-theme-circles > ul.step-anchor > li > a {\n   69      border: 2px solid #f5f5f5;\n   70      background: #f5f5f5;\n   ..\n   84  }\n   85  \n   86: .sw-theme-circles > ul.step-anchor > li > a:hover {\n   87      color: #bbb;\n   88      background: #f5f5f5;\n   ..\n   90  }\n   91  \n   92: .sw-theme-circles > ul.step-anchor > li > a > small {\n   93      position: relative;\n   94      bottom: -40px;\n   ..\n   96  }\n   97  \n   98: .sw-theme-circles > ul.step-anchor > li.clickable > a:hover {\n   99      color: #4285F4 !important;\n  100  }\n  101  \n  102: .sw-theme-circles > ul.step-anchor > li.active > a {\n  103      border-color: #5bc0de;\n  104      color: #fff;\n  ...\n  106  }\n  107  \n  108: .sw-theme-circles > ul.step-anchor > li.active > a > small {\n  109      color: #5bc0de;\n  110  }\n  111  \n  112: .sw-theme-circles > ul.step-anchor > li.done > a {\n  113      border-color: #5cb85c;\n  114      color: #fff;\n  ...\n  116  }\n  117  \n  118: .sw-theme-circles > ul.step-anchor > li.done > a > small {\n  119      color: #5cb85c;\n  120  }\n  121  \n  122: .sw-theme-circles > ul.step-anchor > li.danger > a {\n  123      border-color: #d9534f;\n  124      color: #d9534f;\n  ...\n  126  }\n  127  \n  128: .sw-theme-circles > ul.step-anchor > li.danger > a > small {\n  129      color: #d9534f;\n  130  }\n  131  \n  132: .sw-theme-circles > ul.step-anchor > li.disabled > a, .sw-theme-circles > ul.step-anchor > li.disabled > a:hover {\n  133      color: #eee !important;\n  134  }\n\nC:\\xampp\\htdocs\\logistic\\dummy\\logistic\\themes\\son\\assets\\extensions\\bootstrap\\css\\smart-wizard-theme-circles.min.css:\n    9   * Licensed under the terms of MIT License\n   10   * https://github.com/techlab/SmartWizard/blob/master/LICENSE\n   11:  */.sw-theme-circles .sw-container{min-height:300px}.sw-theme-circles .step-content{padding:10px 0;background-color:#fff;text-align:left}.sw-theme-circles .sw-toolbar{background:#fff;padding-left:10px;padding-right:10px;margin-bottom:0!important}.sw-theme-circles .sw-toolbar-bottom{border-top-color:#ddd!important;border-bottom-color:#ddd!important}.sw-theme-circles>ul.step-anchor{position:relative;background:#fff;border:none;list-style:none;margin-bottom:40px}.sw-theme-circles>ul.step-anchor:before{content:\" \";position:absolute;top:50%;bottom:0;width:100%;height:5px;background-color:#f5f5f5;border-radius:3px;z-index:0}.sw-theme-circles>ul.step-anchor>li{border:none;margin-left:40px;z-index:98}.sw-theme-circles>ul.step-anchor>li>a{border:2px solid #f5f5f5;background:#f5f5f5;width:75px;height:75px;text-align:center;padding:25px 0;border-radius:50%;-webkit-box-shadow:inset 0 0 0 3px #fff!important;box-shadow:inset 0 0 0 3px #fff!important;text-decoration:none;outline-style:none;z-index:99;color:#bbb;background:#f5f5f5;line-height:1}.sw-theme-circles>ul.step-anchor>li>a:hover{color:#bbb;background:#f5f5f5;border-width:2px}.sw-theme-circles>ul.step-anchor>li>a>small{position:relative;bottom:-40px;color:#ccc}.sw-theme-circles>ul.step-anchor>li.clickable>a:hover{color:#4285f4!important}.sw-theme-circles>ul.step-anchor>li.active>a{border-color:#5bc0de;color:#fff;background:#5bc0de}.sw-theme-circles>ul.step-anchor>li.active>a>small{color:#5bc0de}.sw-theme-circles>ul.step-anchor>li.done>a{border-color:#5cb85c;color:#fff;background:#5cb85c}.sw-theme-circles>ul.step-anchor>li.done>a>small{color:#5cb85c}.sw-theme-circles>ul.step-anchor>li.danger>a{border-color:#d9534f;color:#d9534f;background:#fff}.sw-theme-circles>ul.step-anchor>li.danger>a>small{color:#d9534f}.sw-theme-circles>ul.step-anchor>li.disabled>a,.sw-theme-circles>ul.step-anchor>li.disabled>a:hover{color:#eee!important}\n\nC:\\xampp\\htdocs\\logistic\\dummy\\logistic\\themes\\son\\assets\\extensions\\bootstrap\\css\\smart-wizard-theme-dots.css:\n   43  }\n   44  \n   45: .sw-theme-dots > ul.step-anchor {\n   46      position: relative;\n   47      background: #fff;\n   ..\n   50  }\n   51  \n   52: .sw-theme-dots > ul.step-anchor:before {\n   53      content: \" \";\n   54      position: absolute;\n   ..\n   63  }\n   64  \n   65: .sw-theme-dots > ul.step-anchor > li {\n   66      border: none;\n   67  }\n   68  /* Anchors styles */\n   69: .sw-theme-dots > ul.step-anchor > li > a {\n   70      position: relative;\n   71      text-align: center;\n   ..\n   80  }\n   81  \n   82: .sw-theme-dots > ul.step-anchor > li > a:before {\n   83      content: ' ';\n   84      position: absolute;\n   ..\n   97  }\n   98  \n   99: .sw-theme-dots > ul.step-anchor > li > a:after {\n  100      content: ' ';\n  101      position: relative;\n  ...\n  111  }\n  112  \n  113: .sw-theme-dots > ul.step-anchor > li > a:hover {\n  114      color: #ccc;\n  115      background: transparent;\n  116  }\n  117  \n  118: .sw-theme-dots > ul.step-anchor > li > a:focus {\n  119      color: #ccc;\n  120      border: none;\n  121  }\n  122  \n  123: .sw-theme-dots > ul.step-anchor > li.clickable > a:hover {\n  124      color: #999;\n  125  }\n  126  /* Active anchors */\n  127: .sw-theme-dots > ul.step-anchor > li.active > a {\n  128      color: #5bc0de;\n  129  }\n  130  \n  131: .sw-theme-dots > ul.step-anchor > li.active > a:hover {\n  132      border: none;\n  133  }\n  134  \n  135: .sw-theme-dots > ul.step-anchor > li.active > a:after {\n  136      background: #5bc0de;\n  137  }\n  138  /* Done anchors */\n  139: .sw-theme-dots > ul.step-anchor > li.done > a {\n  140      color: #5cb85c;\n  141  }\n  142  \n  143: .sw-theme-dots > ul.step-anchor > li.done > a:after {\n  144      background: #5cb85c;\n  145  }\n  146  /* Danger anchors */\n  147: .sw-theme-dots > ul.step-anchor > li.danger > a {\n  148      color: #d9534f;\n  149  }\n  150  \n  151: .sw-theme-dots > ul.step-anchor > li.danger > a:after {\n  152      background: #d9534f;\n  153  }\n  154  \n  155: .sw-theme-dots > ul.step-anchor > li.disabled > a, .sw-theme-dots > ul.step-anchor > li.disabled > a:hover {\n  156      color: #eee !important;\n  157  }\n  158  \n  159: .sw-theme-dots > ul.step-anchor > li.disabled > a:after {\n  160      background: #eee;\n  161  }\n  ...\n  163  /* Responsive CSS */\n  164  @media screen and (max-width: 768px) {\n  165:     .sw-theme-dots > ul.step-anchor:before {\n  166          top: 0;\n  167          bottom: 0;\n  ...\n  174      }\n  175  \n  176:     .sw-theme-dots > ul.step-anchor > li {\n  177          margin-left: 20px;\n  178          display: block;\n  ...\n  180      }\n  181  \n  182:     .sw-theme-dots > ul.step-anchor > li > a {\n  183          text-align: left;\n  184          margin-left: 0;\n  ...\n  186      }\n  187  \n  188:     .sw-theme-dots > ul.step-anchor > li > a:before {\n  189          top: 5px;\n  190          left: -23px;\n  ...\n  193      }\n  194  \n  195:     .sw-theme-dots > ul.step-anchor > li > a:after {\n  196          top: -38px;\n  197          left: -31px;\n\nC:\\xampp\\htdocs\\logistic\\dummy\\logistic\\themes\\son\\assets\\extensions\\bootstrap\\css\\smart-wizard-theme-dots.min.css:\n    9   * Licensed under the terms of MIT License\n   10   * https://github.com/techlab/SmartWizard/blob/master/LICENSE\n   11:  */.sw-theme-dots .sw-container{min-height:300px}.sw-theme-dots .step-content{padding:10px 0;border:none;background-color:#fff;text-align:left}.sw-theme-dots .sw-toolbar{background:#fff;border-radius:0!important;padding-left:10px;padding-right:10px;margin-bottom:0!important}.sw-theme-dots .sw-toolbar-top{border-bottom-color:#ddd!important}.sw-theme-dots .sw-toolbar-bottom{border-top-color:#ddd!important;border-bottom-color:#ddd!important}.sw-theme-dots>ul.step-anchor{position:relative;background:#fff;border:0 solid #ccc!important;list-style:none}.sw-theme-dots>ul.step-anchor:before{content:\" \";position:absolute;top:70px;bottom:0;width:100%;height:5px;background-color:#f5f5f5;border-radius:3px;z-order:0;z-index:95}.sw-theme-dots>ul.step-anchor>li{border:none}.sw-theme-dots>ul.step-anchor>li>a{position:relative;text-align:center;font-weight:700;background:0 0;border:none;color:#ccc;text-decoration:none;outline-style:none;z-index:96;display:block}.sw-theme-dots>ul.step-anchor>li>a:before{content:' ';position:absolute;bottom:2px;left:40%;margin-top:10px;display:block;border-radius:50%;color:#428bca;background:#f5f5f5;border:none;width:30px;height:30px;text-decoration:none;z-index:98}.sw-theme-dots>ul.step-anchor>li>a:after{content:' ';position:relative;left:43%;bottom:2px;margin-top:10px;display:block;width:15px;height:15px;background:#f5f5f5;border-radius:50%;z-index:99}.sw-theme-dots>ul.step-anchor>li>a:hover{color:#ccc;background:0 0}.sw-theme-dots>ul.step-anchor>li>a:focus{color:#ccc;border:none}.sw-theme-dots>ul.step-anchor>li.clickable>a:hover{color:#999}.sw-theme-dots>ul.step-anchor>li.active>a{color:#5bc0de}.sw-theme-dots>ul.step-anchor>li.active>a:hover{border:none}.sw-theme-dots>ul.step-anchor>li.active>a:after{background:#5bc0de}.sw-theme-dots>ul.step-anchor>li.done>a{color:#5cb85c}.sw-theme-dots>ul.step-anchor>li.done>a:after{background:#5cb85c}.sw-theme-dots>ul.step-anchor>li.danger>a{color:#d9534f}.sw-theme-dots>ul.step-anchor>li.danger>a:after{background:#d9534f}.sw-theme-dots>ul.step-anchor>li.disabled>a,.sw-theme-dots>ul.step-anchor>li.disabled>a:hover{color:#eee!important}.sw-theme-dots>ul.step-anchor>li.disabled>a:after{background:#eee}@media screen and (max-width:768px){.sw-theme-dots>ul.step-anchor:before{top:0;bottom:0;left:10px;width:5px;height:100%;background-color:#f5f5f5;display:block;margin-right:10px}.sw-theme-dots>ul.step-anchor>li{margin-left:20px;display:block;clear:both}.sw-theme-dots>ul.step-anchor>li>a{text-align:left;margin-left:0;display:block}.sw-theme-dots>ul.step-anchor>li>a:before{top:5px;left:-23px;margin-right:10px;display:block}.sw-theme-dots>ul.step-anchor>li>a:after{top:-38px;left:-31px;margin-right:10px;display:block}}\n\nC:\\xampp\\htdocs\\logistic\\dummy\\logistic\\themes\\son\\assets\\extensions\\bootstrap\\css\\smart-wizard.css:\n   71  }\n   72  \n   73: .sw-theme-default > ul.step-anchor > li {\n   74      position: relative;\n   75      margin-right: 2px;\n   76  }\n   77  \n   78: .sw-theme-default > ul.step-anchor > li > a, .sw-theme-default > ul.step-anchor > li > a:hover {\n   79      border: none !important;\n   80      color: #bbb;\n   ..\n   86  }\n   87  \n   88: .sw-theme-default > ul.step-anchor > li.clickable > a:hover {\n   89      color: #4285F4 !important;\n   90      background: transparent !important;\n   ..\n   92  }\n   93  \n   94: .sw-theme-default > ul.step-anchor > li > a::after {\n   95      content: \"\";\n   96      background: #4285F4;\n   ..\n  107  }\n  108  \n  109: .sw-theme-default > ul.step-anchor > li.active > a {\n  110      border: none !important;\n  111      color: #4285F4 !important;\n  ...\n  114  }\n  115  \n  116: .sw-theme-default > ul.step-anchor > li.active > a::after {\n  117      -webkit-transform: scale(1);\n  118      -ms-transform: scale(1);\n  ...\n  120  }\n  121  \n  122: .sw-theme-default > ul.step-anchor > li.done > a {\n  123      border: none !important;\n  124      color: #000 !important;\n  ...\n  127  }\n  128  \n  129: .sw-theme-default > ul.step-anchor > li.done > a::after {\n  130      background: #5cb85c;\n  131      -webkit-transform: scale(1);\n  ...\n  134  }\n  135  \n  136: .sw-theme-default > ul.step-anchor > li.danger > a {\n  137      border: none !important;\n  138      color: #d9534f !important;\n  ...\n  141  }\n  142  \n  143: .sw-theme-default > ul.step-anchor > li.danger > a::after {\n  144      background: #d9534f;\n  145      border-left-color: #f8d7da;\n  ...\n  149  }\n  150  \n  151: .sw-theme-default > ul.step-anchor > li.disabled > a, .sw-theme-default > ul.step-anchor > li.disabled > a:hover {\n  152      color: #eee !important;\n  153      cursor: not-allowed;\n\nC:\\xampp\\htdocs\\logistic\\dummy\\logistic\\themes\\son\\assets\\extensions\\bootstrap\\js\\jquery.smartWizard.js:\n  120              this.main.addClass('sw-main sw-theme-' + this.options.theme);\n  121              // Set anchor elements\n  122:             this.nav.addClass('nav nav-tabs step-anchor').children('li').addClass('nav-item').children('a').addClass('nav-link'); // nav-justified  nav-pills\n  123  \n  124              // Make the anchor clickable\n\n128 matches across 8 files\n",
 			"settings":
 			{
-				"buffer_size": 4623,
+				"buffer_size": 47495,
 				"line_ending": "Windows",
 				"name": "Find Results",
 				"scratch": true
 			}
 		},
 		{
-			"file": "protected/components/form/views/delivery_order_form.php",
+			"file": "protected/config/assets.php",
 			"settings":
 			{
-				"buffer_size": 2456,
+				"buffer_size": 8560,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "protected/controllers/UserController.php",
+			"file": "yii/framework/gii/views/layouts/main.php",
 			"settings":
 			{
-				"buffer_size": 9375,
+				"buffer_size": 2205,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "themes/son/assets/extensions/bootstrap/js/jquery.smartWizard.js",
+			"settings":
+			{
+				"buffer_size": 27630,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "themes/son/assets/extensions/bootstrap/js/bootstrap.js",
+			"settings":
+			{
+				"buffer_size": 60681,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "protected/components/form/SignupForm.php",
+			"file": "/C/Users/Toan Tran/Desktop/SmartWizard-master/examples/index.html",
 			"settings":
 			{
-				"buffer_size": 3601,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "protected/components/menu/UserMenu.php",
-			"settings":
-			{
-				"buffer_size": 4665,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "protected/extensions/Son/html/SMenu.php",
-			"settings":
-			{
-				"buffer_size": 3129,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"settings":
-			{
-				"buffer_size": 0,
-				"line_ending": "Windows"
+				"buffer_size": 12147,
+				"line_ending": "Unix"
 			}
 		}
 	],
@@ -205,59 +207,95 @@
 	"expanded_folders":
 	[
 		"/C/xampp/htdocs/logistic/dummy/logistic",
-		"/C/xampp/htdocs/logistic/dummy/logistic/_cache_data",
-		"/C/xampp/htdocs/logistic/dummy/logistic/img",
 		"/C/xampp/htdocs/logistic/dummy/logistic/protected",
 		"/C/xampp/htdocs/logistic/dummy/logistic/protected/components",
-		"/C/xampp/htdocs/logistic/dummy/logistic/protected/components/form",
-		"/C/xampp/htdocs/logistic/dummy/logistic/protected/components/list",
-		"/C/xampp/htdocs/logistic/dummy/logistic/protected/components/list/views",
-		"/C/xampp/htdocs/logistic/dummy/logistic/protected/components/menu",
-		"/C/xampp/htdocs/logistic/dummy/logistic/protected/components/menu/views",
-		"/C/xampp/htdocs/logistic/dummy/logistic/protected/components/menu/views/include",
-		"/C/xampp/htdocs/logistic/dummy/logistic/protected/components/models",
-		"/C/xampp/htdocs/logistic/dummy/logistic/protected/controllers",
-		"/C/xampp/htdocs/logistic/dummy/logistic/protected/controllers/collaborator",
-		"/C/xampp/htdocs/logistic/dummy/logistic/protected/controllers/collaborator/includes",
+		"/C/xampp/htdocs/logistic/dummy/logistic/protected/config",
 		"/C/xampp/htdocs/logistic/dummy/logistic/protected/data",
 		"/C/xampp/htdocs/logistic/dummy/logistic/protected/extensions",
 		"/C/xampp/htdocs/logistic/dummy/logistic/protected/extensions/Son",
-		"/C/xampp/htdocs/logistic/dummy/logistic/protected/extensions/Son/html",
-		"/C/xampp/htdocs/logistic/dummy/logistic/protected/messages",
-		"/C/xampp/htdocs/logistic/dummy/logistic/protected/messages/vi",
-		"/C/xampp/htdocs/logistic/dummy/logistic/protected/messages/vi/home",
 		"/C/xampp/htdocs/logistic/dummy/logistic/protected/models",
 		"/C/xampp/htdocs/logistic/dummy/logistic/protected/modules",
 		"/C/xampp/htdocs/logistic/dummy/logistic/protected/modules/admin",
 		"/C/xampp/htdocs/logistic/dummy/logistic/protected/views",
+		"/C/xampp/htdocs/logistic/dummy/logistic/protected/views/collaborator",
 		"/C/xampp/htdocs/logistic/dummy/logistic/protected/views/home",
+		"/C/xampp/htdocs/logistic/dummy/logistic/protected/views/layouts",
 		"/C/xampp/htdocs/logistic/dummy/logistic/protected/views/user",
 		"/C/xampp/htdocs/logistic/dummy/logistic/testapp",
 		"/C/xampp/htdocs/logistic/dummy/logistic/themes",
 		"/C/xampp/htdocs/logistic/dummy/logistic/themes/giaodichtrungquoc",
 		"/C/xampp/htdocs/logistic/dummy/logistic/themes/giaodichtrungquoc/assets",
 		"/C/xampp/htdocs/logistic/dummy/logistic/themes/giaodichtrungquoc/assets/extensions",
+		"/C/xampp/htdocs/logistic/dummy/logistic/themes/giaodichtrungquoc/assets/extensions/bootstrap",
+		"/C/xampp/htdocs/logistic/dummy/logistic/themes/giaodichtrungquoc/assets/extensions/bootstrap/css",
 		"/C/xampp/htdocs/logistic/dummy/logistic/themes/giaodichtrungquoc/views",
 		"/C/xampp/htdocs/logistic/dummy/logistic/themes/son",
 		"/C/xampp/htdocs/logistic/dummy/logistic/themes/son/assets",
 		"/C/xampp/htdocs/logistic/dummy/logistic/themes/son/assets/extensions",
+		"/C/xampp/htdocs/logistic/dummy/logistic/themes/son/assets/extensions/bootstrap",
+		"/C/xampp/htdocs/logistic/dummy/logistic/themes/son/assets/extensions/bootstrap/css",
+		"/C/xampp/htdocs/logistic/dummy/logistic/themes/son/assets/extensions/bootstrap/js",
+		"/C/xampp/htdocs/logistic/dummy/logistic/themes/son/assets/extensions/font-awesome-3.2.1",
+		"/C/xampp/htdocs/logistic/dummy/logistic/themes/son/assets/extensions/font-awesome-3.2.1/css",
+		"/C/xampp/htdocs/logistic/dummy/logistic/themes/son/assets/extensions/jquery-ui",
+		"/C/xampp/htdocs/logistic/dummy/logistic/themes/son/assets/extensions/jquery-ui/js",
 		"/C/xampp/htdocs/logistic/dummy/logistic/yii",
 		"/C/xampp/htdocs/logistic/dummy/logistic/yii/framework",
-		"/C/xampp/htdocs/logistic/dummy/logistic/yii/framework/base",
 		"/C/xampp/htdocs/logistic/dummy/logistic/yii/framework/gii",
-		"/C/xampp/htdocs/logistic/dummy/logistic/yii/framework/gii/assets",
-		"/C/xampp/htdocs/logistic/dummy/logistic/yii/framework/gii/assets/js",
 		"/C/xampp/htdocs/logistic/dummy/logistic/yii/framework/gii/views",
 		"/C/xampp/htdocs/logistic/dummy/logistic/yii/framework/gii/views/layouts"
 	],
 	"file_history":
 	[
-		"/C/xampp/htdocs/logistic/dummy/logistic/protected/components/form/views/unknown_shop_delivery_order_form.php",
-		"/C/xampp/htdocs/logistic/dummy/logistic/protected/views/user/b1.css",
-		"/C/xampp/htdocs/logistic/dummy/logistic/protected/views/user/create_order.php",
-		"/C/xampp/htdocs/logistic/dummy/logistic/protected/views/user/create_order.css",
+		"/C/xampp/htdocs/logistic/dummy/logistic/themes/son/assets/extensions/bootstrap/css/smart-wizard-theme-dots.min.css",
+		"/C/Users/Toan Tran/Desktop/SmartWizard-master/dist/css/smart_wizard_theme_dots.min.css",
+		"/C/Users/Toan Tran/Desktop/SmartWizard-master/dist/css/smart_wizard_theme_dots.css",
+		"/C/xampp/htdocs/logistic/dummy/logistic/themes/son/assets/extensions/bootstrap/css/smart-wizard-theme-dots.css",
+		"/C/Users/Toan Tran/Desktop/SmartWizard-master/dist/css/smart_wizard_theme_circles.min.css",
+		"/C/xampp/htdocs/logistic/dummy/logistic/themes/son/assets/extensions/bootstrap/css/smart-wizard-theme-circles.min.css",
+		"/C/Users/Toan Tran/Desktop/SmartWizard-master/dist/css/smart_wizard_theme_circles.css",
+		"/C/xampp/htdocs/logistic/dummy/logistic/themes/son/assets/extensions/bootstrap/css/smart-wizard-theme-circles.css",
+		"/C/xampp/htdocs/logistic/dummy/logistic/protected/views/layouts/user_main.php",
 		"/C/xampp/htdocs/logistic/dummy/logistic/protected/config/assets.php",
+		"/C/xampp/htdocs/logistic/dummy/logistic/protected/views/user/index.php",
+		"/C/Users/Toan Tran/Desktop/SmartWizard-master/examples/smartwizard-ajax.html",
+		"/C/xampp/htdocs/logistic/dummy/logistic/protected/config/params/front_page_content.php",
+		"/C/xampp/htdocs/logistic/dummy/logistic/protected/extensions/paypal/paypal/rest-api-sdk-php/sample/index.php",
+		"/C/xampp/htdocs/logistic/dummy/logistic/protected/extensions/Son/super-modules/api/views/api.php",
+		"/C/xampp/htdocs/logistic/dummy/logistic/themes/son/assets/extensions/bootstrap/css/smart-wizard-theme-arrow.min.css",
+		"/C/Users/Toan Tran/Desktop/SmartWizard-master/dist/css/smart_wizard_theme_arrows.css",
+		"/C/Users/Toan Tran/Desktop/SmartWizard-master/dist/css/smart_wizard.css",
+		"/C/xampp/htdocs/logistic/dummy/logistic/protected/controllers/CollaboratorController.php",
+		"/C/xampp/htdocs/logistic/dummy/logistic/chrome_extensions/libraries/bootstrap/css/bootstrap-theme.min.css",
+		"/C/Users/Toan Tran/Desktop/SmartWizard-master/dist/css/smart_wizard_theme_arrows.min.css",
+		"/C/xampp/htdocs/logistic/dummy/logistic/themes/son/assets/extensions/bootstrap/js/jquery.smartWizard.js",
+		"/C/Users/Toan Tran/Desktop/SmartWizard-master/dist/js/jquery.smartWizard.js",
+		"/C/xampp/htdocs/logistic/dummy/logistic/themes/son/assets/extensions/bootstrap/css/bootstrap-theme.css",
+		"/C/xampp/htdocs/logistic/dummy/logistic/themes/son/assets/extensions/bootstrap/css/smart-wizard-theme-arrow.css",
+		"/C/xampp/htdocs/logistic/dummy/logistic/themes/son/assets/extensions/bootstrap/css/smart-wizard.css",
+		"/C/xampp/htdocs/logistic/dummy/logistic/themes/son/assets/extensions/bootstrap/css/smart_wizard.css",
+		"/C/xampp/htdocs/logistic/dummy/logistic/protected/views/layouts/subviews/header/right_nav.php",
+		"/C/xampp/htdocs/logistic/dummy/logistic/protected/modules/admin/controllers/admin/front_page_content.php",
+		"/C/xampp/htdocs/logistic/dummy/logistic/protected/controllers/UserController.php",
+		"/C/xampp/htdocs/logistic/dummy/logistic/protected/components/menu/views/user_menu.php",
+		"/C/xampp/htdocs/logistic/dummy/logistic/protected/components/menu/UserMenu.php",
+		"/C/Users/Toan Tran/Desktop/SmartWizard-master/examples/index.html",
+		"/C/xampp/htdocs/logistic/dummy/logistic/protected/extensions/Son/html/SMenu.php",
+		"/C/xampp/htdocs/logistic/dummy/logistic/protected/views/user/create_order1.php",
+		"/C/xampp/htdocs/logistic/dummy/logistic/themes/son/assets/extensions/jquery-treetable/vendor/chai-jquery.js",
 		"/C/xampp/htdocs/logistic/dummy/logistic/protected/config/main.php",
+		"/C/xampp/htdocs/logistic/dummy/logistic/protected/components/form/SignupForm.php",
+		"/C/xampp/htdocs/logistic/dummy/logistic/protected/components/form/views/delivery_order_form.php",
+		"/C/xampp/htdocs/logistic/dummy/logistic/protected/extensions/GoogleTranslateHelper/vendor/guzzlehttp/guzzle/src/MessageFormatter.php",
+		"/C/xampp/htdocs/logistic/dummy/logistic/protected/config/db.php",
+		"/C/xampp/htdocs/logistic/dummy/logistic/themes/son/assets/extensions/jquery-treetable/vendor/sinon.js",
+		"/C/xampp/htdocs/logistic/dummy/logistic/protected/views/user/create_order.php",
+		"/C/Users/Toan Tran/Desktop/SmartWizard-master/examples/ajaxtest.php",
+		"/C/xampp/htdocs/logistic/dummy/logistic/protected/views/user/b1.css",
+		"/C/xampp/htdocs/yii2-starter-kit/.env.dist",
+		"/C/xampp/htdocs/yii2-starter-kit/.evn",
+		"/C/xampp/htdocs/logistic/dummy/logistic/protected/components/form/views/unknown_shop_delivery_order_form.php",
+		"/C/xampp/htdocs/logistic/dummy/logistic/protected/views/user/create_order.css",
 		"/C/xampp/htdocs/logistic/dummy/logistic/chrome_extensions/js/jquery.js",
 		"/C/xampp/htdocs/logistic/dummy/logistic/yii/framework/gii/views/layouts/main.php",
 		"/C/xampp/htdocs/logistic/dummy/logistic/protected/views/layouts/main.php",
@@ -280,7 +318,6 @@
 		"/C/xampp/htdocs/logistic/dummy/logistic/protected/controllers/collaborator/order_products.php",
 		"/C/xampp/htdocs/logistic/dummy/logistic/protected/controllers/collaborator/orders.php",
 		"/C/Users/Toan Tran/Desktop/advanced/frontend/assets/AppAsset.php",
-		"/C/xampp/htdocs/logistic/dummy/logistic/protected/components/menu/UserMenu.php",
 		"/C/xampp/htdocs/logistic/dummy/logistic/protected/components/menu/views/include/main_submenu.php",
 		"/C/xampp/htdocs/logistic/dummy/logistic/protected/components/menu/MainMenu.php",
 		"/C/xampp/htdocs/logistic/dummy/logistic/protected/views/home/subviews/search.php",
@@ -290,7 +327,6 @@
 		"/C/xampp/htdocs/logistic/dummy/logistic/themes/create_order/assets/create_order.css",
 		"/C/xampp/htdocs/logistic/protected/components/form/SignupForm.php",
 		"/C/xampp/htdocs/logistic/protected/views/user/create_order.php",
-		"/C/xampp/htdocs/logistic/dummy/logistic/protected/config/db.php",
 		"/C/xampp/htdocs/logistic/protected/config/db.php",
 		"/C/xampp/htdocs/logistic/protected/components/menu/UserMenu.php",
 		"/C/xampp/htdocs/logistic/protected/extensions/Son/html/SMenu.php",
@@ -320,11 +356,11 @@
 	],
 	"find":
 	{
-		"height": 28.0
+		"height": 25.0
 	},
 	"find_in_files":
 	{
-		"height": 116.0,
+		"height": 122.0,
 		"where_history":
 		[
 			"C:\\xampp\\htdocs\\logistic\\dummy\\logistic",
@@ -336,6 +372,34 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"step-anchor",
+			"smartwizard",
+			"class=\"nav-link\"",
+			"smartwizard",
+			"nav nav-tabs step-anchor",
+			"son",
+			"a-list",
+			"style.css",
+			"head",
+			"bootstrap.min.css",
+			"bootstrap-theme.min.css",
+			"jquery",
+			"Son::load(\"SAsset\")->addExtension(\"jquery.jsonview\");",
+			"SAsset",
+			"bootstrap-theme.min.css",
+			"font-awesome-3.2.1",
+			"bootstrap-datepicker",
+			"bootstrap-detepicker",
+			"Lưu ý",
+			"* Lưu ý: ",
+			"Trang cá nhân",
+			"sidebar-content",
+			"Tạo đơn hàng",
+			"btn btn-info",
+			"<<<<<",
+			"active_orders",
+			"order",
+			"tạo đơn hàng",
 			"ghi chú",
 			"tạo đơn hàng",
 			"active_orders",
@@ -390,7 +454,7 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 0,
 			"sheets":
 			[
 				{
@@ -399,37 +463,67 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 21162,
+						"buffer_size": 22027,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								19005,
-								19005
+								15607,
+								15607
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"tab_size": 4,
+							"tab_size": 2,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 10107.0,
+						"translation.y": 3538.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 0,
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "/C/xampp/htdocs/yii2-starter-kit/.env.dist",
+					"file": "themes/son/assets/extensions/bootstrap/css/smart-wizard-theme-arrow.css",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1669,
+						"buffer_size": 4702,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								594,
+								594
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "themes/son/assets/extensions/bootstrap/css/smart-wizard.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4702,
 						"regions":
 						{
 						},
@@ -437,46 +531,20 @@
 						[
 							[
 								0,
-								1669
+								0
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Text/Plain text.tmLanguage"
+							"syntax": "Packages/CSS/CSS.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "/C/xampp/htdocs/yii2-starter-kit/.evn",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1676,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								300,
-								300
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Text/Plain text.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
+					"stack_index": 3,
 					"type": "text"
 				},
 				{
@@ -484,7 +552,7 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 4623,
+						"buffer_size": 47495,
 						"regions":
 						{
 							"match":
@@ -493,64 +561,904 @@
 								"regions":
 								[
 									[
-										233,
-										240
+										188,
+										199
 									],
 									[
-										590,
-										597
+										521,
+										532
 									],
 									[
-										978,
-										985
+										938,
+										949
 									],
 									[
-										1247,
-										1254
+										1175,
+										1186
 									],
 									[
-										1511,
-										1518
+										1592,
+										1603
 									],
 									[
 										1829,
-										1836
+										1840
 									],
 									[
-										2140,
-										2147
+										2246,
+										2257
 									],
 									[
-										2456,
-										2463
+										2555,
+										2566
 									],
 									[
-										2789,
-										2796
+										2972,
+										2983
 									],
 									[
-										3053,
-										3060
+										3209,
+										3220
 									],
 									[
-										3613,
-										3620
+										3626,
+										3637
 									],
 									[
-										3876,
-										3883
+										3935,
+										3946
 									],
 									[
-										4155,
-										4162
+										4352,
+										4363
 									],
 									[
-										4313,
-										4320
+										4589,
+										4600
 									],
 									[
-										4477,
-										4484
+										5006,
+										5017
+									],
+									[
+										5315,
+										5326
+									],
+									[
+										5732,
+										5743
+									],
+									[
+										6041,
+										6052
+									],
+									[
+										6458,
+										6469
+									],
+									[
+										6695,
+										6706
+									],
+									[
+										7112,
+										7123
+									],
+									[
+										7421,
+										7432
+									],
+									[
+										7838,
+										7849
+									],
+									[
+										8147,
+										8158
+									],
+									[
+										8564,
+										8575
+									],
+									[
+										8801,
+										8812
+									],
+									[
+										9218,
+										9229
+									],
+									[
+										9527,
+										9538
+									],
+									[
+										9944,
+										9955
+									],
+									[
+										10253,
+										10264
+									],
+									[
+										10670,
+										10681
+									],
+									[
+										10907,
+										10918
+									],
+									[
+										11324,
+										11335
+									],
+									[
+										11633,
+										11644
+									],
+									[
+										12050,
+										12061
+									],
+									[
+										12359,
+										12370
+									],
+									[
+										12776,
+										12787
+									],
+									[
+										13013,
+										13024
+									],
+									[
+										13430,
+										13441
+									],
+									[
+										13739,
+										13750
+									],
+									[
+										14156,
+										14167
+									],
+									[
+										14393,
+										14404
+									],
+									[
+										14810,
+										14821
+									],
+									[
+										15025,
+										15036
+									],
+									[
+										15070,
+										15081
+									],
+									[
+										15289,
+										15300
+									],
+									[
+										15748,
+										15759
+									],
+									[
+										15762,
+										15773
+									],
+									[
+										15862,
+										15873
+									],
+									[
+										15876,
+										15887
+									],
+									[
+										16107,
+										16118
+									],
+									[
+										16121,
+										16132
+									],
+									[
+										16338,
+										16349
+									],
+									[
+										16352,
+										16363
+									],
+									[
+										16564,
+										16575
+									],
+									[
+										16578,
+										16589
+									],
+									[
+										16796,
+										16807
+									],
+									[
+										16810,
+										16821
+									],
+									[
+										17041,
+										17052
+									],
+									[
+										17131,
+										17142
+									],
+									[
+										17286,
+										17297
+									],
+									[
+										17347,
+										17358
+									],
+									[
+										17454,
+										17465
+									],
+									[
+										17711,
+										17722
+									],
+									[
+										17801,
+										17812
+									],
+									[
+										17956,
+										17967
+									],
+									[
+										21022,
+										21033
+									],
+									[
+										21112,
+										21123
+									],
+									[
+										21267,
+										21278
+									],
+									[
+										21328,
+										21339
+									],
+									[
+										21535,
+										21546
+									],
+									[
+										21625,
+										21636
+									],
+									[
+										21780,
+										21791
+									],
+									[
+										23854,
+										23865
+									],
+									[
+										23944,
+										23955
+									],
+									[
+										24099,
+										24110
+									],
+									[
+										24160,
+										24171
+									],
+									[
+										24358,
+										24369
+									],
+									[
+										24448,
+										24459
+									],
+									[
+										24603,
+										24614
+									],
+									[
+										27474,
+										27485
+									],
+									[
+										27564,
+										27575
+									],
+									[
+										27719,
+										27730
+									],
+									[
+										27780,
+										27791
+									],
+									[
+										27887,
+										27898
+									],
+									[
+										28132,
+										28143
+									],
+									[
+										28262,
+										28273
+									],
+									[
+										28421,
+										28432
+									],
+									[
+										28543,
+										28554
+									],
+									[
+										28755,
+										28766
+									],
+									[
+										28890,
+										28901
+									],
+									[
+										29164,
+										29175
+									],
+									[
+										29222,
+										29233
+									],
+									[
+										29240,
+										29251
+									],
+									[
+										29465,
+										29476
+									],
+									[
+										29573,
+										29584
+									],
+									[
+										29666,
+										29677
+									],
+									[
+										30084,
+										30095
+									],
+									[
+										30211,
+										30222
+									],
+									[
+										30256,
+										30267
+									],
+									[
+										30398,
+										30409
+									],
+									[
+										30575,
+										30586
+									],
+									[
+										30714,
+										30725
+									],
+									[
+										30871,
+										30882
+									],
+									[
+										31037,
+										31048
+									],
+									[
+										31189,
+										31200
+									],
+									[
+										31349,
+										31360
+									],
+									[
+										31506,
+										31517
+									],
+									[
+										31667,
+										31678
+									],
+									[
+										31721,
+										31732
+									],
+									[
+										32373,
+										32384
+									],
+									[
+										32548,
+										32559
+									],
+									[
+										32603,
+										32614
+									],
+									[
+										32640,
+										32651
+									],
+									[
+										32845,
+										32856
+									],
+									[
+										33096,
+										33107
+									],
+									[
+										33361,
+										33372
+									],
+									[
+										33428,
+										33439
+									],
+									[
+										33562,
+										33573
+									],
+									[
+										33637,
+										33648
+									],
+									[
+										33743,
+										33754
+									],
+									[
+										33868,
+										33879
+									],
+									[
+										33959,
+										33970
+									],
+									[
+										34082,
+										34093
+									],
+									[
+										34161,
+										34172
+									],
+									[
+										34286,
+										34297
+									],
+									[
+										34377,
+										34388
+									],
+									[
+										34423,
+										34434
+									],
+									[
+										34532,
+										34543
+									],
+									[
+										34666,
+										34677
+									],
+									[
+										34703,
+										34714
+									],
+									[
+										34797,
+										34808
+									],
+									[
+										34840,
+										34851
+									],
+									[
+										35123,
+										35134
+									],
+									[
+										35250,
+										35261
+									],
+									[
+										35380,
+										35391
+									],
+									[
+										35507,
+										35518
+									],
+									[
+										35653,
+										35664
+									],
+									[
+										35791,
+										35802
+									],
+									[
+										35932,
+										35943
+									],
+									[
+										36056,
+										36067
+									],
+									[
+										36197,
+										36208
+									],
+									[
+										36309,
+										36320
+									],
+									[
+										36448,
+										36459
+									],
+									[
+										36558,
+										36569
+									],
+									[
+										36702,
+										36713
+									],
+									[
+										36814,
+										36825
+									],
+									[
+										36868,
+										36879
+									],
+									[
+										37567,
+										37578
+									],
+									[
+										37681,
+										37692
+									],
+									[
+										37843,
+										37854
+									],
+									[
+										37919,
+										37930
+									],
+									[
+										38262,
+										38273
+									],
+									[
+										38353,
+										38364
+									],
+									[
+										38439,
+										38450
+									],
+									[
+										38517,
+										38528
+									],
+									[
+										38613,
+										38624
+									],
+									[
+										38678,
+										38689
+									],
+									[
+										38772,
+										38783
+									],
+									[
+										38835,
+										38846
+									],
+									[
+										38931,
+										38942
+									],
+									[
+										38996,
+										39007
+									],
+									[
+										39043,
+										39054
+									],
+									[
+										39254,
+										39265
+									],
+									[
+										39378,
+										39389
+									],
+									[
+										39505,
+										39516
+									],
+									[
+										39613,
+										39624
+									],
+									[
+										39748,
+										39759
+									],
+									[
+										39884,
+										39895
+									],
+									[
+										40019,
+										40030
+									],
+									[
+										40152,
+										40163
+									],
+									[
+										40274,
+										40285
+									],
+									[
+										40401,
+										40412
+									],
+									[
+										40502,
+										40513
+									],
+									[
+										40607,
+										40618
+									],
+									[
+										40737,
+										40748
+									],
+									[
+										40836,
+										40847
+									],
+									[
+										40966,
+										40977
+									],
+									[
+										41067,
+										41078
+									],
+									[
+										41179,
+										41190
+									],
+									[
+										41230,
+										41241
+									],
+									[
+										41347,
+										41358
+									],
+									[
+										41534,
+										41545
+									],
+									[
+										41662,
+										41673
+									],
+									[
+										41804,
+										41815
+									],
+									[
+										41949,
+										41960
+									],
+									[
+										42090,
+										42101
+									],
+									[
+										42877,
+										42888
+									],
+									[
+										42987,
+										42998
+									],
+									[
+										43158,
+										43169
+									],
+									[
+										43203,
+										43214
+									],
+									[
+										43393,
+										43404
+									],
+									[
+										43633,
+										43644
+									],
+									[
+										43825,
+										43836
+									],
+									[
+										43892,
+										43903
+									],
+									[
+										43956,
+										43967
+									],
+									[
+										44018,
+										44029
+									],
+									[
+										44074,
+										44085
+									],
+									[
+										44134,
+										44145
+									],
+									[
+										44201,
+										44212
+									],
+									[
+										44255,
+										44266
+									],
+									[
+										44320,
+										44331
+									],
+									[
+										44376,
+										44387
+									],
+									[
+										44443,
+										44454
+									],
+									[
+										44487,
+										44498
+									],
+									[
+										44558,
+										44569
+									],
+									[
+										44660,
+										44671
+									],
+									[
+										44801,
+										44812
+									],
+									[
+										44876,
+										44887
+									],
+									[
+										44955,
+										44966
+									],
+									[
+										45048,
+										45059
+									],
+									[
+										45275,
+										45286
+									],
+									[
+										45402,
+										45413
+									],
+									[
+										45447,
+										45458
+									],
+									[
+										45589,
+										45600
+									],
+									[
+										45766,
+										45777
+									],
+									[
+										45905,
+										45916
+									],
+									[
+										46062,
+										46073
+									],
+									[
+										46228,
+										46239
+									],
+									[
+										46380,
+										46391
+									],
+									[
+										46540,
+										46551
+									],
+									[
+										46697,
+										46708
+									],
+									[
+										46858,
+										46869
+									],
+									[
+										46912,
+										46923
+									],
+									[
+										47297,
+										47308
 									]
 								],
 								"scope": ""
@@ -559,15 +1467,15 @@
 						"selection":
 						[
 							[
-								3616,
-								3616
+								29884,
+								29884
 							]
 						],
 						"settings":
 						{
 							"detect_indentation": false,
 							"line_numbers": false,
-							"output_tag": 1,
+							"output_tag": 2,
 							"result_base_dir": "",
 							"result_file_regex": "^([^ \t].*):$",
 							"result_line_regex": "^ +([0-9]+):",
@@ -575,126 +1483,33 @@
 							"syntax": "Packages/Default/Find Results.hidden-tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 1026.0,
+						"translation.y": 13968.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 2,
 					"type": "text"
 				},
 				{
 					"buffer": 4,
-					"file": "protected/components/form/views/delivery_order_form.php",
+					"file": "protected/config/assets.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2456,
+						"buffer_size": 8560,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								860,
-								860
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 5,
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "protected/controllers/UserController.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 9375,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1445,
-								1445
+								693,
+								693
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/PHP/PHP.sublime-syntax",
 							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 1254.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 4,
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "protected/components/form/SignupForm.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 3601,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2392,
-								2392
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 399.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 8,
-					"type": "text"
-				},
-				{
-					"buffer": 7,
-					"file": "protected/components/menu/UserMenu.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 4665,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								607,
-								607
-							],
-							[
-								901,
-								901
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -704,20 +1519,20 @@
 					"type": "text"
 				},
 				{
-					"buffer": 8,
-					"file": "protected/extensions/Son/html/SMenu.php",
+					"buffer": 5,
+					"file": "yii/framework/gii/views/layouts/main.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3129,
+						"buffer_size": 2205,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								3009,
-								3009
+								383,
+								383
 							]
 						],
 						"settings":
@@ -733,30 +1548,93 @@
 					"type": "text"
 				},
 				{
-					"buffer": 9,
+					"buffer": 6,
+					"file": "themes/son/assets/extensions/bootstrap/js/jquery.smartWizard.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 0,
+						"buffer_size": 27630,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								5924,
+								5924
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Text/Plain text.tmLanguage"
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 9,
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "themes/son/assets/extensions/bootstrap/js/bootstrap.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 60681,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								734,
+								734
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1056.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "/C/Users/Toan Tran/Desktop/SmartWizard-master/examples/index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 12147,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								703,
+								703
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 48.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
 					"type": "text"
 				}
 			]
@@ -764,7 +1642,7 @@
 	],
 	"incremental_find":
 	{
-		"height": 28.0
+		"height": 25.0
 	},
 	"input":
 	{
@@ -805,7 +1683,7 @@
 	"project": "myproject.sublime-project",
 	"replace":
 	{
-		"height": 52.0
+		"height": 46.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -886,7 +1764,7 @@
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 333.0,
+	"side_bar_width": 370.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

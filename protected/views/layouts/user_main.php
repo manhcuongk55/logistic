@@ -13,13 +13,8 @@
             <?php echo Util::param2("front_page_content","user_page_content1") ?>
         </div>
         <div class="row">
-            <div class="col-sm-3">
-                <div class="sidebar-content">
-                    <?php $menu = new UserMenu(); ?>
-                    <?php $menu->render(); ?>
-                </div>
-            </div>
-            <div class="col-sm-9">
+           
+            <div class="col-sm-12">
 		        <?php echo $content; ?>
             </div>
         </div>

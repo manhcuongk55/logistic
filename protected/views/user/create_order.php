@@ -284,7 +284,7 @@ input[type=submit]:hover {
                 </form>
                 <div class="row mg-t15">
                     <div class="col-md-9 italic">
-                        Ssadadsadasdasd tất việc thêm sản phẩm, bạn chỉ cần click vào nút Gửi đơn hàng và đợi CTV báo giá.<br>
+                        tất việc thêm sản phẩm, bạn chỉ cần click vào nút Gửi đơn hàng và đợi CTV báo giá.<br>
                         Mọi thông tin cập nhật về đơn hàng này sẽ được thông báo qua email cũng như trên trang web này
                     </div>
                     <div class="col-md-3 text-right">

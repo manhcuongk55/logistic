@@ -24,9 +24,10 @@ class OrderHelper {
             $orderProduct->web_price = $item->web_price;
             $orderProduct->shop_id = @substr($item->shop_id,0,50);
             $orderProduct->ordered_count = $orderProduct->count;
+            $orderProduct->testla =  $item->description;;
 
             $result = $orderProduct->validate(array(
-                "url", "name", "vietnamese_name", "image", "count", "type", "description", "web_price", "shop_id"
+                "url", "name", "vietnamese_name", "image", "count", "type", "description", "web_price", "shop_id", "testla",
             ));
             if(!$result){
                 Output::returnJsonError($orderProduct->getFirstError());

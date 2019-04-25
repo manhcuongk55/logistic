@@ -253,7 +253,7 @@ class ProductCartItem {
 	public $web_price;
 	public $shop_id;
 	public $is_updating;
-	public $test1;
+	public $testla;
 
 	public function parse($item){
 		$this->url = $item["url"];
@@ -261,12 +261,13 @@ class ProductCartItem {
 		$this->name = ArrayHelper::get($item,"name");
 		$this->image = ArrayHelper::get($item,"image");
 		$this->description = ArrayHelper::get($item,"description");
+		$this->testla = ArrayHelper::get($item,"testla");
 		$this->type = ArrayHelper::get($item,"type");
 		$this->original_name = ArrayHelper::get($item,"original_name");
 		$this->web_price = ArrayHelper::get($item,"web_price");
 		$this->shop_id = ArrayHelper::get($item,"shop_id");
 		$this->is_updating = ArrayHelper::get($item,"is_updating");
-		$this->test1 = ArrayHelper::get($item,"test1");
+		
 	}
 
 	public static function fetch($items,$sessionID){

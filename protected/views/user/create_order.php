@@ -50,13 +50,16 @@
                     <input type="hidden" name="action" value="add" />
                     <input type="hidden" name="redirect_url" value="<?php echo $url ?>" />
                     <div class="row mg-t5" ng-repeat="addedItem in addedItems">
-                        <div class="col-md-8">
+                        <div class="col-md-6">
                             <input type="text" class="form-control input-sm" name="items[{{$index}}][url]" ng-model="addedItem.url" placeholder="Đường dẫn sản phẩm {{$index+1}}" />
                             
                             <textarea class="form-control input-sm mg-t5" rows="2" name="items[{{$index}}][description]" ng-model="addedItem.description" placeholder="Ghi chú"></textarea>
 
-                            <input type="text" class="form-control input-sm" name="items[{{$index}}][test1]" ng-model="addedItem.test1" placeholder="test1 {{$index+1}}" />
-
+                            
+                        </div>
+                        <div class="col-md-2">
+                        <input type="text" class="form-control input-sm" name="items[{{$index}}][testla]" ng-model="addedItem.testla" placeholder="testla " />
+                            {{addedItem}}
                         </div>
 
                         <div class="col-md-2">
@@ -143,6 +146,9 @@
                                     <th>
                                         Ghi chú
                                     </th>
+                                    <th>
+                                       test nao
+                                    </th>
                                     <th class="p-action">
                                     </th>
                                 </tr>
@@ -157,6 +163,8 @@
                                         <input type="hidden" ng-value="item.type" ng-attr-name="items[{{$index}}][type]" />
                                         <input type="hidden" ng-value="item.original_name" ng-attr-name="items[{{$index}}][original_name]" />
                                         <input type="hidden" ng-value="item.web_price" ng-attr-name="items[{{$index}}][web_price]" />
+                                        <input type="hidden" ng-value="item.testla" ng-attr-name="items[{{$index}}][testla]" />
+                                        {{item}}
 
                                         <a ng-attr-href="{{item.url}}" target="_blank" ng-attr-title="{{item.url}}">
                                             <img ng-attr-src="{{ getVendorLogo() }}" />
@@ -181,6 +189,10 @@
                                     <td>
                                         {{item.description}}
                                     </td>
+                                    <td>
+                                        {{item.testla}}
+                                    </td>
+                                     
                                     <td class="p-action">
                                         <button class="button" class="btn btn-sm btn-danger" ng-click="removeItem($index)"><i class="fa fa-close"></i></button>
                                     </td>
@@ -222,11 +234,15 @@
                         <input type="hidden" value="<?php echo $item->url ?>" name="items[<?php echo $i ?>][url]" />
                         <input type="hidden" value="<?php echo $item->name ?>" name="items[<?php echo $i ?>][name]"/>
                         <input type="hidden" value="<?php echo $item->description ?>" name="items[<?php echo $i ?>][description]"/>
+
                         <input type="hidden" value="<?php echo $item->image ?>" name="items[<?php echo $i ?>][image]"/>
                         <input type="hidden" value="<?php echo $item->type ?>" name="items[<?php echo $i ?>][type]"/>
                         <input type="hidden" value="<?php echo $item->original_name ?>" name="items[<?php echo $i ?>][original_name]"/>
                         <input type="hidden" value="<?php echo $item->web_price ?>" name="items[<?php echo $i ?>][web_price]"/>
                         <input type="hidden" value="<?php echo $item->shop_id ?>" name="items[<?php echo $i ?>][shop_id]"/>
+
+                        <input type="hidden" value="<?php echo $item->testla ?>" name="items[<?php echo $i ?>][testla]"/>
+
                     <?php endforeach; ?>
                 </form>
 			</div>

@@ -28,6 +28,7 @@
  * @property integer $shop_delivery_order_id
  * @property string $shop_id
  * @property double $real_price
+ * @property string $testla
  *
  */
 abstract class BaseOrderProduct extends SModel {
@@ -117,7 +118,8 @@ abstract class BaseOrderProduct extends SModel {
 		$criteria->compare('shop_delivery_order_id', $this->shop_delivery_order_id);
 		$criteria->compare('shop_id', $this->shop_id, true);
 		$criteria->compare('real_price', $this->real_price);
-
+		//
+		$criteria->compare('testla', $this->testla, true);
 		return new CActiveDataProvider($this, array(
 			'criteria' => $criteria,
 		));

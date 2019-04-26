@@ -85,17 +85,20 @@ class OrderProductList extends AdminTableList {
                 "description" => array(
                     "inputType" => "textarea"
                 ),
+                 "testla" => array(
+                    "inputType" => "text"
+                ),
                 "collaborator_note" => array(
                 )
             ),
             "actions" => array(
                 "action" => array(
                     "update" => array(
-                        "vietnamese_name", "url", "count", "description"
+                        "vietnamese_name", "url", "count", "description","testla"
                     ),
                     "delete" => true,
                     "insert" => array(
-                        "vietnamese_name", "url", "count", "description", "order_id"
+                        "vietnamese_name", "url", "count", "description", "order_id","testla"
                     ),
                     "data" => array(
                         "search" => array(
@@ -171,7 +174,7 @@ class OrderProductList extends AdminTableList {
                     "order_id", "price", "count", "image"
                 ),
                 "detail" => array(
-                    "id", "created_time", "updated_time", "active", "order_id", "name", "url", "website_type", "price", "count", "ordered_count", "vietnamese_name", "image", "web_price", "color", "description"
+                    "id", "created_time", "updated_time", "active", "order_id", "name", "url", "website_type", "price", "count", "ordered_count", "vietnamese_name", "image", "web_price", "color", "description","testla"
                 ),
                 "action" => true,
                 "actionButtons" => array(

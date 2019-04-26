@@ -58,7 +58,7 @@
                             
                         </div>
                         <div class="col-md-2">
-                        <input type="text" class="form-control input-sm" name="items[{{$index}}][testla]" ng-model="addedItem.testla" placeholder="testla " />
+                        <input type="text" class="form-control input-sm" name="items[{{$index}}][testla]" ng-model="addedItem.testla" placeholder="testla" />
                             {{addedItem}}
                         </div>
 

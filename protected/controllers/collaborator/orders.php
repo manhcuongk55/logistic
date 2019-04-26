@@ -77,6 +77,7 @@ $arr = array(
 			)
         ),
         "description" => array(),
+        "testla" => array(),
         "name" => array(),
         "is_paid" => array(
             "inputType" => "checkbox_button",
@@ -312,7 +313,7 @@ $arr = array(
 			"id", "status", "__action__", "total_price", "deposit_amount", "sms_status", "user_name", "collaborator_name", "created_time", "name"
 		),
 		"detail" => array(
-			"id", "collaborator_name", "total_price_ndt", "total_delivery_price_ndt", "exchange_rate", "created_time", "user_name", "status", "sms_status", "total_price", "service_price", "total_weight", "total_weight_price", "total_volume", "total_delivery_price", "shipping_home_price", "extra_price", "final_price", "deposit_amount", "remaining_amount", "updated_time", "active", "user_id", "description", "name", "total_quantity", "weight_price", "service_price_percentage", "shop_name", "delivery_price_ndt", "real_price", "shop_id", "order_code"
+			"id", "collaborator_name", "total_price_ndt", "total_delivery_price_ndt", "exchange_rate", "created_time", "user_name", "status", "sms_status", "total_price", "service_price", "total_weight", "total_weight_price", "total_volume", "total_delivery_price", "shipping_home_price", "extra_price", "final_price", "deposit_amount", "remaining_amount", "updated_time", "active", "user_id", "description", "name", "total_quantity", "weight_price", "service_price_percentage", "shop_name", "delivery_price_ndt", "real_price", "shop_id", "order_code", "testla"
 		),
 		"action" => true,
 		"actionButtons" => include(dirname(__FILE__) . "/includes/order_action_buttons.php")

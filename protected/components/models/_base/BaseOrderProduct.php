@@ -57,8 +57,8 @@ abstract class BaseOrderProduct extends SModel {
 			array('url, name, vietnamese_name, image', 'length', 'max'=>1000),
 			array('description', 'length', 'max'=>400),
 			array('color, shop_id', 'length', 'max'=>50),
-			array('active, name, vietnamese_name, image, description, web_price, ordered_count, color, shop_delivery_order_id, shop_id, real_price', 'default', 'setOnEmpty' => true, 'value' => null),
-			array('id, active, created_time, updated_time, order_id, url, website_type, name, price, count, vietnamese_name, image, description, web_price, ordered_count, color, shop_delivery_order_id, shop_id, real_price', 'safe', 'on'=>'search'),
+			array('active, name, vietnamese_name, image, description, web_price, ordered_count, color, shop_delivery_order_id, shop_id, real_price', 'default', 'setOnEmpty', 'testla' => true, 'value' => null),
+			array('id, active, created_time, updated_time, order_id, url, website_type, name, price, count, vietnamese_name, image, description, testla, web_price, ordered_count, color, shop_delivery_order_id, shop_id, real_price', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -93,6 +93,8 @@ abstract class BaseOrderProduct extends SModel {
 			'shop_delivery_order_id' => Yii::t('app', 'Shop Delivery Order'),
 			'shop_id' => Yii::t('app', 'Shop'),
 			'real_price' => Yii::t('app', 'Real Price'),
+			//
+			'testla' => Yii::t('app', 'testla'),
 		);
 	}
 

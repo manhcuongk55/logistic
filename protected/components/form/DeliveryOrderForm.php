@@ -15,6 +15,9 @@ class DeliveryOrderForm extends SForm {
                 "description" => array(
                     "type" => "textarea"
 				),
+				"testla" => array(
+                    "type" => "text"
+				),
 				"num_block" => array(
 					"type" => "number",
 					"model" => "shop_delivery_order"

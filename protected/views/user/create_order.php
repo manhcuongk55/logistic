@@ -105,24 +105,23 @@ input[type=submit]:hover {
                 <div id="step-1" class="" ng-controller="OrderTypeController">
                    <label for="country">Chọn loại đơn hàng</label>
                       <select id="country" name="country" ng-model="data.orderType">
-                        <option value="australia">Đơn hàng uỷ thác trọn gói</option>
-                        <option value="canada">Đơn hàng Thanh toán và Vận Chuyển</option>
-                        <option value="usa">Đơn hàng vận chuyển</option>
+                        <option value="type_uy_thac_tron_goi">Đơn hàng uỷ thác trọn gói</option>
+                        <option value="type_thanh_toan_van_chuyen">Đơn hàng Thanh toán và Vận Chuyển</option>
+                        <option value="type_van_chuyen">Đơn hàng vận chuyển</option>
                       </select>
                       <button type="submit" class="btn btn-sm btn-primary" ng-click="showOrderType()">test</button>
                 </div>
                      
                 <div id="step-2" class="">
                    <div>
-                        <form action="/action_page.php">
-                          <label for="fname">Link Hoặc Tên Nhà Cung Cấp</label>
-                          <input type="text" id="fname" name="firstname" placeholder="Link Hoặc Tên Nhà Cung Cấp">
-
+                          <label for="fname">Link Nhà Cung Cấp</label>
+                          <input type="text" id="fname" name="firstname" placeholder="Link Nhà Cung Cấp">
+                          <label for="fname">Tên Nhà Cung Cấp</label>
+                          <input type="text" id="fname" name="firstname" placeholder="Tên Nhà Cung Cấp">
                           <label for="lname">Số Điện Thoại</label>
                           <input type="text" id="lname" name="lastname" placeholder="Số Điện Thoại">
                         
                           <input type="submit" value="Xác Nhận">
-                        </form>
                       </div>
                 </div>
                 <div id="step-3" class="">

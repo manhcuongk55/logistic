@@ -102,14 +102,15 @@ input[type=submit]:hover {
             </ul>
 
             <div>
-                <div id="step-1" class="">
+                <div id="step-1" class="" ng-controller="OrderTypeController">
                    <label for="country">Chọn loại đơn hàng</label>
-                      <select id="country" name="country">
+                      <select id="country" name="country" ng-model="data.orderType">
                         <option value="australia">Đơn hàng uỷ thác trọn gói</option>
                         <option value="canada">Đơn hàng Thanh toán và Vận Chuyển</option>
                         <option value="usa">Đơn hàng vận chuyển</option>
                       </select>
-                    </div>
+                      <button type="submit" class="btn btn-sm btn-primary" ng-click="showOrderType()">test</button>
+                </div>
                      
                 <div id="step-2" class="">
                    <div>
@@ -351,6 +352,14 @@ input[type=submit]:hover {
     })();
     (function(){
         var app = $__$.angular.init("app");
+        app.controller("OrderTypeController",function($scope){ // controller cho ordertype
+            function init(){
+                $scope.data.orderType = "";
+            }
+            $scope.showOrderType = function(){
+                console.log($scope.data.orderType);
+            }
+        });
         app.controller("CartController",function($scope){
             t = $scope;
             $scope.data = {
@@ -460,6 +469,7 @@ input[type=submit]:hover {
 
             $("#next-btn").on("click", function() {
                 // Navigate next
+                console.log("triggered");
                 $('#smartwizard').smartWizard("next");
                 return true;
             });

@@ -23,8 +23,8 @@
         useURLhash: true, // Enable selection of the step based on url hash
         showStepURLhash: true, // Show url hash based on step
         lang: { // Language variables for button
-            next: 'Next',
-            previous: 'Previous'
+            next: 'Tiếp Tục',
+            previous: 'Trở Về'
         },
         toolbarSettings: {
             toolbarPosition: 'bottom', // none, top, bottom, both

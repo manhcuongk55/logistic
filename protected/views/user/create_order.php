@@ -73,20 +73,17 @@ input[type=submit]:hover {
         <!-- External toolbar sample -->
         <div class="row d-flex align-items-center p-3 my-3 text-white-50">
             <div class="col-12 col-lg-6 col-sm-12">
-              <label>Theme:</label>
-              <select id="theme_selector" class="custom-select col-lg-6 col-sm-12">
-                    <option value="default">default</option>
+       
+              <select id="theme_selector" class="hidden" class="custom-select col-lg-6 col-sm-12">
+                    
                     <option value="arrows">arrows</option>
-                    <option value="circles">circles</option>
-                    <option value="dots">dots</option>
+                   
               </select>
             </div>
-            <div class="col-12 col-lg-6 col-sm-12">
-              <label>External Buttons:</label>
-              <div class="btn-group col-lg-6 col-sm-12" role="group">
-                  <button class="btn btn-secondary" id="prev-btn" type="button">Go Previous</button>
-                  <button class="btn btn-secondary" id="next-btn" type="button">Go Next</button>
-                  <button class="btn btn-danger" id="reset-btn" type="button">Reset Wizard</button>
+            <div class="hidden" class="col-12 col-lg-6 col-sm-12">
+              <div class="btn-group col-lg-6 col-sm-12"  role="group">
+                  <button  class="btn btn-secondary" id="prev-btn" type="button">Trở Về</button>
+                  <button  class="btn btn-secondary" id="next-btn" type="button">Tiếp Tục</button>
               </div>
             </div>
         </div>
@@ -103,25 +100,27 @@ input[type=submit]:hover {
 
             <div>
                 <div id="step-1" class="">
-                   <label for="country">Chọn loại đơn hàng</label>
-                      <select id="country" name="country">
-                        <option value="australia">Đơn hàng uỷ thác trọn gói</option>
-                        <option value="canada">Đơn hàng Thanh toán và Vận Chuyển</option>
-                        <option value="usa">Đơn hàng vận chuyển</option>
-                      </select>
+                   <div class="container">
+                        <button type="button" class="btn btn-primary btn-lg">Đơn hàng uỷ thác trọn gói</button>
+                        <button type="button" class="btn btn-primary btn-lg">Đơn hàng Thanh toán và Vận Chuyển</button>
+                        <button type="button" class="btn btn-primary btn-lg">Đơn hàng vận chuyển</button>
+                        
+                      </div>
                     </div>
                      
                 <div id="step-2" class="">
                    <div>
-                        <form action="/action_page.php">
-                          <label for="fname">Link Hoặc Tên Nhà Cung Cấp</label>
+                        
+                          <label for="fname">Link Nhà Cung Cấp</label>
+                          <input type="text" id="fname" name="firstname" placeholder="Link Hoặc Tên Nhà Cung Cấp">
+                          <label for="fname">Tên Nhà Cung Cấp</label>
                           <input type="text" id="fname" name="firstname" placeholder="Link Hoặc Tên Nhà Cung Cấp">
 
                           <label for="lname">Số Điện Thoại</label>
                           <input type="text" id="lname" name="lastname" placeholder="Số Điện Thoại">
                         
-                          <input type="submit" value="Xác Nhận">
-                        </form>
+                         
+                    
                       </div>
                 </div>
                 <div id="step-3" class="">
@@ -315,7 +314,7 @@ input[type=submit]:hover {
                         <option value="australia">Giá bao gồm thuế sản phẩm </option>
                         <option value="canada">Không bao gồm thuế sản phẩm</option>
                          </select>
-                         <input type="submit" value="Xác Nhận">
+                        
                 </div>
                 <div id="step-5" class="">
                     <label for="warehouse">Chọn Kho Gửi Hàng</label> 
@@ -324,7 +323,7 @@ input[type=submit]:hover {
                     <option value=".....">.....</option>
                     
                   </select>
-                  <input type="submit" value="Xác Nhận">
+                  
     
                   
                 </div>

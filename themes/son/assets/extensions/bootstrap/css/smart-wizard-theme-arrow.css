@@ -73,6 +73,7 @@
 .sw-theme-default > ul.step-anchor > li {
     position: relative;
     margin-right: 2px;
+
 }
 
 .sw-theme-default > ul.step-anchor > li > a, .sw-theme-default > ul.step-anchor > li > a:hover {
@@ -124,6 +125,8 @@
     color: #000 !important;
     background: transparent !important;
     cursor: pointer;
+     width: 20%;
+
 }
 
 .sw-theme-default > ul.step-anchor > li.done > a::after {
@@ -131,6 +134,7 @@
     -webkit-transform: scale(1);
     -ms-transform: scale(1);
     transform: scale(1);
+     width: 20%;
 }
 
 .sw-theme-default > ul.step-anchor > li.danger > a {

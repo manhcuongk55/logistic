@@ -70,8 +70,12 @@ input[type=submit]:hover {
         <div class="row">
 			<div class="col-md-12">
          <div class="container">
+
+
+
+
         <!-- External toolbar sample -->
-        <div class="row d-flex align-items-center p-3 my-3 text-white-50">
+        <div class="row d-flex align-items-center p-3 my-3 text-white-50" >
             <div class="col-12 col-lg-6 col-sm-12">
        
               <select id="theme_selector" class="hidden" class="custom-select col-lg-6 col-sm-12">
@@ -89,13 +93,13 @@ input[type=submit]:hover {
         </div>
 
         <!-- SmartWizard html -->
-        <div id="smartwizard">
+        <div id="smartwizard" ng-controller="InsertFormController">
             <ul>
                 <li><a href="#step-1">B1<br /><small>Chọn loại đơn hàng</small></a></li>
                 <li><a href="#step-2">B2<br /><small>Nhập thông tin nhà cung cấp</small></a></li>
-                <li><a href="#step-3">B3<br /><small>Nhập thông tin sp</small></a></li>
+                <li><a href="#step-3">B3<br /><small>Chọn kho gửi hàng</small></a></li>
                 <li><a href="#step-4">B4<br /><small>Chọn hình thức báo giá v/c</small></a></li>
-                <li><a href="#step-5">B5<br /><small>Chọn kho gửi hàng</small></a></li>
+                <li><a href="#step-5">B5<br /><small>Nhập thông tin sp</small></a></li>
             </ul>
 
             <div>
@@ -105,11 +109,13 @@ input[type=submit]:hover {
                         <button type="button" class="btn btn-primary btn-lg">Đơn hàng Thanh toán và Vận Chuyển</button>
                         <button type="button" class="btn btn-primary btn-lg">Đơn hàng vận chuyển</button>
                         
+                         <label for="lname">Số Điện Thoại</label>
+                          <input type="text" id="lname" name="sdt" ng-model="addedItem.sdt" placeholder=" Số Điện Thoại">
                       </div>
                     </div>
                      
                 <div id="step-2" class="">
-                   <div>
+                      <div ng-repeat="addedItem in addedItems" >
                         
                           <label for="fname">Link Nhà Cung Cấp</label>
                           <input type="text" id="fname" name="firstname" placeholder="Link Hoặc Tên Nhà Cung Cấp">
@@ -117,15 +123,32 @@ input[type=submit]:hover {
                           <input type="text" id="fname" name="firstname" placeholder="Link Hoặc Tên Nhà Cung Cấp">
 
                           <label for="lname">Số Điện Thoại</label>
-                          <input type="text" id="lname" name="lastname" placeholder="Số Điện Thoại">
+                          <input type="text" id="lname" name="lastname" ng-model="addedItem.lastname" placeholder=" Số Điện Thoại">
                         
-                         
-                    
                       </div>
                 </div>
                 <div id="step-3" class="">
+                    <label for="warehouse">Chọn Kho Gửi Hàng</label> 
+                    <select id="warehouse" name="warehouse">
+                    <option value="Bằng Tường">Bằng Tường </option>
+                    <option value=".....">.....</option>          
+                    </select>
+         
+                </div>
+                <div id="step-4" class="">
+                     <label for="country">Chọn Hình Thức Báo Giá Sản Phẩm</label>
+                      <select id="country" name="country">
+                        <option value="australia">Giá bao gồm thuế sản phẩm </option>
+                        <option value="canada">Không bao gồm thuế sản phẩm</option>
+                         </select>
+                        
+                </div>
+                <div id="step-5" class="">
+                   
                    <div class="row">
-            <div class="col-md-8" ng-controller="InsertFormController">
+                   
+
+            <div class="col-md-8" >
                 <form action="<?php echo $cartUrl ?>" method="POST">
                     <input type="hidden" name="action" value="add" />
                     <input type="hidden" name="redirect_url" value="<?php echo $url ?>" />
@@ -134,6 +157,7 @@ input[type=submit]:hover {
                             <input type="text" class="form-control input-sm" name="items[{{$index}}][url]" ng-model="addedItem.url" placeholder="Đường dẫn sản phẩm {{$index+1}}" />
                             
                             <textarea class="form-control input-sm mg-t5" rows="2" name="items[{{$index}}][description]" ng-model="addedItem.description" placeholder="Ghi chú"></textarea>
+                            {{addedItem}} 
                         </div>
                         <div class="col-md-2">
                             <input type="number" class="form-control input-sm" name="items[{{$index}}][count]" ng-model="addedItem.count" placeholder="Số lượng" />
@@ -146,6 +170,7 @@ input[type=submit]:hover {
                         </div>
                     </div>
                     <div class="row mg-t10">
+
                         <div class="col-md-12">
                             <button type="submit" class="btn btn-sm btn-primary" ng-disabled="!getSubmitable()">Xác nhận</button>
                         </div>
@@ -183,8 +208,27 @@ input[type=submit]:hover {
             </div>
         </div>
         <hr/>
+    
+                  
+                </div>
+            </div>
+        </div>
 
-        <div class="row mg-t20">
+
+    </div>
+
+
+
+                
+            </div>
+        </div>
+       
+	</div>
+
+
+{{addedItem}} 
+
+<div class="row mg-t20">
             <div class="col-md-12">
                 <div class="page-title bold">
                     <h1>Danh sách sản phẩm</h1>
@@ -306,40 +350,7 @@ input[type=submit]:hover {
                 </form>
             </div>
         </div>
-                   
-                </div>
-                <div id="step-4" class="">
-                     <label for="country">Chọn Hình Thức Báo Giá Sản Phẩm</label>
-                      <select id="country" name="country">
-                        <option value="australia">Giá bao gồm thuế sản phẩm </option>
-                        <option value="canada">Không bao gồm thuế sản phẩm</option>
-                         </select>
-                        
-                </div>
-                <div id="step-5" class="">
-                    <label for="warehouse">Chọn Kho Gửi Hàng</label> 
-                    <select id="warehouse" name="warehouse">
-                    <option value="Bằng Tường">Bằng Tường </option>
-                    <option value=".....">.....</option>
-                    
-                  </select>
-                  
-    
-                  
-                </div>
-            </div>
-        </div>
 
-
-    </div>
-
-
-
-                
-            </div>
-        </div>
-       
-	</div>
 </div>
 <!--End of Cart Main Area-->
 <script>

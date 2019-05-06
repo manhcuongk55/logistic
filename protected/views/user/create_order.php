@@ -107,41 +107,43 @@ input[type=submit]:hover {
                    <div class="container">
                         <button type="button" class="btn btn-primary btn-lg">Đơn hàng uỷ thác trọn gói</button>
                         <button type="button" class="btn btn-primary btn-lg">Đơn hàng Thanh toán và Vận Chuyển</button>
-                        <button type="button" class="btn btn-primary btn-lg">Đơn hàng vận chuyển</button>
-                        
-                         <label for="lname">Số Điện Thoại</label>
-                          <input type="text" id="lname" name="sdt" ng-model="addedItem.sdt" placeholder=" Số Điện Thoại">
-                      </div>
-                    </div>
+                        <button type="button" class="btn btn-primary btn-lg">Đơn hàng vận chuyển</button>        
+                   </div>
+                </div>
                      
                 <div id="step-2" class="">
                       <div ng-repeat="addedItem in addedItems" >
                         
-                          <label for="fname">Link Nhà Cung Cấp</label>
-                          <input type="text" id="fname" name="firstname" placeholder="Link Hoặc Tên Nhà Cung Cấp">
-                          <label for="fname">Tên Nhà Cung Cấp</label>
-                          <input type="text" id="fname" name="firstname" placeholder="Link Hoặc Tên Nhà Cung Cấp">
+                          <label for="idLinkNhaCungCap">Link Nhà Cung Cấp</label>
+                          <input type="text" id="idLinkNhaCungCap" name="LinkNhaCungCap" ng-model="addedItem.LinkNhaCungCap" placeholder="Link Hoặc Tên Nhà Cung Cấp">
 
-                          <label for="lname">Số Điện Thoại</label>
-                          <input type="text" id="lname" name="lastname" ng-model="addedItem.lastname" placeholder=" Số Điện Thoại">
+                          <label for="idNhaCungCap">Tên Nhà Cung Cấp</label>
+                          <input type="text" id="idNhaCungCap" name="NhaCungCap" ng-model="addedItem.NhaCungCap" placeholder="Link Hoặc Tên Nhà Cung Cấp">
+
+                          <label for="idsdt">Số Điện Thoại</label>
+                          <input type="text" id="idsdt" name="sdt" ng-model="addedItem.sdt" placeholder=" Số Điện Thoại">
                         
                       </div>
                 </div>
                 <div id="step-3" class="">
                     <label for="warehouse">Chọn Kho Gửi Hàng</label> 
-                    <select id="warehouse" name="warehouse">
-                    <option value="Bằng Tường">Bằng Tường </option>
-                    <option value=".....">.....</option>          
-                    </select>
          
+                   <div  ng-repeat="addedItem in addedItems"  >
+                     <select ng-options="size as size for size in sizes " ng-model="addedItem.Tenkho" > </select>
+
+                     {{addedItem}}
+                   </div>
+
                 </div>
                 <div id="step-4" class="">
+
                      <label for="country">Chọn Hình Thức Báo Giá Sản Phẩm</label>
-                      <select id="country" name="country">
-                        <option value="australia">Giá bao gồm thuế sản phẩm </option>
-                        <option value="canada">Không bao gồm thuế sản phẩm</option>
-                         </select>
                         
+                    <div  ng-repeat="addedItem in addedItems"  >
+                     <select ng-options="size1 as size1 for size1 in size1s " ng-model="addedItem.HinhThucBaoGia" > </select>
+                     
+                     {{addedItem}}
+                    </div>
                 </div>
                 <div id="step-5" class="">
                    
@@ -415,8 +417,18 @@ input[type=submit]:hover {
                 return false;
             }
 
-            init();
-        });
+            
+
+            //tao combobox chon kho hang
+
+            $scope.sizes = [ "Bằng Tường1", "Bằng Tường2"];
+           // Tao thuoc tich trong combobox Hinh Thuc Bao Gia van chuyen ( co thue hay khong?)
+            $scope.size1s = [ "Giá bao gồm thuế sản phẩm ", "Giá không bao gồm thuế sản phẩm"];
+            
+
+        init();// goi ham init
+});
+
     })();
      $(document).ready(function(){
 

@@ -51,6 +51,9 @@ input[type=submit]:hover {
   background-color: #45a049;
   width: 20%;
 }
+.menu_step_order li{
+    width: 25%;
+}
 </style>
 
 <form id="delete-all-form" class="hidden" method="POST" action="<?php echo $cartUrl ?>" data-type="validate" data-confirm="Xóa tất cả sản phẩm trong giỏ hàng">
@@ -94,25 +97,25 @@ input[type=submit]:hover {
 
         <!-- SmartWizard html -->
         <div id="smartwizard" ng-controller="InsertFormController">
-            <ul>
-                <li><a href="#step-1">B1<br /><small>Chọn loại đơn hàng</small></a></li>
-                <li><a href="#step-2">B2<br /><small>Nhập thông tin nhà cung cấp</small></a></li>
-                <li><a href="#step-3">B3<br /><small>Chọn kho gửi hàng</small></a></li>
-                <li><a href="#step-4">B4<br /><small>Chọn hình thức báo giá v/c</small></a></li>
-                <li><a href="#step-5">B5<br /><small>Nhập thông tin sp</small></a></li>
+            <ul class="menu_step_order">
+                
+                <li><a href="#step-1">Bước 1<br /><small>Chọn Loại Đơn Hàng Và Nhập thông tin nhà cung cấp</small></a></li>
+                <li><a href="#step-2">Bước 2<br /><small>Chọn kho gửi hàng</small></a></li>
+                <li><a href="#step-3">Bước 3<br /><small>Chọn hình thức báo giá vận chuyển</small></a></li>
+                <li><a href="#step-4">Bước 4<br /><small>Nhập thông tin sản phẩm</small></a></li>
             </ul>
 
             <div>
-                <div id="step-1" class="">
-                   <div class="container">
-                        <button type="button" class="btn btn-primary btn-lg">Đơn hàng uỷ thác trọn gói</button>
-                        <button type="button" class="btn btn-primary btn-lg">Đơn hàng Thanh toán và Vận Chuyển</button>
-                        <button type="button" class="btn btn-primary btn-lg">Đơn hàng vận chuyển</button>        
-                   </div>
-                </div>
-                     
-                <div id="step-2" class="">
-                      <div ng-repeat="addedItem in addedItems" >
+               <div id="step-1" class="">
+                     Chọn Loại Đơn Hàng :
+                            <select ng-model="myVar">
+                              <option value="order_1">Đơn hàng uỷ thác trọn gói
+                              <option value="order_2">Đơn hàng Thanh toán và Vận Chuyển
+                              <option value="order_3">Đơn hàng vận chuyển
+                            </select>
+                    <div ng-switch="myVar">
+                   <div  ng-switch-when="order_1"> 
+                          <div ng-repeat="addedItem in addedItems" >
                         
                           <label for="idLinkNhaCungCap">Link Nhà Cung Cấp</label>
                           <input type="text" id="idLinkNhaCungCap" name="LinkNhaCungCap" ng-model="addedItem.LinkNhaCungCap" placeholder="Link Hoặc Tên Nhà Cung Cấp">
@@ -124,8 +127,37 @@ input[type=submit]:hover {
                           <input type="text" id="idsdt" name="sdt" ng-model="addedItem.sdt" placeholder=" Số Điện Thoại">
                         
                       </div>
+                      </div>
+                    <div ng-switch-when="order_2">
+                        <div ng-repeat="addedItem in addedItems" >
+                        
+                          <label for="idLinkNhaCungCap">Link Nhà Cung Cấp</label>
+                          <input type="text" id="idLinkNhaCungCap" name="LinkNhaCungCap" ng-model="addedItem.LinkNhaCungCap" placeholder="Link Hoặc Tên Nhà Cung Cấp">
+
+                          <label for="idNhaCungCap">Tên Nhà Cung Cấp</label>
+                          <input type="text" id="idNhaCungCap" name="NhaCungCap" ng-model="addedItem.NhaCungCap" placeholder="Link Hoặc Tên Nhà Cung Cấp">
+
+                          <label for="idsdt">Số Điện Thoại</label>
+                          <input type="text" id="idsdt" name="sdt" ng-model="addedItem.sdt" placeholder=" Số Điện Thoại">
+                        
+                      </div>
+                    </div>
+                    <div ng-switch-when="order_3">
+                        <label for="fname">Mã Vận Đơn </label>
+                          <input type="text"  placeholder="Mã Vận Đơn">
+                          <label for="fname">Số Kiện</label>
+                          <input type="text"  placeholder="Số Kiện">
+                        <label for="fname">Link Nhà Cung Cấp</label>
+                          <input type="text"  placeholder="Link Hoặc Tên Nhà Cung Cấp">
+                          <label for="fname">Tên Nhà Cung Cấp</label>
+                          <input type="text" placeholder="Link Hoặc Tên Nhà Cung Cấp">
+
+                          <label for="lname">Số Điện Thoại</label>
+                          <input type="text"  placeholder="Số Điện Thoại"> 
+                    </div>
                 </div>
-                <div id="step-3" class="">
+                </div>
+                <div id="step-2" class="">
                     <label for="warehouse">Chọn Kho Gửi Hàng</label> 
          
                    <div  ng-repeat="addedItem in addedItems"  >
@@ -135,7 +167,7 @@ input[type=submit]:hover {
                    </div>
 
                 </div>
-                <div id="step-4" class="">
+                <div id="step-3" class="">
 
                      <label for="country">Chọn Hình Thức Báo Giá Sản Phẩm</label>
                         
@@ -145,7 +177,7 @@ input[type=submit]:hover {
                      {{addedItem}}
                     </div>
                 </div>
-                <div id="step-5" class="">
+                <div id="step-4" class="">
                    
                    <div class="row">
                    
@@ -462,7 +494,7 @@ input[type=submit]:hover {
                     showStepURLhash: true,
                     toolbarSettings: {toolbarPosition: 'both',
                                       toolbarButtonPosition: 'end',
-                                      toolbarExtraButtons: [btnFinish, btnCancel]
+                                      // toolbarExtraButtons: [btnFinish, btnCancel]
                                     }
             });
 

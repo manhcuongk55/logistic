@@ -20,10 +20,8 @@ return array(
 				"css" => array(
 					"bootstrap.min.css",
 					"bootstrap-theme.min.css",
-					"bootstrap-wizard.css",
 					"smart-wizard-theme-arrow.min.css",
-					"smart-wizard-theme-circles.min.css",
-					"smart-wizard-theme-dots.min.css"
+					"smart-wizard.css"
 					
 				),
 				"js" =>array(

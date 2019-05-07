@@ -51,6 +51,10 @@ input[type=submit]:hover {
   background-color: #45a049;
   width: 20%;
 }
+.toan li{
+    width: 25%;
+}
+
 </style>
 
 <form id="delete-all-form" class="hidden" method="POST" action="<?php echo $cartUrl ?>" data-type="validate" data-confirm="Xóa tất cả sản phẩm trong giỏ hàng">
@@ -90,40 +94,80 @@ input[type=submit]:hover {
 
         <!-- SmartWizard html -->
         <div id="smartwizard">
-            <ul>
-                <li><a href="#step-1">B1<br /><small>Chọn loại đơn hàng</small></a></li>
-                <li><a href="#step-2">B2<br /><small>Nhập thông tin nhà cung cấp</small></a></li>
-                <li><a href="#step-3">B3<br /><small>Nhập thông tin sp</small></a></li>
-                <li><a href="#step-4">B4<br /><small>Chọn hình thức báo giá v/c</small></a></li>
-                <li><a href="#step-5">B5<br /><small>Chọn kho gửi hàng</small></a></li>
+            
+            <ul class="toan">
+                
+                <li><a href="#step-1">Bước 1<br /><small>Chọn Loại Đơn Hàng Và Nhập thông tin nhà cung cấp</small></a></li>
+                <li><a href="#step-2">Bước 2<br /><small>Chọn kho gửi hàng</small></a></li>
+                <li><a href="#step-3">Bước 3<br /><small>Chọn hình thức báo giá vận chuyển</small></a></li>
+                <li><a href="#step-4">Bước 4<br /><small>Nhập thông tin sản phẩm</small></a></li>
             </ul>
+        
 
             <div>
-                <div id="step-1" class="">
-                   <div class="container">
-                        <button type="button" class="btn btn-primary btn-lg">Đơn hàng uỷ thác trọn gói</button>
-                        <button type="button" class="btn btn-primary btn-lg">Đơn hàng Thanh toán và Vận Chuyển</button>
-                        <button type="button" class="btn btn-primary btn-lg">Đơn hàng vận chuyển</button>
-                        
-                      </div>
-                    </div>
                      
-                <div id="step-2" class="">
-                   <div>
-                        
+                <div id="step-1" class="">
+                     Chọn Loại Đơn Hàng :
+                            <select ng-model="myVar">
+                              <option value="order_1">Đơn hàng uỷ thác trọn gói
+                              <option value="order_2">Đơn hàng Thanh toán và Vận Chuyển
+                              <option value="order_3">Đơn hàng vận chuyển
+                            </select>
+                    <div ng-switch="myVar">
+                   <div  ng-switch-when="order_1"> 
                           <label for="fname">Link Nhà Cung Cấp</label>
-                          <input type="text" id="fname" name="firstname" placeholder="Link Hoặc Tên Nhà Cung Cấp">
+                          <input type="text" placeholder="Link Hoặc Tên Nhà Cung Cấp">
                           <label for="fname">Tên Nhà Cung Cấp</label>
-                          <input type="text" id="fname" name="firstname" placeholder="Link Hoặc Tên Nhà Cung Cấp">
+                          <input type="text" placeholder="Link Hoặc Tên Nhà Cung Cấp">
 
                           <label for="lname">Số Điện Thoại</label>
-                          <input type="text" id="lname" name="lastname" placeholder="Số Điện Thoại">
-                        
-                         
-                    
+                          <input type="text" placeholder="Số Điện Thoại"> 
                       </div>
+                    <div ng-switch-when="order_2">
+                        <label for="fname">Link Nhà Cung Cấp</label>
+                          <input type="text"  placeholder="Link Hoặc Tên Nhà Cung Cấp">
+                          <label for="fname">Tên Nhà Cung Cấp</label>
+                          <input type="text" placeholder="Link Hoặc Tên Nhà Cung Cấp">
+
+                          <label for="lname">Số Điện Thoại</label>
+                          <input type="text"  placeholder="Số Điện Thoại"> 
+                    </div>
+                    <div ng-switch-when="order_3">
+                        <label for="fname">Mã Vận Đơn </label>
+                          <input type="text"  placeholder="Mã Vận Đơn">
+                          <label for="fname">Số Kiện</label>
+                          <input type="text"  placeholder="Số Kiện">
+                        <label for="fname">Link Nhà Cung Cấp</label>
+                          <input type="text"  placeholder="Link Hoặc Tên Nhà Cung Cấp">
+                          <label for="fname">Tên Nhà Cung Cấp</label>
+                          <input type="text" placeholder="Link Hoặc Tên Nhà Cung Cấp">
+
+                          <label for="lname">Số Điện Thoại</label>
+                          <input type="text"  placeholder="Số Điện Thoại"> 
+                    </div>
+                </div>
+                </div>
+                
+                <div id="step-2" class="">
+                     <label >Chọn Hình Thức Báo Giá Sản Phẩm</label>
+                      <select >
+                        <option >Giá bao gồm thuế sản phẩm </option>
+                        <option >Không bao gồm thuế sản phẩm</option>
+                         </select>
+                        
                 </div>
                 <div id="step-3" class="">
+                    <label for="warehouse">Chọn Kho Gửi Hàng</label> 
+                    <select id="warehouse" name="warehouse">
+                    <option value="Bằng Tường">Bằng Tường </option>
+                    <option value=".....">.....</option>
+                    
+                  </select>
+                  
+    
+                  
+                </div>
+                <div id="step-4" class="">
                    <div class="row">
             <div class="col-md-8" ng-controller="InsertFormController">
                 <form action="<?php echo $cartUrl ?>" method="POST">
@@ -148,13 +192,18 @@ input[type=submit]:hover {
                     <div class="row mg-t10">
                         <div class="col-md-12">
                             <button type="submit" class="btn btn-sm btn-primary" ng-disabled="!getSubmitable()">Xác nhận</button>
+
                         </div>
+
+                               
                     </div>
                 </form>
+                        
+ 
             </div>
         </div>
 
-        <hr/>
+        
 
         <div class="row">
             <div class="col-md-12">
@@ -182,9 +231,13 @@ input[type=submit]:hover {
                 </form>
             </div>
         </div>
-        <hr/>
+  </div>
+            </div>
+        </div>
 
-        <div class="row mg-t20">
+
+    </div>
+    <div class="row mg-t20">
             <div class="col-md-12">
                 <div class="page-title bold">
                     <h1>Danh sách sản phẩm</h1>
@@ -306,32 +359,6 @@ input[type=submit]:hover {
                 </form>
             </div>
         </div>
-                   
-                </div>
-                <div id="step-4" class="">
-                     <label for="country">Chọn Hình Thức Báo Giá Sản Phẩm</label>
-                      <select id="country" name="country">
-                        <option value="australia">Giá bao gồm thuế sản phẩm </option>
-                        <option value="canada">Không bao gồm thuế sản phẩm</option>
-                         </select>
-                        
-                </div>
-                <div id="step-5" class="">
-                    <label for="warehouse">Chọn Kho Gửi Hàng</label> 
-                    <select id="warehouse" name="warehouse">
-                    <option value="Bằng Tường">Bằng Tường </option>
-                    <option value=".....">.....</option>
-                    
-                  </select>
-                  
-    
-                  
-                </div>
-            </div>
-        </div>
-
-
-    </div>
 
 
 
@@ -379,9 +406,23 @@ input[type=submit]:hover {
         });
 
         app.controller("InsertFormController",function($scope){
+        
             function init(){
                 $scope.addedItems = [];
+                $scope.type_order=1;
                 $scope.add();
+            }
+            $scope.step1=function(){
+
+                    $scope.type_order=1;
+            }
+             $scope.step2=function(){
+
+                    $scope.type_order=2;
+            }
+             $scope.step3=function(){
+
+                    $scope.type_order=3;
             }
 
             $scope.add = function(){
@@ -395,13 +436,15 @@ input[type=submit]:hover {
             }
 
             $scope.getSubmitable = function(){
+
                 for(var i in $scope.addedItems){
                     var addedItem = $scope.addedItems[i];
                     if(addedItem.count > 0 && addedItem.url){
                         return true;
                     }
                 }
-                return false;
+               return false;
+                
             }
 
             init();
@@ -434,12 +477,12 @@ input[type=submit]:hover {
             // Smart Wizard
             $('#smartwizard').smartWizard({
                     selected: 0,
-                    theme: 'default',
+                    theme: 'arrows',
                     transitionEffect:'fade',
                     showStepURLhash: true,
                     toolbarSettings: {toolbarPosition: 'both',
                                       toolbarButtonPosition: 'end',
-                                      toolbarExtraButtons: [btnFinish, btnCancel]
+                                      // toolbarExtraButtons: [btnFinish, btnCancel]
                                     }
             });
 

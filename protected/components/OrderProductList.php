@@ -85,17 +85,22 @@ class OrderProductList extends AdminTableList {
                 "description" => array(
                     "inputType" => "textarea"
                 ),
+
+                 "LinkNhaCungCap" => array(
+                    "inputType" => "text"
+                ),
+
                 "collaborator_note" => array(
                 )
             ),
             "actions" => array(
                 "action" => array(
                     "update" => array(
-                        "vietnamese_name", "url", "count", "description"
+                        "vietnamese_name", "url", "count", "description" , "LinkNhaCungCap"
                     ),
                     "delete" => true,
                     "insert" => array(
-                        "vietnamese_name", "url", "count", "description", "order_id"
+                        "vietnamese_name", "url", "count", "description", "order_id", "LinkNhaCungCap"
                     ),
                     "data" => array(
                         "search" => array(

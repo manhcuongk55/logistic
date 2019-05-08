@@ -42,6 +42,10 @@ class ProductFetcher {
             $fetchedItem["name"] = GoogleTranslateHelper::translate($fetchedItem["original_name"],"auto","vi");
         }
         $fetchedItem["type"] = $brand;
+
+        //them fetche item moi
+
+         $fetchedItem["LinkNhaCungCap"] = $item["LinkNhaCungCap"];
         return $fetchedItem;
     }
 

@@ -37,6 +37,9 @@ Son::load("SAsset")->addExtension("bootstrap");
   border-radius: 4px;
   box-sizing: border-box;
 }
+.a{
+     display: none;
+}
 input[type=submit] {
   width: 20%;
   background-color: #4CAF50;
@@ -112,25 +115,31 @@ input[type=submit]:hover {
                 </div>
                      
                 <div id="step-2" class="">
+
+
                       <div ng-repeat="addedItem in addedItems" >
                         
                           <label for="idLinkNhaCungCap">Link Nhà Cung Cấp</label>
-                          <input type="text" id="idLinkNhaCungCap" name="LinkNhaCungCap" ng-model="addedItem.LinkNhaCungCap" placeholder="Link Hoặc Tên Nhà Cung Cấp">
+                          <input type="text" id="idLinkNhaCungCap" name="items[{{$index}}][LinkNhaCungCap]" ng-model="addedItem.LinkNhaCungCap" placeholder="Link Hoặc Tên Nhà Cung Cấp">
 
+                           <!-- Tao 1 textbox set copy du lieu tu oject addedItem tro den value={{addedItem.LinkNhaCungCap}}  -->
+                           <!-- <input type="text" id="idNhaCungCap1" name="NhaCungCap1" placeholder="Link Hoặc Tên Nhà Cung Cấp" value={{addedItem.LinkNhaCungCap}}> -->
+                          {{addedItem}}
                           <label for="idNhaCungCap">Tên Nhà Cung Cấp</label>
                           <input type="text" id="idNhaCungCap" name="NhaCungCap" ng-model="addedItem.NhaCungCap" placeholder="Link Hoặc Tên Nhà Cung Cấp">
 
                           <label for="idsdt">Số Điện Thoại</label>
                           <input type="text" id="idsdt" name="sdt" ng-model="addedItem.sdt" placeholder=" Số Điện Thoại">
-                        
+
                       </div>
                 </div>
                 <div id="step-3" class="">
                     <label for="warehouse">Chọn Kho Gửi Hàng</label> 
          
                    <div  ng-repeat="addedItem in addedItems"  >
-                     <select ng-options="size as size for size in sizes " ng-model="addedItem.Tenkho" > </select>
+                     <select ng-options="size as size for size in sizes " ng-model="default_khohang" > </select>
 
+                   <!--  <input type="text" id="idNhaCungCap" name="NhaCungCap" placeholder="Link Hoặc Tên Nhà Cung Cấp" value={{addedItem.Tenkho}}> -->
                      {{addedItem}}
                    </div>
 
@@ -140,8 +149,15 @@ input[type=submit]:hover {
                      <label for="country">Chọn Hình Thức Báo Giá Sản Phẩm</label>
                         
                     <div  ng-repeat="addedItem in addedItems"  >
-                     <select ng-options="size1 as size1 for size1 in size1s " ng-model="addedItem.HinhThucBaoGia" > </select>
+                     <select ng-options="size1 as size1 for size1 in size1s " ng-model="default_baogiathue" > </select>
                      
+                        <select name="singleSelect" id="singleSelect" ng-model="addedItem.singleSelect">
+                        <option value="" disabled selected>---Qúy khách vui lòng chọn hình thức báo giá ---</option>
+                        <!-- not selected / blank option -->
+                         <option value="Giá bao gồm thuế sản phẩm ">Giá bao gồm thuế sản phẩm </option>
+                         <!-- interpolation -->
+                         <option value="Giá không bao gồm thuế sản phẩm">Giá không bao gồm thuế sản phẩm</option>
+                        </select>
                      {{addedItem}}
                     </div>
                 </div>
@@ -158,6 +174,15 @@ input[type=submit]:hover {
                         <div class="col-md-8">
                             <input type="text" class="form-control input-sm" name="items[{{$index}}][url]" ng-model="addedItem.url" placeholder="Đường dẫn sản phẩm {{$index+1}}" />
                             
+                            <!-- Tao the input an de luu du lieu TenKho -->
+                            <input type="text" id="idNhaCungCap" name="items[{{$index}}][Tenkho]"  
+                            ng-model="addedItem.Tenkho" style="display: none;" >
+
+                            <!-- Tao the input an de luu du lieu LinkNhaCungCap -->
+                            <input type="text"  id="idLinkNhaCungCap" name="items[{{$index}}][LinkNhaCungCap]" ng-model="addedItem.LinkNhaCungCap" placeholder="Link Hoặc Tên Nhà Cung Cấp" style="display: none;">
+                          
+
+                            
                             <textarea class="form-control input-sm mg-t5" rows="2" name="items[{{$index}}][description]" ng-model="addedItem.description" placeholder="Ghi chú"></textarea>
                             {{addedItem}} 
                         </div>
@@ -167,9 +192,11 @@ input[type=submit]:hover {
                         <div class="col-md-1 text-right">
                             <button type="button" class="btn btn-sm btn-danger" ng-click="remove($index)" ng-disabled="addedItems.length==1"><i class="fa fa-close"></i></button>
                         </div>
+
                         <div class="col-md-1 text-right">
                             <button type="button" class="btn btn-sm btn-success" ng-click="add()" ng-if="$index==addedItems.length-1"><i class="fa fa-plus"></i></button>
                         </div>
+
                     </div>
                     <div class="row mg-t10">
 
@@ -278,7 +305,9 @@ input[type=submit]:hover {
                                         <input type="hidden" ng-value="item.type" ng-attr-name="items[{{$index}}][type]" />
                                         <input type="hidden" ng-value="item.original_name" ng-attr-name="items[{{$index}}][original_name]" />
                                         <input type="hidden" ng-value="item.web_price" ng-attr-name="items[{{$index}}][web_price]" />
-
+                                    
+                                        <input type="hidden" ng-value="item.LinkNhaCungCap" ng-attr-name="items[{{$index}}][LinkNhaCungCap]" />
+                                        {{item}}
                                         <a ng-attr-href="{{item.url}}" target="_blank" ng-attr-title="{{item.url}}">
                                             <img ng-attr-src="{{ getVendorLogo() }}" />
                                         </a>
@@ -348,6 +377,9 @@ input[type=submit]:hover {
                         <input type="hidden" value="<?php echo $item->original_name ?>" name="items[<?php echo $i ?>][original_name]"/>
                         <input type="hidden" value="<?php echo $item->web_price ?>" name="items[<?php echo $i ?>][web_price]"/>
                         <input type="hidden" value="<?php echo $item->shop_id ?>" name="items[<?php echo $i ?>][shop_id]"/>
+
+                        <!--Them vao-->
+                        <input type="hidden" value="<?php echo $item->LinkNhaCungCap ?>" name="items[<?php echo $i ?>][LinkNhaCungCap]"/>
                     <?php endforeach; ?>
                 </form>
             </div>
@@ -422,8 +454,10 @@ input[type=submit]:hover {
             //tao combobox chon kho hang
 
             $scope.sizes = [ "Bằng Tường1", "Bằng Tường2"];
+            $scope.default_khohang = $scope.sizes[0];//tao gia tri mac dinh cho combobox kho hang
            // Tao thuoc tich trong combobox Hinh Thuc Bao Gia van chuyen ( co thue hay khong?)
             $scope.size1s = [ "Giá bao gồm thuế sản phẩm ", "Giá không bao gồm thuế sản phẩm"];
+            $scope.default_baogiathue = $scope.size1s[0]
             
 
         init();// goi ham init
@@ -460,9 +494,9 @@ input[type=submit]:hover {
                     theme: 'default',
                     transitionEffect:'fade',
                     showStepURLhash: true,
-                    toolbarSettings: {toolbarPosition: 'both',
+                    toolbarSettings: {//toolbarPosition: 'both',
                                       toolbarButtonPosition: 'end',
-                                      toolbarExtraButtons: [btnFinish, btnCancel]
+                                      //toolbarExtraButtons: [btnFinish, btnCancel]
                                     }
             });
 

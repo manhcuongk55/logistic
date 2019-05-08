@@ -253,6 +253,8 @@ class ProductCartItem {
 	public $web_price;
 	public $shop_id;
 	public $is_updating;
+	
+	public $LinkNhaCungCap;
 
 	public function parse($item){
 		$this->url = $item["url"];
@@ -265,6 +267,8 @@ class ProductCartItem {
 		$this->web_price = ArrayHelper::get($item,"web_price");
 		$this->shop_id = ArrayHelper::get($item,"shop_id");
 		$this->is_updating = ArrayHelper::get($item,"is_updating");
+
+		$this->LinkNhaCungCap = ArrayHelper::get($item,"LinkNhaCungCap");
 	}
 
 	public static function fetch($items,$sessionID){

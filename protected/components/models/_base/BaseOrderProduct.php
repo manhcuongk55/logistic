@@ -28,6 +28,7 @@
  * @property integer $shop_delivery_order_id
  * @property string $shop_id
  * @property double $real_price
+ * @property string $LinkNhaCungCap
  *
  */
 abstract class BaseOrderProduct extends SModel {
@@ -56,8 +57,8 @@ abstract class BaseOrderProduct extends SModel {
 			array('url, name, vietnamese_name, image', 'length', 'max'=>1000),
 			array('description', 'length', 'max'=>400),
 			array('color, shop_id', 'length', 'max'=>50),
-			array('active, name, vietnamese_name, image, description, web_price, ordered_count, color, shop_delivery_order_id, shop_id, real_price', 'default', 'setOnEmpty' => true, 'value' => null),
-			array('id, active, created_time, updated_time, order_id, url, website_type, name, price, count, vietnamese_name, image, description, web_price, ordered_count, color, shop_delivery_order_id, shop_id, real_price', 'safe', 'on'=>'search'),
+			array('active, name, vietnamese_name, image, description, web_price, ordered_count, color, shop_delivery_order_id, shop_id, real_price', 'default', 'setOnEmpty', 'LinkNhaCungCap' => true, 'value' => null),
+			array('id, active, created_time, updated_time, order_id, url, website_type, name, price, count, vietnamese_name, image, description, web_price, ordered_count, color, shop_delivery_order_id, shop_id, real_price', 'safe', 'on','LinkNhaCungCap'=>'search'),
 		);
 	}
 
@@ -92,6 +93,8 @@ abstract class BaseOrderProduct extends SModel {
 			'shop_delivery_order_id' => Yii::t('app', 'Shop Delivery Order'),
 			'shop_id' => Yii::t('app', 'Shop'),
 			'real_price' => Yii::t('app', 'Real Price'),
+			//them thuoc tinh moi
+			'LinkNhaCungCap' => Yii::t('app', 'LinkNhaCungCap'),
 		);
 	}
 
@@ -117,6 +120,8 @@ abstract class BaseOrderProduct extends SModel {
 		$criteria->compare('shop_delivery_order_id', $this->shop_delivery_order_id);
 		$criteria->compare('shop_id', $this->shop_id, true);
 		$criteria->compare('real_price', $this->real_price);
+		// them thuoc tinh moi
+		$criteria->compare('LinkNhaCungCap', $this->LinkNhaCungCap, true);
 
 		return new CActiveDataProvider($this, array(
 			'criteria' => $criteria,

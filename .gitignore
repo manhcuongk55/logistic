@@ -22,3 +22,5 @@ themes/classic/views/
 *.cache
 
 \.vscode/
+
+logs/background_task_url\.txt

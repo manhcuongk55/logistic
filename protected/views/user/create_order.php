@@ -5,7 +5,7 @@
         var_dump(json_encode($items,JSON_UNESCAPED_UNICODE));
         die();
     }
-    $url = Yii::app()->request->requestUri;
+    $url = Yii::app()->request->requestUri ."#step-4";
     $cartUrl = $this->createUrl("/home/cart");
     $vendorLogos = array(
         OrderProduct::WEBSITE_TYPE_TAOBAO => "/img/vendors/taobao.png",

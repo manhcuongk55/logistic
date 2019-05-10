@@ -37,9 +37,7 @@ Son::load("SAsset")->addExtension("bootstrap");
   border-radius: 4px;
   box-sizing: border-box;
 }
-.a{
-     display: none;
-}
+
 input[type=submit] {
   width: 20%;
   background-color: #4CAF50;
@@ -53,6 +51,10 @@ input[type=submit] {
 input[type=submit]:hover {
   background-color: #45a049;
   width: 20%;
+}
+
+.menu_step_order li{
+    width: 25%;
 }
 </style>
 
@@ -97,116 +99,145 @@ input[type=submit]:hover {
 
         <!-- SmartWizard html -->
         <div id="smartwizard" ng-controller="InsertFormController">
-            <ul>
-                <li><a href="#step-1">B1<br /><small>Chọn loại đơn hàng</small></a></li>
-                <li><a href="#step-2">B2<br /><small>Nhập thông tin nhà cung cấp</small></a></li>
-                <li><a href="#step-3">B3<br /><small>Chọn kho gửi hàng</small></a></li>
-                <li><a href="#step-4">B4<br /><small>Chọn hình thức báo giá v/c</small></a></li>
-                <li><a href="#step-5">B5<br /><small>Nhập thông tin sp</small></a></li>
+            <ul class="menu_step_order"> 
+                <li><a href="#step-1">Bước 1<br /><small>Chọn Loại Đơn Hàng Và Nhập thông tin nhà cung cấp</small></a></li>
+                <li><a href="#step-2">Bước 2<br /><small>Chọn kho gửi hàng</small></a></li>
+                <li><a href="#step-3">Bước 3<br /><small>Chọn hình thức báo giá vận chuyển</small></a></li>
+                <li><a href="#step-4">Bước 4<br /><small>Nhập thông tin sản phẩm</small></a></li>
             </ul>
 
             <div>
                 <div id="step-1" class="">
-                   <div class="container">
+                  <!--  <div class="container">
                         <button type="button" class="btn btn-primary btn-lg">Đơn hàng uỷ thác trọn gói</button>
                         <button type="button" class="btn btn-primary btn-lg">Đơn hàng Thanh toán và Vận Chuyển</button>
                         <button type="button" class="btn btn-primary btn-lg">Đơn hàng vận chuyển</button>        
-                   </div>
+                   </div> -->
+
+                   Chọn Loại Đơn Hàng :
+                    <select ng-model="myVar">
+                        <option value="order_1">Đơn hàng uỷ thác trọn gói
+                        <option value="order_2">Đơn hàng Thanh toán và Vận Chuyển
+                        <option value="order_3">Đơn hàng vận chuyển
+                    </select>
+
+                    <div ng-switch="myVar">
+
+                        <div  ng-switch-when="order_1"> 
+                            <div ng-repeat="addedItem in addedItems" >
+                                <label for="idLinkNhaCungCap">Link Nhà Cung Cấp</label>
+                                <input type="text" id="idLinkNhaCungCap" name="LinkNhaCungCap" ng-model="addedItem.LinkNhaCungCap" placeholder="Link Hoặc Tên Nhà Cung Cấp">
+
+                                <label for="idNhaCungCap">Tên Nhà Cung Cấp</label>
+                                <input type="text" id="idNhaCungCap" name="NhaCungCap" ng-model="addedItem.NhaCungCap" placeholder="Link Hoặc Tên Nhà Cung Cấp">
+
+                                <label for="idsdt">Số Điện Thoại</label>
+                                <input type="text" id="idsdt" name="sdt" ng-model="addedItem.sdt" placeholder=" Số Điện Thoại">
+                           </div>
+                        </div>
+
+                        <div ng-switch-when="order_2">
+                            <div ng-repeat="addedItem in addedItems" >
+                                <label for="idLinkNhaCungCap">Link Nhà Cung Cấp</label>
+                                <input type="text" id="idLinkNhaCungCap" name="items[{{$index}}][LinkNhaCungCap]" ng-model="addedItem.LinkNhaCungCap" placeholder="Link Hoặc Tên Nhà Cung Cấp">
+
+                                <!-- Tao 1 textbox set copy du lieu tu oject addedItem tro den value={{addedItem.LinkNhaCungCap}}  -->
+                                <!-- <input type="text" id="idNhaCungCap1" name="NhaCungCap1" placeholder="Link Hoặc Tên Nhà Cung Cấp" value={{addedItem.LinkNhaCungCap}}> -->
+                                {{addedItem}}
+                                <label for="idNhaCungCap">Tên Nhà Cung Cấp</label>
+                                <input type="text" id="idNhaCungCap" name="NhaCungCap" ng-model="addedItem.NhaCungCap" placeholder="Link Hoặc Tên Nhà Cung Cấp">
+
+                                <label for="idsdt">Số Điện Thoại</label>
+                                <input type="text" id="idsdt" name="sdt" ng-model="addedItem.sdt" placeholder=" Số Điện Thoại">
+                            </div>
+                        </div>
+                        <div ng-switch-when="order_3">
+                            <label for="fname">Mã Vận Đơn </label>
+                            <input type="text"  placeholder="Mã Vận Đơn">
+                            <label for="fname">Số Kiện</label>
+                            <input type="text"  placeholder="Số Kiện">
+                            <label for="fname">Link Nhà Cung Cấp</label>
+                            <input type="text"  placeholder="Link Hoặc Tên Nhà Cung Cấp">
+                            <label for="fname">Tên Nhà Cung Cấp</label>
+                            <input type="text" placeholder="Link Hoặc Tên Nhà Cung Cấp">
+
+                            <label for="lname">Số Điện Thoại</label>
+                            <input type="text"  placeholder="Số Điện Thoại"> 
+                        </div>
+
+                    </div>
                 </div>
                      
                 <div id="step-2" class="">
-
-
-                      <div ng-repeat="addedItem in addedItems" >
-                        
-                          <label for="idLinkNhaCungCap">Link Nhà Cung Cấp</label>
-                          <input type="text" id="idLinkNhaCungCap" name="items[{{$index}}][LinkNhaCungCap]" ng-model="addedItem.LinkNhaCungCap" placeholder="Link Hoặc Tên Nhà Cung Cấp">
-
-                           <!-- Tao 1 textbox set copy du lieu tu oject addedItem tro den value={{addedItem.LinkNhaCungCap}}  -->
-                           <!-- <input type="text" id="idNhaCungCap1" name="NhaCungCap1" placeholder="Link Hoặc Tên Nhà Cung Cấp" value={{addedItem.LinkNhaCungCap}}> -->
-                          {{addedItem}}
-                          <label for="idNhaCungCap">Tên Nhà Cung Cấp</label>
-                          <input type="text" id="idNhaCungCap" name="NhaCungCap" ng-model="addedItem.NhaCungCap" placeholder="Link Hoặc Tên Nhà Cung Cấp">
-
-                          <label for="idsdt">Số Điện Thoại</label>
-                          <input type="text" id="idsdt" name="sdt" ng-model="addedItem.sdt" placeholder=" Số Điện Thoại">
-
-                      </div>
+                    <label for="warehouse">Chọn Kho Gửi Hàng</label>
+                    <div  ng-repeat="addedItem in addedItems"  >
+                    <select ng-options="size as size for size in sizes " ng-model="default_khohang" > </select>
+                    <!--  <input type="text" id="idNhaCungCap" name="NhaCungCap" placeholder="Link Hoặc Tên Nhà Cung Cấp" value={{addedItem.Tenkho}}> -->
+                    {{addedItem}}
+                    </div>      
                 </div>
                 <div id="step-3" class="">
-                    <label for="warehouse">Chọn Kho Gửi Hàng</label> 
-         
-                   <div  ng-repeat="addedItem in addedItems"  >
-                     <select ng-options="size as size for size in sizes " ng-model="default_khohang" > </select>
-
-                   <!--  <input type="text" id="idNhaCungCap" name="NhaCungCap" placeholder="Link Hoặc Tên Nhà Cung Cấp" value={{addedItem.Tenkho}}> -->
-                     {{addedItem}}
-                   </div>
-
-                </div>
-                <div id="step-4" class="">
-
-                     <label for="country">Chọn Hình Thức Báo Giá Sản Phẩm</label>
+                   
+                    <label for="country">Chọn Hình Thức Báo Giá Sản Phẩm</label>
                         
                     <div  ng-repeat="addedItem in addedItems"  >
-                     <select ng-options="size1 as size1 for size1 in size1s " ng-model="default_baogiathue" > </select>
-                     
+                        <!-- <select ng-options="size1 as size1 for size1 in size1s " ng-model="default_baogiathue" > </select> -->
                         <select name="singleSelect" id="singleSelect" ng-model="addedItem.singleSelect">
-                        <option value="" disabled selected>---Qúy khách vui lòng chọn hình thức báo giá ---</option>
-                        <!-- not selected / blank option -->
-                         <option value="Giá bao gồm thuế sản phẩm ">Giá bao gồm thuế sản phẩm </option>
-                         <!-- interpolation -->
-                         <option value="Giá không bao gồm thuế sản phẩm">Giá không bao gồm thuế sản phẩm</option>
+                            <option value="" disabled selected>---Qúy khách vui lòng chọn hình thức báo giá ---</option>
+                            <!-- not selected / blank option -->
+                            <option value="Giá bao gồm thuế sản phẩm ">Giá bao gồm thuế sản phẩm </option>
+                            <!-- interpolation -->
+                            <option value="Giá không bao gồm thuế sản phẩm">Giá không bao gồm thuế sản phẩm</option>
                         </select>
                      {{addedItem}}
                     </div>
+
                 </div>
-                <div id="step-5" class="">
-                   
+               
+                <div id="step-4" class="">
                    <div class="row">
                    
+                        <div class="col-md-8" >
+                            <form action="<?php echo $cartUrl ?>" method="POST">
+                                <input type="hidden" name="action" value="add" />
+                                <input type="hidden" name="redirect_url" value="<?php echo $url ?>" />
+                                <div class="row mg-t5" ng-repeat="addedItem in addedItems">
+                                    <div class="col-md-8">
+                                        <input type="text" class="form-control input-sm" name="items[{{$index}}][url]" ng-model="addedItem.url" placeholder="Đường dẫn sản phẩm {{$index+1}}" />
+                                                
+                                        <!-- Tao the input an de luu du lieu TenKho -->
+                                        <input type="text" id="idNhaCungCap" name="items[{{$index}}][Tenkho]"  
+                                        ng-model="addedItem.Tenkho" style="display: none;" >
 
-            <div class="col-md-8" >
-                <form action="<?php echo $cartUrl ?>" method="POST">
-                    <input type="hidden" name="action" value="add" />
-                    <input type="hidden" name="redirect_url" value="<?php echo $url ?>" />
-                    <div class="row mg-t5" ng-repeat="addedItem in addedItems">
-                        <div class="col-md-8">
-                            <input type="text" class="form-control input-sm" name="items[{{$index}}][url]" ng-model="addedItem.url" placeholder="Đường dẫn sản phẩm {{$index+1}}" />
-                            
-                            <!-- Tao the input an de luu du lieu TenKho -->
-                            <input type="text" id="idNhaCungCap" name="items[{{$index}}][Tenkho]"  
-                            ng-model="addedItem.Tenkho" style="display: none;" >
+                                        <!-- Tao the input an de luu du lieu LinkNhaCungCap -->
+                                        <input type="text"  id="idLinkNhaCungCap" name="items[{{$index}}][LinkNhaCungCap]" ng-model="addedItem.LinkNhaCungCap" placeholder="Link Hoặc Tên Nhà Cung Cấp" style="display: none;">
+                                      
+                                        <textarea class="form-control input-sm mg-t5" rows="2" name="items[{{$index}}][description]" ng-model="addedItem.description" placeholder="Ghi chú"></textarea>
+                                        {{addedItem}} 
+                                    </div>
 
-                            <!-- Tao the input an de luu du lieu LinkNhaCungCap -->
-                            <input type="text"  id="idLinkNhaCungCap" name="items[{{$index}}][LinkNhaCungCap]" ng-model="addedItem.LinkNhaCungCap" placeholder="Link Hoặc Tên Nhà Cung Cấp" style="display: none;">
-                          
+                                    <div class="col-md-2">
+                                        <input type="number" class="form-control input-sm" name="items[{{$index}}][count]" ng-model="addedItem.count" placeholder="Số lượng" />
+                                    </div>
 
-                            
-                            <textarea class="form-control input-sm mg-t5" rows="2" name="items[{{$index}}][description]" ng-model="addedItem.description" placeholder="Ghi chú"></textarea>
-                            {{addedItem}} 
+                                    <div class="col-md-1 text-right">
+                                        <button type="button" class="btn btn-sm btn-danger" ng-click="remove($index)" ng-disabled="addedItems.length==1"><i class="fa fa-close"></i></button>
+                                    </div>
+
+                                    <div class="col-md-1 text-right">
+                                        <button type="button" class="btn btn-sm btn-success" ng-click="add()" ng-if="$index==addedItems.length-1"><i class="fa fa-plus"></i></button>
+                                    </div>   
+                                </div>
+
+                                <div class="row mg-t10">
+
+                                    <div class="col-md-12">
+                                        <button type="submit" class="btn btn-sm btn-primary" ng-disabled="!getSubmitable()">Xác nhận</button>
+                                    </div>
+                                </div>
+                            </form>
                         </div>
-                        <div class="col-md-2">
-                            <input type="number" class="form-control input-sm" name="items[{{$index}}][count]" ng-model="addedItem.count" placeholder="Số lượng" />
-                        </div>
-                        <div class="col-md-1 text-right">
-                            <button type="button" class="btn btn-sm btn-danger" ng-click="remove($index)" ng-disabled="addedItems.length==1"><i class="fa fa-close"></i></button>
-                        </div>
-
-                        <div class="col-md-1 text-right">
-                            <button type="button" class="btn btn-sm btn-success" ng-click="add()" ng-if="$index==addedItems.length-1"><i class="fa fa-plus"></i></button>
-                        </div>
-
                     </div>
-                    <div class="row mg-t10">
-
-                        <div class="col-md-12">
-                            <button type="submit" class="btn btn-sm btn-primary" ng-disabled="!getSubmitable()">Xác nhận</button>
-                        </div>
-                    </div>
-                </form>
-            </div>
-        </div>
 
         <hr/>
 

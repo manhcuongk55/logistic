@@ -171,8 +171,17 @@ input[type=submit]:hover {
                 <div id="step-2" class="">
                     <label for="warehouse">Chọn Kho Gửi Hàng</label>
                     <div  ng-repeat="addedItem in addedItems"  >
-                    <select ng-options="size as size for size in sizes " ng-model="default_khohang" > </select>
-                    <!--  <input type="text" id="idNhaCungCap" name="NhaCungCap" placeholder="Link Hoặc Tên Nhà Cung Cấp" value={{addedItem.Tenkho}}> -->
+
+                    <select name="Tenkho" ng-model="addedItem.Tenkho">
+                        <option value="" disabled selected>---Qúy khách vui lòng chọn kho gửi hàng ---</option>
+                        <!-- not selected / blank option -->
+                        <option value="Bằng Tường1"> Bằng Tường1 </option>
+                        <!-- interpolation -->
+                        <option value="Bằng Tường2"> Bằng Tường2 </option>
+                    </select>
+
+                    <!-- <select ng-options="size as size for size in sizes " ng-model="default_khohang" > </select> -->
+                 
                     {{addedItem}}
                     </div>      
                 </div>

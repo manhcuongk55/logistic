@@ -6,7 +6,7 @@
         die();
     }
     $url = Yii::app()->request->requestUri;
-    $cartUrl = $this->createUrl("/home/cart");
+    $cartUrl = $this->createUrl("/home/cart").'#step-4';
     $vendorLogos = array(
         OrderProduct::WEBSITE_TYPE_TAOBAO => "/img/vendors/taobao.png",
         OrderProduct::WEBSITE_TYPE_TMALL => "/img/vendors/tmall.png",
@@ -182,7 +182,7 @@ input[type=submit]:hover {
                         
                     <div  ng-repeat="addedItem in addedItems"  >
                         <!-- <select ng-options="size1 as size1 for size1 in size1s " ng-model="default_baogiathue" > </select> -->
-                        <select name="singleSelect" id="singleSelect" ng-model="addedItem.singleSelect">
+                        <select name="HinhThucBaoGia" ng-model="addedItem.HinhThucBaoGia">
                             <option value="" disabled selected>---Qúy khách vui lòng chọn hình thức báo giá ---</option>
                             <!-- not selected / blank option -->
                             <option value="Giá bao gồm thuế sản phẩm ">Giá bao gồm thuế sản phẩm </option>

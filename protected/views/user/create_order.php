@@ -198,7 +198,11 @@ input[type=submit]:hover {
                
                 <div id="step-4" class="">
                    <div class="row">
-                   
+                    test:
+                    <input type="text" id="idNhaCungCap1" name=""  
+                    ng-model="addedItem123" id="mySelect" onchange="myFunction()"  >
+
+                    Object  addedItem123 la : {{ addedItem123}}
                         <div class="col-md-8" >
                             <form action="<?php echo $cartUrl ?>" method="POST">
                                 <input type="hidden" name="action" value="add" />
@@ -207,15 +211,16 @@ input[type=submit]:hover {
                                     <div class="col-md-8">
                                         <input type="text" class="form-control input-sm" name="items[{{$index}}][url]" ng-model="addedItem.url" placeholder="Đường dẫn sản phẩm {{$index+1}}" />
                                                 
-                                        <!-- Tao the input an de luu du lieu TenKho -->
+                                        <!-- Tao the input an de luu du lieu Tenkho -->
                                         <input type="text" id="idNhaCungCap" name="items[{{$index}}][Tenkho]"  
-                                        ng-model="addedItem.Tenkho" style="display: none;" >
+                                        ng-model="addedItem.Tenkho" ng-init="addedItem.Tenkho= 'fake du lieu' " >
+
 
                                         <!-- Tao the input an de luu du lieu LinkNhaCungCap -->
                                         <input type="text"  id="idLinkNhaCungCap" name="items[{{$index}}][LinkNhaCungCap]" ng-model="addedItem.LinkNhaCungCap" placeholder="Link Hoặc Tên Nhà Cung Cấp" style="display: none;">
                                       
                                         <textarea class="form-control input-sm mg-t5" rows="2" name="items[{{$index}}][description]" ng-model="addedItem.description" placeholder="Ghi chú"></textarea>
-                                        {{addedItem}} 
+                                      Object  addedItem la :  {{addedItem}} 
                                     </div>
 
                                     <div class="col-md-2">
@@ -421,6 +426,11 @@ input[type=submit]:hover {
 </div>
 <!--End of Cart Main Area-->
 <script>
+
+    function myFunction() {
+    var x = document.getElementById("mySelect").value;
+    }
+
     (function(){
         $("#make-order-form").on("form-success",function(e,data){
             location.href = "<?php echo $this->createUrl("/user/active_orders") ?>" + "?order_id=" + data.order_id;
@@ -506,8 +516,9 @@ input[type=submit]:hover {
                 }
                 return false;
             }
-
             
+            var x = $scope.addedItem123;
+        
 
             //tao combobox chon kho hang
 

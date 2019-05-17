@@ -394,7 +394,7 @@ input[type=submit]:hover {
                             <div class="mg-t10">
                                 <div class="alert alert-info" role="alert">
                                     Chưa có sản phẩm nào. Bắt đầu thêm sản phẩm dưới đây!
-                                </div>HinhThucBaoGia
+                                </div>priceInform
                             </div>
                         <?php endif; ?>
                     </div>
@@ -495,11 +495,12 @@ input[type=submit]:hover {
                 $scope.k = 0 ;
                 $scope.addedItems = [];
                 $scope.addedInfo = {
-                    LinkNhaCungCap: "",
-                    NhaCungCap: "",
-                    Tenkho: "",
-                    HinhThucBaoGia: "",
-                    sdt: ""
+                    order_type: "",
+                    shop_link: "",// link nha cung cap, truong shop_id trong tbl_order
+                    shop_name: "",// ten nha cung cap, truong shop_name trong tbl_order
+                    warehouse: "",// kho gui hang, truong warehouse trong tbl_order
+                    priceInform: "",// hinh thuc bao gia, truong price_inform trong tbl_order
+                    shop_phone: "" // sdt nha cung cap, truong shop_phone trong tbl_order
                 }
                 $scope.add();
             }   
@@ -509,11 +510,11 @@ input[type=submit]:hover {
 
                 $scope.k = index;
                 $scope.addedItems.push({
-                    LinkNhaCungCap: $scope.addedInfo.LinkNhaCungCap,
-                    idNhaCungCap: $scope.addedInfo.idNhaCungCap,
-                    Tenkho: $scope.addedInfo.Tenkho,
-                    HinhThucBaoGia: $scope.addedInfo.HinhThucBaoGia,
-                    sdt: $scope.addedInfo.sdt,
+                    shop_link: $scope.addedInfo.shop_link,
+                    shop_name: $scope.addedInfo.shop_name,
+                    warehouse: $scope.addedInfo.warehouse,
+                    priceInform: $scope.addedInfo.priceInform,
+                    shop_phone: $scope.addedInfo.shop_phone,
                     count : 1
                 });
             }

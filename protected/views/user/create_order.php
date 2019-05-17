@@ -135,19 +135,17 @@ input[type=submit]:hover {
                         </div>
 
                         <div ng-switch-when="order_2">
-                            <div ng-repeat="addedItem in addedItems" >
                                 <label for="idLinkNhaCungCap">Link Nhà Cung Cấp</label>
-                                <input type="text" id="idLinkNhaCungCap" name="items[{{$index}}][LinkNhaCungCap]" ng-model="addedItem.LinkNhaCungCap" placeholder="Link Hoặc Tên Nhà Cung Cấp">
+                                <input type="text" id="idLinkNhaCungCap" name="items[{{$index}}][LinkNhaCungCap]" ng-model="addedInfo.LinkNhaCungCap" placeholder="Link Hoặc Tên Nhà Cung Cấp">
 
                                 <!-- Tao 1 textbox set copy du lieu tu oject addedItem tro den value={{addedItem.LinkNhaCungCap}}  -->
                                 <!-- <input type="text" id="idNhaCungCap1" name="NhaCungCap1" placeholder="Link Hoặc Tên Nhà Cung Cấp" value={{addedItem.LinkNhaCungCap}}> -->
                                 {{addedItem}}
                                 <label for="idNhaCungCap">Tên Nhà Cung Cấp</label>
-                                <input type="text" id="idNhaCungCap" name="NhaCungCap" ng-model="addedItem.NhaCungCap" placeholder="Link Hoặc Tên Nhà Cung Cấp">
+                                <input type="text" id="idNhaCungCap" name="NhaCungCap" ng-model="addedInfo.NhaCungCap" placeholder="Link Hoặc Tên Nhà Cung Cấp">
 
                                 <label for="idsdt">Số Điện Thoại</label>
-                                <input type="text" id="idsdt" name="sdt" ng-model="addedItem.sdt" placeholder=" Số Điện Thoại">
-                            </div>
+                                <input type="text" id="idsdt" name="sdt" ng-model="addedInfo.sdt" placeholder=" Số Điện Thoại">
                         </div>
                         <div ng-switch-when="order_3">
                             <label for="fname">Mã Vận Đơn </label>

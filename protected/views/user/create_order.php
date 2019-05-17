@@ -471,7 +471,7 @@ input[type=submit]:hover {
                 $scope.add();
             }   
 
-            $scope.$watch("addedInfo", function(newValue, oldValue){
+            $scope.$watch("addedInfo", function(newValue, oldValue){        //Watch changes on addedInfo to update everyobject in addedItems array
                 if (newValue != oldValue) {
                     for (var i = 0; i < $scope.addedItems.length; i++) {
                         $scope.addedItems[i].LinkNhaCungCap = $scope.LinkNhaCungCap;

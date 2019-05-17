@@ -394,7 +394,7 @@ input[type=submit]:hover {
                             <div class="mg-t10">
                                 <div class="alert alert-info" role="alert">
                                     Chưa có sản phẩm nào. Bắt đầu thêm sản phẩm dưới đây!
-                                </div>
+                                </div>HinhThucBaoGia
                             </div>
                         <?php endif; ?>
                     </div>
@@ -494,14 +494,26 @@ input[type=submit]:hover {
             function init(){
                 $scope.k = 0 ;
                 $scope.addedItems = [];
+                $scope.addedInfo = {
+                    LinkNhaCungCap: "",
+                    NhaCungCap: "",
+                    Tenkho: "",
+                    HinhThucBaoGia: "",
+                    sdt: ""
+                }
                 $scope.add();
-            }
+            }   
 
         
             $scope.add = function(index){
 
                 $scope.k = index;
                 $scope.addedItems.push({
+                    LinkNhaCungCap: $scope.addedInfo.LinkNhaCungCap,
+                    idNhaCungCap: $scope.addedInfo.idNhaCungCap,
+                    Tenkho: $scope.addedInfo.Tenkho,
+                    HinhThucBaoGia: $scope.addedInfo.HinhThucBaoGia,
+                    sdt: $scope.addedInfo.sdt,
                     count : 1
                 });
             }

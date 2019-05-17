@@ -124,16 +124,14 @@ input[type=submit]:hover {
                     <div ng-switch="myVar">
 
                         <div  ng-switch-when="order_1"> 
-                            <div ng-repeat="addedItem in addedItems" >
                                 <label for="idLinkNhaCungCap">Link Nhà Cung Cấp</label>
-                                <input type="text" id="idLinkNhaCungCap" name="LinkNhaCungCap" ng-model="addedItem.LinkNhaCungCap" placeholder="Link Hoặc Tên Nhà Cung Cấp">
+                                <input type="text" id="idLinkNhaCungCap" name="LinkNhaCungCap" ng-model="addedInfo.LinkNhaCungCap" placeholder="Link Hoặc Tên Nhà Cung Cấp">
 
                                 <label for="idNhaCungCap">Tên Nhà Cung Cấp</label>
-                                <input type="text" id="idNhaCungCap" name="NhaCungCap" ng-model="addedItem.NhaCungCap" placeholder="Link Hoặc Tên Nhà Cung Cấp">
+                                <input type="text" id="idNhaCungCap" name="NhaCungCap" ng-model="addedInfo.NhaCungCap" placeholder="Link Hoặc Tên Nhà Cung Cấp">
 
                                 <label for="idsdt">Số Điện Thoại</label>
-                                <input type="text" id="idsdt" name="sdt" ng-model="addedItem.sdt" placeholder=" Số Điện Thoại">
-                           </div>
+                                <input type="text" id="idsdt" name="sdt" ng-model="addedInfo.sdt" placeholder=" Số Điện Thoại">
                         </div>
 
                         <div ng-switch-when="order_2">
@@ -170,9 +168,8 @@ input[type=submit]:hover {
                      
                 <div id="step-2" class="">
                     <label for="warehouse">Chọn Kho Gửi Hàng</label>
-                    <div  ng-repeat="addedItem in addedItems"  >
 
-                    <select name="Tenkho" ng-model="addedItem.Tenkho">
+                    <select name="Tenkho" ng-model="addedInfo.Tenkho">
                         <option value="" disabled selected>---Qúy khách vui lòng chọn kho gửi hàng ---</option>
                         <!-- not selected / blank option -->
                         <option value="Bằng Tường1"> Bằng Tường1 </option>
@@ -182,16 +179,15 @@ input[type=submit]:hover {
 
                     <!-- <select ng-options="size as size for size in sizes " ng-model="default_khohang" > </select> -->
                  
-                    {{addedItem}}
-                    </div>      
+                    {{addedInfo }}    
+                    {{addedItems}}
                 </div>
                 <div id="step-3" class="">
                    
                     <label for="country">Chọn Hình Thức Báo Giá Sản Phẩm</label>
                         
-                    <div  ng-repeat="addedItem in addedItems"  >
                         <!-- <select ng-options="size1 as size1 for size1 in size1s " ng-model="default_baogiathue" > </select> -->
-                        <select name="HinhThucBaoGia" ng-model="addedItem.HinhThucBaoGia">
+                        <select name="HinhThucBaoGia" ng-model="addedInfo.HinhThucBaoGia">
                             <option value="" disabled selected>---Qúy khách vui lòng chọn hình thức báo giá ---</option>
                             <!-- not selected / blank option -->
                             <option value="Giá bao gồm thuế sản phẩm ">Giá bao gồm thuế sản phẩm </option>
@@ -199,7 +195,6 @@ input[type=submit]:hover {
                             <option value="Giá không bao gồm thuế sản phẩm">Giá không bao gồm thuế sản phẩm</option>
                         </select>
                      {{addedItem}}
-                    </div>
 
                 </div>
                
@@ -381,7 +376,7 @@ input[type=submit]:hover {
                             <div class="mg-t10">
                                 <div class="alert alert-info" role="alert">
                                     Chưa có sản phẩm nào. Bắt đầu thêm sản phẩm dưới đây!
-                                </div>
+                                </div>HinhThucBaoGia
                             </div>
                         <?php endif; ?>
                     </div>
@@ -466,11 +461,36 @@ input[type=submit]:hover {
         app.controller("InsertFormController",function($scope){
             function init(){
                 $scope.addedItems = [];
+                $scope.addedInfo = {
+                    LinkNhaCungCap: "",
+                    NhaCungCap: "",
+                    Tenkho: "",
+                    HinhThucBaoGia: "",
+                    sdt: ""
+                }
                 $scope.add();
-            }
+            }   
+
+            $scope.$watch("addedInfo", function(newValue, oldValue){
+                if (newValue != oldValue) {
+                    for (var i = 0; i < $scope.addedItems.length; i++) {
+                        $scope.addedItems[i].LinkNhaCungCap = $scope.LinkNhaCungCap;
+                        $scope.addedItems[i].NhaCungCap = $scope.addedInfo.NhaCungCap;
+                        $scope.addedItems[i].Tenkho = $scope.addedInfo.Tenkho;
+                        $scope.addedItems[i].HinhThucBaoGia = $scope.addedInfo.HinhThucBaoGia;
+                        $scope.addedItems[i].sdt = $scope.addedInfo.sdt;
+                        
+                    }
+                }
+            }, true);
 
             $scope.add = function(){
                 $scope.addedItems.push({
+                    LinkNhaCungCap: $scope.addedInfo.LinkNhaCungCap,
+                    idNhaCungCap: $scope.addedInfo.idNhaCungCap,
+                    Tenkho: $scope.addedInfo.Tenkho,
+                    HinhThucBaoGia: $scope.addedInfo.HinhThucBaoGia,
+                    sdt: $scope.addedInfo.sdt,
                     count : 1
                 });
             }

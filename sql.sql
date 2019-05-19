@@ -220,7 +220,6 @@ CREATE TABLE `tbl_order` (
   `HinhThucBaoGia` varchar(200) COLLATE utf8_unicode_ci DEFAULT NULL,
   `MaVanDon` varchar(200) COLLATE utf8_unicode_ci DEFAULT NULL,
   `SoKien` varchar(200) COLLATE utf8_unicode_ci DEFAULT NULL
-  
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 -- --------------------------------------------------------

@@ -224,7 +224,7 @@ input[type=submit]:hover {
                                         
                                       
                                         <textarea class="form-control input-sm mg-t5" rows="2" name="items[{{$index}}][description]" ng-model="addedItem.description" placeholder="Ghi chú"></textarea>
-                                      Object  addedItem la :  {{addedItem}} 
+                                     <!--  Object  addedItem la :  {{addedItem}} --> 
                                     </div>
 
                                     <div class="col-md-2">
@@ -348,7 +348,8 @@ input[type=submit]:hover {
                                         <input type="hidden" ng-value="item.original_name" ng-attr-name="items[{{$index}}][original_name]" />
                                         <input type="hidden" ng-value="item.web_price" ng-attr-name="items[{{$index}}][web_price]" />
                                     
-                                        {{item}}
+                                        <!-- In ra man hinh array item đe kiem tra ket qua -->
+                                        <!-- {{item}} -->
                                         <a ng-attr-href="{{item.url}}" target="_blank" ng-attr-title="{{item.url}}">
                                             <img ng-attr-src="{{ getVendorLogo() }}" />
                                         </a>

@@ -1,4 +1,4 @@
--- phpMyAdmin SQL Dump
+﻿-- phpMyAdmin SQL Dump
 -- version 4.8.5
 -- https://www.phpmyadmin.net/
 --
@@ -209,7 +209,18 @@ CREATE TABLE `tbl_order` (
   `volume_price` float NOT NULL DEFAULT '0',
   `total_volume` float NOT NULL DEFAULT '0',
   `name` varchar(100) COLLATE utf8_unicode_ci DEFAULT NULL,
-  `extra_description` varchar(500) COLLATE utf8_unicode_ci DEFAULT NULL
+  `extra_description` varchar(500) COLLATE utf8_unicode_ci DEFAULT NULL,
+ 
+-- Them thuoc tinh moi Nhacungcap, Kho, Thue ... 
+  `TypeOrder` varchar(200) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `LinkNhaCungCap` varchar(200) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `TenNhaCungCap` varchar(200) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `sdtNhaCungCap` varchar(200) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `TenKho` varchar(200) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `HinhThucBaoGia` varchar(200) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `MaVanDon` varchar(200) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `SoKien` varchar(200) COLLATE utf8_unicode_ci DEFAULT NULL
+  
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 -- --------------------------------------------------------
@@ -239,6 +250,7 @@ CREATE TABLE `tbl_order_product` (
   `shop_id` varchar(200) COLLATE utf8_unicode_ci DEFAULT NULL,
   `real_price` float DEFAULT NULL,
   `collaborator_note` varchar(600) COLLATE utf8_unicode_ci DEFAULT NULL
+
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 -- --------------------------------------------------------

@@ -110,18 +110,19 @@ input[type=submit]:hover {
                 <div id="step-1" class="">
                  
                 <!-- Create Object DefaultShopAttribute save all Attribute input from before step(1->3)
-                    objDefShopAttr
+                    objDefShopAtt
                  -->
 
                    Chọn Loại Đơn Hàng :
                     <select ng-model="objDefShopAttr.TypeOrder">
+                        <option value="" disabled selected>---Qúy khách vui lòng chọn loại Đon Hàng ---</option>
                         <option value="Đơn hàng Uỷ thác trọn gói"> Đơn Hàng Uỷ Thác Trọn gói
                         <option value="Đơn hàng Thanh toán và Vận chuyển"> Đơn Hàng Thanh Toán Và Vận Chuyển
                         <option value="Đơn hàng Vận chuyển"> Đơn Hàng Vận Chuyển
                     </select>
 
                     <div ng-switch="objDefShopAttr.TypeOrder">
-                         {{objDefShopAttr}}
+                         <!-- {{objDefShopAttr}} -->
                         <div  ng-switch-when="Đơn hàng Uỷ thác trọn gói">             
                             <label for="idLinkNhaCungCap">Link Nhà Cung Cấp</label>
                             <input type="text" id="idLinkNhaCungCap" name="LinkNhaCungCap" ng-model="objDefShopAttr.LinkNhaCungCap" placeholder=" Link Nhà Cung Cấp">
@@ -160,7 +161,6 @@ input[type=submit]:hover {
                             <label for="idsdt">Số Điện Thoại</label>
                             <input type="text" id="idsdtNhaCungCap" name="sdtNhaCungCap" ng-model="objDefShopAttr.sdtNhaCungCap" placeholder=" Số Điện Thoại Nhà Cung Cấp">
                         </div>
-                        {{objDefShopAttr}}
                     </div>
                 </div>
                      
@@ -431,8 +431,16 @@ input[type=submit]:hover {
                         <input type="hidden" value="<?php echo $item->shop_id ?>" name="items[<?php echo $i ?>][shop_id]"/>
 
                         <!--Them vao-->
-
+                        <input type="hidden" value="<?php echo $item->TypeOrder ?>" name="items[<?php echo $i ?>][TypeOrder]"/>
                         <input type="hidden" value="<?php echo $item->LinkNhaCungCap ?>" name="items[<?php echo $i ?>][LinkNhaCungCap]"/>
+                        <input type="hidden" value="<?php echo $item->TenNhaCungCap ?>" name="items[<?php echo $i ?>][TenNhaCungCap]"/>
+                        <input type="hidden" value="<?php echo $item->sdtNhaCungCap ?>" name="items[<?php echo $i ?>][sdtNhaCungCap]"/>
+                        <input type="hidden" value="<?php echo $item->TenKho ?>" name="items[<?php echo $i ?>][TenKho]"/>
+                        <input type="hidden" value="<?php echo $item->HinhThucBaoGia ?>" name="items[<?php echo $i ?>][HinhThucBaoGia]"/>
+                        <input type="hidden" value="<?php echo $item->MaVanDon ?>" name="items[<?php echo $i ?>][MaVanDon]"/>
+                        <input type="hidden" value="<?php echo $item->SoKien ?>" name="items[<?php echo $i ?>][SoKien]"/>
+
+
                     <?php endforeach; ?>
                 </form>
             </div>

@@ -86,9 +86,13 @@ class OrderProductList extends AdminTableList {
                     "inputType" => "textarea"
                 ),
 
-                 "LinkNhaCungCap" => array(
-                    "inputType" => "text"
-                ),
+                //Muon add Vao table ProductList
+                   // "LinkNhaCungCap" => array(
+                    // "inputType" => "text"
+                    // ),
+
+                    
+
 
                 "collaborator_note" => array(
                 )

@@ -29,7 +29,7 @@
  * @property string $shop_id
  * @property double $real_price
  * @property string $LinkNhaCungCap
- *
+ * @property string $TenKho
  */
 abstract class BaseOrderProduct extends SModel {
 
@@ -95,6 +95,7 @@ abstract class BaseOrderProduct extends SModel {
 			'real_price' => Yii::t('app', 'Real Price'),
 			//them thuoc tinh moi
 			'LinkNhaCungCap' => Yii::t('app', 'LinkNhaCungCap'),
+			'TenKho' => Yii::t('app', 'Tenkho'),
 		);
 	}
 
@@ -122,6 +123,7 @@ abstract class BaseOrderProduct extends SModel {
 		$criteria->compare('real_price', $this->real_price);
 		// them thuoc tinh moi
 		$criteria->compare('LinkNhaCungCap', $this->LinkNhaCungCap, true);
+		$criteria->compare('TenKho', $this->TenKho, true);
 
 		return new CActiveDataProvider($this, array(
 			'criteria' => $criteria,

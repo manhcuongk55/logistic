@@ -253,8 +253,16 @@ class ProductCartItem {
 	public $web_price;
 	public $shop_id;
 	public $is_updating;
-	
+	//Khoi Tao Them thuoc tinh trong item in list items
+	public $TypeOrder;
 	public $LinkNhaCungCap;
+	public $TenNhaCungCap;
+	public $sdtNhaCungCap;
+	public $TenKho;
+	public $HinhThucBaoGia;
+	public $MaVanDon;
+	public $SoKien;
+	
 
 	public function parse($item){
 		$this->url = $item["url"];
@@ -268,7 +276,15 @@ class ProductCartItem {
 		$this->shop_id = ArrayHelper::get($item,"shop_id");
 		$this->is_updating = ArrayHelper::get($item,"is_updating");
 
+		//Khoi Tao Them thuoc tinh trong item in list items
+		$this->TypeOrder = ArrayHelper::get($item,"TypeOrder");
 		$this->LinkNhaCungCap = ArrayHelper::get($item,"LinkNhaCungCap");
+		$this->TenNhaCungCap = ArrayHelper::get($item,"TenNhaCungCap");
+		$this->sdtNhaCungCap = ArrayHelper::get($item,"sdtNhaCungCap");
+		$this->TenKho = ArrayHelper::get($item,"TenKho");
+		$this->HinhThucBaoGia = ArrayHelper::get($item,"HinhThucBaoGia");
+		$this->MaVanDon = ArrayHelper::get($item,"MaVanDon");
+		$this->SoKien = ArrayHelper::get($item,"SoKien");
 	}
 
 	public static function fetch($items,$sessionID){

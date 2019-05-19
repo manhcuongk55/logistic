@@ -103,128 +103,125 @@ input[type=submit]:hover {
                 <li><a href="#step-1">Bước 1<br /><small>Chọn Loại Đơn Hàng Và Nhập thông tin nhà cung cấp</small></a></li>
                 <li><a href="#step-2">Bước 2<br /><small>Chọn kho gửi hàng</small></a></li>
                 <li><a href="#step-3">Bước 3<br /><small>Chọn hình thức báo giá vận chuyển</small></a></li>
-                <li><a href="#step-4">Bước 4<br /><small>Nhập thông tin sản phẩm</small></a></li>
+                <li ng-click="myFunc()"><a href="#step-4">Bước 4<br /><small>Nhập thông tin sản phẩm</small></a></li>
             </ul>
 
             <div>
                 <div id="step-1" class="">
-                  <!--  <div class="container">
-                        <button type="button" class="btn btn-primary btn-lg">Đơn hàng uỷ thác trọn gói</button>
-                        <button type="button" class="btn btn-primary btn-lg">Đơn hàng Thanh toán và Vận Chuyển</button>
-                        <button type="button" class="btn btn-primary btn-lg">Đơn hàng vận chuyển</button>        
-                   </div> -->
+                 
+                <!-- Create Object DefaultShopAttribute save all Attribute input from before step(1->3)
+                    objDefShopAttr
+                 -->
 
                    Chọn Loại Đơn Hàng :
-                    <select ng-model="myVar">
-                        <option value="order_1">Đơn hàng uỷ thác trọn gói
-                        <option value="order_2">Đơn hàng Thanh toán và Vận Chuyển
-                        <option value="order_3">Đơn hàng vận chuyển
+                    <select ng-model="objDefShopAttr.TypeOrder">
+                        <option value="Đơn hàng Uỷ thác trọn gói"> Đơn Hàng Uỷ Thác Trọn gói
+                        <option value="Đơn hàng Thanh toán và Vận chuyển"> Đơn Hàng Thanh Toán Và Vận Chuyển
+                        <option value="Đơn hàng Vận chuyển"> Đơn Hàng Vận Chuyển
                     </select>
 
-                    <div ng-switch="myVar">
+                    <div ng-switch="objDefShopAttr.TypeOrder">
+                         {{objDefShopAttr}}
+                        <div  ng-switch-when="Đơn hàng Uỷ thác trọn gói">             
+                            <label for="idLinkNhaCungCap">Link Nhà Cung Cấp</label>
+                            <input type="text" id="idLinkNhaCungCap" name="LinkNhaCungCap" ng-model="objDefShopAttr.LinkNhaCungCap" placeholder=" Link Nhà Cung Cấp">
 
-                        <div  ng-switch-when="order_1"> 
-                            <div ng-repeat="addedItem in addedItems" >
-                                <label for="idLinkNhaCungCap">Link Nhà Cung Cấp</label>
-                                <input type="text" id="idLinkNhaCungCap" name="LinkNhaCungCap" ng-model="addedItem.LinkNhaCungCap" placeholder="Link Hoặc Tên Nhà Cung Cấp">
+                            <label for="idNhaCungCap">Tên Nhà Cung Cấp</label>
+                            <input type="text" id="idTenNhaCungCap" name="TenNhaCungCap" ng-model="objDefShopAttr.TenNhaCungCap" placeholder=" Tên Nhà Cung Cấp">
 
-                                <label for="idNhaCungCap">Tên Nhà Cung Cấp</label>
-                                <input type="text" id="idNhaCungCap" name="NhaCungCap" ng-model="addedItem.NhaCungCap" placeholder="Link Hoặc Tên Nhà Cung Cấp">
-
-                                <label for="idsdt">Số Điện Thoại</label>
-                                <input type="text" id="idsdt" name="sdt" ng-model="addedItem.sdt" placeholder=" Số Điện Thoại">
-                           </div>
+                            <label for="idsdt">Số Điện Thoại</label>
+                            <input type="text" id="idsdtNhaCungCap" name="sdtNhaCungCap" ng-model="objDefShopAttr.sdtNhaCungCap" placeholder=" Số Điện Thoại Nhà Cung Cấp">          
                         </div>
 
-                        <div ng-switch-when="order_2">
-                            <div ng-repeat="addedItem in addedItems" >
-                                <label for="idLinkNhaCungCap">Link Nhà Cung Cấp</label>
-                                <input type="text" id="idLinkNhaCungCap" name="items[{{$index}}][LinkNhaCungCap]" ng-model="addedItem.LinkNhaCungCap" placeholder="Link Hoặc Tên Nhà Cung Cấp">
+                        <div ng-switch-when="Đơn hàng Thanh toán và Vận chuyển">
+                            <label for="idLinkNhaCungCap">Link Nhà Cung Cấp</label>
+                            <input type="text" id="idLinkNhaCungCap" name="LinkNhaCungCap" ng-model="objDefShopAttr.LinkNhaCungCap" placeholder=" Link Nhà Cung Cấp">
 
-                                <!-- Tao 1 textbox set copy du lieu tu oject addedItem tro den value={{addedItem.LinkNhaCungCap}}  -->
-                                <!-- <input type="text" id="idNhaCungCap1" name="NhaCungCap1" placeholder="Link Hoặc Tên Nhà Cung Cấp" value={{addedItem.LinkNhaCungCap}}> -->
-                                {{addedItem}}
-                                <label for="idNhaCungCap">Tên Nhà Cung Cấp</label>
-                                <input type="text" id="idNhaCungCap" name="NhaCungCap" ng-model="addedItem.NhaCungCap" placeholder="Link Hoặc Tên Nhà Cung Cấp">
+                            <label for="idNhaCungCap">Tên Nhà Cung Cấp</label>
+                            <input type="text" id="idTenNhaCungCap" name="TenNhaCungCap" ng-model="objDefShopAttr.TenNhaCungCap" placeholder=" Tên Nhà Cung Cấp">
 
-                                <label for="idsdt">Số Điện Thoại</label>
-                                <input type="text" id="idsdt" name="sdt" ng-model="addedItem.sdt" placeholder=" Số Điện Thoại">
-                            </div>
-                        </div>
-                        <div ng-switch-when="order_3">
-                            <label for="fname">Mã Vận Đơn </label>
-                            <input type="text"  placeholder="Mã Vận Đơn">
-                            <label for="fname">Số Kiện</label>
-                            <input type="text"  placeholder="Số Kiện">
-                            <label for="fname">Link Nhà Cung Cấp</label>
-                            <input type="text"  placeholder="Link Hoặc Tên Nhà Cung Cấp">
-                            <label for="fname">Tên Nhà Cung Cấp</label>
-                            <input type="text" placeholder="Link Hoặc Tên Nhà Cung Cấp">
-
-                            <label for="lname">Số Điện Thoại</label>
-                            <input type="text"  placeholder="Số Điện Thoại"> 
+                            <label for="idsdt">Số Điện Thoại</label>
+                            <input type="text" id="idsdtNhaCungCap" name="sdtNhaCungCap" ng-model="objDefShopAttr.sdtNhaCungCap" placeholder=" Số Điện Thoại Nhà Cung Cấp">
                         </div>
 
+                        <div ng-switch-when="Đơn hàng Vận chuyển">
+                            <label for="idMaVanDon"> Mã Vận Đơn </label>
+                            <input type="text" id="idMaVanDon" name="MaVanDon" ng-model="objDefShopAttr.MaVanDon" placeholder="Quý Khách Hãy Nhập Mã Vận Đơn">
+                            
+                            <label for="idSoKien"> Số Kiện </label>
+                            <input type="text" id="idSoKien" name="SoKien" ng-model="objDefShopAttr.SoKien" placeholder="Quý Khách Hãy Nhập Số Kiện Hàng">
+
+                            <label for="idLinkNhaCungCap">Link Nhà Cung Cấp</label>
+                            <input type="text" id="idLinkNhaCungCap" name="LinkNhaCungCap" ng-model="objDefShopAttr.LinkNhaCungCap" placeholder=" Link Nhà Cung Cấp">
+
+                            <label for="idNhaCungCap">Tên Nhà Cung Cấp</label>
+                            <input type="text" id="idTenNhaCungCap" name="TenNhaCungCap" ng-model="objDefShopAttr.TenNhaCungCap" placeholder=" Tên Nhà Cung Cấp">
+
+                            <label for="idsdt">Số Điện Thoại</label>
+                            <input type="text" id="idsdtNhaCungCap" name="sdtNhaCungCap" ng-model="objDefShopAttr.sdtNhaCungCap" placeholder=" Số Điện Thoại Nhà Cung Cấp">
+                        </div>
+                        {{objDefShopAttr}}
                     </div>
                 </div>
                      
                 <div id="step-2" class="">
-                    <label for="warehouse">Chọn Kho Gửi Hàng</label>
-                    <!-- <div  ng-repeat="addedItem in addedItems"  > -->
-
-                    <select name="Tenkho" ng-model="addedItem123">
-                        <option value="" disabled selected>---Qúy khách vui lòng chọn kho gửi hàng ---</option>
-                        <!-- not selected / blank option -->
-                        <option value="Bằng Tường1"> Bằng Tường1 </option>
-                        <!-- interpolation -->
-                        <option value="Bằng Tường2"> Bằng Tường2 </option>
-                    </select>
-
-                    <!-- <select ng-options="size as size for size in sizes " ng-model="default_khohang" > </select> -->
-                 
-                    {{addedItem123}}
-                    <!-- </div>  -->     
+                    <label for="">Chọn Kho Gửi Hàng :</label>
+                        <select name="TenKho" ng-model="objDefShopAttr.TenKho">
+                            <option value="" disabled selected>---Qúy khách vui lòng chọn kho gửi hàng ---</option>
+                            <!-- not selected / blank option -->
+                            <option value="Bằng Tường1"> Bằng Tường1 </option>
+                            <!-- interpolation -->
+                            <option value="Bằng Tường2"> Bằng Tường2 </option>
+                        </select>
                 </div>
-                <div id="step-3" class="">
-                   
-                    <label for="country">Chọn Hình Thức Báo Giá Sản Phẩm</label>
-                        
-                    <div  ng-repeat="addedItem in addedItems"  >
-                        <!-- <select ng-options="size1 as size1 for size1 in size1s " ng-model="default_baogiathue" > </select> -->
-                        <select name="HinhThucBaoGia" ng-model="addedItem.HinhThucBaoGia">
+
+                <div id="step-3" class="">  
+                    <label for="">Chọn Hình Thức Báo Giá Sản Phẩm :</label> 
+                        <select name="HinhThucBaoGia" ng-model="objDefShopAttr.HinhThucBaoGia">
                             <option value="" disabled selected>---Qúy khách vui lòng chọn hình thức báo giá ---</option>
                             <!-- not selected / blank option -->
                             <option value="Giá bao gồm thuế sản phẩm ">Giá bao gồm thuế sản phẩm </option>
                             <!-- interpolation -->
                             <option value="Giá không bao gồm thuế sản phẩm">Giá không bao gồm thuế sản phẩm</option>
                         </select>
-                     {{addedItem}}
-                    </div>
-
                 </div>
                
-                <div id="step-4" class="">
+                <div id="step-4" class="" ng-click="myFunc()">
                    <div class="row">
-                    test:
-                    <input type="text" id="idNhaCungCap1" name=""  
-                    ng-model="addedItem123" id="mySelect" onchange="myFunction()"  >
 
-                    Object  addedItem123 la : {{ addedItem123}}
                         <div class="col-md-8" >
                             <form action="<?php echo $cartUrl ?>" method="POST">
                                 <input type="hidden" name="action" value="add" />
                                 <input type="hidden" name="redirect_url" value="<?php echo $url ?>" />
                                 <div class="row mg-t5" ng-repeat="addedItem in addedItems">
                                     <div class="col-md-8">
+                                        <!-- + Tao the input an de luu du lieu DefaultShopAttribute from before step(1->3)
+                                        + Du lieu 1 array addedItem thuoc list array addedItems, du lieu tung phan tu thuoc array addedItem duoc lay tu object objDefShopAttr -->
+                                        <!-- Tao the input an de luu du lieu TypeOrder -->
+                                        <input type="text"  name="items[{{$index}}][TypeOrder]"  
+                                        ng-model="addedItem.TypeOrder" style="display: none;" >
+                                        <input type="text"  id="idLinkNhaCungCap" name="items[{{$index}}][LinkNhaCungCap]" ng-model="addedItem.LinkNhaCungCap"
+                                        style="display: none;">
+                                        <input type="text" name="items[{{$index}}][TenNhaCungCap]"  
+                                        ng-model="addedItem.TenNhaCungCap" style="display: none;" >
+                                        <input type="text" name="items[{{$index}}][sdtNhaCungCap]"  
+                                        ng-model="addedItem.sdtNhaCungCap" style="display: none;">
+                                        <input type="text" name="items[{{$index}}][TenKho]"  
+                                        ng-model="addedItem.TenKho" style="display: none;" >
+                                        <input type="text" name="items[{{$index}}][HinhThucBaoGia]"  
+                                        ng-model="addedItem.HinhThucBaoGia" style="display: none;" >
+
+                                        <input type="text" name="items[{{$index}}][MaVanDon]"  
+                                        ng-model="addedItem.MaVanDon" style="display: none;" >
+                                        <input type="text" name="items[{{$index}}][SoKien]"  
+                                        ng-model="addedItem.SoKien" style="display: none;" >
+
+                                        <!-- ket thuc het form input an lay du lieu tu step 1->3 -->
+                                        
+
                                         <input type="text" class="form-control input-sm" name="items[{{$index}}][url]" ng-model="addedItem.url" placeholder="Đường dẫn sản phẩm {{$index+1}}" />
                                                 
-                                        <!-- Tao the input an de luu du lieu Tenkho -->
-                                        <input type="text" id="idNhaCungCap" name="items[{{$index}}][Tenkho]"  
-                                        ng-model="addedItem.Tenkho" ng-init="addedItem.Tenkho= 'fake du lieu' " >
-
-
-                                        <!-- Tao the input an de luu du lieu LinkNhaCungCap -->
-                                        <input type="text"  id="idLinkNhaCungCap" name="items[{{$index}}][LinkNhaCungCap]" ng-model="addedItem.LinkNhaCungCap" placeholder="Link Hoặc Tên Nhà Cung Cấp" style="display: none;">
+                                        
                                       
                                         <textarea class="form-control input-sm mg-t5" rows="2" name="items[{{$index}}][description]" ng-model="addedItem.description" placeholder="Ghi chú"></textarea>
                                       Object  addedItem la :  {{addedItem}} 
@@ -239,7 +236,7 @@ input[type=submit]:hover {
                                     </div>
 
                                     <div class="col-md-1 text-right">
-                                        <button type="button" class="btn btn-sm btn-success" ng-click="add()" ng-if="$index==addedItems.length-1"><i class="fa fa-plus"></i></button>
+                                        <button type="button" class="btn btn-sm btn-success" ng-click="add($index)" ng-if="$index==addedItems.length-1"><i class="fa fa-plus"></i></button>
                                     </div>   
                                 </div>
 
@@ -351,11 +348,21 @@ input[type=submit]:hover {
                                         <input type="hidden" ng-value="item.original_name" ng-attr-name="items[{{$index}}][original_name]" />
                                         <input type="hidden" ng-value="item.web_price" ng-attr-name="items[{{$index}}][web_price]" />
                                     
-                                        <input type="hidden" ng-value="item.LinkNhaCungCap" ng-attr-name="items[{{$index}}][LinkNhaCungCap]" />
                                         {{item}}
                                         <a ng-attr-href="{{item.url}}" target="_blank" ng-attr-title="{{item.url}}">
                                             <img ng-attr-src="{{ getVendorLogo() }}" />
                                         </a>
+
+                                        <!-- Luu vao item in list items -->
+                                        <input type="hidden" ng-value="item.TypeOrder" ng-attr-name="items[{{$index}}][TypeOrder]" />
+                                        <input type="hidden" ng-value="item.LinkNhaCungCap" ng-attr-name="items[{{$index}}][LinkNhaCungCap]" />
+                                        <input type="hidden" ng-value="item.TenNhaCungCap" ng-attr-name="items[{{$index}}][TenNhaCungCap]" />
+                                        <input type="hidden" ng-value="item.sdtNhaCungCap" ng-attr-name="items[{{$index}}][sdtNhaCungCap]" />
+                                        <input type="hidden" ng-value="item.TenKho" ng-attr-name="items[{{$index}}][TenKho]" />
+                                        <input type="hidden" ng-value="item.HinhThucBaoGia" ng-attr-name="items[{{$index}}][HinhThucBaoGia]" />
+                                        <input type="hidden" ng-value="item.MaVanDon" ng-attr-name="items[{{$index}}][MaVanDon]" />
+                                        <input type="hidden" ng-value="item.SoKien" ng-attr-name="items[{{$index}}][SoKien]" />
+     
                                     </td>
                                     <!--<td class="p-name">
                                         {{item.name ? item.name : "[Đang cập nhật]"}}
@@ -424,6 +431,7 @@ input[type=submit]:hover {
                         <input type="hidden" value="<?php echo $item->shop_id ?>" name="items[<?php echo $i ?>][shop_id]"/>
 
                         <!--Them vao-->
+
                         <input type="hidden" value="<?php echo $item->LinkNhaCungCap ?>" name="items[<?php echo $i ?>][LinkNhaCungCap]"/>
                     <?php endforeach; ?>
                 </form>
@@ -475,12 +483,15 @@ input[type=submit]:hover {
 
         app.controller("InsertFormController",function($scope){
             function init(){
+                $scope.k = 0 ;
                 $scope.addedItems = [];
                 $scope.add();
             }
 
-        var x = $scope.addedItem123;
-            $scope.add = function(){
+        
+            $scope.add = function(index){
+
+                $scope.k = index;
                 $scope.addedItems.push({
                     count : 1
                 });
@@ -500,7 +511,24 @@ input[type=submit]:hover {
                 return false;
             }
             
-            var x = $scope.addedItem123;
+            $scope.myFunc = function() {
+            
+            $scope.m = 0;
+            if($scope.k != null){
+            $scope.m = $scope.m + $scope.k + 1;
+            }
+
+            $scope.addedItems[$scope.m].TypeOrder = $scope.objDefShopAttr.TypeOrder;
+            $scope.addedItems[$scope.m].LinkNhaCungCap = $scope.objDefShopAttr.LinkNhaCungCap;
+            $scope.addedItems[$scope.m].TenNhaCungCap = $scope.objDefShopAttr.TenNhaCungCap;
+            $scope.addedItems[$scope.m].sdtNhaCungCap = $scope.objDefShopAttr.sdtNhaCungCap;
+            $scope.addedItems[$scope.m].TenKho = $scope.objDefShopAttr.TenKho;
+            $scope.addedItems[$scope.m].HinhThucBaoGia = $scope.objDefShopAttr.HinhThucBaoGia;
+            $scope.addedItems[$scope.m].MaVanDon = $scope.objDefShopAttr.MaVanDon;
+            $scope.addedItems[$scope.m].SoKien = $scope.objDefShopAttr.SoKien;
+            
+            };
+            
         
 
             //tao combobox chon kho hang

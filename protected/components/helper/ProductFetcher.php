@@ -43,9 +43,16 @@ class ProductFetcher {
         }
         $fetchedItem["type"] = $brand;
 
-        //them fetche item moi
+        //Fetched data in addeditem add to item: Gan du lieu tung thuoc tinh trong addeditem vao tung thuoc tinh trong item
+        $fetchedItem["TypeOrder"] = $item["TypeOrder"];
+        $fetchedItem["LinkNhaCungCap"] = $item["LinkNhaCungCap"];
+        $fetchedItem["TenNhaCungCap"] = $item["TenNhaCungCap"];
+        $fetchedItem["sdtNhaCungCap"] = $item["sdtNhaCungCap"];
+        $fetchedItem["TenKho"] = $item["TenKho"];
+        $fetchedItem["HinhThucBaoGia"] = $item["HinhThucBaoGia"];
+        $fetchedItem["MaVanDon"] = $item["MaVanDon"];
+        $fetchedItem["SoKien"] = $item["SoKien"];
 
-         $fetchedItem["LinkNhaCungCap"] = $item["LinkNhaCungCap"];
         return $fetchedItem;
     }
 

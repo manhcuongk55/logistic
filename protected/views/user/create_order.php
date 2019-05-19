@@ -216,7 +216,7 @@ input[type=submit]:hover {
                                         <input type="text" name="items[{{$index}}][SoKien]"  
                                         ng-model="addedItem.SoKien" style="display: none;" >
 
-                                        <!-- ket thuc het form input an lay du lieu tu step 1->3 -->
+                                        <!-- ket thuc het form input an lay du lieu tu step 1->3  -->
                                         
 
                                         <input type="text" class="form-control input-sm" name="items[{{$index}}][url]" ng-model="addedItem.url" placeholder="Đường dẫn sản phẩm {{$index+1}}" />

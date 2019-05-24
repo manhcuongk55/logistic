@@ -455,7 +455,6 @@ input[type=submit]:hover {
     var ar_ext = ['xls', 'xlsx', 'XLS', 'XLSX']; // array with allowed extensions
 
     function checkName(el, to, sbm) {
-    // - coursesweb.net
     // get the file name and split it to separe the extension
     var name = el.value;
     var ar_name = name.split('.');

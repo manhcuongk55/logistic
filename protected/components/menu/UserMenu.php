@@ -1,4 +1,4 @@
-<!-- <?php
+ <?php
 class UserMenu extends SMenu {
     protected function getConfig(){
 		if($this->isSubMenu)
@@ -23,4 +23,5 @@ class UserMenu extends SMenu {
         parent::init();
         $this->setActiveItemId(Util::controller()->action->id);
     }
-} -->
+}
+?>

@@ -187,16 +187,29 @@ class ProductCartHelper {
 						$excelObj->setActiveSheetIndexByName("Sheet1");
 						$arr = $excelObj->getActiveSheet()->toArray(null, true,true,true);
 						$addedItems = array();
+						// foreach($arr as $i => $row){
+						// 	if ($i > 14){
+						// 		if(!$row["C"]){
+						// 			break;
+						// 		}
+						// 		$item = array(
+						// 			"url" => $row["C"],
+						// 			"count" => intval($row["G"]),
+						// 			"description" => $row["E"],
+						// 			//"name" => $row["D"] 
+						// 		);
+						// 		$addedItems[] = $item;
+						// 	}
+						// } // xu ly file excel theo thu tu 
 						foreach($arr as $i => $row){
-							if ($i > 14){
-								if(!$row["C"]){
+							if ($i > 1){
+								if (!$row["B"]){
 									break;
-								}
+								} else 
 								$item = array(
-									"url" => $row["C"],
-									"count" => intval($row["G"]),
-									"description" => $row["E"],
-									//"name" => $row["D"] 
+									"url" => $row["B"],
+									"count" => intval($row["D"]),
+									"description" => $row["C"]
 								);
 								$addedItems[] = $item;
 							}

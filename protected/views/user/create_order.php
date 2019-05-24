@@ -5,7 +5,8 @@
         var_dump(json_encode($items,JSON_UNESCAPED_UNICODE));
         die();
     }
-    $url = Yii::app()->request->requestUri;
+    $url = Yii::app()->request->requestUri.'#step-4';
+    
     $cartUrl = $this->createUrl("/home/cart").'#step-4';
     $vendorLogos = array(
         OrderProduct::WEBSITE_TYPE_TAOBAO => "/img/vendors/taobao.png",
@@ -263,8 +264,8 @@ input[type=submit]:hover {
         <div class="row">
             <div class="col-md-12">
                 <form action="<?php echo $cartUrl ?>" method="POST" enctype="multipart/form-data"  novalidate>
-                    <input type="hidden" name="action" value="upload_file" />
-                    <input type="hidden" name="redirect_url" value="<?php echo $url ?>" />
+                    <input type="" name="action" value="upload_file" />
+                    <input type="" name="redirect_url" value="<?php echo $url ?>" />
                     <div class="row">
                         <div class="col-md-8">
                             <input type="file" name="file" class="form-control" />

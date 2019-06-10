@@ -483,10 +483,7 @@ input[type=submit]:hover {
                                         <button  class="btn btn-secondary" id="next-btn" type="button" ng-click="nextClick()" ng-disabled="true" >Tiếp Tục</button>
                                     </div>
                                 </div>
-                            </div>
-                        
-
-                        
+                            </div>    
                     </div>
 
                     <hr/>

@@ -5,9 +5,10 @@
         var_dump(json_encode($items,JSON_UNESCAPED_UNICODE));
         die();
     }
-    $url = Yii::app()->request->requestUri.'#step-4';
+    $url = Yii::app()->request->requestUri;//url : /user/create_order 
     
-    $cartUrl = $this->createUrl("/home/cart").'#step-4';
+    $cartUrl = $this->createUrl("/home/cart");
+    // .'#step-1';
     $vendorLogos = array(
         OrderProduct::WEBSITE_TYPE_TAOBAO => "/img/vendors/taobao.png",
         OrderProduct::WEBSITE_TYPE_TMALL => "/img/vendors/tmall.png",
@@ -22,32 +23,131 @@ Son::load("SAsset")->addExtension("bootstrap");
 
 <style>
 
-    .p-url {
-        text-overflow: ellipsis;
-        white-space: nowrap;
-        max-width: 200px;
-        overflow: hidden;
-        
-    }
-    input[type=text], select {
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
+/*Change Color placeholder input*/
+.form-control::-webkit-input-placeholder { color: red; }  /* WebKit, Blink, Edge */
+.form-control:-moz-placeholder { color: red; }  /* Mozilla Firefox 4 to 18 */
+.form-control::-moz-placeholder { color: red; }  /* Mozilla Firefox 19+ */
+.form-control:-ms-input-placeholder { color: red; }  /* Internet Explorer 10-11 */
+.form-control::-ms-input-placeholder { color: red; }  /* Microsoft Edge */
+/*End */
+
+
+/*Tieude Buoc1*/
+.title-comm {
+    color: #fff;
+    font-size: 18px;
+    position: relative;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-weight: 700;
+    background-color: #fff;
+    text-align: center;
+}
+
+h3.title-comm:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    margin-top: 0;
+    border-top: 2px solid #d0d2d3;
+    z-index: 1;
+    display: block;
+}
+
+.title-comm .title-holder {
+    min-width: 350px;
+    height: 45px;
+    background-color: #56bbe7;
+    height: auto;
+    line-height: 45px;
+    padding: 0px 20px;
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    display: inline-block;
+    min-width: 280px;
+}
+
+.title-holder:before {
+    content: "";
+    position: absolute;
+    right: -15px;
+    border-width: 0px;
+    bottom: 0px;
+    border-style: solid;
+    border-color: #5c9efe transparent;
+    display: block;
+    width: 0;
+    height: 0;
+    border-top: 23px solid transparent;
+    border-bottom: 22px solid transparent;
+    border-left: 15px solid #56bbe7;
+}
+
+.title-holder:after {
+    content: "";
+    position: absolute;
+    left: -15px;
+    border-width: 0px;
+    bottom: 0px;
+    border-style: solid;
+    border-color: #5c9efe transparent;
+    display: block;
+    width: 0;
+    height: 0;
+    border-top: 23px solid transparent;
+    border-bottom: 22px solid transparent;
+    border-right: 15px solid #56bbe7;
+}
+/*Het*/
+
+/*Tieude Danh Sach San Pham*/
+#nz-div-3 h3.tde span {
+    background: #56bbe7;
+    padding: 10px 20px 8px 20px;
+    color: white;
+    position: relative;
+    display: inline-block;
+    margin: 0;
+    border-radius: 23px 23px 0px 0px;
+}
+
+#nz-div-3 h3.tde {
+    margin: 15px 0;
+    border-bottom: 2px solid #56bbe7;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+}
+/*Het*/
+.p-url {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 200px;
+    overflow: hidden;
+}
+
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
 }
 
 input[type=submit] {
-  width: 20%;
-  background-color: #4CAF50;
-  color: white;
-  padding: 14px 20px;
-  margin: 8px 0;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
+    width: 20%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
 }
 input[type=submit]:hover {
   background-color: #45a049;
@@ -55,8 +155,33 @@ input[type=submit]:hover {
 }
 
 .menu_step_order li{
-    width: 25%;
+    width: 20%;
 }
+
+
+#btnDonHang1 {
+    width: 250px;
+    height: 40px;
+    font-size:120%;
+}
+#btnDonHang2 {
+    width: 250px;
+    height: 40px;
+    font-size:120%;
+}
+#btnDonHang3 {
+    width: 250px;
+    height: 40px;
+    font-size:120%;
+}
+.sizeTextStepSmartWizard {
+    font-size:130%;
+}
+.sizeInputText{
+    height: 135%;
+    font-size:100%;
+}
+
 </style>
 
 <form id="delete-all-form" class="hidden" method="POST" action="<?php echo $cartUrl ?>" data-type="validate" data-confirm="Xóa tất cả sản phẩm trong giỏ hàng">
@@ -71,216 +196,329 @@ input[type=submit]:hover {
     </div>
 <?php endif; ?>
 
-<div class="cart-main-area area-padding mg-t20" ng-app="app" ng-controller="CartController" ng-rendered>
+<div class="cart-main-area area-padding mg-t20" ng-app="app" ng-controller="CartController" ng-rendered >
 	<div class="container-1">
         <div class="row">
 			<div class="col-md-12">
          <div class="container">
 
 
-
-
-        <!-- External toolbar sample -->
+        <!-- Thanh công cụ, Next, back bên ngoài, goi button next back moi khi click thi click vao buton trong thanh nay-->
+        <div style="display: none;">
         <div class="row d-flex align-items-center p-3 my-3 text-white-50" >
-            <div class="col-12 col-lg-6 col-sm-12">
-       
-              <select id="theme_selector" class="hidden" class="custom-select col-lg-6 col-sm-12">
-                    
-                    <option value="arrows">arrows</option>
-                   
-              </select>
+            <div class="col-12 col-lg-6 col-sm-12" >
+                <select id="theme_selector" class="custom-select col-lg-6 col-sm-12" >    
+                    <option value="arrows">arrows</option>    
+                </select>
             </div>
-            <div class="hidden" class="col-12 col-lg-6 col-sm-12">
-              <div class="btn-group col-lg-6 col-sm-12"  role="group">
-                  <button  class="btn btn-secondary" id="prev-btn" type="button">Trở Về</button>
-                  <button  class="btn btn-secondary" id="next-btn" type="button">Tiếp Tục</button>
-              </div>
+                <!-- Test button disable -->
+                    <!-- <button  class="btn btn-secondary" id="next-btn" type="button" ng-click="secondFx()" ng-disabled="true" >Tiếp Tục</button> -->
+            <div  class="col-12 col-lg-6 col-sm-12" >
+                <div class="btn-group col-lg-6 col-sm-12"  role="group">
+                    <button  class="btn btn-secondary" id="prev-btn" type="button" ng-click="backClick()" >Trở Về </button>
+                    <button  class="btn btn-secondary" id="next-btn" type="button" ng-click="nextClick()" >Tiếp Tục</button>
+                </div>
             </div>
+        </div>
         </div>
 
         <!-- SmartWizard html -->
-        <div id="smartwizard" ng-controller="InsertFormController">
-            <ul class="menu_step_order"> 
-                <li><a href="#step-1">Bước 1<br /><small>Chọn Loại Đơn Hàng Và Nhập thông tin nhà cung cấp</small></a></li>
-                <li><a href="#step-2">Bước 2<br /><small>Chọn kho gửi hàng</small></a></li>
-                <li><a href="#step-3">Bước 3<br /><small>Chọn hình thức báo giá vận chuyển</small></a></li>
-                <li ng-click="myFunc()"><a href="#step-4">Bước 4<br /><small>Nhập thông tin sản phẩm</small></a></li>
+        <div  id="smartwizard" ng-controller="InsertFormController"  data-ng-init="init()" >
+            <ul class="menu_step_order" class = "sizeTextStepSmartWizard"> 
+                <!-- Sau khi load trang chay on-load-clicker ->>ng-click="myFunc1()" scollerball tro vao id = "Start" -->
+                <li ng-click="myFunc1()"   on-load-clicker  >
+                    <a href="#step-1" class = "sizeTextStepSmartWizard">
+                        <u>Bước 1:</u> <br />
+                        <small>Chọn Loại Đơn Hàng</small>
+                    </a>
+                </li >
+                <li>
+                    <a href="#step-2" class = "sizeTextStepSmartWizard"  >
+                        <u>Bước 2:</u> <br />
+                        <small>Nhập thông tin nhà cung cấp</small>
+                    </a>    
+                </li>
+                <li>
+                    <a href="#step-3" class = "sizeTextStepSmartWizard">
+                        <u>Bước 3:</u> <br />
+                        <small>Chọn kho gửi hàng</small></a></li>
+                <li>
+                    <a href="#step-4" class = "sizeTextStepSmartWizard">
+                        <u>Bước 4:</u> <br />
+                    <small>Chọn hình thức báo giá v/c</small></a></li>
+                <li ng-click="myFunc()" class = "sizeTextStepSmartWizard">
+                    <a href="#step-5">
+                        <u>Bước 5:</u> <br />
+                        <small>Nhập thông tin sản phẩm</small>
+                    </a>
+                </li>
             </ul>
 
             <div>
-                <div id="step-1" class="">
-                 
-                <!-- Create Object DefaultShopAttribute save all Attribute input from before step(1->3)
-                    objDefShopAtt
-                 -->
+                <div id="step-1" class="" ng-click="myFunc1()"  >
+                    <h3 class="title-comm" ><span class="title-holder">QUÝ KHÁCH HÃY CHỌN LOẠI ĐƠN HÀNG</span></h3>
 
-                   Chọn Loại Đơn Hàng :
-                    <select ng-model="objDefShopAttr.TypeOrder">
+                    <div class = "row ">
+                        <div class = "col-sm-1 ">
+                        </div>
+                        <div class = "col-sm-3 " >
+                            <button ng-click="selectTypeOrder1()" class="btn btn-primary " id="btnDonHang1">Đơn Hàng Uỷ Thác Trọn gói</button>
+                        </div>
+
+                        <div class = "col-sm-3">
+                            <button ng-click="selectTypeOrder2()" class="btn btn-primary" id="btnDonHang2">Đơn Hàng Thanh Toán Và Vận Chuyển</button>
+                        </div>
+                        <div class = "col-sm-3">
+                            <button ng-click="selectTypeOrder3()" class="btn btn-primary" id="btnDonHang3" >Đơn Hàng Vận Chuyển </button>
+                        </div>
+                        <input type="text" id="TypeOrder" name="TypeOrder" ng-model="objDefShopAttr.TypeOrder" ng-init="objDefShopAttr.TypeOrder='' "    style="display: none;">
+
+
+
+                    </div>
+                    <!--  {{check}} -->
+
+
+                    <div > <br /> <br /> </div>
+                    <div  class = "row ">
+                        <div class = "col-sm-10 "></div>
+                        <div class = "col-sm-2 ">
+                            <div class="btn-group "  role="group">
+                                <button  class="btn btn-secondary" id="prev-btn" type="button" ng-disabled="true" >Trở Về</button>
+                                <button  class="btn btn-secondary" id="next-btn" type="button" ng-click="nextClick()" ng-disabled="check" >Tiếp Tục</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+
+                <div id="step-2" class="" >
+                    <div >  <br /> </div> 
+                <!-- Create Object DefaultShopAttribute save all Attribute input from before step(1->3)
+                    objDefShopAttr
+                 -->
+                    <select ng-model="objDefShopAttr.TypeOrder" style="display: none;">
                         <option value="" disabled selected>---Qúy khách vui lòng chọn loại Đon Hàng ---</option>
                         <option value="Đơn hàng Uỷ thác trọn gói"> Đơn Hàng Uỷ Thác Trọn gói
                         <option value="Đơn hàng Thanh toán và Vận chuyển"> Đơn Hàng Thanh Toán Và Vận Chuyển
                         <option value="Đơn hàng Vận chuyển"> Đơn Hàng Vận Chuyển
                     </select>
 
+
                     <div ng-switch="objDefShopAttr.TypeOrder">
                          <!-- {{objDefShopAttr}} -->
-                        <div  ng-switch-when="Đơn hàng Uỷ thác trọn gói">             
-                            <label for="idLinkNhaCungCap">Link Nhà Cung Cấp</label>
-                            <input type="text" id="idLinkNhaCungCap" name="LinkNhaCungCap" ng-model="objDefShopAttr.LinkNhaCungCap" placeholder=" Link Nhà Cung Cấp">
+                        <div  ng-switch-when="Đơn hàng Uỷ thác trọn gói" >    
+                                  
+                            <label  for="idLinkNhaCungCap">Link Nhà Cung Cấp :</label>
+                            <input class="form-control input-sm " type="text" id="idLinkNhaCungCap" name="LinkNhaCungCap" ng-model="objDefShopAttr.LinkNhaCungCap" placeholder="Quý Khách Hãy Nhập Link Nhà Cung Cấp" ng-init="objDefShopAttr.LinkNhaCungCap='' ">
 
                             <label for="idNhaCungCap">Tên Nhà Cung Cấp</label>
-                            <input type="text" id="idTenNhaCungCap" name="TenNhaCungCap" ng-model="objDefShopAttr.TenNhaCungCap" placeholder=" Tên Nhà Cung Cấp">
+                            <input class="form-control input-lg" type="text" id="idTenNhaCungCap" name="TenNhaCungCap" ng-model="objDefShopAttr.TenNhaCungCap" placeholder="Quý Khách Hãy Nhập Tên Nhà Cung Cấp" ng-init="objDefShopAttr.TenNhaCungCap='' ">
 
                             <label for="idsdt">Số Điện Thoại</label>
-                            <input type="text" id="idsdtNhaCungCap" name="sdtNhaCungCap" ng-model="objDefShopAttr.sdtNhaCungCap" placeholder=" Số Điện Thoại Nhà Cung Cấp">          
+                            <input class="form-control input-lg" type="text" id="idsdtNhaCungCap" name="sdtNhaCungCap" ng-model="objDefShopAttr.sdtNhaCungCap" placeholder="Quý Khách Hãy Nhập Số Điện Thoại Nhà Cung Cấp" ng-init="objDefShopAttr.sdtNhaCungCap='' ">       
                         </div>
 
                         <div ng-switch-when="Đơn hàng Thanh toán và Vận chuyển">
                             <label for="idLinkNhaCungCap">Link Nhà Cung Cấp</label>
-                            <input type="text" id="idLinkNhaCungCap" name="LinkNhaCungCap" ng-model="objDefShopAttr.LinkNhaCungCap" placeholder=" Link Nhà Cung Cấp">
+                            <input class="form-control input-lg" type="text" id="idLinkNhaCungCap" name="LinkNhaCungCap" ng-model="objDefShopAttr.LinkNhaCungCap" placeholder="Link Nhà Cung Cấp" ng-init="objDefShopAttr.LinkNhaCungCap='' ">
 
                             <label for="idNhaCungCap">Tên Nhà Cung Cấp</label>
-                            <input type="text" id="idTenNhaCungCap" name="TenNhaCungCap" ng-model="objDefShopAttr.TenNhaCungCap" placeholder=" Tên Nhà Cung Cấp">
+                            <input class="form-control input-lg" type="text" id="idTenNhaCungCap" name="TenNhaCungCap" ng-model="objDefShopAttr.TenNhaCungCap" placeholder="Quý khách hãy nhập tên nhà cung cấp" ng-init="objDefShopAttr.TenNhaCungCap='' ">
 
                             <label for="idsdt">Số Điện Thoại</label>
-                            <input type="text" id="idsdtNhaCungCap" name="sdtNhaCungCap" ng-model="objDefShopAttr.sdtNhaCungCap" placeholder=" Số Điện Thoại Nhà Cung Cấp">
+                            <input class="form-control input-lg" type="text" id="idsdtNhaCungCap" name="sdtNhaCungCap" ng-model="objDefShopAttr.sdtNhaCungCap" placeholder="Số Điện Thoại Nhà Cung Cấp" ng-init="objDefShopAttr.sdtNhaCungCap='' ">
                         </div>
 
                         <div ng-switch-when="Đơn hàng Vận chuyển">
                             <label for="idMaVanDon"> Mã Vận Đơn </label>
-                            <input type="text" id="idMaVanDon" name="MaVanDon" ng-model="objDefShopAttr.MaVanDon" placeholder="Quý Khách Hãy Nhập Mã Vận Đơn">
+                            <input class="form-control input-lg" type="text" id="idMaVanDon" name="MaVanDon" ng-model="objDefShopAttr.MaVanDon" placeholder="Quý Khách Hãy Nhập Mã Vận Đơn" ng-init="objDefShopAttr.MaVanDon='' ">
                             
                             <label for="idSoKien"> Số Kiện </label>
-                            <input type="text" id="idSoKien" name="SoKien" ng-model="objDefShopAttr.SoKien" placeholder="Quý Khách Hãy Nhập Số Kiện Hàng">
+                            <input class="form-control input-lg" type="text" id="idSoKien" name="SoKien" ng-model="objDefShopAttr.SoKien" placeholder="Quý Khách Hãy Nhập Số Kiện Hàng" ng-init="objDefShopAttr.SoKien='' ">
 
                             <label for="idLinkNhaCungCap">Link Nhà Cung Cấp</label>
-                            <input type="text" id="idLinkNhaCungCap" name="LinkNhaCungCap" ng-model="objDefShopAttr.LinkNhaCungCap" placeholder=" Link Nhà Cung Cấp">
+                            <input class="form-control input-lg" type="text" id="idLinkNhaCungCap" name="LinkNhaCungCap" ng-model="objDefShopAttr.LinkNhaCungCap" placeholder=" Link Nhà Cung Cấp" ng-init="objDefShopAttr.LinkNhaCungCap='' ">
 
                             <label for="idNhaCungCap">Tên Nhà Cung Cấp</label>
-                            <input type="text" id="idTenNhaCungCap" name="TenNhaCungCap" ng-model="objDefShopAttr.TenNhaCungCap" placeholder=" Tên Nhà Cung Cấp">
+                            <input class="form-control input-lg" type="text" id="idTenNhaCungCap" name="TenNhaCungCap" ng-model="objDefShopAttr.TenNhaCungCap" placeholder=" Tên Nhà Cung Cấp" ng-init="objDefShopAttr.TenNhaCungCap='' ">
 
                             <label for="idsdt">Số Điện Thoại</label>
-                            <input type="text" id="idsdtNhaCungCap" name="sdtNhaCungCap" ng-model="objDefShopAttr.sdtNhaCungCap" placeholder=" Số Điện Thoại Nhà Cung Cấp">
+                            <input class="form-control input-lg" type="text" id="idsdtNhaCungCap" name="sdtNhaCungCap" ng-model="objDefShopAttr.sdtNhaCungCap" placeholder=" Số Điện Thoại Nhà Cung Cấp" ng-init="objDefShopAttr.sdtNhaCungCap='' ">
+                        </div>
+                    </div>
+
+                    <!-- next, back step2 -->
+                    <div > <br /> <br /> </div>
+                    <div  class = "row ">
+                        <div class = "col-sm-10 "></div>
+                        <div class = "col-sm-2 ">
+                            <div class="btn-group "  role="group">
+                                <button  class="btn btn-secondary" id="prev-btn" type="button" ng-click="backClick()" >Trở Về</button>
+                                <button  class="btn btn-secondary" id="next-btn" type="button" ng-click="nextClick()" ng-disabled="checkStep2ValidateReturnTrueOrFalse()"  >Tiếp Tục</button>
+                            </div>
                         </div>
                     </div>
                 </div>
-                     
-                <div id="step-2" class="">
+
+                <div id="step-3" class="">
+                    
                     <label for="">Chọn Kho Gửi Hàng :</label>
-                        <select name="TenKho" ng-model="objDefShopAttr.TenKho">
-                            <option value="" disabled selected>---Qúy khách vui lòng chọn kho gửi hàng ---</option>
+                        <select name="TenKho" ng-model="objDefShopAttr.TenKho" ng-init="objDefShopAttr.TenKho='' " class="ready-list" style="color:red" >
+                            <option value="" disabled selected  style="color:black" >---Qúy khách vui lòng chọn kho gửi hàng ---</option>
                             <!-- not selected / blank option -->
-                            <option value="Bằng Tường1"> Bằng Tường1 </option>
+                            <option value="Bằng Tường1"> Bằng Tường 1 </option>
                             <!-- interpolation -->
-                            <option value="Bằng Tường2"> Bằng Tường2 </option>
+                            <option value="Bằng Tường2"> Bằng Tường 2 </option>
                         </select>
+            
+
+                    <!-- next, back step3 -->
+                    <div > <br /> <br /> </div>
+                    <div  class = "row ">
+                        <div class = "col-sm-10 "></div>
+                        <div class = "col-sm-2 ">
+                            <div class="btn-group "  role="group">
+                                <button  class="btn btn-secondary" id="prev-btn" type="button" ng-click="backClick()" >Trở Về</button>
+                                <button  class="btn btn-secondary" id="next-btn" type="button" ng-click="nextClick()" ng-disabled="checkStep3ValidateReturnTrueOrFalse()" >Tiếp Tục</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
-                <div id="step-3" class="">  
+                <div id="step-4" class="">  
                     <label for="">Chọn Hình Thức Báo Giá Sản Phẩm :</label> 
-                        <select name="HinhThucBaoGia" ng-model="objDefShopAttr.HinhThucBaoGia">
-                            <option value="" disabled selected>---Qúy khách vui lòng chọn hình thức báo giá ---</option>
+                        <select name="HinhThucBaoGia" ng-model="objDefShopAttr.HinhThucBaoGia" ng-init="objDefShopAttr.HinhThucBaoGia='' "  style="color:red" class="ready-list">
+                            <option value="" disabled selected style="color:black">---Qúy khách vui lòng chọn hình thức báo giá ---</option>
                             <!-- not selected / blank option -->
                             <option value="Giá bao gồm thuế sản phẩm ">Giá bao gồm thuế sản phẩm </option>
                             <!-- interpolation -->
                             <option value="Giá không bao gồm thuế sản phẩm">Giá không bao gồm thuế sản phẩm</option>
                         </select>
+
+
+                    <!-- next, back step4 -->
+                    <div > <br /> <br /> </div>
+                    <div  class = "row ">
+                        <div class = "col-sm-10 "></div>
+                        <div class = "col-sm-2 ">
+                            <div class="btn-group "  role="group">
+                                <button  class="btn btn-secondary" id="prev-btn" type="button" ng-click="backClick()" >Trở Về</button>
+                                <button  class="btn btn-secondary" id="next-btn" type="button" ng-click="nextClick()" ng-disabled="checkStep4ValidateReturnTrueOrFalse()" >Tiếp Tục</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                
-                <div id="step-4" class="" ng-click="myFunc()">
+                <div id="step-5" class="" ng-click="myFunc()">
                    <div class="row">
+                        
+                            <div class="col-md-8" >
+                                <form action="<?php echo $cartUrl ?>" method="POST">
+                                    <input type="hidden" name="action" value="add" />
+                                    <input type="hidden" name="redirect_url" value="<?php echo $url ?>" />
+                                    <div class="row mg-t5" ng-repeat="addedItem in addedItems">
+                                        <div class="col-md-8">
+                                            <!-- + Tao the input an de luu du lieu DefaultShopAttribute from before step(1->3)
+                                            + Du lieu 1 array addedItem thuoc list array addedItems, du lieu tung phan tu thuoc array addedItem duoc lay tu object objDefShopAttr -->
+                                            <!-- Tao the input an de luu du lieu TypeOrder -->
+                                            <input type="text"  name="items[{{$index}}][TypeOrder]"  
+                                            ng-model="addedItem.TypeOrder" style="display: none;" >
+                                            <input type="text"  id="idLinkNhaCungCap" name="items[{{$index}}][LinkNhaCungCap]" ng-model="addedItem.LinkNhaCungCap"
+                                            style="display: none;">
+                                            <input type="text" name="items[{{$index}}][TenNhaCungCap]"  
+                                            ng-model="addedItem.TenNhaCungCap" style="display: none;" >
+                                            <input type="text" name="items[{{$index}}][sdtNhaCungCap]"  
+                                            ng-model="addedItem.sdtNhaCungCap" style="display: none;">
+                                            <input type="text" name="items[{{$index}}][TenKho]"  
+                                            ng-model="addedItem.TenKho" style="display: none;" >
+                                            <input type="text" name="items[{{$index}}][HinhThucBaoGia]"  
+                                            ng-model="addedItem.HinhThucBaoGia" style="display: none;" >
 
-                        <div class="col-md-8" >
-                            <form action="<?php echo $cartUrl ?>" method="POST">
-                                <input type="hidden" name="action" value="add" />
-                                <input type="hidden" name="redirect_url" value="<?php echo $url ?>" />
-                                <div class="row mg-t5" ng-repeat="addedItem in addedItems">
-                                    <div class="col-md-8">
-                                        <!-- + Tao the input an de luu du lieu DefaultShopAttribute from before step(1->3)
-                                        + Du lieu 1 array addedItem thuoc list array addedItems, du lieu tung phan tu thuoc array addedItem duoc lay tu object objDefShopAttr -->
-                                        <!-- Tao the input an de luu du lieu TypeOrder -->
-                                        <input type="text"  name="items[{{$index}}][TypeOrder]"  
-                                        ng-model="addedItem.TypeOrder" style="display: none;" >
-                                        <input type="text"  id="idLinkNhaCungCap" name="items[{{$index}}][LinkNhaCungCap]" ng-model="addedItem.LinkNhaCungCap"
-                                        style="display: none;">
-                                        <input type="text" name="items[{{$index}}][TenNhaCungCap]"  
-                                        ng-model="addedItem.TenNhaCungCap" style="display: none;" >
-                                        <input type="text" name="items[{{$index}}][sdtNhaCungCap]"  
-                                        ng-model="addedItem.sdtNhaCungCap" style="display: none;">
-                                        <input type="text" name="items[{{$index}}][TenKho]"  
-                                        ng-model="addedItem.TenKho" style="display: none;" >
-                                        <input type="text" name="items[{{$index}}][HinhThucBaoGia]"  
-                                        ng-model="addedItem.HinhThucBaoGia" style="display: none;" >
+                                            <input type="text" name="items[{{$index}}][MaVanDon]"  
+                                            ng-model="addedItem.MaVanDon" style="display: none;" >
+                                            <input type="text" name="items[{{$index}}][SoKien]"  
+                                            ng-model="addedItem.SoKien" style="display: none;" >
 
-                                        <input type="text" name="items[{{$index}}][MaVanDon]"  
-                                        ng-model="addedItem.MaVanDon" style="display: none;" >
-                                        <input type="text" name="items[{{$index}}][SoKien]"  
-                                        ng-model="addedItem.SoKien" style="display: none;" >
+                                            <!-- ket thuc het form input an lay du lieu tu step 1->3  -->
+                                            
 
-                                        <!-- ket thuc het form input an lay du lieu tu step 1->3  -->
-                                        
+                                            <input type="text" class="form-control input-sm " name="items[{{$index}}][url]" ng-model="addedItem.url" placeholder="Đường dẫn sản phẩm {{$index+1}}" />
+                                                    
+                                            
+                                          
+                                            <textarea class="form-control input-sm mg-t5" rows="2" name="items[{{$index}}][description]" ng-model="addedItem.description" placeholder="Ghi chú"></textarea>
+                                         <!--  Object  addedItem la :  {{addedItem}} --> 
+                                        </div>
 
-                                        <input type="text" class="form-control input-sm" name="items[{{$index}}][url]" ng-model="addedItem.url" placeholder="Đường dẫn sản phẩm {{$index+1}}" />
-                                                
-                                        
-                                      
-                                        <textarea class="form-control input-sm mg-t5" rows="2" name="items[{{$index}}][description]" ng-model="addedItem.description" placeholder="Ghi chú"></textarea>
-                                     <!--  Object  addedItem la :  {{addedItem}} --> 
+                                        <div class="col-md-2">
+                                            <input type="number" class="form-control input-sm mg-t5" name="items[{{$index}}][count]" ng-model="addedItem.count" placeholder="Số lượng" />
+                                        </div>
+
+                                        <div class="col-md-1 text-right">
+                                            <button type="button" class="btn btn-sm btn-danger" ng-click="remove($index)" ng-disabled="addedItems.length==1"><i class="fa fa-close"></i></button>
+                                        </div>
+
+                                        <div class="col-md-1 text-right">
+                                            <button type="button" class="btn btn-sm btn-success" ng-click="add($index)" ng-if="$index==addedItems.length-1"><i class="fa fa-plus"></i></button>
+                                        </div>   
                                     </div>
 
-                                    <div class="col-md-2">
-                                        <input type="number" class="form-control input-sm" name="items[{{$index}}][count]" ng-model="addedItem.count" placeholder="Số lượng" />
-                                    </div>
+                                    <div class="row mg-t10">
 
-                                    <div class="col-md-1 text-right">
-                                        <button type="button" class="btn btn-sm btn-danger" ng-click="remove($index)" ng-disabled="addedItems.length==1"><i class="fa fa-close"></i></button>
+                                        <div class="col-md-12">
+                                            <button type="submit" class="btn btn-sm btn-primary" ng-disabled="!getSubmitable()">Xác nhận</button>
+                                        </div>
                                     </div>
+                                </form>
+                            </div>
 
-                                    <div class="col-md-1 text-right">
-                                        <button type="button" class="btn btn-sm btn-success" ng-click="add($index)" ng-if="$index==addedItems.length-1"><i class="fa fa-plus"></i></button>
-                                    </div>   
+                            <!-- next, back step5 -->
+                            <div > <br /> <br /> </div>
+                            <div  class="col-md-12">
+                                <div class = "col-md-10 "></div>
+                                <div class = "col-md-2 ">
+                                    <div class="btn-group "  role="group">
+                                        <button  class="btn btn-secondary" id="prev-btn" type="button" ng-click="backClick()" >Trở Về</button>
+                                        <button  class="btn btn-secondary" id="next-btn" type="button" ng-click="nextClick()" ng-disabled="true" >Tiếp Tục</button>
+                                    </div>
                                 </div>
+                            </div>
+                        
 
+                        
+                    </div>
+
+                    <hr/>
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="page-title bold">
+                                <h1>Upload file</h1>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <form action="<?php echo $cartUrl ?>" method="POST" enctype="multipart/form-data"  novalidate>
+                                <input type="" name="action" value="upload_file" />
+                                <input type="" name="redirect_url" value="<?php echo $url ?>" />
+                                <div class="row">
+                                    <div class="col-md-8">
+                                        <input type="file" name="file" class="form-control" onchange="checkName(this, 'fname', 'submit')" />
+                                        <input type='hidden' value='' name='denumire' id='fname' />
+                                    </div>
+                                </div>
                                 <div class="row mg-t10">
-
-                                    <div class="col-md-12">
-                                        <button type="submit" class="btn btn-sm btn-primary" ng-disabled="!getSubmitable()">Xác nhận</button>
+                                    <div class="col-md-8">
+                                        <button type="submit" id="submit" class="btn btn-sm btn-primary" disabled="disabled">Upload</button>
                                     </div>
                                 </div>
                             </form>
                         </div>
                     </div>
-
-        <hr/>
-
-        <div class="row">
-            <div class="col-md-12">
-                <div class="page-title bold">
-                    <h1>Upload file</h1>
-                </div>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-md-12">
-                <form action="<?php echo $cartUrl ?>" method="POST" enctype="multipart/form-data"  novalidate>
-                    <input type="" name="action" value="upload_file" />
-                    <input type="" name="redirect_url" value="<?php echo $url ?>" />
-                    <div class="row">
-                        <div class="col-md-8">
-                            <input type="file" name="file" class="form-control" onchange="checkName(this, 'fname', 'submit')" />
-                            <input type='hidden' value='' name='denumire' id='fname' />
-                        </div>
-                    </div>
-                    <div class="row mg-t10">
-                        <div class="col-md-8">
-                            <button type="submit" id="submit" class="btn btn-sm btn-primary" disabled="disabled">Upload</button>
-                        </div>
-                    </div>
-                </form>
-            </div>
-        </div>
-        <hr/>
+                    <hr/>
     
                   
                 </div>
@@ -303,8 +541,10 @@ input[type=submit]:hover {
 
 <div class="row mg-t20">
             <div class="col-md-12">
-                <div class="page-title bold">
-                    <h1>Danh sách sản phẩm</h1>
+                <div id='nz-div-3'>
+                    <h3 class="tde">          
+                        <span>Danh sách sản phẩm</span>           
+                    </h3>
                 </div>
             </div>
         </div>
@@ -396,7 +636,7 @@ input[type=submit]:hover {
                             <div class="mg-t10">
                                 <div class="alert alert-info" role="alert">
                                     Chưa có sản phẩm nào. Bắt đầu thêm sản phẩm dưới đây!
-                                </div>priceInform
+                                </div>
                             </div>
                         <?php endif; ?>
                     </div>
@@ -493,6 +733,7 @@ input[type=submit]:hover {
     var x = document.getElementById("mySelect").value;
     }
 
+
     (function(){
         $("#make-order-form").on("form-success",function(e,data){
             location.href = "<?php echo $this->createUrl("/user/active_orders") ?>" + "?order_id=" + data.order_id;
@@ -528,8 +769,25 @@ input[type=submit]:hover {
             }
         });
 
-        app.controller("InsertFormController",function($scope){
+    //Ham de bat su kien auto click after open page on-load-clicker
+        app.directive('onLoadClicker', ['$timeout',
+            function($timeout) {
+                return {
+                    restrict: 'A',
+                    priority: -1,
+                    link: function($scope, iElm, iAttrs, controller) {
+                    $timeout(function() {
+                    iElm.triggerHandler('click');
+                    }, 0);
+                    }
+                };
+            }
+        ]);
+
+        app.controller("InsertFormController",function($scope,$window){
             function init(){
+                //scope.check =1 ;
+
                 $scope.k = 0 ;
                 $scope.addedItems = [];
                 $scope.addedInfo = {
@@ -554,7 +812,7 @@ input[type=submit]:hover {
                     priceInform: $scope.addedInfo.priceInform,
                     shop_phone: $scope.addedInfo.shop_phone,
                     count : 1
-                });
+                });1
             }
 
             $scope.remove = function(index){
@@ -571,6 +829,142 @@ input[type=submit]:hover {
                 return false;
             }
             
+
+
+            //ham click vao Trở Về
+            $scope.backClick = function() { 
+              // your logic here
+              angular.element('#prev-btn').click();
+            };
+
+            //ham click vao Tiếp Tục
+            $scope.nextClick = function() { 
+              // your logic here
+              angular.element('#next-btn').click();
+            };
+          
+
+            $scope.selectTypeOrder1 = function() {
+                $scope.objDefShopAttr.TypeOrder= "Đơn hàng Uỷ thác trọn gói";
+                //goi ham click vao next sang buoc tiep theo
+                $scope.nextClick();
+            };
+            
+            $scope.selectTypeOrder2 = function() {
+                $scope.objDefShopAttr.TypeOrder= "Đơn hàng Thanh toán và Vận chuyển";
+                $scope.nextClick();
+            };
+
+            $scope.selectTypeOrder3 = function() {
+                $scope.objDefShopAttr.TypeOrder= "Đơn hàng Vận chuyển";
+                $scope.nextClick();
+            };
+
+            $scope.myFunc1 = function() {
+                //B1: Sau khi bat si lien on-load-clicker auto click vao myFunc1
+                // Khoi chay lenh set vi tri cia scrollbar theo the div id start
+                // $window.scrollTo(0, angular.element(document.getElementById('Start')).offsetTop); 
+
+                // Khoi chay lenh set vi tri cia scrollarbar cach top 100
+                //$window.scrollTo(0, 100);
+                //on top
+                $window.scrollTo(0,100);
+                // het doan lenh scrollbar
+
+
+            //Validate step1: Check gia tri null disable next
+                if($scope.objDefShopAttr.TypeOrder != ""){
+                    $scope.check = false; 
+                    console.log("hello"); 
+                }
+                else{
+                    $scope.check = true;
+                    console.log("hello1"); 
+                }
+            // $scope.check2 = true; 
+            }
+
+
+            
+
+            //Validate step2
+            $scope.checkStep2ValidateReturnTrueOrFalse = function()
+            {
+                if( $scope.objDefShopAttr.TypeOrder == "Đơn hàng Uỷ thác trọn gói" )
+                {
+                    if(     $scope.objDefShopAttr.LinkNhaCungCap != "" 
+                        &&  $scope.objDefShopAttr.TenNhaCungCap != "" 
+                        &&  $scope.objDefShopAttr.sdtNhaCungCap != "")
+                    {
+                        return false;  
+                    }
+                    else
+                    {
+                        return true;
+                    }
+                }
+                else
+                {
+                    if ( $scope.objDefShopAttr.TypeOrder == "Đơn hàng Thanh toán và Vận chuyển" )
+                    {
+                        if(     $scope.objDefShopAttr.LinkNhaCungCap != "" 
+                            &&  $scope.objDefShopAttr.TenNhaCungCap != "" 
+                            &&  $scope.objDefShopAttr.sdtNhaCungCap != "")
+                        {
+                            return false;  
+                        }
+                        else
+                        {
+                            return true;
+                        }
+                    }
+                    else 
+                    {
+                        if ( $scope.objDefShopAttr.TypeOrder == "Đơn hàng Vận chuyển" )
+                        {
+                            if(     $scope.objDefShopAttr.MaVanDon != ""  
+                                &&  $scope.objDefShopAttr.SoKien != ""   
+                                &&  $scope.objDefShopAttr.LinkNhaCungCap != "" 
+                                &&  $scope.objDefShopAttr.TenNhaCungCap != "" 
+                                &&  $scope.objDefShopAttr.sdtNhaCungCap != "")
+                            {
+                                return false;  
+                            }
+                            else
+                            {
+                                return true;
+                            }
+                        }
+                    }  
+                }
+            }// End Validate step2
+
+            //Validate step3
+            $scope.checkStep3ValidateReturnTrueOrFalse = function()
+            {
+               if(     $scope.objDefShopAttr.TenKho != "" )
+                    {
+                        return false;  
+                    }
+                    else
+                    {
+                        return true;
+                    }
+            }//End Validate step3
+
+            //Validate step4
+            $scope.checkStep4ValidateReturnTrueOrFalse = function()
+            {
+               if(     $scope.objDefShopAttr.HinhThucBaoGia != "" )
+                    {
+                        return false;  
+                    }
+                    else
+                    {
+                        return true;
+                    }
+            }//End Validate step3
+
             $scope.myFunc = function() {
             
             $scope.m = 0;
@@ -589,7 +983,10 @@ input[type=submit]:hover {
             
             };
             
-        
+            // $scope.scroll = function () {
+            // $window.scrollTo(0, angular.element(document.getElementById('div1')).offsetTop);  
+            // // $window.scrollTo(0, 0);  
+            // };
 
             //tao combobox chon kho hang
 
@@ -604,6 +1001,20 @@ input[type=submit]:hover {
 });
 
     })();
+
+
+    //jQery
+    $('.ready-list').on('change', function() {
+       var selected_v = this.value;
+       if (selected_v != "") {
+          $(this).css("color", "black");
+       }
+       else {
+          $(this).css("color", "red");
+       }
+    });
+
+
      $(document).ready(function(){
 
             // Step show event
@@ -635,7 +1046,7 @@ input[type=submit]:hover {
                     transitionEffect:'fade',
                     showStepURLhash: true,
                     toolbarSettings: {//toolbarPosition: 'both',
-                                      toolbarButtonPosition: 'end',
+                                      //toolbarButtonPosition: 'end',
                                       //toolbarExtraButtons: [btnFinish, btnCancel]
                                     }
             });

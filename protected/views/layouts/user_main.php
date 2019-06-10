@@ -9,15 +9,21 @@
         <div class="text-right">
             Tỷ giá hôm nay: <span class="bold" money-display data-money="<?php echo Util::param2("setting","vnd_ndt_rate") ?>"></span> VNĐ / 1 NDT
         </div>
+        
+        <!-- Thong tin lien he  -->
         <div class="mg-b10 mg-t10">
             <?php echo Util::param2("front_page_content","user_page_content1") ?>
         </div>
+
+        <!-- Goi phan tao don hang -->
         <div class="row">
            
             <div class="col-sm-12">
 		        <?php echo $content; ?>
             </div>
         </div>
+
+
 	</div>
 	<?php $this->renderPartial("application.views.layouts.subviews.footer"); ?>
 </body>

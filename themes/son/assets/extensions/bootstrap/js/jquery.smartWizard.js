@@ -158,9 +158,10 @@
                 return true;
             }
 
-            // Create the toolbar buttons
-            var btnNext = this.options.toolbarSettings.showNextButton !== false ? $('<button></button>').text(this.options.lang.next).addClass('btn btn-secondary sw-btn-next').attr('type', 'button') : null;
-            var btnPrevious = this.options.toolbarSettings.showPreviousButton !== false ? $('<button></button>').text(this.options.lang.previous).addClass('btn btn-secondary sw-btn-prev').attr('type', 'button') : null;
+            // Create the toolbar buttons , Tu dong add them button next , back vao moi step
+            // Sua lai them style="display: none;" de an di button next, back va tao nut button khac 
+            var btnNext = this.options.toolbarSettings.showNextButton !== false ? $('<button style="display: none;"></button>').text(this.options.lang.next).addClass('btn btn-secondary sw-btn-next').attr('type', 'button') : null;
+            var btnPrevious = this.options.toolbarSettings.showPreviousButton !== false ? $('<button style="display: none;"></button>').text(this.options.lang.previous).addClass('btn btn-secondary sw-btn-prev').attr('type', 'button') : null;
             var btnGroup = $('<div></div>').addClass('btn-group mr-2 sw-btn-group').attr('role', 'group').append(btnPrevious, btnNext);
 
             // Add extra toolbar buttons

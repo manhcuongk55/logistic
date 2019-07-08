@@ -53,8 +53,8 @@
 			<div class="col-md-6 col-sm-6">
 				<div class="preview-2">
 					<div id="nivoslider" class="slides">
-						<a href="#"><img src="/orderhip.com/img/slider/slider-4.jpg" alt="" title="#slider-1-caption1"/></a>
-						<a href="#"><img src="/orderhip.com/img/slider/slider-5.jpg" alt="" title="#slider-1-caption1"/></a>
+						<a href="#"><img src="/img/slider/slider-4.jpg" alt="" title="#slider-1-caption1"/></a>
+						<a href="#"><img src="/img/slider/slider-5.jpg" alt="" title="#slider-1-caption1"/></a>
 					</div>
 					<div id="slider-1-caption1" class="nivo-html-caption nivo-caption">
 						<div class="timethai" style=" position:absolute; bottom:0; left:0; background-color:rgba(224, 53, 80, 0.6); height:3px; -webkit-animation: myfirst 10000ms ease-in-out; -moz-animation: myfirst 10000ms ease-in-out; -ms-animation: myfirst 10000ms ease-in-out; animation: myfirst 10000ms ease-in-out; ">
@@ -68,14 +68,14 @@
 						<div class="col-md-6 col-sm-6">
 							<div class="banner-container">
 								<a href="/page_5_order-online.html">
-									<img src="/orderhip.com/img/slider/slider-3.jpg" alt="">
+									<img src="/img/slider/slider-3.jpg" alt="">
 								</a>
 							</div>
 						</div>
 						<div class="col-md-6 col-sm-6">
 							<div class="banner-container">
 								<a href="/page_6_ky-gui-hang.html">
-									<img src="/orderhip.com/img/slider/slider-2.jpg" alt="">
+									<img src="/img/slider/slider-2.jpg" alt="">
 								</a>
 							</div>
 						</div>
@@ -84,14 +84,14 @@
 						<div class="col-md-6 col-sm-6">
 							<div class="banner-container">
 								<a href="/page_7_chuyen-hang-noi-dia.html">
-									<img src="/orderhip.com/img/slider/slider-1.jpg" alt="">
+									<img src="/img/slider/slider-1.jpg" alt="">
 								</a>
 							</div>
 						</div>
 						<div class="col-md-6 col-sm-6">
 							<div class="banner-container">
 								<a href="#">
-									<img src="/orderhip.com/img/slider/slider-6.jpg" alt="">
+									<img src="/img/slider/slider-6.jpg" alt="">
 								</a>
 							</div>
 						</div>
@@ -138,7 +138,7 @@
 				<div class="item-team text-center">
 					<div class="team-info">
 						<div class="team-img">
-							<img width="250" height="250" alt="team1" class="img-responsive" src="/orderhip.com/img/banner/vendors/taobao.gif">
+							<img width="250" height="250" alt="team1" class="img-responsive" src="/img/banner/vendors/taobao.gif">
 							<div class="mask">
 								<div class="mask-inner">
 									<a href="http://taobao.com" target="_blank"><i class="fa fa-link"></i></a>
@@ -154,7 +154,7 @@
 				<div class="item-team text-center">
 					<div class="team-info">
 						<div class="team-img">
-							<img width="250" height="250" alt="team2" class="img-responsive" src="/orderhip.com/img/banner/vendors/1688.jpg">
+							<img width="250" height="250" alt="team2" class="img-responsive" src="/img/banner/vendors/1688.jpg">
 							<div class="mask">
 								<div class="mask-inner">
 									<a href="http://1688.com" target="_blank"><i class="fa fa-link"></i></a>
@@ -170,7 +170,7 @@
 				<div class="item-team text-center">
 					<div class="team-info">
 						<div class="team-img">
-							<img width="250" height="250" alt="team3" class="img-responsive" src="/orderhip.com/img/banner/vendors/tmall.png">
+							<img width="250" height="250" alt="team3" class="img-responsive" src="/img/banner/vendors/tmall.png">
 							<div class="mask">
 								<div class="mask-inner">
 									<a href="http://tmall.com" target="_blank"><i class="fa fa-link"></i></a>
@@ -186,7 +186,7 @@
 				<div class="item-team text-center">
 					<div class="team-info">
 						<div class="team-img">
-							<img width="250" height="250" alt="team4" class="img-responsive" src="/orderhip.com/img/banner/vendors/other.jpg">
+							<img width="250" height="250" alt="team4" class="img-responsive" src="/img/banner/vendors/other.jpg">
 							<div class="mask">
 								<div class="mask-inner">
 									<a href="#"><i class="fa fa-link"></i></a>

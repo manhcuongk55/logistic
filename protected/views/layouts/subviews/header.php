@@ -54,7 +54,7 @@
 					<div class="row">
 						<div class="col-lg-4 col-md-3">
 							<div class="logo">
-								<a href="<?php echo $this->createUrl("/home") ?>"><img src="/orderhip.com/img/logo.jpg" alt="MOZAR"></a>
+								<a href="<?php echo $this->createUrl("/home") ?>"><img src="/img/logo.jpg" alt="MOZAR"></a>
 							</div>
 						</div>
 						<div class="col-lg-8 col-md-9 hidden-sm hidden-xs">

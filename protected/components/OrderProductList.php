@@ -100,11 +100,11 @@ class OrderProductList extends AdminTableList {
             "actions" => array(
                 "action" => array(
                     "update" => array(
-                        "vietnamese_name", "url", "count", "description" , "LinkNhaCungCap"
+                        "vietnamese_name", "url", "count", "description" //, "LinkNhaCungCap"
                     ),
                     "delete" => true,
                     "insert" => array(
-                        "vietnamese_name", "url", "count", "description", "order_id", "LinkNhaCungCap"
+                        "vietnamese_name", "url", "count", "description", "order_id"//, "LinkNhaCungCap"
                     ),
                     "data" => array(
                         "search" => array(

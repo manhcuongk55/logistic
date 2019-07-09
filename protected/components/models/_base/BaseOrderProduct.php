@@ -28,7 +28,7 @@
  * @property integer $shop_delivery_order_id
  * @property string $shop_id
  * @property double $real_price
- * @property string $LinkNhaCungCap
+ * //file nay de them truong vao chinh sua don hang sau khi vao chi tiet don hang
  * @property string $TenKho
  */
 abstract class BaseOrderProduct extends SModel {

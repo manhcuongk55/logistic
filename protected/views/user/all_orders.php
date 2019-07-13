@@ -1,3 +1,5 @@
+<!-- Thong ke tat ca don hang -->
+
 <?php 
     $orderList = new OrderList(OrderList::TYPE_ALL); 
     $orderID = Input::get("order_id");

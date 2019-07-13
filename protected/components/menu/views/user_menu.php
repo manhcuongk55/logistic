@@ -1,4 +1,4 @@
-<div class="account-nav">
+<!-- <div class="account-nav">
     <?php $menu->resetLoop(); while($menu->loop()): ?>
         <div class="menu-title">
             <?php echo $menu->currentItem("name") ?>
@@ -24,4 +24,4 @@
             </ul>
         <?php endif; ?>
     <?php endwhile; ?>
-</div>
+</div> -->

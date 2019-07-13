@@ -25,8 +25,18 @@ class OrderHelper {
             $orderProduct->shop_id = @substr($item->shop_id,0,50);
             $orderProduct->ordered_count = $orderProduct->count;
 
+        //Them Cac truong vao tbl_orderProduct
+           //  $orderProduct->TypeOrder =  $item->TypeOrder;
+           //  $orderProduct->LinkNhaCungCap = $item->LinkNhaCungCap ;
+           //  $orderProduct->TenNhaCungCap = $item->TenNhaCungCap ;
+           //  $orderProduct->sdtNhaCungCap = $item->sdtNhaCungCap ;
+           //  $orderProduct->TenKho = $item->TenKho ;
+           //  $orderProduct->HinhThucBaoGia = $item->HinhThucBaoGia ;
+           //  $orderProduct->MaVanDon = $item->MaVanDon ;
+           //  $orderProduct->SoKien = $item->SoKien ;
+
             $result = $orderProduct->validate(array(
-                "url", "name", "vietnamese_name", "image", "count", "type", "description", "web_price", "shop_id"
+                "url", "name", "vietnamese_name", "image", "count", "type", "description", "web_price", "shop_id","LinkNhaCungCap"
             ));
             if(!$result){
                 Output::returnJsonError($orderProduct->getFirstError());
@@ -59,9 +69,17 @@ class OrderHelper {
             $order->delivery_price_ndt = 0;
             $order->real_price = 0;
 
+            $order->TypeOrder =  $item->TypeOrder;
+            $order->LinkNhaCungCap = $item->LinkNhaCungCap ;
+            $order->TenNhaCungCap = $item->TenNhaCungCap ;
+            $order->sdtNhaCungCap = $item->sdtNhaCungCap ;
+            $order->TenKho = $item->TenKho ;
+            $order->HinhThucBaoGia = $item->HinhThucBaoGia ;
+            $order->MaVanDon = $item->MaVanDon ;
+            $order->SoKien = $item->SoKien ;
+
             $result = $order->save();
             
-
             if(!$result){
                 Output::returnJsonError($order->getFirstError());
                 return;

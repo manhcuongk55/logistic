@@ -19,9 +19,18 @@ return array(
 			"bootstrap" => array(
 				"css" => array(
 					"bootstrap.min.css",
-					"bootstrap-theme.min.css"
+					"bootstrap-theme.min.css",
+					"bootstrap-wizard.css",
+					"smart-wizard-theme-arrow.min.css",
+					"smart-wizard-theme-circles.min.css",
+					"smart-wizard-theme-dots.min.css"
+					
 				),
-				"js" => "bootstrap.min.js"
+				"js" =>array(
+				 	"bootstrap.min.js",
+				 	"jquery.smartWizard.js"
+				 ),
+
 			),
 			"font-awesome-3.2.1" => array(
 				"css" => "font-awesome.css",

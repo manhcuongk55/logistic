@@ -2,8 +2,8 @@
     $vendorLogos = array(
         OrderProduct::WEBSITE_TYPE_TAOBAO => "/img/vendors/taobao.png",
         OrderProduct::WEBSITE_TYPE_TMALL => "/img/vendors/tmall.png",
-        OrderProduct::WEBSITE_TYPE_1688 => "/img/vendors/1688.jpg",
-        OrderProduct::WEBSITE_TYPE_OTHER => "/img/vendors/other.png",
+        //OrderProduct::WEBSITE_TYPE_1688 => "/img/vendors/1688.jpg",
+      //  OrderProduct::WEBSITE_TYPE_OTHER => "/img/vendors/other.png",
     );
 ?>
 <style>

@@ -7,6 +7,7 @@ $cs->registerCoreScript('jquery');
 $cs->registerScriptFile($baseUrl.'/js/tooltip.js');
 $cs->registerScriptFile($baseUrl.'/js/fancybox/jquery.fancybox-1.3.1.pack.js');
 $cs->registerCssFile($baseUrl.'/js/fancybox/jquery.fancybox-1.3.1.css');
+
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
